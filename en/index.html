@@ -7,12 +7,12 @@
 <meta name="description" content="Moving in Tallinn and Harju County. Home, office and household moves, heavy-item transport, junk removal. We arrive, pack and move it all. 24/7.">
 
 <!-- ===== SEO / Open Graph / Schema ===== -->
-<link rel="canonical" href="https://dennymansa.github.io/moving24-landing/index-en.html">
-<link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/index.html">
-<link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/index-et.html">
-<link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/index-en.html">
-<link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/index.html">
-<meta property="og:url" content="https://dennymansa.github.io/moving24-landing/index-en.html">
+<link rel="canonical" href="https://dennymansa.github.io/moving24-landing/en/">
+<link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/">
+<link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/">
+<link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/">
+<link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/">
+<meta property="og:url" content="https://dennymansa.github.io/moving24-landing/en/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Moving24">
 <meta property="og:title" content="Moving24 · Moving services in Tallinn. One call. Everything moves.">
@@ -165,7 +165,7 @@ a{color:inherit;text-decoration:none}
 /* -------- HERO -------- */
 .hero{background:linear-gradient(160deg,var(--hero-bg),var(--hero-bg-2));color:var(--hero-text);padding:0;overflow:hidden;position:relative;margin-top:-72px;min-height:100vh;display:flex;flex-direction:column}
 .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
-.hero-photo-bg{position:absolute;inset:0;background:url('imagebg-1920.jpg') center 40%/cover no-repeat;z-index:0;transform:scale(1.0)}
+.hero-photo-bg{position:absolute;inset:0;background:url('../imagebg-1920.jpg') center 40%/cover no-repeat;z-index:0;transform:scale(1.0)}
 /* lighter overlay */
 .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(165deg,rgba(6,10,16,.72) 0%,rgba(8,14,24,.55) 55%,rgba(6,10,18,.70) 100%);z-index:1}
 .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(900px 400px at 80% 10%,rgba(31,122,224,.12),transparent 60%);pointer-events:none;z-index:1}
@@ -499,7 +499,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 <!-- PILL NAV -->
 <div class="nav-wrap">
   <nav class="nav-pill">
-    <a class="nav-logo" href="index.html" aria-label="Moving24 — home">
+    <a class="nav-logo" href="./" aria-label="Moving24 — home">
       <img src="https://moving24.ee/wp-content/uploads/2024/02/cropped-Group-1-1-192x192.png" alt="Moving24">
       <span>Moving<b>24</b></span>
     </a>
@@ -533,9 +533,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     </div>
     <div class="nav-cta">
       <div class="lang-switch" role="navigation" aria-label="Язык / Keel / Language">
-        <a href="index.html" class="lang-link" hreflang="ru" lang="ru">RU</a>
-        <a href="index-et.html" class="lang-link" hreflang="et" lang="et">ET</a>
-        <a href="index-en.html" class="lang-link is-active" hreflang="en" lang="en" aria-current="page">EN</a>
+        <a href="../ru/" class="lang-link" hreflang="ru" lang="ru">RU</a>
+        <a href="../" class="lang-link" hreflang="et" lang="et">ET</a>
+        <a href="./" class="lang-link is-active" hreflang="en" lang="en" aria-current="page">EN</a>
       </div>
       <a class="nav-tel" href="tel:+37256870101">+372 5687 0101</a>
       <a class="btn btn-accent" href="#form">Get a quote →</a>
@@ -551,9 +551,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   <a href="#form" onclick="closeMob()">Get a quote →</a>
   <a href="tel:+37256870101">📞 +372 5687 0101</a>
   <div class="nav-mobile-lang">
-    <a href="index.html" lang="ru" hreflang="ru">RU</a>
-    <a href="index-et.html" lang="et" hreflang="et">ET</a>
-    <a href="index-en.html" lang="en" hreflang="en" aria-current="page">EN</a>
+    <a href="../ru/" lang="ru" hreflang="ru">RU</a>
+    <a href="../" lang="et" hreflang="et">ET</a>
+    <a href="./" lang="en" hreflang="en" aria-current="page">EN</a>
   </div>
 </div>
 
@@ -561,8 +561,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 <!-- HERO -->
 <section class="hero">
   <!-- video kept, switch back by removing display:none -->
-  <video class="hero-video" autoplay muted loop playsinline poster="img/IMG_0061.jpg?v=3" style="display:none">
-    <source src="img/hero-video.mp4" type="video/mp4">
+  <video class="hero-video" autoplay muted loop playsinline poster="../img/IMG_0061.jpg?v=3" style="display:none">
+    <source src="../img/hero-video.mp4" type="video/mp4">
   </video>
   <div class="hero-photo-bg"></div>
   <div class="wrap">
@@ -610,7 +610,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
             <span id="photoLabel-txt" aria-live="polite">Attach a photo (optional)</span>
           </label>
           <button class="btn btn-accent" type="submit" style="width:100%;padding:12px;font-size:14.5px">Get a quote →</button>
-          <p style="text-align:center;font-size:11.5px;color:#566472;margin-top:7px">Free · Within 2 hours · No obligation · By submitting this form you accept the <a href="privacy-en.html" style="color:var(--accent)">Privacy Policy</a></p>
+          <p style="text-align:center;font-size:11.5px;color:#566472;margin-top:7px">Free · Within 2 hours · No obligation · By submitting this form you accept the <a href="privacy/" style="color:var(--accent)">Privacy Policy</a></p>
           <div class="form-ok" id="formOk" role="status"><b>Thank you! Your request has been received.</b><br>We will get in touch with you shortly.</div>
         </form>
       </div>
@@ -646,7 +646,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     <p class="lead lead--lg">Every move is different. We match the van, the crew and the approach to your specific situation.</p>
     <div class="steps-ph">
       <div class="step-ph">
-        <div class="img-wrap"><img src="img/IMG_0061.jpg?v=3" alt="Home moving with Moving24" loading="lazy"></div>
+        <div class="img-wrap"><img src="../img/IMG_0061.jpg?v=3" alt="Home moving with Moving24" loading="lazy"></div>
         <div class="sp-top-label">Home move</div>
         <div class="sp-body">
           <h3>Apartment and house</h3>
@@ -703,9 +703,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
       <div class="gbp-panel">
         <!-- Photo collage -->
         <div class="gbp-photos">
-          <div class="gbp-photo-main" style="background:url('imagebg-1920.jpg') center/cover"></div>
+          <div class="gbp-photo-main" style="background:url('../imagebg-1920.jpg') center/cover"></div>
           <div class="gbp-photo-stack">
-            <div style="background:url('img/IMG_0061.jpg') center/cover;flex:1;border-radius:0 12px 0 0"></div>
+            <div style="background:url('../img/IMG_0061.jpg') center/cover;flex:1;border-radius:0 12px 0 0"></div>
             <div style="background:url('https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.45.jpg') center/cover;flex:1;border-radius:0 0 12px 0"></div>
           </div>
         </div>
@@ -848,42 +848,42 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 
       <div class="partner-logo" role="listitem">
         <!-- Скачать: https://logo.clearbit.com/remax.com → img/partners/remax.png -->
-        <img src="img/partners/remax.png" alt="RE/MAX" loading="lazy"
+        <img src="../img/partners/remax.png" alt="RE/MAX" loading="lazy"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <span class="partner-fallback">RE/MAX</span>
       </div>
 
       <div class="partner-logo" role="listitem">
         <!-- Скачать: https://logo.clearbit.com/ober-haus.ee → img/partners/ober-haus.png -->
-        <img src="img/partners/ober-haus.png" alt="Ober-Haus" loading="lazy"
+        <img src="../img/partners/ober-haus.png" alt="Ober-Haus" loading="lazy"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <span class="partner-fallback">OBER-HAUS</span>
       </div>
 
       <div class="partner-logo" role="listitem">
         <!-- Скачать: https://logo.clearbit.com/pindi.ee → img/partners/pindi.png -->
-        <img src="img/partners/pindi.png" alt="Pindi Kinnisvara" loading="lazy"
+        <img src="../img/partners/pindi.png" alt="Pindi Kinnisvara" loading="lazy"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <span class="partner-fallback">PINDI</span>
       </div>
 
       <div class="partner-logo" role="listitem">
         <!-- Скачать: https://logo.clearbit.com/uusmaa.ee → img/partners/uus-maa.png -->
-        <img src="img/partners/uus-maa.png" alt="Uus Maa" loading="lazy"
+        <img src="../img/partners/uus-maa.png" alt="Uus Maa" loading="lazy"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <span class="partner-fallback">UUS MAA</span>
       </div>
 
       <div class="partner-logo" role="listitem">
         <!-- Скачать: https://logo.clearbit.com/ikea.com → img/partners/ikea.png -->
-        <img src="img/partners/ikea.png" alt="IKEA" loading="lazy"
+        <img src="../img/partners/ikea.png" alt="IKEA" loading="lazy"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <span class="partner-fallback">IKEA</span>
       </div>
 
       <div class="partner-logo" role="listitem">
         <!-- Скачать: https://logo.clearbit.com/liven.ee → img/partners/liven.png -->
-        <img src="img/partners/liven.png" alt="Liven" loading="lazy"
+        <img src="../img/partners/liven.png" alt="Liven" loading="lazy"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <span class="partner-fallback">Liven</span>
       </div>
@@ -996,7 +996,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 </section>
 
 <!-- NUMBERS -->
-<section class="section section--dark" id="meist" style="position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:url('imagebg-1920.jpg') center/cover no-repeat;opacity:.07;pointer-events:none"></div>
+<section class="section section--dark" id="meist" style="position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:url('../imagebg-1920.jpg') center/cover no-repeat;opacity:.07;pointer-events:none"></div>
   <div class="wrap" style="position:relative;z-index:1">
     <span class="tag">The numbers speak</span>
     <h2 class="big">Thousands of moves. New ones every day.</h2>
@@ -1065,9 +1065,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
       <a href="https://moving24.ee/wp-content/uploads/2026/04/680400674_2177159153029414_3665252672125438182_n-1.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/680400674_2177159153029414_3665252672125438182_n-1.jpg" alt="Carrying large items" loading="lazy"></a>
       <a href="https://moving24.ee/wp-content/uploads/2026/04/672936968_1540802098048739_2966411495760863387_n-1-768x1024.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/672936968_1540802098048739_2966411495760863387_n-1-768x1024.jpg" alt="Belongings secured inside the van" loading="lazy"></a>
       <a href="https://moving24.ee/wp-content/uploads/2026/04/679002288_35800524549546135_7308767804721973724_n-1.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/679002288_35800524549546135_7308767804721973724_n-1.jpg" alt="Loading belongings into the van" loading="lazy"></a>
-      <a href="img/IMG_0061.jpg?v=3"><img src="img/IMG_0061.jpg?v=3" alt="Better Call Moving24 van" loading="lazy"></a>
-      <a href="img/IMG_0060.jpg?v=3"><img src="img/IMG_0060.jpg?v=3" alt="Moving24 vans on the street" loading="lazy"></a>
-      <a href="img/IMG_0018.jpg?v=3"><img src="img/IMG_0018.jpg?v=3" alt="Moving24 vans against the city skyline" loading="lazy"></a>
+      <a href="../img/IMG_0061.jpg?v=3"><img src="../img/IMG_0061.jpg?v=3" alt="Better Call Moving24 van" loading="lazy"></a>
+      <a href="../img/IMG_0060.jpg?v=3"><img src="../img/IMG_0060.jpg?v=3" alt="Moving24 vans on the street" loading="lazy"></a>
+      <a href="../img/IMG_0018.jpg?v=3"><img src="../img/IMG_0018.jpg?v=3" alt="Moving24 vans against the city skyline" loading="lazy"></a>
     </div>
   </div>
 </section>
@@ -1091,7 +1091,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a class="nav-logo" href="index.html" aria-label="Moving24 — home">
+        <a class="nav-logo" href="./" aria-label="Moving24 — home">
           <img src="https://moving24.ee/wp-content/uploads/2024/02/cropped-Group-1-1-192x192.png" alt="Moving24">
           <span style="color:var(--hero-text)">Moving<b style="color:var(--accent)">24</b></span>
         </a>
@@ -1144,7 +1144,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     <div class="foot-bottom">
       <div>© 2026 Moving24 · All rights reserved</div>
       <div class="foot-legal">
-        <a href="privacy-en.html">Privacy Policy</a>
+        <a href="privacy/">Privacy Policy</a>
         <a href="mailto:info@moving24.ee">info@moving24.ee</a>
       </div>
     </div>
