@@ -515,7 +515,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 /* form3 overrides */
 .form-card{max-width:415px}
 .form-card.expanded{box-shadow:0 24px 56px rgba(0,0,0,.28)}
-@media(min-width:761px){.hero{height:100vh}.form-card{align-self:start}}
+@media(min-width:761px){.hero{height:100vh}.hero-grid{min-height:0}.form-card{align-self:start;max-height:calc(100vh - 196px);overflow-y:auto}}
 .form-card input,.form-card textarea,.form-card select,.form-card .form-select{padding:12px 13px;font-size:14.5px}
 .ff-base{margin-bottom:9px}
 .ff-base>label,.form-card .ff>label{display:block;font-size:12px;font-weight:600;color:#56657a;margin:0 0 4px}
@@ -527,11 +527,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 
 .chip{position:relative}
 .chip-tick{position:absolute;right:11px;top:50%;transform:translateY(-50%);color:#7db8ff;font-size:13px;font-weight:700;opacity:0;pointer-events:none}
-@keyframes tickCycle{0%{opacity:0;transform:translateY(-50%) translateX(-5px) scale(.9)}2.5%{opacity:.6;transform:translateY(-50%) translateX(0) scale(1)}6%{opacity:.6;transform:translateY(-50%) translateX(0) scale(1)}9%{opacity:0;transform:translateY(-50%) translateX(4px) scale(.9)}100%{opacity:0;transform:translateY(-50%) translateX(4px) scale(.9)}}
-#svcChips:not(:has(.chip.on)) .chip:nth-child(1) .chip-tick{animation:tickCycle 16s ease-in-out 0s infinite}
-#svcChips:not(:has(.chip.on)) .chip:nth-child(2) .chip-tick{animation:tickCycle 16s ease-in-out 1.6s infinite}
-#svcChips:not(:has(.chip.on)) .chip:nth-child(3) .chip-tick{animation:tickCycle 16s ease-in-out 3.2s infinite}
-#svcChips:not(:has(.chip.on)) .chip:nth-child(4) .chip-tick{animation:tickCycle 16s ease-in-out 4.8s infinite}
+@keyframes tickCycle{0%{opacity:0;transform:translateY(-50%) translateX(-5px) scale(.9)}3%{opacity:.6;transform:translateY(-50%) translateX(0) scale(1)}10%{opacity:.6;transform:translateY(-50%) translateX(0) scale(1)}14%{opacity:0;transform:translateY(-50%) translateX(4px) scale(.9)}100%{opacity:0;transform:translateY(-50%) translateX(4px) scale(.9)}}
+#svcChips:not(:has(.chip.on)) .chip:nth-child(1) .chip-tick{animation:tickCycle 10s ease-in-out 0s infinite}
+#svcChips:not(:has(.chip.on)) .chip:nth-child(2) .chip-tick{animation:tickCycle 10s ease-in-out 1.4s infinite}
+#svcChips:not(:has(.chip.on)) .chip:nth-child(3) .chip-tick{animation:tickCycle 10s ease-in-out 2.8s infinite}
+#svcChips:not(:has(.chip.on)) .chip:nth-child(4) .chip-tick{animation:tickCycle 10s ease-in-out 4.2s infinite}
 @media(prefers-reduced-motion:reduce){.chip-tick{animation:none!important}}
 
 .cc{position:fixed;left:14px;right:14px;bottom:14px;max-width:540px;margin:0 auto;background:#0e1622;color:#e7eef7;border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:15px 17px;z-index:9999;box-shadow:0 18px 50px rgba(0,0,0,.5);font-size:13px;line-height:1.5;display:none}
@@ -1340,7 +1340,7 @@ document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
   });
 })();
 </script>
-<div class="cc" id="cc" role="dialog" aria-live="polite">
+<div class="cc" id="cc" role="dialog" aria-label="Согласие на использование cookie" aria-live="polite">
   <div class="cc-txt">Мы используем cookie для аналитики и рекламы. <a href="privaatsus/">Подробнее</a></div>
   <div class="cc-row"><button class="cc-btn cc-dec" type="button">Отклонить</button><button class="cc-btn cc-acc" type="button">Принять</button></div>
 </div>
