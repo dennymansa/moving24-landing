@@ -55,23 +55,19 @@
 }
 </script>
 
-<!-- ===== TRACKING — placeholder ID. Реальные подставить в window.M24 ниже:
-     GTM-XXXXXXX   -> GTM-TSG2CVLC    (Google Tag Manager; GA4 G-7X1TS2BVF6 настроен ВНУТРИ контейнера)
-     AW-XXXXXXXXXX -> AW-16489866360  (Google Ads)
-     CONV_FORM     -> AW-16489866360/uyGYCLT3uagZEPjI_bY9  (конверсия: отправка формы)
-     CONV_PHONE    -> AW-16489866360/LgJRCOq6nK4ZEPjI_bY9  (конверсия: клик по телефону)
-     FORM_ENDPOINT -> URL формы Basin/Cloudflare (пусто = демо-режим без реальной отправки)
-     С placeholder-ID скрипты НЕ грузятся (чистая консоль), но dataLayer-события работают. ===== -->
+<!-- ===== TRACKING — РЕАЛЬНЫЕ коды подставлены: GTM-TSG2CVLC, AW-16489866360 (GA4 + конверсии внутри GTM). Гейт по hostname: трекинг включается ТОЛЬКО на moving24.ee — на тесте (github.io/localhost) молчит, чтобы не засорять живую GA4/Ads. FORM_ENDPOINT пуст = демо (форма пока не шлёт по-настоящему). Consent Mode v2 default=denied, баннер обновляет. ===== -->
 <script>
-  window.M24={GTM:'GTM-XXXXXXX',AW:'AW-XXXXXXXXXX',GA4:'G-XXXXXXXXXX',CONV_FORM:'AW-XXXXXXXXXX/FORM_LABEL',CONV_PHONE:'AW-XXXXXXXXXX/PHONE_LABEL',FORM_ENDPOINT:''};
+  window.M24={GTM:'GTM-TSG2CVLC',AW:'AW-16489866360',GA4:'G-7X1TS2BVF6',CONV_FORM:'AW-16489866360/uyGYCLT3uagZEPjI_bY9',CONV_PHONE:'AW-16489866360/LgJRCOq6nK4ZEPjI_bY9',FORM_ENDPOINT:''};
   window.dataLayer=window.dataLayer||[];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
   gtag('set','ads_data_redaction',true);
   gtag('set','url_passthrough',true);
   (function(){
     window.M24.real=function(v){return !!v && !/X{4,}/.test(v) && !/FORM_LABEL|PHONE_LABEL/.test(v);};
-    var realGTM=window.M24.real(window.M24.GTM);
-    var realAW=window.M24.real(window.M24.AW);
+    var prod=/(^|\.)moving24\.ee$/i.test(location.hostname);
+    var realGTM=prod && window.M24.real(window.M24.GTM);
+    var realAW=prod && window.M24.real(window.M24.AW);
     if(realGTM){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',window.M24.GTM);}
     if(realAW){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+window.M24.AW;document.head.appendChild(s);gtag('js',new Date());gtag('config',window.M24.AW);}
   })();
@@ -540,11 +536,19 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 #svcChips:not(:has(.chip.on)) .chip:nth-child(4) .chip-tick{animation:tickCycle 9s ease-in-out 6.75s infinite}
 @media(prefers-reduced-motion:reduce){.chip-tick{animation:none!important}}
 
+.cc{position:fixed;left:14px;right:14px;bottom:14px;max-width:540px;margin:0 auto;background:#0e1622;color:#e7eef7;border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:15px 17px;z-index:9999;box-shadow:0 18px 50px rgba(0,0,0,.5);font-size:13px;line-height:1.5;display:none}
+.cc.show{display:block}
+.cc-txt a{color:#7fb0ff}
+.cc-row{display:flex;gap:8px;margin-top:12px}
+.cc-btn{flex:1;padding:10px;border-radius:9px;font-weight:700;font-size:13px;cursor:pointer;font-family:inherit}
+.cc-acc{background:var(--accent);color:#fff;border:1px solid var(--accent)}
+.cc-dec{background:transparent;color:#aebfd2;border:1px solid rgba(255,255,255,.22)}
+
 </style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript). ВАЖНО: этот ID правится ВРУЧНУЮ (JS-конфиг window.M24 сюда не дотянется) — при вставке реального GTM замени GTM-XXXXXXX и здесь. -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden" title="gtm"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSG2CVLC" height="0" width="0" style="display:none;visibility:hidden" title="gtm"></iframe></noscript>
 
 <a href="#main" class="skip-link">Liigu sisu juurde</a>
 
@@ -1338,5 +1342,10 @@ document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
   });
 })();
 </script>
+<div class="cc" id="cc" role="dialog" aria-live="polite">
+  <div class="cc-txt">Kasutame küpsiseid analüütika ja reklaami jaoks. <a href="privaatsus/">Loe lähemalt</a></div>
+  <div class="cc-row"><button class="cc-btn cc-dec" type="button">Keeldun</button><button class="cc-btn cc-acc" type="button">Nõustun</button></div>
+</div>
+<script>(function(){var KEY="m24_consent";var cc=document.getElementById("cc");if(!cc)return;function apply(g){gtag("consent","update",{ad_storage:g?"granted":"denied",ad_user_data:g?"granted":"denied",ad_personalization:g?"granted":"denied",analytics_storage:g?"granted":"denied"});}var s=null;try{s=localStorage.getItem(KEY);}catch(e){}if(s==="granted"){apply(true);}else if(s==="denied"){apply(false);}else{cc.classList.add("show");}function ch(g){try{localStorage.setItem(KEY,g?"granted":"denied");}catch(e){}apply(g);cc.classList.remove("show");}cc.querySelector(".cc-acc").addEventListener("click",function(){ch(true);});cc.querySelector(".cc-dec").addEventListener("click",function(){ch(false);});})();</script>
 </body>
 </html>
