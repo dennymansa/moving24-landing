@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moving24 · Грузоперевозки в Таллине. Один звонок. Всё переедет.</title>
+<meta name="description" content="Переезды в Таллине и Харьюмаа. Квартирные, офисные и домашние переезды, перевозка тяжёлых предметов, вывоз мусора. Приедем, упакуем и перевезём. 24/7.">
+
+<!-- ===== SEO / Open Graph / Schema ===== -->
+<link rel="canonical" href="https://YOUR-SITE.pages.dev/"><!-- TODO: заменить на финальный URL -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Moving24">
+<meta property="og:title" content="Moving24 · Грузоперевозки в Таллине. Один звонок. Всё переедет.">
+<meta property="og:description" content="Переезды в Таллине и Харьюмаа: квартирные, офисные, домашние. Перевозка тяжёлых предметов, упаковка, вывоз мусора. 24/7.">
+<meta property="og:image" content="https://moving24.ee/wp-content/uploads/2024/02/cropped-Group-1-1-192x192.png">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Moving24 · Грузоперевозки в Таллине">
+<meta name="twitter:description" content="Один звонок — и всё переедет. Переезды 24/7 по Эстонии.">
+<meta name="twitter:image" content="https://moving24.ee/wp-content/uploads/2024/02/cropped-Group-1-1-192x192.png">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MovingCompany",
+  "name":"Moving24",
+  "image":"https://moving24.ee/wp-content/uploads/2024/02/cropped-Group-1-1-192x192.png",
+  "url":"https://moving24.ee/",
+  "telephone":"+372 56870101",
+  "email":"info@moving24.ee",
+  "priceRange":"€€",
+  "address":{"@type":"PostalAddress","streetAddress":"Kentmanni 28","addressLocality":"Tallinn","postalCode":"10116","addressCountry":"EE"},
+  "areaServed":["Tallinn","Harjumaa","Estonia"],
+  "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}
+}
+</script>
+
+<!-- ===== TRACKING — placeholder ID. Реальные подставить в window.M24 ниже:
+     GTM-XXXXXXX   -> GTM-TSG2CVLC    (Google Tag Manager; GA4 G-7X1TS2BVF6 настроен ВНУТРИ контейнера)
+     AW-XXXXXXXXXX -> AW-16489866360  (Google Ads)
+     CONV_FORM     -> AW-16489866360/uyGYCLT3uagZEPjI_bY9  (конверсия: отправка формы)
+     CONV_PHONE    -> AW-16489866360/LgJRCOq6nK4ZEPjI_bY9  (конверсия: клик по телефону)
+     FORM_ENDPOINT -> URL формы Basin/Cloudflare (пусто = демо-режим без реальной отправки)
+     С placeholder-ID скрипты НЕ грузятся (чистая консоль), но dataLayer-события работают. ===== -->
+<script>
+  window.M24={GTM:'GTM-XXXXXXX',AW:'AW-XXXXXXXXXX',GA4:'G-XXXXXXXXXX',CONV_FORM:'AW-XXXXXXXXXX/FORM_LABEL',CONV_PHONE:'AW-XXXXXXXXXX/PHONE_LABEL',FORM_ENDPOINT:''};
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'granted',security_storage:'granted',wait_for_update:500});
+  gtag('set','ads_data_redaction',true);
+  gtag('set','url_passthrough',true);
+  (function(){
+    var realGTM=window.M24.GTM.indexOf('X')===-1;
+    var realAW=window.M24.AW.indexOf('X')===-1;
+    if(realGTM){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',window.M24.GTM);}
+    if(realAW){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+window.M24.AW;document.head.appendChild(s);gtag('js',new Date());gtag('config',window.M24.AW);}
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}.hand{font-family:cursive}</style>
+<link rel="icon" href="https://moving24.ee/wp-content/uploads/2024/02/cropped-Group-1-1-32x32.png">
+<style>
+:root{
+  --hero-bg:#0b0f15;
+  --hero-bg-2:#101c2c;
+  --hero-text:#ffffff;
+  --hero-text-dim:#9fb4c8;
+
+  --body-bg:#fafbfc;
+  --body-bg-2:#edf3fa;
+  --body-card:#ffffff;
+  --body-text:#1c2330;
+  --body-text-dim:#4a5a6b;
+  --body-text-mute:#7e8e9a;
+
+  --line:#dde7f0;
+  --line-strong:#c2d3e2;
+  --line-hero:#1e2d3d;
+
+  --accent:#1a6cd4;
+  --accent-deep:#1450a0;
+  --accent-soft:#e8f2fc;
+  --accent-line:#bdd5f5;
+
+  --cool:#79b6f2;
+  --cool-soft:#dceafa;
+  --cool-deep:#103a66;
+
+  --green:#3e7a4a;
+  --warn:#b3452f;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--body-bg);color:var(--body-text);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+.hand{font-family:'Caveat',cursive;font-weight:700;font-size:1.18em}
+
+/* -------- PILL NAV (winserv-style floating tablet) -------- */
+.nav-wrap{position:sticky;top:16px;z-index:100;display:flex;justify-content:center;padding:0 16px;pointer-events:none}
+.nav-pill{
+  background:rgba(10,16,24,.88);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:60px;
+  padding:0 8px 0 16px;
+  display:flex;
+  align-items:center;
+  gap:4px;
+  height:56px;
+  pointer-events:all;
+  width:min(96vw,1140px);
+  justify-content:space-between;
+  box-shadow:0 8px 40px rgba(0,0,0,.38),0 2px 8px rgba(0,0,0,.25);
+}
+.nav-logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:17px;color:var(--hero-text);padding-right:12px;border-right:1px solid rgba(255,255,255,.1);margin-right:4px}
+.nav-logo img{width:26px;height:26px;border-radius:6px}
+.nav-logo span b{color:var(--accent)}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links>div{position:relative}
+.nav-links a,.nav-links button{font-size:14px;font-weight:500;color:rgba(255,255,255,.75);background:none;border:none;cursor:pointer;font-family:inherit;padding:8px 18px;border-radius:40px;transition:all .15s;white-space:nowrap}
+.nav-links a:hover,.nav-links button:hover{color:#fff;background:rgba(255,255,255,.08)}
+.dd{position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%);background:#101a25;border:1px solid var(--line-hero);border-radius:16px;padding:10px;min-width:230px;display:none;box-shadow:0 16px 40px rgba(0,0,0,.4)}
+.nav-links>div:hover .dd{display:block}
+.dd a{display:block;padding:9px 12px;border-radius:8px;font-size:14px;color:rgba(255,255,255,.8)}
+.dd a:hover{background:rgba(255,255,255,.06);color:#fff}
+.nav-cta{display:flex;align-items:center;gap:10px;margin-left:8px;padding-left:8px;border-left:1px solid rgba(255,255,255,.1)}
+.nav-tel{font-weight:700;font-size:14px;color:var(--hero-text)!important;padding:0 10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:15px;border-radius:12px;padding:12px 22px;cursor:pointer;border:none;font-family:inherit;transition:all .15s}
+.btn-accent{background:var(--accent);color:#fff!important}
+.btn-accent:hover{background:var(--accent-deep)}
+.btn-ghost{background:transparent;color:var(--hero-text)!important;border:1px solid rgba(255,255,255,.2)}
+.btn-ghost:hover{border-color:var(--cool);background:rgba(255,255,255,.05)}
+.nav-pill .btn{padding:9px 18px;font-size:13.5px;border-radius:40px}
+.nav-pill .btn-ghost{border-color:rgba(255,255,255,.2)}
+.burger{display:none;background:rgba(255,255,255,.1);border:none;border-radius:40px;color:var(--hero-text);font-size:20px;cursor:pointer;padding:8px 14px;margin-left:6px}
+.nav-mobile{display:none}
+
+/* -------- HERO -------- */
+.hero{background:linear-gradient(160deg,var(--hero-bg),var(--hero-bg-2));color:var(--hero-text);padding:0;overflow:hidden;position:relative;margin-top:-72px;min-height:100vh;display:flex;flex-direction:column}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-photo-bg{position:absolute;inset:0;background:url('imagebg.png') center 40%/cover no-repeat;z-index:0;transform:scale(1.0)}
+/* lighter overlay */
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(165deg,rgba(6,10,16,.72) 0%,rgba(8,14,24,.55) 55%,rgba(6,10,18,.70) 100%);z-index:1}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(900px 400px at 80% 10%,rgba(31,122,224,.12),transparent 60%);pointer-events:none;z-index:1}
+.hero .wrap{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;padding-top:calc(72px + 36px);max-width:1520px;padding-left:6px;padding-right:6px}
+.hero-grid{display:grid;grid-template-columns:1fr .68fr;gap:88px;align-items:center;flex:1;padding-bottom:40px;padding-top:0}
+.hero-kicker{font-size:33px;color:#9cc6f5;margin-bottom:17px;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.hero-trust{display:flex;align-items:center;gap:7px;margin-bottom:28px;flex-wrap:wrap}
+.ht-stars{color:#f4b429;font-size:17px;letter-spacing:1px}
+.ht-score{font-size:16px;font-weight:700;color:#fff}
+.ht-sep{color:rgba(255,255,255,.3);font-size:16px}
+.ht-label{font-size:14px;color:rgba(255,255,255,.6)}
+.hero h1{font-size:clamp(37px,5vw,62px);line-height:1.09;font-weight:800;letter-spacing:-.02em;max-width:820px;text-shadow:0 2px 20px rgba(0,0,0,.45)}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero-btns{display:flex;gap:15px;margin:50px 0 0;flex-wrap:wrap}
+.hero-btns .btn{padding:17px 33px;font-size:17px}
+.hero-stats{display:flex;gap:0;border-top:1px solid rgba(255,255,255,.14);flex-wrap:wrap;background:rgba(8,12,18,.52);backdrop-filter:blur(6px);border-radius:20px 20px 0 0;margin-top:auto}
+.hstat{flex:1;min-width:150px;padding:18px 28px 22px;border-right:1px solid rgba(255,255,255,.12)}
+.hstat:last-child{border-right:none}
+.hstat b{display:block;font-size:34px;font-weight:700;letter-spacing:-.015em;color:var(--hero-text);line-height:1}
+.hstat span{font-size:12px;color:var(--hero-text-dim);margin-top:4px;display:block;line-height:1.35}
+
+/* -------- FORM -------- */
+.form-card{background:rgba(235,242,255,.96);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.7);border-radius:20px;padding:25px 25px;box-shadow:0 24px 56px rgba(0,0,0,.28);color:#1c2330;max-width:395px;margin:0 auto}
+.form-tag{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.form-card h2{font-size:22px;font-weight:800;margin:7px 0 5px;color:#0f1a2e}
+.form-card>p{color:var(--body-text-dim);font-size:13px;margin-bottom:14px}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:12px}
+.chip{border:1px solid #c8d4e6;background:#fff;color:var(--body-text-dim);border-radius:10px;padding:10px 13px;font-size:13.5px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .15s;text-align:center}
+.chip:hover{border-color:var(--accent-line);background:#f0f5ff}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.chip--full{grid-column:1/-1}
+.photo-upload{display:flex;align-items:center;gap:8px;border:1.5px dashed #c8d4e6;border-radius:10px;padding:10px 15px;font-size:13px;font-weight:600;color:#6a7e92;cursor:pointer;margin-bottom:10px;transition:border-color .15s,background .15s;background:#fff}
+.photo-upload:hover{border-color:var(--accent);color:var(--accent);background:#f5f8ff}
+.photo-upload svg{flex-shrink:0;opacity:.7}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:9px}
+.form-card input,.form-card textarea{width:100%;background:#fff;border:1px solid #c8d4e6;border-radius:10px;padding:11px 13px;color:#1c2330;font-family:inherit;font-size:14px;box-sizing:border-box}
+.form-card input::placeholder,.form-card textarea::placeholder{color:#9aaabb}
+.form-card input:focus,.form-card textarea:focus{outline:none;border-color:var(--accent)}
+.form-card textarea{grid-column:1/-1;min-height:68px;resize:vertical}
+.form-note{font-size:11.5px;color:#6a7e92;margin:4px 0 10px}
+.form-ok{display:none;background:rgba(90,122,58,.15);border:1px solid var(--green);color:#b9d49a;border-radius:12px;padding:16px 18px;margin-top:18px;font-size:15px}
+
+/* -------- SECTIONS -------- */
+.section{padding:76px 0}
+.section--alt{background:var(--body-bg-2)}
+.section--dark{background:var(--hero-bg);color:var(--hero-text)}
+.tag{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;display:block;margin-bottom:14px}
+h1,h2.big,.info-title,.cta-final h2{font-family:'Plus Jakarta Sans',system-ui,sans-serif}
+h2.big{font-size:clamp(30px,4.4vw,46px);font-weight:700;letter-spacing:-.015em;line-height:1.15;max-width:760px}
+h2.big--xl{font-size:clamp(36px,5.2vw,58px);font-weight:800;letter-spacing:-.02em;line-height:1.1;max-width:900px}
+.lead{font-size:17px;color:var(--body-text-dim);max-width:680px;margin-top:18px}
+.lead--lg{font-size:20px;color:var(--body-text-dim);max-width:720px;margin-top:22px;line-height:1.6}
+.section--dark .lead{color:var(--hero-text-dim)}
+
+.info-strip{background:var(--accent-soft);border-top:3px solid var(--accent);border-bottom:1px solid var(--accent-line);padding:40px 0}
+.info-inner{display:flex;flex-direction:column;align-items:center;text-align:center;max-width:680px;margin:0 auto;gap:16px}
+.info-title{font-size:clamp(28px,3.2vw,44px);font-weight:700;letter-spacing:-.02em;line-height:1.12;margin:6px 0 0;color:var(--body-text)}
+.info-strip p{font-size:17px;color:var(--body-text-dim);line-height:1.65;max-width:600px}
+.info-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.info-chips span{background:#fff;border:1px solid var(--accent-line);color:var(--accent-deep);border-radius:99px;padding:8px 18px;font-size:14px;font-weight:600;white-space:nowrap}
+
+/* ---- PARTNERS / TRUST STRIP ---- */
+/* ---- PARTNERS TRUST STRIP ---- */
+.partners-strip{padding:72px 0;background:radial-gradient(circle at 20% 0%,rgba(26,108,212,.10),transparent 34%),linear-gradient(180deg,#f8fbff 0%,#eef6ff 100%)}
+.trust-bar{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end;margin-bottom:28px}
+.trust-copy h2{font-size:clamp(30px,4vw,46px);line-height:1.1;letter-spacing:-.02em;max-width:640px;font-weight:800;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--body-text);margin:12px 0 14px}
+.trust-copy p{font-size:17px;color:var(--body-text-dim);max-width:620px;line-height:1.6;margin:0 0 24px}
+.trust-cta{display:flex;gap:10px;flex-wrap:wrap}
+.trust-cta .btn{padding:13px 24px;font-size:14.5px}
+.btn-outline-blue{background:transparent;color:var(--accent);border:1.5px solid var(--accent-line);border-radius:12px;font-weight:700;transition:background .15s,border-color .15s;padding:13px 24px;font-size:14.5px;font-family:inherit;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;line-height:1}
+.btn-outline-blue:hover{background:var(--accent-soft);border-color:var(--accent)}
+.trust-metrics{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);background:rgba(255,255,255,.78);border-radius:22px;overflow:hidden;box-shadow:0 18px 50px rgba(20,80,160,.08)}
+.trust-metrics div{padding:20px 18px;text-align:center;border-right:1px solid var(--line)}
+.trust-metrics div:last-child{border-right:0}
+.trust-metrics b{display:block;font-size:24px;line-height:1;color:var(--body-text);font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-.01em}
+.trust-metrics span{display:block;margin-top:6px;font-size:12.5px;color:var(--body-text-mute)}
+.trust-metrics a{display:block;margin-top:7px;font-size:11px;color:var(--accent);text-decoration:none;font-weight:600}
+.trust-metrics a:hover{text-decoration:underline}
+.partner-logo-row{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.partner-logo{height:86px;border-radius:18px;border:1px solid #d8e7f5;background:rgba(255,255,255,.88);display:flex;align-items:center;justify-content:center;padding:18px 22px;box-shadow:0 12px 34px rgba(20,80,160,.06);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;cursor:default;overflow:hidden}
+.partner-logo img{max-width:140px;max-height:36px;object-fit:contain;filter:grayscale(1) saturate(.2);opacity:.78;transition:filter .18s ease,opacity .18s ease,transform .18s ease;display:block;flex-shrink:0}
+.partner-logo:hover{transform:translateY(-3px);border-color:var(--accent-line);box-shadow:0 18px 44px rgba(20,80,160,.11)}
+.partner-logo:hover img{filter:none;opacity:1;transform:scale(1.03)}
+.partner-fallback{font-size:12.5px;font-weight:700;color:#8ca0b8;letter-spacing:.06em;font-family:'Plus Jakarta Sans',sans-serif;display:flex;align-items:center;justify-content:center;width:100%;text-align:center}
+@media(max-width:1020px){.trust-bar{grid-template-columns:1fr;align-items:start}.partner-logo-row{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){.partners-strip{padding:58px 0}.trust-metrics div{padding:16px 10px}.trust-metrics b{font-size:20px}.partner-logo-row{grid-template-columns:repeat(2,1fr);gap:10px}.partner-logo{height:74px;padding:14px}.partner-logo img{max-height:30px;max-width:120px}}
+
+.mini-cta{background:var(--accent-soft);border-top:1px solid var(--accent-line);border-bottom:1px solid var(--accent-line);padding:22px 0}
+.mini-cta .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.mini-cta>div>span{font-size:16px;font-weight:600;color:var(--body-text)}
+.mini-cta-btns{display:flex;gap:12px;flex-wrap:wrap}
+.mini-cta .btn-ghost{color:var(--accent)!important;border-color:var(--accent-line);background:transparent}
+.mini-cta .btn-ghost:hover{background:var(--accent-soft)}
+
+.steps-ph{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px;max-width:1260px;margin-left:auto;margin-right:auto}
+.step-ph{border-radius:20px;overflow:hidden;position:relative;height:390px;background:#08101c;transition:transform .25s ease,box-shadow .28s ease;cursor:default}
+.step-ph:hover{transform:translateY(-4px);box-shadow:0 28px 56px rgba(0,0,0,.3)}
+.step-ph .img-wrap{position:absolute;inset:0}
+.step-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.25,.46,.45,.94);display:block}
+.step-ph:hover img{transform:scale(1.07)}
+.step-ph::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(4,8,18,.9) 0%,rgba(4,8,18,.52) 38%,rgba(0,0,0,.06) 65%);z-index:1;pointer-events:none}
+.sp-top-label{position:absolute;top:14px;left:14px;background:rgba(6,10,20,.58);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.92);font-size:10px;font-weight:700;letter-spacing:.11em;padding:5px 11px;border-radius:8px;z-index:3;text-transform:uppercase;white-space:nowrap}
+.sp-badge{position:absolute;top:14px;right:14px;width:36px;height:36px;border-radius:50%;background:#fff;color:#0a1220;font-size:13px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;display:flex;align-items:center;justify-content:center;z-index:3;box-shadow:0 2px 10px rgba(0,0,0,.35)}
+.step-ph .sp-body{position:absolute;bottom:0;left:0;right:0;padding:20px 20px 22px;z-index:2}
+.sp-num{display:none}
+.step-ph h3{font-size:17px;font-weight:700;color:#fff;margin:0 0 7px;line-height:1.25;font-family:'Plus Jakarta Sans',sans-serif}
+.step-ph p{font-size:12.5px;color:rgba(255,255,255,.68);line-height:1.55;margin:0}
+
+.checks{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:52px}
+.check{background:var(--body-card);border:1px solid var(--line);border-radius:18px;padding:28px;transition:border-color .2s,box-shadow .2s,transform .2s}
+.check:hover{border-color:var(--accent-line);box-shadow:0 10px 32px rgba(26,108,212,.08);transform:translateY(-2px)}
+.check b.n{display:inline-flex;width:34px;height:34px;border-radius:10px;background:var(--accent-soft);color:var(--accent-deep);align-items:center;justify-content:center;font-size:15px;font-weight:800;margin-bottom:16px}
+.check h3{font-size:17px;font-weight:700;margin-bottom:8px}
+.check p{font-size:14.5px;color:var(--body-text-dim)}
+
+.hsteps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:60px;position:relative}
+.hsteps::before{content:"";position:absolute;top:40px;left:calc(12.5% + 10px);right:calc(12.5% + 10px);height:2px;background:linear-gradient(90deg,var(--accent-line),var(--accent),var(--accent-line));z-index:0;pointer-events:none}
+.hstep{background:#fff;border:1px solid var(--line);border-radius:22px;padding:36px 26px 32px;text-align:center;position:relative;z-index:1;transition:transform .2s,box-shadow .2s}
+.hstep:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(26,80,160,.1)}
+.hstep-num{width:80px;height:80px;background:linear-gradient(135deg,var(--accent),var(--accent-deep));color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:800;margin:0 auto 22px;box-shadow:0 6px 22px rgba(26,108,212,.3)}
+.hstep h3{font-size:17px;font-weight:700;margin-bottom:10px;color:var(--body-text)}
+.hstep p{font-size:14px;color:var(--body-text-dim);line-height:1.6}
+
+.equip{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:10px}
+.equip-img{border-radius:22px;overflow:hidden;border:1px solid var(--line-strong);box-shadow:0 26px 60px rgba(26,24,20,.14)}
+.equip-img img{height:480px;width:100%;object-fit:cover}
+.spec{list-style:none;margin-top:30px;border-top:1px solid var(--line)}
+.spec li{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
+.spec li span:first-child{color:var(--body-text-mute)}
+.spec li span:last-child{font-weight:600;text-align:right}
+
+/* Google Business Profile layout */
+.gbp-wrap{display:grid;grid-template-columns:340px 1fr;gap:36px;align-items:start;margin-top:16px}
+.gbp-panel{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 6px 28px rgba(26,60,120,.09);position:sticky;top:100px}
+.gbp-photos{display:grid;grid-template-columns:2fr 1fr;height:210px;gap:3px}
+.gbp-photo-main{background:center/cover no-repeat;border-radius:0}
+.gbp-photo-stack{display:flex;flex-direction:column;gap:3px}
+.gbp-body{padding:18px 20px 20px}
+.gbp-title-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:5px}
+.gbp-name{font-size:19px;font-weight:800;color:#1a1a1a;font-family:'Plus Jakarta Sans',sans-serif;margin:0}
+.gbp-rating-row{display:flex;align-items:center;gap:7px;margin-bottom:3px}
+.gbp-score{font-size:22px;font-weight:700;color:#1a1a1a;line-height:1}
+.gbp-stars{color:#f4b429;font-size:14px;letter-spacing:.5px}
+.gbp-cnt{font-size:12.5px;color:#1a73e8;text-decoration:none}
+.gbp-cnt:hover{text-decoration:underline}
+.gbp-type{font-size:12px;color:#70757a;margin:0 0 13px}
+.gbp-actions{display:flex;gap:7px;margin-bottom:13px;flex-wrap:wrap}
+.gbp-btn{display:inline-flex;align-items:center;gap:5px;padding:7px 14px;border:1px solid #dadce0;border-radius:20px;font-size:12.5px;font-weight:600;color:#1a73e8;text-decoration:none;background:#fff;transition:background .15s,border-color .15s;white-space:nowrap}
+.gbp-btn:hover{background:#f0f4ff;border-color:#b8d0f5}
+.gbp-opts{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:#3c4043;margin-bottom:13px}
+.gbp-check{color:#188038;font-weight:700;margin-right:2px}
+.gbp-hr{border:none;border-top:1px solid #f0f0f0;margin:12px 0}
+.gbp-details{display:flex;flex-direction:column;gap:10px}
+.gbp-row{display:flex;align-items:center;gap:11px;font-size:13px;color:#3c4043;line-height:1.4}
+.gbp-row svg{flex-shrink:0;opacity:.7}
+/* Reviews right column */
+.gbp-reviews{display:flex;flex-direction:column;gap:16px}
+.gbp-rev-hd{display:flex;align-items:center;gap:20px;padding:22px 28px;background:linear-gradient(135deg,#fff 0%,#f5f8ff 100%);border:1px solid var(--line);border-radius:18px;box-shadow:0 2px 14px rgba(26,60,120,.05)}
+.gbp-rev-score{font-size:54px;font-weight:800;color:#1a1a1a;font-family:'Plus Jakarta Sans',sans-serif;line-height:1;letter-spacing:-.02em}
+.gbp-rev-divider{width:1px;height:44px;background:var(--line);flex-shrink:0}
+.gbp-rev-mid{display:flex;flex-direction:column;gap:4px}
+.gbp-rev-stars{color:#f4b429;font-size:22px;letter-spacing:2px;line-height:1}
+.gbp-rev-cnt{font-size:13.5px;color:#70757a}
+.gbp-rev-link{margin-left:auto;font-size:13.5px;font-weight:700;color:var(--accent);text-decoration:none;padding:8px 16px;border:1.5px solid var(--accent-line);border-radius:20px;background:var(--accent-soft);white-space:nowrap;transition:background .15s}
+.gbp-rev-link:hover{background:#deeafc}
+.gbp-rev-list{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.gbp-rev-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 24px;transition:box-shadow .22s,transform .22s}
+.gbp-rev-card:hover{box-shadow:0 10px 32px rgba(26,108,212,.10);transform:translateY(-3px)}
+.gbp-rev-top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.ava{width:40px;height:40px;border-radius:50%;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;flex-shrink:0}
+.gr-name{font-weight:700;font-size:14px;color:var(--body-text)}
+.gr-meta{font-size:12px;color:var(--body-text-mute);margin-top:1px}
+.gbp-rev-stars-row{color:#f4b429;font-size:13px;margin-bottom:8px;letter-spacing:.5px}
+.gbp-rev-date{color:#9aa5b4;font-size:11.5px;margin-left:6px;font-weight:400}
+.gbp-rev-txt{font-size:13.5px;color:var(--body-text-dim);line-height:1.6;margin:0}
+
+.honest{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:52px}
+.hon{border-radius:18px;padding:32px;border:1px solid var(--line);background:var(--body-card)}
+.hon.good{border-top:4px solid var(--green)}
+.hon.bad{border-top:4px solid var(--warn)}
+.hon h3{font-size:19px;font-weight:800;margin-bottom:18px}
+.hon ul{list-style:none}
+.hon li{padding:9px 0 9px 30px;position:relative;font-size:15px;color:var(--body-text-dim);border-bottom:1px dashed var(--line)}
+.hon li:last-child{border-bottom:none}
+.hon.good li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:800}
+.hon.bad li::before{content:"+";position:absolute;left:0;color:var(--warn);font-weight:800}
+
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:56px}
+.num{border:1px solid var(--line-hero);border-radius:18px;padding:32px 28px;background:rgba(255,255,255,.02)}
+.num b{font-size:44px;font-weight:800;letter-spacing:-.02em;display:block}
+.num b small{font-size:22px;color:var(--accent)}
+.num .t{font-weight:700;font-size:15px;margin-top:6px}
+.num p{font-size:13.5px;color:var(--hero-text-dim);margin-top:4px}
+
+.faq{max-width:820px;margin-top:48px}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;text-align:left;background:none;border:none;font-family:inherit;font-size:17px;font-weight:700;color:var(--body-text);padding:22px 44px 22px 0;cursor:pointer;position:relative}
+.faq-q::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:26px;font-weight:400;color:var(--accent);transition:transform .2s}
+.faq-item.open .faq-q::after{transform:translateY(-50%) rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease}
+.faq-a p{padding:0 0 24px;font-size:15px;color:var(--body-text-dim);max-width:720px}
+
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:52px}
+.gal a{border-radius:14px;overflow:hidden;border:1px solid var(--line);display:block}
+.gal img{height:240px;width:100%;object-fit:cover;transition:transform .3s}
+.gal a:hover img{transform:scale(1.04)}
+
+.cta-final{background:linear-gradient(160deg,var(--hero-bg) 0%,var(--hero-bg-2) 100%);color:var(--hero-text);padding:110px 0;text-align:center}
+.cta-final h2{font-size:clamp(30px,4.6vw,50px);font-weight:800;letter-spacing:-.02em;line-height:1.12;max-width:780px;margin:0 auto}
+.cta-final h2 em{font-style:normal;color:var(--accent)}
+.cta-final p{color:var(--hero-text-dim);font-size:17px;max-width:560px;margin:20px auto 36px}
+.cta-final .hero-btns{justify-content:center}
+
+.foot{background:#0a1016;color:var(--hero-text-dim);padding:72px 0 0;font-size:14px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:48px;border-bottom:1px solid var(--line-hero)}
+.foot h4{color:var(--hero-text);font-size:14px;font-weight:700;margin-bottom:16px}
+.foot a{display:block;padding:5px 0;transition:color .15s}
+.foot a:hover{color:var(--hero-text)}
+.foot-brand .nav-logo{margin-bottom:14px}
+.foot-brand p{max-width:300px;margin-bottom:18px}
+.foot-stats{display:flex;gap:24px;margin:18px 0}
+.foot-stats div b{color:var(--hero-text);font-size:20px;font-weight:800;display:block}
+.foot-stats div span{font-size:12px}
+.foot-hours div{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px dashed var(--line-hero)}
+.foot-bottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:26px 0;font-size:13px}
+.foot-bottom a{display:inline;padding:0}
+
+.mob-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:120;background:rgba(13,20,28,.97);border-top:1px solid var(--line-hero);padding:10px 14px;gap:10px}
+.mob-bar .btn{flex:1;padding:13px 10px;font-size:15px}
+
+.lb{position:fixed;inset:0;background:rgba(10,14,20,.94);z-index:200;display:none;align-items:center;justify-content:center;padding:30px}
+.lb.on{display:flex}
+.lb img{max-height:88vh;max-width:92vw;border-radius:12px;object-fit:contain}
+.lb-x{position:absolute;top:18px;right:26px;background:none;border:none;color:#fff;font-size:38px;cursor:pointer}
+
+@media(max-width:1020px){
+  .steps-ph,.hsteps,.nums{grid-template-columns:repeat(2,1fr)}
+  .checks,.gr-cards{grid-template-columns:repeat(2,1fr)}
+  .gbp-wrap{grid-template-columns:1fr}
+  .gbp-rev-list{grid-template-columns:repeat(2,1fr)}
+  .equip{grid-template-columns:1fr;gap:36px}
+  .equip-img img{height:340px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .nav-links>div:nth-child(2),.nav-links a[href="#hinnad"],.nav-links a[href="#meist"],.nav-links a[href="#kkk"]{display:none}
+}
+@media(max-width:760px){
+  .nav-links,.nav-cta .nav-tel{display:none}
+  .burger{display:block}
+  .nav-mobile{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--hero-bg);z-index:99;padding:80px 24px 24px;overflow:auto}
+  .nav-mobile.on{display:block}
+  .nav-mobile a{display:block;padding:13px 4px;font-size:17px;font-weight:600;color:var(--hero-text);border-bottom:1px solid var(--line-hero)}
+  .hero .wrap{padding-top:calc(56px + 24px)}
+  .hero-grid{grid-template-columns:1fr;gap:32px;padding-bottom:32px}
+  .hero-kicker{font-size:24px;margin-bottom:12px}
+  .hero-trust{margin-bottom:20px}
+  .ht-stars{font-size:13px}
+  .ht-score,.ht-sep,.ht-label{font-size:12px}
+  .hero-btns{margin:32px 0 0}
+  .hero-btns .btn{padding:14px 22px;font-size:15px}
+  .hstat{flex:0 0 33.33%;min-width:0;padding:14px 8px 16px;border-right:none}
+  .hstat b{font-size:26px}
+  .form-card{padding:26px 20px}
+  .form-grid{grid-template-columns:1fr}
+  .checks,.gr-cards,.steps-ph,.hsteps,.nums,.honest,.gbp-wrap{grid-template-columns:1fr}
+  .gbp-panel{position:static}
+  .gbp-rev-list{grid-template-columns:1fr}
+  .info-inner{grid-template-columns:1fr;gap:28px}
+  .hsteps::before{display:none}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .gal img{height:150px}
+  .mob-bar{display:flex}
+  body{padding-bottom:64px}
+  .section{padding:70px 0}
+  .nav-pill .btn-ghost{display:none}
+  .foot-grid{grid-template-columns:1fr}
+  .cc-banner{left:12px;right:12px;bottom:76px;flex-direction:column;align-items:stretch;padding:16px}
+  .cc-actions{justify-content:stretch}
+  .cc-actions button{flex:1}
+}
+
+/* ===== Cookie consent banner (Consent Mode v2) ===== */
+.cc-banner{position:fixed;z-index:120;left:24px;right:24px;bottom:24px;max-width:560px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 18px 60px rgba(11,15,21,.28);padding:18px 20px;display:none;gap:14px;align-items:center;flex-wrap:wrap}
+.cc-banner.on{display:flex}
+.cc-text{flex:1;min-width:220px;font-size:13px;line-height:1.55;color:var(--body-text-dim)}
+.cc-text b{color:var(--body-text);font-weight:700}
+.cc-text a{color:var(--accent);text-decoration:none}
+.cc-actions{display:flex;gap:8px;flex-wrap:wrap}
+.cc-actions button{font-family:inherit;font-size:13px;font-weight:700;border-radius:10px;padding:10px 16px;cursor:pointer;border:1px solid var(--line-strong);transition:background .15s,border-color .15s}
+.cc-decline{background:#fff;color:var(--body-text-dim)}
+.cc-decline:hover{background:#f4f7fb}
+.cc-accept{background:var(--accent);color:#fff;border-color:var(--accent)}
+.cc-accept:hover{background:var(--accent-deep)}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden" title="gtm"></iframe></noscript>
+
+<!-- PILL NAV -->
+<div class="nav-wrap">
+  <nav class="nav-pill">
+    <a class="nav-logo" href="#">
+      <img src="https://moving24.ee/wp-content/uploads/2024/02/cropped-Group-1-1-192x192.png" alt="Moving24 logo">
+      <span>Moving<b>24</b></span>
+    </a>
+    <div class="nav-links">
+      <div>
+        <button>Услуги ▾</button>
+        <div class="dd">
+          <a href="#teenused">Квартирный переезд</a>
+          <a href="#teenused">Домашний переезд</a>
+          <a href="#teenused">Офисный переезд</a>
+          <a href="#teenused">Тяжёлые предметы</a>
+          <a href="#teenused">Упаковка</a>
+          <a href="#teenused">Вывоз мусора</a>
+          <a href="#teenused">Краткосрочное хранение</a>
+        </div>
+      </div>
+      <div>
+        <button>Районы ▾</button>
+        <div class="dd">
+          <a href="#">Таллин</a>
+          <a href="#">Харьюмаа</a>
+          <a href="#">Маарду</a>
+          <a href="#">Кейла</a>
+          <a href="#">Сауэ</a>
+          <a href="#">По всей Эстонии</a>
+        </div>
+      </div>
+      <a href="#hinnad">Цены</a>
+      <a href="#meist">О нас</a>
+      <a href="#kkk">FAQ</a>
+    </div>
+    <div class="nav-cta">
+      <a class="nav-tel" href="tel:+37256870101">+372 5687 0101</a>
+      <a class="btn btn-accent" href="#form">Получить расчёт →</a>
+      <button class="burger" onclick="document.querySelector('.nav-mobile').classList.toggle('on')">☰</button>
+    </div>
+  </nav>
+</div>
+<div class="nav-mobile">
+  <a href="#teenused" onclick="closeMob()">Услуги</a>
+  <a href="#hinnad" onclick="closeMob()">Цены</a>
+  <a href="#meist" onclick="closeMob()">О нас</a>
+  <a href="#kkk" onclick="closeMob()">FAQ</a>
+  <a href="#form" onclick="closeMob()">Получить расчёт →</a>
+  <a href="tel:+37256870101">📞 +372 5687 0101</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <!-- video kept, switch back by removing display:none -->
+  <video class="hero-video" autoplay muted loop playsinline poster="img/IMG_0061.jpg?v=3" style="display:none">
+    <source src="img/hero-video.mp4" type="video/mp4">
+  </video>
+  <div class="hero-photo-bg"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-kicker hand">Переезд намечается?</div>
+        <div class="hero-trust">
+          <span class="ht-stars">★★★★★</span>
+          <span class="ht-score">4.9</span>
+          <span class="ht-sep">·</span>
+          <span class="ht-label">200+ отзывов на Google</span>
+        </div>
+        <h1>Один звонок.<br><em>Всё переедет.</em><br>Приедем и сделаем.</h1>
+        <div class="hero-btns">
+          <a class="btn btn-accent" href="#form">Получить расчёт →</a>
+          <a class="btn btn-ghost" href="tel:+37256870101">Позвонить +372 5687 0101</a>
+        </div>
+      </div>
+      <div class="form-card" id="form">
+        <span class="form-tag">Оформить заявку</span>
+        <h2>Что везём?</h2>
+        <div class="chips" id="chips">
+          <button class="chip on" type="button">Частный переезд</button>
+          <button class="chip" type="button">Бизнес переезд</button>
+          <button class="chip chip--full" type="button">Вывоз мусора</button>
+        </div>
+        <form id="leadForm">
+          <input type="hidden" name="service" id="serviceField" value="Частный переезд">
+          <div class="form-grid">
+            <input type="text" name="name" placeholder="Имя / компания *" required>
+            <input type="tel" name="phone" placeholder="Телефон *" required>
+            <input type="email" name="email" placeholder="E-mail" style="grid-column:1/-1">
+            <textarea name="msg" placeholder="Откуда, куда, этаж, лифт — кратко"></textarea>
+          </div>
+          <label class="photo-upload" id="photoLabel">
+            <input type="file" name="photos" accept="image/*" multiple style="display:none" id="photoInput">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span id="photoLabel-txt">Прикрепить фото (необязательно)</span>
+          </label>
+          <button class="btn btn-accent" type="submit" style="width:100%;padding:12px;font-size:14.5px">Получить расчёт →</button>
+          <p style="text-align:center;font-size:11.5px;color:#7a8ea0;margin-top:7px">Бесплатно · За 2 часа · Без обязательств</p>
+          <div class="form-ok" id="formOk"><b>Спасибо! Заявка принята.</b><br>Свяжемся с вами в ближайшее время.</div>
+        </form>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><b>24/7</b><span>Работаем каждый день, даже ночью</span></div>
+      <div class="hstat"><b>0</b><span>Скрытых доплат. Цена есть цена.</span></div>
+      <div class="hstat"><b>5000+</b><span>Успешных переездов по Эстонии</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- INFO STRIP -->
+<section class="info-strip">
+  <div class="wrap">
+    <div class="info-inner">
+      <div>
+        <span class="tag">Что мы делаем</span>
+        <h2 class="info-title">Грузоперевозки.<br>Быстро, аккуратно,<br>по честной цене.</h2>
+      </div>
+      <div>
+        <p>Квартирные, офисные и домашние переезды, тяжёлые предметы, упаковка, вывоз мусора. <b>Приедем, упакуем, перевезём.</b> Таллин, Харьюмаа, вся Эстония.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS PHOTOS -->
+<section class="section" id="teenused">
+  <div class="wrap">
+    <span class="tag">Наши услуги</span>
+    <h2 class="big big--xl">Переедем всё. Квартира, офис, кладовка или рояль.</h2>
+    <p class="lead lead--lg">Каждый переезд разный. Подбираем машину, команду и подход под ваш конкретный случай.</p>
+    <div class="steps-ph">
+      <div class="step-ph">
+        <div class="img-wrap"><img src="img/IMG_0061.jpg?v=3" alt="Квартирный переезд Moving24" loading="lazy"></div>
+        <div class="sp-top-label">Частный переезд</div>
+        <div class="sp-body">
+          <h3>Квартира и дом</h3>
+          <p>Однушка, четырёхкомнатная или загородный дом. Упакуем, вынесем, перевезём и расставим на новом месте. Всё за один день.</p>
+        </div>
+      </div>
+      <div class="step-ph">
+        <div class="img-wrap"><img src="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.45.jpg" alt="Офисный переезд в Таллине" loading="lazy"></div>
+        <div class="sp-top-label">Бизнес и офис</div>
+        <div class="sp-body">
+          <h3>Офис, склад, магазин</h3>
+          <p>Переезжаем вечером или в выходные, чтобы работа не останавливалась. IT-оборудование, архивы и мебель. Всё пронумеровано и упаковано.</p>
+        </div>
+      </div>
+      <div class="step-ph">
+        <div class="img-wrap"><img src="https://moving24.ee/wp-content/uploads/2026/04/680400674_2177159153029414_3665252672125438182_n-1.jpg" alt="Перевозка тяжёлых предметов" loading="lazy"></div>
+        <div class="sp-top-label">Тяжёлые предметы</div>
+        <div class="sp-body">
+          <h3>Пианино, сейфы, оборудование</h3>
+          <p>Перевозим то, от чего другие отказываются. Специальное оборудование, опытная команда. Вещи и стены остаются целыми.</p>
+        </div>
+      </div>
+      <div class="step-ph">
+        <div class="img-wrap"><img src="https://moving24.ee/wp-content/uploads/2026/04/679002288_35800524549546135_7308767804721973724_n-1.jpg" alt="Вывоз и утилизация мусора" loading="lazy"></div>
+        <div class="sp-top-label">Вывоз и утиль</div>
+        <div class="sp-body">
+          <h3>Мусор, мебель, хлам</h3>
+          <p>Уберём всё, что уже не нужно. Официальная утилизация, без незаконных свалок. Цена: почасовая + 30 €/м³.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MINI CTA -->
+<div class="mini-cta">
+  <div class="wrap">
+    <span>Не знаете, какая услуга подходит?</span>
+    <div class="mini-cta-btns">
+      <a class="btn btn-accent" href="#form">Получить расчёт →</a>
+      <a class="btn btn-ghost" href="tel:+37256870101">Позвонить, разберёмся за 5 минут</a>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<section class="section">
+  <div class="wrap">
+    <span class="tag">Отзывы в Google</span>
+    <h2 class="big" style="margin-bottom:32px">Нам доверяют в Таллине и по всей Эстонии</h2>
+    <div class="gbp-wrap">
+
+      <!-- LEFT: Google Business Profile panel -->
+      <div class="gbp-panel">
+        <!-- Photo collage -->
+        <div class="gbp-photos">
+          <div class="gbp-photo-main" style="background:url('imagebg.png') center/cover"></div>
+          <div class="gbp-photo-stack">
+            <div style="background:url('img/IMG_0061.jpg') center/cover;flex:1;border-radius:0 12px 0 0"></div>
+            <div style="background:url('https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.45.jpg') center/cover;flex:1;border-radius:0 0 12px 0"></div>
+          </div>
+        </div>
+        <!-- Info body -->
+        <div class="gbp-body">
+          <div class="gbp-title-row">
+            <h3 class="gbp-name">Moving24</h3>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" flex-shrink="0"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          </div>
+          <div class="gbp-rating-row">
+            <span class="gbp-score">4.9</span>
+            <span class="gbp-stars">★★★★★</span>
+            <a class="gbp-cnt" href="https://www.google.com/search?q=Moving24+Tallinn+reviews" target="_blank" rel="noopener">200+ Google отзывов</a>
+          </div>
+          <p class="gbp-type">Kolimis- ja veoteenused &middot; Таллин</p>
+          <!-- Action buttons -->
+          <div class="gbp-actions">
+            <a class="gbp-btn" href="https://moving24.ee" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Сайт
+            </a>
+            <a class="gbp-btn" href="tel:+37256870101">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5.08 2 2 0 0 1 3.59 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.6a16 16 0 0 0 6 6l.92-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Позвонить
+            </a>
+            <a class="gbp-btn" href="https://www.google.com/search?q=Moving24+Tallinn" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+              Маршрут
+            </a>
+          </div>
+          <!-- Service options -->
+          <div class="gbp-opts">
+            <span><span class="gbp-check">&#10003;</span> Квартирный</span>
+            <span><span class="gbp-check">&#10003;</span> Офисный</span>
+            <span><span class="gbp-check">&#10003;</span> 24/7</span>
+          </div>
+          <hr class="gbp-hr">
+          <!-- Details -->
+          <div class="gbp-details">
+            <div class="gbp-row">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#70757a" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Таллин, Эстония</span>
+            </div>
+            <div class="gbp-row">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#70757a" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span><b style="color:#188038">Открыто</b> &middot; Работаем 24/7</span>
+            </div>
+            <div class="gbp-row">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#70757a" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5.08 2 2 0 0 1 3.59 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.6a16 16 0 0 0 6 6l.92-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+37256870101" style="color:#1a73e8;text-decoration:none">+372 5687 0101</a>
+            </div>
+            <div class="gbp-row">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#70757a" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <a href="https://moving24.ee" target="_blank" rel="noopener" style="color:#1a73e8;text-decoration:none">moving24.ee</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Reviews -->
+      <div class="gbp-reviews">
+        <div class="gbp-rev-hd">
+          <span class="gbp-rev-score">4.9</span>
+          <div class="gbp-rev-divider"></div>
+          <div class="gbp-rev-mid">
+            <div class="gbp-rev-stars">★★★★★</div>
+            <div class="gbp-rev-cnt">200+ отзывов в Google</div>
+          </div>
+          <a class="gbp-rev-link" href="https://www.google.com/search?q=Moving24+Tallinn+reviews" target="_blank" rel="noopener">Все отзывы →</a>
+        </div>
+        <div class="gbp-rev-list">
+          <div class="gbp-rev-card">
+            <div class="gbp-rev-top"><div class="ava" style="background:#d44638">K</div><div><div class="gr-name">Kristiina M.</div><div class="gr-meta">Local Guide &middot; 14 отзывов</div></div></div>
+            <div class="gbp-rev-stars-row">★★★★★ <span class="gbp-rev-date">3 месяца назад</span></div>
+            <p class="gbp-rev-txt">Переезжали из 3-комнатной квартиры с Мустамяэ в Виймси. Ребята приехали точно вовремя, сами упаковали кухню, и всё доехало целым. Цена совпала с расчётом.</p>
+          </div>
+          <div class="gbp-rev-card">
+            <div class="gbp-rev-top"><div class="ava" style="background:#1a73e8">A</div><div><div class="gr-name">Andres T.</div><div class="gr-meta">7 отзывов</div></div></div>
+            <div class="gbp-rev-stars-row">★★★★★ <span class="gbp-rev-date">5 месяцев назад</span></div>
+            <p class="gbp-rev-txt">Офисный переезд: 12 рабочих мест, IT-оборудование и архив. Всё сделали за один вечер, утром офис уже работал. Очень профессионально.</p>
+          </div>
+          <div class="gbp-rev-card">
+            <div class="gbp-rev-top"><div class="ava" style="background:#34a853">J</div><div><div class="gr-name">Jelena K.</div><div class="gr-meta">Local Guide &middot; 23 отзыва</div></div></div>
+            <div class="gbp-rev-stars-row">★★★★★ <span class="gbp-rev-date">1 месяц назад</span></div>
+            <p class="gbp-rev-txt">Нужно было перевезти пианино с 4 этажа без лифта. Другие отказали. Moving24 приехал с тремя грузчиками и спецоборудованием. Пианино целое, стены целые.</p>
+          </div>
+          <div class="gbp-rev-card">
+            <div class="gbp-rev-top"><div class="ava" style="background:#f4511e">M</div><div><div class="gr-name">Maksim V.</div><div class="gr-meta">5 отзывов</div></div></div>
+            <div class="gbp-rev-stars-row">★★★★★ <span class="gbp-rev-date">2 месяца назад</span></div>
+            <p class="gbp-rev-txt">Переезжали срочно — позвонили вечером, утром уже всё везли. Двухкомнатная квартира с Копли в Кристийне. Ребята работали быстро, вещи упаковали сами. Рекомендую.</p>
+          </div>
+        </div>
+        <!-- embed placeholder -->
+        <p style="font-size:12px;color:var(--body-text-mute);text-align:center;margin:4px 0 0">
+          Подключить реальные отзывы: <a href="https://elfsight.com/google-reviews-widget/" target="_blank" rel="noopener" style="color:var(--accent)">Elfsight</a> или <a href="https://trustindex.io/" target="_blank" rel="noopener" style="color:var(--accent)">Trustindex</a> — вставить embed вместо карточек
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="partners-strip" aria-label="Клиенты и партнёры">
+  <div class="wrap">
+
+    <div class="trust-bar">
+      <!-- Left: copy + CTA -->
+      <div class="trust-copy">
+        <span class="tag">Нам доверяют</span>
+        <h2>Переезды для квартир,<br>офисов и бизнеса</h2>
+        <p>Работаем с частными клиентами, агентствами недвижимости, магазинами, офисами и девелоперами по всей Эстонии.</p>
+        <div class="trust-cta">
+          <a class="btn btn-accent" href="#form">Получить расчёт →</a>
+          <a class="btn-outline-blue" href="https://www.google.com/search?q=Moving24.ee+Kolimis-+ja+veoteenused+Tallinnas+reviews" target="_blank" rel="noopener">Смотреть отзывы →</a>
+        </div>
+      </div>
+
+      <!-- Right: metrics -->
+      <div class="trust-metrics">
+        <div>
+          <b>5 000+</b>
+          <span>переездов</span>
+        </div>
+        <div>
+          <b>4.9 ★</b>
+          <span>Google</span>
+          <a href="https://www.google.com/search?q=Moving24.ee+Kolimis-+ja+veoteenused+Tallinnas+reviews" target="_blank" rel="noopener">200+ отзывов →</a>
+        </div>
+        <div>
+          <b>24/7</b>
+          <span>на связи</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo row — src указывает на локальные файлы; пока файлов нет — показывается текст -->
+    <!-- Скачай логотипы и сохрани в img/partners/ — они подхватятся автоматически -->
+    <div class="partner-logo-row" role="list" aria-label="Клиенты и партнёры Moving24">
+
+      <div class="partner-logo" role="listitem">
+        <!-- Скачать: https://logo.clearbit.com/remax.com → img/partners/remax.png -->
+        <img src="img/partners/remax.png" alt="RE/MAX" loading="lazy"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="partner-fallback">RE/MAX</span>
+      </div>
+
+      <div class="partner-logo" role="listitem">
+        <!-- Скачать: https://logo.clearbit.com/ober-haus.ee → img/partners/ober-haus.png -->
+        <img src="img/partners/ober-haus.png" alt="Ober-Haus" loading="lazy"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="partner-fallback">OBER-HAUS</span>
+      </div>
+
+      <div class="partner-logo" role="listitem">
+        <!-- Скачать: https://logo.clearbit.com/pindi.ee → img/partners/pindi.png -->
+        <img src="img/partners/pindi.png" alt="Pindi Kinnisvara" loading="lazy"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="partner-fallback">PINDI</span>
+      </div>
+
+      <div class="partner-logo" role="listitem">
+        <!-- Скачать: https://logo.clearbit.com/uusmaa.ee → img/partners/uus-maa.png -->
+        <img src="img/partners/uus-maa.png" alt="Uus Maa" loading="lazy"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="partner-fallback">UUS MAA</span>
+      </div>
+
+      <div class="partner-logo" role="listitem">
+        <!-- Скачать: https://logo.clearbit.com/ikea.com → img/partners/ikea.png -->
+        <img src="img/partners/ikea.png" alt="IKEA" loading="lazy"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="partner-fallback">IKEA</span>
+      </div>
+
+      <div class="partner-logo" role="listitem">
+        <!-- Скачать: https://logo.clearbit.com/liven.ee → img/partners/liven.png -->
+        <img src="img/partners/liven.png" alt="Liven" loading="lazy"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="partner-fallback">Liven</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section section--alt">
+  <div class="wrap">
+    <span class="tag">Как мы работаем</span>
+    <h2 class="big">Четыре шага. Вы ничего не поднимаете.</h2>
+    <p class="lead">От звонка до вещей на новом месте. Один слаженный процесс.</p>
+    <div class="steps-ph">
+      <div class="step-ph">
+        <div class="img-wrap"><img src="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.42.jpg" alt="Оценка объёма переезда" loading="lazy"></div>
+        <div class="sp-top-label">01 · Шаг первый</div>
+        <div class="sp-badge">01</div>
+        <div class="sp-body">
+          <h3>Описываете переезд</h3>
+          <p>Одного предложения достаточно. Позвоните, напишите или заполните форму.</p>
+        </div>
+      </div>
+      <div class="step-ph">
+        <div class="img-wrap"><img src="https://moving24.ee/wp-content/uploads/2026/04/679002288_35800524549546135_7308767804721973724_n-1.jpg" alt="Упаковка вещей" loading="lazy"></div>
+        <div class="sp-top-label">02 · Шаг второй</div>
+        <div class="sp-badge">02</div>
+        <div class="sp-body">
+          <h3>Получаете расчёт</h3>
+          <p>Оцениваем объём и называем честную цену. Без скрытых доплат.</p>
+        </div>
+      </div>
+      <div class="step-ph">
+        <div class="img-wrap"><img src="https://moving24.ee/wp-content/uploads/2026/04/672936968_1540802098048739_2966411495760863387_n-1-768x1024.jpg" alt="Погрузка и транспортировка" loading="lazy"></div>
+        <div class="sp-top-label">03 · Шаг третий</div>
+        <div class="sp-badge">03</div>
+        <div class="sp-body">
+          <h3>Приезжаем и переезжаем</h3>
+          <p>Упакуем, вынесем, довезём. Обычная квартира переезжает за один день.</p>
+        </div>
+      </div>
+      <div class="step-ph">
+        <div class="img-wrap"><img src="https://moving24.ee/wp-content/uploads/2026/04/680400674_2177159153029414_3665252672125438182_n-1.jpg" alt="Расстановка вещей на новом месте" loading="lazy"></div>
+        <div class="sp-top-label">04 · Шаг четвёртый</div>
+        <div class="sp-badge">04</div>
+        <div class="sp-body">
+          <h3>Проверяем результат</h3>
+          <p>Все вещи на местах, мебель собрана, упаковка вывезена.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HONEST -->
+<section class="section section--alt">
+  <div class="wrap">
+    <span class="tag">Честно о ценах</span>
+    <h2 class="big">Что входит в цену, а за что доплачивать.</h2>
+    <p class="lead">Никто не любит сюрпризы в счёте. Ниже честно написано, что включает стоимость и за что берётся доплата.</p>
+    <div class="honest">
+      <div class="hon good">
+        <h3>Всегда входит в цену</h3>
+        <ul>
+          <li>Грузчики и водитель</li>
+          <li>Фургон и топливо в пределах Таллина</li>
+          <li>Переездные одеяла, ремни и тележки</li>
+          <li>Страхование вещей при перевозке</li>
+          <li>Погрузка и разгрузка</li>
+          <li>Первичная оценка и расчёт</li>
+        </ul>
+      </div>
+      <div class="hon bad">
+        <h3>Оплачивается отдельно</h3>
+        <ul>
+          <li>Упаковочные материалы (коробки, плёнка)</li>
+          <li>Полная услуга упаковки</li>
+          <li>Разборка и сборка мебели</li>
+          <li>Особо тяжёлые предметы (пианино, сейф)</li>
+          <li>Вывоз и утилизация мусора (30 €/м³)</li>
+          <li>Дальние маршруты за пределами Харьюмаа</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPMENT -->
+<section class="section" id="hinnad">
+  <div class="wrap">
+    <div class="equip">
+      <div class="equip-img">
+        <img src="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.30.jpg" alt="Moving24 furgoon laaditud ja kinnitatud esemetega" loading="lazy">
+      </div>
+      <div>
+        <span class="tag">Оснащение</span>
+        <h2 class="big">Нужная машина, опытная команда, правильное оснащение.</h2>
+        <p class="lead">Перевозим на собственных фургонах, оснащённых переездными одеялами, ремнями, тележками и защитными материалами. Каждый предмет крепится ремнями. <b>Вещи не скользят, не царапают друг друга и не бьются в пути.</b> Каждый член команды сделал сотни переездов.</p>
+        <ul class="spec">
+          <li><span>Машины</span><span>Фургоны с задней загрузкой, разных размеров</span></li>
+          <li><span>Защита</span><span>Переездные одеяла, плёнка, пузырчатая плёнка, ремни</span></li>
+          <li><span>Команда</span><span>1-4 опытных грузчика в зависимости от объёма</span></li>
+          <li><span>Страховка</span><span>Транспортировка и страхование включены в цену</span></li>
+          <li><span>Режим</span><span>24/7, включая выходные и ночное время</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section class="section section--dark" id="meist" style="position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:url('imagebg.png') center/cover no-repeat;opacity:.07;pointer-events:none"></div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <span class="tag">Цифры говорят</span>
+    <h2 class="big">Тысячи переездов. Каждый день новые.</h2>
+    <p class="lead">Не каждая работа попадает в кадр. Не каждый клиент оставляет отзыв. Но цифры остаются.</p>
+    <div class="nums">
+      <div class="num"><b>5000<small>+</small></b><div class="t">успешных переездов</div><p>Квартиры, дома, офисы, склады и рестораны</p></div>
+      <div class="num"><b>1000<small>+</small></b><div class="t">тонн вывезено</div><p>Официально и в соответствии с нормами</p></div>
+      <div class="num"><b>24<small>/7</small></b><div class="t">всегда на связи</div><p>Ночью, в выходные и праздники</p></div>
+      <div class="num"><b>100<small>%</small></b><div class="t">застраховано</div><p>Страхование каждой вещи входит в цену</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--alt" id="kkk">
+  <div class="wrap" style="display:flex;flex-direction:column;align-items:center;text-align:center">
+    <span class="tag">Часто задаваемые вопросы</span>
+    <h2 class="big">Что спрашивают перед заказом</h2>
+    <div class="faq" style="text-align:left">
+      <div class="faq-item">
+        <button class="faq-q">Сколько стоит переезд?</button>
+        <div class="faq-a"><p>Цена зависит от объёма вещей, расстояния, этажа и дополнительных услуг. Опишите переезд в форме или по телефону, и мы пришлём точное предложение в тот же день. Оценка бесплатна и ни к чему не обязывает.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Что входит в цену?</button>
+        <div class="faq-a"><p>В цену входят транспорт, грузчики и страховка. Упаковочные материалы, полная упаковка и демонтаж мебели оплачиваются отдельно, мы всегда называем стоимость заранее.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Как быстро вы можете приехать?</button>
+        <div class="faq-a"><p>По Таллину и Харьюмаа часто уже в тот же или на следующий день. Работаем 24/7, поэтому найдём время вечером, ночью или в выходные. Чем раньше свяжетесь, тем надёжнее получите нужную дату.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Вы сами упакуете вещи?</button>
+        <div class="faq-a"><p>Да, по желанию наши грузчики упакуют всё по стандартам безопасности. Хрупкие предметы оборачиваем пузырчатой плёнкой и укладываем в коробки с перегородками. Можете упаковать сами: рекомендуем подписать коробки по комнатам и содержимому.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Какой размер машины мне нужен?</button>
+        <div class="faq-a"><p>Не нужно это знать. Опишите, что везёте, и мы подберём подходящее транспортное средство: от небольшого фургона до большого грузовика с задней загрузкой.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Вы перевезёте пианино или сейф?</button>
+        <div class="faq-a"><p>Да. Перевозка тяжёлых предметов наша специализация: пианино, сейфы, промышленное оборудование. Используем специальные инструменты и опытную команду, чтобы вещь и лестничный пролёт остались целыми.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Вы заберёте старую мебель и мусор?</button>
+        <div class="faq-a"><p>Да, организуем вывоз и утилизацию сразу после переезда. Стоимость: почасовая оплата грузчиков плюс утилизация 30 €/м³.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Как забронировать и можно ли перенести?</button>
+        <div class="faq-a"><p>Свяжитесь по телефону, почте или через форму. Бронирование можно изменить или отменить, предупредив нас за разумное время до даты переезда. Принимаем наличные, банковский перевод и карту.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section">
+  <div class="wrap">
+    <span class="tag">Галерея</span>
+    <h2 class="big">Переезд это наш родной язык.</h2>
+    <p class="lead">Каждый шкаф, каждое пианино, каждая коробка. Ниже часть нашей повседневной работы. Нажмите на фото, чтобы открыть полностью.</p>
+    <div class="gal" id="gal">
+      <a href="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.42.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.42.jpg" alt="Фургоны Moving24 в центре Таллина" loading="lazy"></a>
+      <a href="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.45.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.45.jpg" alt="Офисный переезд в Таллине" loading="lazy"></a>
+      <a href="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.30.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.30.jpg" alt="Загруженный грузовой фургон" loading="lazy"></a>
+      <a href="https://moving24.ee/wp-content/uploads/2026/04/680400674_2177159153029414_3665252672125438182_n-1.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/680400674_2177159153029414_3665252672125438182_n-1.jpg" alt="Перенос крупных предметов" loading="lazy"></a>
+      <a href="https://moving24.ee/wp-content/uploads/2026/04/672936968_1540802098048739_2966411495760863387_n-1-768x1024.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/672936968_1540802098048739_2966411495760863387_n-1-768x1024.jpg" alt="Вещи закреплены в фургоне" loading="lazy"></a>
+      <a href="https://moving24.ee/wp-content/uploads/2026/04/679002288_35800524549546135_7308767804721973724_n-1.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/679002288_35800524549546135_7308767804721973724_n-1.jpg" alt="Загрузка вещей в фургон" loading="lazy"></a>
+      <a href="img/IMG_0061.jpg?v=3"><img src="img/IMG_0061.jpg?v=3" alt="Фургон Better Call Moving24" loading="lazy"></a>
+      <a href="img/IMG_0060.jpg?v=3"><img src="img/IMG_0060.jpg?v=3" alt="Фургоны Moving24 на улице" loading="lazy"></a>
+      <a href="img/IMG_0018.jpg?v=3"><img src="img/IMG_0018.jpg?v=3" alt="Фургоны Moving24 на фоне города" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-final">
+  <div class="wrap">
+    <h2>Не знаете, с чего начать?<br><em>Ничего страшного. Напишите пару строк.</em></h2>
+    <p>Разберёмся и скажем, какая машина нужна, сколько грузчиков и сколько времени займёт ваш переезд. Оценка бесплатна.</p>
+    <div class="hero-btns">
+      <a class="btn btn-accent" href="#form">Запросить предложение →</a>
+      <a class="btn btn-ghost" href="tel:+37256870101">Позвонить +372 5687 0101</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="nav-logo" href="#">
+          <img src="https://moving24.ee/wp-content/uploads/2024/02/cropped-Group-1-1-192x192.png" alt="Moving24 logo">
+          <span style="color:var(--hero-text)">Moving<b style="color:var(--accent)">24</b></span>
+        </a>
+        <p>Переезды для частных лиц и компаний. Быстро, аккуратно и по честной цене. 24/7 по всей Эстонии.</p>
+        <div class="foot-stats">
+          <div><b>5000+</b><span>переездов</span></div>
+          <div><b>24/7</b><span>работаем</span></div>
+          <div><b>100%</b><span>застраховано</span></div>
+        </div>
+        <a href="tel:+37256870101"><b style="color:var(--hero-text)">Позвонить</b> +372 5687 0101</a>
+        <a href="mailto:info@moving24.ee"><b style="color:var(--hero-text)">Написать</b> info@moving24.ee</a>
+      </div>
+      <div>
+        <h4>Услуги</h4>
+        <a href="#teenused">Квартирный переезд</a>
+        <a href="#teenused">Домашний переезд</a>
+        <a href="#teenused">Офисный переезд</a>
+        <a href="#teenused">Перевозка тяжёлых предметов</a>
+        <a href="#teenused">Услуга упаковки</a>
+        <a href="#teenused">Вывоз мусора</a>
+      </div>
+      <div>
+        <h4>Районы</h4>
+        <a href="#">Таллин</a>
+        <a href="#">Харьюмаа</a>
+        <a href="#">Маарду</a>
+        <a href="#">Кейла</a>
+        <a href="#">Сауэ</a>
+        <a href="#">По всей Эстонии</a>
+      </div>
+      <div>
+        <h4>Компания</h4>
+        <a href="#meist">О нас</a>
+        <a href="#hinnad">Прайс</a>
+        <a href="#kkk">FAQ</a>
+        <a href="#form">Контакты</a>
+      </div>
+      <div class="foot-hours">
+        <h4>Режим работы</h4>
+        <div><span>Пн–Пт</span><span>24 ч</span></div>
+        <div><span>Сб</span><span>24 ч</span></div>
+        <div><span>Вс</span><span>24 ч</span></div>
+        <p style="margin-top:16px"><b style="color:var(--hero-text)">Зона обслуживания</b><br>Таллин, Харьюмаа, вся Эстония</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 Moving24 · Все права защищены</div>
+      <div><a href="https://moving24.ee/">moving24.ee</a> · <a href="mailto:info@moving24.ee">info@moving24.ee</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE BAR -->
+<div class="mob-bar">
+  <a class="btn btn-ghost" href="tel:+37256870101">📞 Позвонить</a>
+  <a class="btn btn-accent" href="#form">Запросить предложение</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb"><button class="lb-x" onclick="lb.classList.remove('on')">×</button><img id="lbImg" src="" alt=""></div>
+
+<!-- Cookie consent (Consent Mode v2) -->
+<div class="cc-banner" id="ccBanner" role="dialog" aria-label="Согласие на использование cookie">
+  <div class="cc-text"><b>Мы используем cookie</b> для аналитики и рекламы. Нажимая «Принять», вы соглашаетесь на обработку данных для статистики и Google Ads.</div>
+  <div class="cc-actions">
+    <button class="cc-decline" id="ccDecline" type="button">Только необходимые</button>
+    <button class="cc-accept" id="ccAccept" type="button">Принять</button>
+  </div>
+</div>
+
+<script>
+/* ---- Service chips -> hidden field ---- */
+document.querySelectorAll('#chips .chip').forEach(c=>{
+  c.addEventListener('click',()=>{
+    document.querySelectorAll('#chips .chip').forEach(x=>x.classList.remove('on'));
+    c.classList.add('on');
+    var f=document.getElementById('serviceField'); if(f) f.value=c.textContent.trim();
+  });
+});
+
+/* ---- Photo input: keep selected files, show count ---- */
+var selectedPhotos=[];
+document.getElementById('photoInput').addEventListener('change',function(){
+  selectedPhotos=Array.prototype.slice.call(this.files);
+  var lbl=document.getElementById('photoLabel-txt');
+  lbl.textContent=selectedPhotos.length?selectedPhotos.length+' фото выбрано':'Прикрепить фото (необязательно)';
+  var box=document.getElementById('photoLabel');
+  box.style.borderColor=selectedPhotos.length?'var(--accent)':'';
+  box.style.color=selectedPhotos.length?'var(--accent)':'';
+});
+
+/* ---- Client-side image compression (canvas) before upload ---- */
+function compressImage(file, maxDim, quality){
+  return new Promise(function(resolve){
+    if(!/^image\//.test(file.type)){resolve(file);return;}
+    var img=new Image(), url=URL.createObjectURL(file);
+    img.onload=function(){
+      var w=img.width,h=img.height,scale=Math.min(1,maxDim/Math.max(w,h));
+      var cw=Math.round(w*scale),ch=Math.round(h*scale);
+      var cv=document.createElement('canvas');cv.width=cw;cv.height=ch;
+      cv.getContext('2d').drawImage(img,0,0,cw,ch);
+      URL.revokeObjectURL(url);
+      cv.toBlob(function(blob){
+        resolve(blob? new File([blob], file.name.replace(/\.\w+$/,'')+'.jpg', {type:'image/jpeg'}) : file);
+      },'image/jpeg',quality||0.8);
+    };
+    img.onerror=function(){URL.revokeObjectURL(url);resolve(file);};
+    img.src=url;
+  });
+}
+
+/* ---- Lead form submit: compress photos, POST to backend, fire events ---- */
+document.getElementById('leadForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var form=e.target;
+  var btn=form.querySelector('button[type=submit]');
+  var btnTxt=btn?btn.textContent:'';
+  if(btn){btn.disabled=true;btn.textContent='Отправляем…';}
+
+  Promise.all(selectedPhotos.map(function(f){return compressImage(f,1600,0.8);})).then(function(photos){
+    var fd=new FormData(form);
+    fd.delete('photos');
+    photos.forEach(function(p,i){fd.append('photo'+(i+1),p,p.name);});
+    fd.append('page_url', location.href);
+    fd.append('_subject', 'Заявка с лендинга Moving24');
+
+    function done(ok){
+      if(btn){btn.disabled=false;btn.textContent=btnTxt;}
+      if(ok){
+        document.getElementById('formOk').style.display='block';
+        form.querySelectorAll('input:not([type=hidden]),textarea').forEach(function(i){i.value='';});
+        selectedPhotos=[];
+        document.getElementById('photoLabel-txt').textContent='Прикрепить фото (необязательно)';
+        /* ---- conversion + GA4 lead event ---- */
+        dataLayer.push({event:'generate_lead'});
+        if(window.M24 && M24.CONV_FORM && M24.CONV_FORM.indexOf('X')===-1){
+          gtag('event','conversion',{send_to:M24.CONV_FORM});
+        }
+      }else{
+        alert('Не удалось отправить заявку. Позвоните нам: +372 5687 0101');
+      }
+    }
+
+    var endpoint=(window.M24&&M24.FORM_ENDPOINT)||'';
+    if(!endpoint){ console.warn('M24.FORM_ENDPOINT не задан — демо-режим, письмо не отправлено.'); done(true); return; }
+    fetch(endpoint,{method:'POST',body:fd,headers:{'Accept':'application/json'}})
+      .then(function(r){done(r.ok);})
+      .catch(function(){done(false);});
+  });
+});
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const item=q.parentElement,a=item.querySelector('.faq-a'),open=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-a').style.maxHeight=null});
+    if(!open){item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}
+  });
+});
+const lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg');
+document.querySelectorAll('#gal a').forEach(a=>{
+  a.addEventListener('click',e=>{e.preventDefault();lbImg.src=a.href;lb.classList.add('on')});
+});
+lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('on')});
+function closeMob(){document.querySelector('.nav-mobile').classList.remove('on')}
+const hv=document.querySelector('.hero-video');
+if(hv){
+  const mid=()=>{if(hv.duration)hv.currentTime=hv.duration/2};
+  if(hv.readyState>=1)mid();else hv.addEventListener('loadedmetadata',mid,{once:true});
+}
+
+/* ---- Cookie consent (Consent Mode v2) ---- */
+(function(){
+  var banner=document.getElementById('ccBanner');
+  if(!banner) return;
+  var stored=null; try{stored=localStorage.getItem('m24_consent');}catch(e){}
+  function apply(granted){
+    gtag('consent','update',{
+      ad_storage:granted?'granted':'denied',
+      ad_user_data:granted?'granted':'denied',
+      ad_personalization:granted?'granted':'denied',
+      analytics_storage:granted?'granted':'denied'
+    });
+    dataLayer.push({event:granted?'consent_accepted':'consent_declined'});
+  }
+  if(stored==='granted'){apply(true);}
+  else if(stored==='denied'){apply(false);}
+  else{banner.classList.add('on');}
+  function choose(granted){
+    try{localStorage.setItem('m24_consent',granted?'granted':'denied');}catch(e){}
+    apply(granted); banner.classList.remove('on');
+  }
+  document.getElementById('ccAccept').addEventListener('click',function(){choose(true);});
+  document.getElementById('ccDecline').addEventListener('click',function(){choose(false);});
+})();
+
+/* ---- Track phone & email link clicks (mirror live GTM events) ---- */
+document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+  a.addEventListener('click',function(){
+    dataLayer.push({event:'phone_link_klick'});
+    if(window.M24 && M24.CONV_PHONE && M24.CONV_PHONE.indexOf('X')===-1){
+      gtag('event','conversion',{send_to:M24.CONV_PHONE});
+    }
+  });
+});
+document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
+  a.addEventListener('click',function(){ dataLayer.push({event:'email_link_click'}); });
+});
+</script>
+</body>
+</html>
