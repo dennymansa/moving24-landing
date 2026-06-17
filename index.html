@@ -80,6 +80,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" as="image" href="imagebg-1920.jpg" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 <style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}.hand{font-family:'Caveat',cursive}</style>
 <link rel="icon" href="https://moving24.ee/wp-content/uploads/2024/02/cropped-Group-1-1-32x32.png">
@@ -165,7 +166,7 @@ a{color:inherit;text-decoration:none}
 
 /* -------- HERO -------- */
 .hero{background:linear-gradient(160deg,var(--hero-bg),var(--hero-bg-2));color:var(--hero-text);padding:0;overflow:hidden;position:relative;margin-top:-72px;min-height:100vh;display:flex;flex-direction:column}
-.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+
 .hero-photo-bg{position:absolute;inset:0;background:url('imagebg-1920.jpg') center 40%/cover no-repeat;z-index:0;transform:scale(1.0)}
 /* lighter overlay */
 .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(165deg,rgba(6,10,16,.72) 0%,rgba(8,14,24,.55) 55%,rgba(6,10,18,.70) 100%);z-index:1}
@@ -532,11 +533,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 
 .chip{position:relative}
 .chip-tick{position:absolute;right:11px;top:50%;transform:translateY(-50%);color:var(--accent);font-size:13px;font-weight:800;opacity:0;pointer-events:none}
-@keyframes tickCycle{0%{opacity:0}5%{opacity:.8}22%{opacity:.8}27%{opacity:0}100%{opacity:0}}
-#svcChips:not(:has(.chip.on)) .chip:nth-child(1) .chip-tick{animation:tickCycle 4s 0s infinite}
-#svcChips:not(:has(.chip.on)) .chip:nth-child(2) .chip-tick{animation:tickCycle 4s 1s infinite}
-#svcChips:not(:has(.chip.on)) .chip:nth-child(3) .chip-tick{animation:tickCycle 4s 2s infinite}
-#svcChips:not(:has(.chip.on)) .chip:nth-child(4) .chip-tick{animation:tickCycle 4s 3s infinite}
+@keyframes tickCycle{0%{opacity:0;transform:translateY(-50%) translateX(-7px) scale(.8)}10%{opacity:.95;transform:translateY(-50%) translateX(0) scale(1)}17%{opacity:.95;transform:translateY(-50%) translateX(0) scale(1)}27%{opacity:0;transform:translateY(-50%) translateX(5px) scale(.8)}100%{opacity:0;transform:translateY(-50%) translateX(5px) scale(.8)}}
+#svcChips:not(:has(.chip.on)) .chip:nth-child(1) .chip-tick{animation:tickCycle 9s ease-in-out 0s infinite}
+#svcChips:not(:has(.chip.on)) .chip:nth-child(2) .chip-tick{animation:tickCycle 9s ease-in-out 2.25s infinite}
+#svcChips:not(:has(.chip.on)) .chip:nth-child(3) .chip-tick{animation:tickCycle 9s ease-in-out 4.5s infinite}
+#svcChips:not(:has(.chip.on)) .chip:nth-child(4) .chip-tick{animation:tickCycle 9s ease-in-out 6.75s infinite}
 @media(prefers-reduced-motion:reduce){.chip-tick{animation:none!important}}
 
 </style>
@@ -600,10 +601,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 <main id="main">
 <!-- HERO -->
 <section class="hero">
-  <!-- video kept, switch back by removing display:none -->
-  <video class="hero-video" autoplay muted loop playsinline poster="img/IMG_0061.jpg?v=3" style="display:none">
-    <source src="img/hero-video.mp4" type="video/mp4">
-  </video>
   <div class="hero-photo-bg"></div>
   <div class="wrap">
     <div class="hero-grid">
@@ -684,7 +681,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     <p class="lead lead--lg">Iga kolimine on erinev. Valime auto, meeskonna ja lähenemise just teie konkreetse juhtumi järgi.</p>
     <div class="steps-ph">
       <div class="step-ph">
-        <div class="img-wrap"><img src="img/IMG_0061.jpg?v=3" alt="Moving24 korterikolimine" loading="lazy"></div>
+        <div class="img-wrap"><img src="img/IMG_0061.jpg?v=4" alt="Moving24 korterikolimine" loading="lazy"></div>
         <div class="sp-top-label">Erakolimine</div>
         <div class="sp-body">
           <h3>Korter ja maja</h3>
@@ -743,7 +740,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
         <div class="gbp-photos">
           <div class="gbp-photo-main" style="background:url('imagebg-1920.jpg') center/cover"></div>
           <div class="gbp-photo-stack">
-            <div style="background:url('img/IMG_0061.jpg') center/cover;flex:1;border-radius:0 12px 0 0"></div>
+            <div style="background:url('img/IMG_0061.jpg?v=4') center/cover;flex:1;border-radius:0 12px 0 0"></div>
             <div style="background:url('https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.45.jpg') center/cover;flex:1;border-radius:0 0 12px 0"></div>
           </div>
         </div>
@@ -1057,7 +1054,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
       <a href="https://moving24.ee/wp-content/uploads/2026/04/680400674_2177159153029414_3665252672125438182_n-1.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/680400674_2177159153029414_3665252672125438182_n-1.jpg" alt="Suurte esemete tõstmine" loading="lazy"></a>
       <a href="https://moving24.ee/wp-content/uploads/2026/04/672936968_1540802098048739_2966411495760863387_n-1-768x1024.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/672936968_1540802098048739_2966411495760863387_n-1-768x1024.jpg" alt="Asjad kaubikus kinnitatud" loading="lazy"></a>
       <a href="https://moving24.ee/wp-content/uploads/2026/04/679002288_35800524549546135_7308767804721973724_n-1.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/679002288_35800524549546135_7308767804721973724_n-1.jpg" alt="Asjade laadimine kaubikusse" loading="lazy"></a>
-      <a href="img/IMG_0061.jpg?v=3"><img src="img/IMG_0061.jpg?v=3" alt="Better Call Moving24 kaubik" loading="lazy"></a>
+      <a href="img/IMG_0061.jpg?v=4"><img src="img/IMG_0061.jpg?v=4" alt="Better Call Moving24 kaubik" loading="lazy"></a>
       <a href="img/IMG_0060.jpg?v=3"><img src="img/IMG_0060.jpg?v=3" alt="Moving24 kaubikud tänaval" loading="lazy"></a>
       <a href="img/IMG_0018.jpg?v=3"><img src="img/IMG_0018.jpg?v=3" alt="Moving24 kaubikud linna taustal" loading="lazy"></a>
     </div>
@@ -1321,11 +1318,6 @@ document.querySelectorAll('#gal a').forEach(a=>{
 });
 lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('on')});
 function closeMob(){document.querySelector('.nav-mobile').classList.remove('on')}
-const hv=document.querySelector('.hero-video');
-if(hv){
-  const mid=()=>{if(hv.duration)hv.currentTime=hv.duration/2};
-  if(hv.readyState>=1)mid();else hv.addEventListener('loadedmetadata',mid,{once:true});
-}
 
 
 
