@@ -517,6 +517,19 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .chips.chips-hint{outline:2px solid #b3452f;outline-offset:4px;border-radius:12px}
 @media(min-width:761px){.hero{overflow:visible}.form-card.expanded{transition:box-shadow .2s}}
 
+/* form3 overrides */
+.form-card{max-width:415px}
+.form-card.expanded{box-shadow:0 24px 56px rgba(0,0,0,.28)}
+@media(min-width:761px){.hero{height:100vh}.form-card{align-self:start}}
+.form-card input,.form-card textarea,.form-card select,.form-card .form-select{padding:12px 13px;font-size:14.5px}
+.ff-base{margin-bottom:9px}
+.ff-base>label,.form-card .ff>label{display:block;font-size:12px;font-weight:600;color:#56657a;margin:0 0 4px}
+.lift-toggle{display:flex;align-items:center;gap:6px;height:100%}
+.lift-toggle .lift-q{font-size:12px;font-weight:600;color:#56657a;white-space:nowrap}
+.lift-toggle button{flex:1;padding:11px 0;border:1px solid #c8d4e6;background:#fff;border-radius:10px;font-family:inherit;font-size:13.5px;font-weight:600;color:#56657a;cursor:pointer;transition:background .12s,border-color .12s,color .12s}
+.lift-toggle button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.pick-hint{font-size:13px;font-weight:500;color:#8aa0bf;margin-left:7px}
+
 </style>
 </head>
 <body>
@@ -601,13 +614,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
       </div>
       <div class="form-card" id="form">
         <span class="form-tag">Esita päring</span>
-        <h2>Mida veame?</h2>
+        <h2>Mida veame? <span class="pick-hint">(vali)</span></h2>
         <form id="leadForm">
           <button type="button" class="form-close" id="formClose" aria-label="Sulge" style="display:none">&times;</button>
-          <input type="hidden" name="service" id="serviceField">
-          <input type="hidden" name="utm_source" id="utm_source"><input type="hidden" name="utm_medium" id="utm_medium"><input type="hidden" name="utm_campaign" id="utm_campaign"><input type="hidden" name="utm_term" id="utm_term"><input type="hidden" name="utm_content" id="utm_content"><input type="hidden" name="gclid" id="gclid">
+          <input type="hidden" name="service" id="serviceField"><input type="hidden" name="utm_source" id="utm_source"><input type="hidden" name="utm_medium" id="utm_medium"><input type="hidden" name="utm_campaign" id="utm_campaign"><input type="hidden" name="utm_term" id="utm_term"><input type="hidden" name="utm_content" id="utm_content"><input type="hidden" name="gclid" id="gclid">
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:0;top:0;width:1px;height:1px;opacity:0;overflow:hidden;pointer-events:none">
-          <div class="chips" id="svcChips" role="radiogroup" aria-label="Mida veame?">
+          <div class="chips" id="svcChips" role="radiogroup">
             <button type="button" class="chip" data-svc="private">Erakolimine</button>
             <button type="button" class="chip" data-svc="business">Ärikolimine</button>
             <button type="button" class="chip" data-svc="garbage">Prügivedu</button>
@@ -618,16 +630,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
             <input type="email" name="email" placeholder="E-post *" aria-label="E-post" required>
             <input type="tel" name="phone" placeholder="Telefon *" aria-label="Telefon" pattern="[+0-9 ()\-]{6,}" required>
           </div>
-          <div class="ff" data-svc="private,business,garbage,transport"><label>Kust? *</label><input type="text" name="from_address" placeholder="Aadress" required></div>
-          <div class="ff form-grid2" data-svc="private,business,garbage"><input type="text" name="from_floor" placeholder="Mis korruselt?"><select name="from_lift" class="form-select"><option value="">Lift</option><option>Jah</option><option>Ei</option></select></div>
+          <div class="ff-base"><label>Kust? *</label><input type="text" name="from_address" placeholder="Aadress" required></div>
+          <div class="ff form-grid2" data-svc="private,business,garbage"><input type="text" name="from_floor" placeholder="Korrus"><div class="lift-toggle" data-name="from_lift" role="group" aria-label="Lift?"><span class="lift-q">Lift?</span><button type="button" data-val="Jah">Jah</button><button type="button" data-val="Ei">Ei</button><input type="hidden" name="from_lift"></div></div>
           <div class="ff" data-svc="private,business,transport"><label>Kuhu? *</label><input type="text" name="to_address" placeholder="Aadress" required></div>
-          <div class="ff form-grid2" data-svc="private,business"><input type="text" name="to_floor" placeholder="Mis korrusele?"><select name="to_lift" class="form-select"><option value="">Lift</option><option>Jah</option><option>Ei</option></select></div>
-          <div class="ff form-grid2" data-svc="private,business,garbage,transport"><input type="date" name="date" aria-label="Kuupäev" required><input type="time" name="time" aria-label="Aeg"></div>
+          <div class="ff form-grid2" data-svc="private,business"><input type="text" name="to_floor" placeholder="Korrus"><div class="lift-toggle" data-name="to_lift" role="group" aria-label="Lift?"><span class="lift-q">Lift?</span><button type="button" data-val="Jah">Jah</button><button type="button" data-val="Ei">Ei</button><input type="hidden" name="to_lift"></div></div>
+          <div class="ff form-grid2" data-svc="private,business,garbage,transport"><input type="date" name="date" aria-label="Kuupäev" required><input type="time" name="time" step="900" aria-label="Aeg"></div>
           <div class="ff" data-svc="private,business"><select name="packing" class="form-select"><option value="">Pakkimine</option><option>Pakkimist pole vaja</option><option>Soovin pakkimist</option></select></div>
           <div class="ff" data-svc="private,business,garbage,transport"><textarea name="msg" placeholder="Lisainfo – esemete loetelu"></textarea></div>
           <label class="photo-upload ff" data-svc="private,business,garbage" id="photoLabel"><input type="file" name="photos" accept="image/*" multiple id="photoInput" aria-label="Lisa foto (valikuline)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);border:0"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span id="photoLabel-txt" aria-live="polite">Lisa foto (valikuline)</span></label>
-          <button class="btn btn-accent" type="submit" style="width:100%;padding:12px;font-size:14.5px">Küsi hinnapakkumist →</button>
-          <p class="form-note">Tasuta · 2 tunni jooksul · Kohustusteta</p>
+          <button class="btn btn-accent" type="submit" style="width:100%;padding:13px;font-size:15px">Küsi hinnapakkumist →</button>
           <p class="form-consent">Vormi saates nõustud <a href="privaatsus/">privaatsuspoliitikaga</a></p>
           <div class="form-ok" id="formOk" role="status"><b>Aitäh! Päring on vastu võetud.</b><br>Võtame teiega peagi ühendust.</div>
         </form>
@@ -1000,7 +1011,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
         <ul class="spec">
           <li><span>Autod</span><span>Tagaluugiga kaubikud, eri suurustes</span></li>
           <li><span>Kaitse</span><span>Kolimistekid, kile, mullikile, rihmad</span></li>
-          <li><span>Meeskond</span><span>1-4 kogenud kolijat olenevalt mahust</span></li>
+          <li><span>Meeskond</span><span>1-8 kogenud kolijat olenevalt mahust</span></li>
           <li><span>Kindlustus</span><span>Transport ja kindlustus on hinna sees</span></li>
           <li><span>Tööaeg</span><span>24/7, sh nädalavahetused ja öine aeg</span></li>
         </ul>
@@ -1178,11 +1189,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 
 <script>
 /* ---- Service chips -> hidden field ---- */
-/* ---- Service chips + conditional expand (desktop: overlay so page stays put) ---- */
+/* ---- Service chips + conditional expand (inline, no reposition) ---- */
 (function(){
   var chips=document.getElementById('svcChips'); if(!chips) return;
   var hidden=document.getElementById('serviceField');
-  var card=document.querySelector('.form-card');
   var closeBtn=document.getElementById('formClose');
   function showGroups(v){
     document.querySelectorAll('#leadForm .ff').forEach(function(g){
@@ -1190,32 +1200,26 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
       g.style.display=ok?'':'none';
       g.querySelectorAll('input,select,textarea').forEach(function(el){el.disabled=!ok;});
     });
-  }
-  function resetPos(){ if(!card) return; card.style.position='';card.style.top='';card.style.left='';card.style.width='';card.style.zIndex=''; }
-  function apply(v){
-    if(card) card.classList.toggle('expanded',!!v);
     if(closeBtn) closeBtn.style.display=v?'':'none';
-    resetPos(); showGroups('');
-    if(v && card && window.innerWidth>760){
-      var hero=card.closest('.hero');
-      if(hero){ var r=card.getBoundingClientRect(), hr=hero.getBoundingClientRect();
-        card.style.width=r.width+'px'; card.style.left=(r.left-hr.left)+'px'; card.style.top=(r.top-hr.top)+'px'; card.style.position='absolute'; card.style.zIndex='30'; }
-    }
-    showGroups(v);
   }
   function select(v,btn){
     chips.querySelectorAll('.chip').forEach(function(c){var on=c===btn;c.classList.toggle('on',on);c.setAttribute('aria-checked',on?'true':'false');});
-    if(hidden) hidden.value=v; apply(v);
+    if(hidden) hidden.value=v; showGroups(v);
   }
   function closeForm(){
     chips.querySelectorAll('.chip').forEach(function(c){c.classList.remove('on');c.setAttribute('aria-checked','false');});
-    if(hidden) hidden.value=''; apply('');
+    if(hidden) hidden.value=''; showGroups('');
   }
   window.m24CloseForm=closeForm;
   chips.querySelectorAll('.chip').forEach(function(c){c.setAttribute('role','radio');c.setAttribute('aria-checked','false');c.addEventListener('click',function(){select(c.getAttribute('data-svc'),c);});});
   if(closeBtn) closeBtn.addEventListener('click',closeForm);
-  window.addEventListener('resize',function(){ if(hidden && hidden.value) apply(hidden.value); });
-  apply('');
+  document.querySelectorAll('#leadForm .lift-toggle').forEach(function(tg){
+    var hid=tg.querySelector('input[type=hidden]');
+    tg.querySelectorAll('button').forEach(function(b){ b.addEventListener('click',function(){
+      tg.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b);}); if(hid) hid.value=b.getAttribute('data-val');
+    });});
+  });
+  showGroups('');
 })();
 
 /* ---- Photo input: keep selected files, show count ---- */
