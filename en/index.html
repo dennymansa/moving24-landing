@@ -502,6 +502,21 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .gbp-rev-more{display:inline-block;margin-top:11px;font-size:12.5px;font-weight:600;color:var(--accent);text-decoration:none}
 .gbp-rev-more:hover{text-decoration:underline}
 
+.form-card{position:relative}
+.form-close{position:absolute;top:13px;right:13px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--body-text-dim);font-size:20px;line-height:1;cursor:pointer;z-index:4;transition:background .15s}
+.form-close:hover{background:#f4f7fb;color:var(--body-text)}
+.form-card.expanded{box-shadow:0 30px 72px rgba(0,0,0,.34)}
+.form-card select,.form-card .form-select{width:100%;padding:11px 13px;font-size:14px;border:1px solid #c8d4e6;border-radius:10px;background:#fff;color:#1c2330;font-family:inherit;margin-bottom:9px}
+.form-card .ff{margin-bottom:9px}
+.form-card .ff>label{display:block;font-size:12px;font-weight:600;color:#56657a;margin:0 0 4px}
+.form-card .form-grid2{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.form-card .ff select,.form-card .ff .form-select{margin-bottom:0}
+.form-note{text-align:center;font-size:11.5px;color:#566472;margin-top:9px}
+.form-consent{text-align:center;font-size:10.5px;color:#8a98a8;margin-top:5px}
+.form-consent a{color:var(--accent);text-decoration:none}
+.chips.chips-hint{outline:2px solid #b3452f;outline-offset:4px;border-radius:12px}
+@media(min-width:761px){.hero{overflow:visible}.form-card.expanded{transition:box-shadow .2s}}
+
 </style>
 </head>
 <body>
@@ -588,39 +603,32 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
         <span class="form-tag">Request a quote</span>
         <h2>What are we moving?</h2>
         <form id="leadForm">
-          <input type="hidden" name="utm_source" id="utm_source">
-          <input type="hidden" name="utm_medium" id="utm_medium">
-          <input type="hidden" name="utm_campaign" id="utm_campaign">
-          <input type="hidden" name="utm_term" id="utm_term">
-          <input type="hidden" name="utm_content" id="utm_content">
-          <input type="hidden" name="gclid" id="gclid">
+          <button type="button" class="form-close" id="formClose" aria-label="Close" style="display:none">&times;</button>
+          <input type="hidden" name="service" id="serviceField">
+          <input type="hidden" name="utm_source" id="utm_source"><input type="hidden" name="utm_medium" id="utm_medium"><input type="hidden" name="utm_campaign" id="utm_campaign"><input type="hidden" name="utm_term" id="utm_term"><input type="hidden" name="utm_content" id="utm_content"><input type="hidden" name="gclid" id="gclid">
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:0;top:0;width:1px;height:1px;opacity:0;overflow:hidden;pointer-events:none">
+          <div class="chips" id="svcChips" role="radiogroup" aria-label="What are we moving?">
+            <button type="button" class="chip" data-svc="private">Home move</button>
+            <button type="button" class="chip" data-svc="business">Business move</button>
+            <button type="button" class="chip" data-svc="garbage">Junk removal</button>
+            <button type="button" class="chip" data-svc="transport">Transport</button>
+          </div>
           <div class="form-grid">
             <input type="text" name="name" placeholder="Full name / company *" aria-label="Full name / company" required style="grid-column:1/-1">
             <input type="email" name="email" placeholder="Email *" aria-label="Email" required>
             <input type="tel" name="phone" placeholder="Phone *" aria-label="Phone" pattern="[+0-9 ()\-]{6,}" required>
           </div>
-          <select class="form-select" name="service" id="serviceSelect" required aria-label="Which service are you interested in?">
-            <option value="" disabled selected>Which service are you interested in? *</option>
-            <option value="private">Moving for individuals</option>
-            <option value="business">Moving for business</option>
-            <option value="garbage">Junk removal</option>
-            <option value="transport">Transport service</option>
-          </select>
           <div class="ff" data-svc="private,business,garbage,transport"><label>From *</label><input type="text" name="from_address" placeholder="Move from" required></div>
-          <div class="ff form-grid2" data-svc="private,business,garbage"><input type="text" name="from_floor" placeholder="Floor"><select name="from_lift" class="form-select"><option value="">Elevator?</option><option>Yes</option><option>No</option></select></div>
+          <div class="ff form-grid2" data-svc="private,business,garbage"><input type="text" name="from_floor" placeholder="From which floor"><select name="from_lift" class="form-select"><option value="">Elevator?</option><option>Yes</option><option>No</option></select></div>
           <div class="ff" data-svc="private,business,transport"><label>To *</label><input type="text" name="to_address" placeholder="Move to" required></div>
-          <div class="ff form-grid2" data-svc="private,business"><input type="text" name="to_floor" placeholder="Floor"><select name="to_lift" class="form-select"><option value="">Elevator?</option><option>Yes</option><option>No</option></select></div>
+          <div class="ff form-grid2" data-svc="private,business"><input type="text" name="to_floor" placeholder="To which floor"><select name="to_lift" class="form-select"><option value="">Elevator?</option><option>Yes</option><option>No</option></select></div>
           <div class="ff form-grid2" data-svc="private,business,garbage,transport"><input type="date" name="date" aria-label="Date" required><input type="time" name="time" aria-label="Time"></div>
           <div class="ff" data-svc="private,business"><select name="packing" class="form-select"><option value="">Packing</option><option>No packing needed</option><option>I need packing</option></select></div>
           <div class="ff" data-svc="private,business,garbage,transport"><textarea name="msg" placeholder="Additional info — list of items"></textarea></div>
-          <label class="photo-upload ff" data-svc="private,business,garbage" id="photoLabel">
-            <input type="file" name="photos" accept="image/*" multiple id="photoInput" aria-label="Attach a photo (optional)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);border:0">
-            <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            <span id="photoLabel-txt" aria-live="polite">Attach a photo (optional)</span>
-          </label>
+          <label class="photo-upload ff" data-svc="private,business,garbage" id="photoLabel"><input type="file" name="photos" accept="image/*" multiple id="photoInput" aria-label="Attach a photo (optional)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);border:0"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span id="photoLabel-txt" aria-live="polite">Attach a photo (optional)</span></label>
           <button class="btn btn-accent" type="submit" style="width:100%;padding:12px;font-size:14.5px">Get a quote →</button>
-          <p style="text-align:center;font-size:11.5px;color:#566472;margin-top:7px">Free · Within 2 hours · No obligation · By submitting this form you accept the <a href="privacy/" style="color:var(--accent)">Privacy Policy</a></p>
+          <p class="form-note">Free · Within 2 hours · No obligation</p>
+          <p class="form-consent">By submitting this form you accept the <a href="privacy/">Privacy Policy</a></p>
           <div class="form-ok" id="formOk" role="status"><b>Thank you! Your request has been received.</b><br>We will contact you shortly.</div>
         </form>
       </div>
@@ -1016,6 +1024,26 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   </div>
 </section>
 
+<!-- GALLERY -->
+<section class="section">
+  <div class="wrap">
+    <span class="tag">Gallery</span>
+    <h2 class="big">Moving is our mother tongue.</h2>
+    <p class="lead">Every wardrobe, every piano, every box. Below is a slice of our everyday work. Click a photo to open it full size.</p>
+    <div class="gal" id="gal">
+      <a href="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.42.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.42.jpg" alt="Moving24 vans in central Tallinn" loading="lazy"></a>
+      <a href="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.45.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.45.jpg" alt="Office move in Tallinn" loading="lazy"></a>
+      <a href="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.30.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.30.jpg" alt="Loaded cargo van" loading="lazy"></a>
+      <a href="https://moving24.ee/wp-content/uploads/2026/04/680400674_2177159153029414_3665252672125438182_n-1.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/680400674_2177159153029414_3665252672125438182_n-1.jpg" alt="Carrying large items" loading="lazy"></a>
+      <a href="https://moving24.ee/wp-content/uploads/2026/04/672936968_1540802098048739_2966411495760863387_n-1-768x1024.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/672936968_1540802098048739_2966411495760863387_n-1-768x1024.jpg" alt="Belongings secured inside the van" loading="lazy"></a>
+      <a href="https://moving24.ee/wp-content/uploads/2026/04/679002288_35800524549546135_7308767804721973724_n-1.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/679002288_35800524549546135_7308767804721973724_n-1.jpg" alt="Loading belongings into the van" loading="lazy"></a>
+      <a href="../img/IMG_0061.jpg?v=3"><img src="../img/IMG_0061.jpg?v=3" alt="Better Call Moving24 van" loading="lazy"></a>
+      <a href="../img/IMG_0060.jpg?v=3"><img src="../img/IMG_0060.jpg?v=3" alt="Moving24 vans on the street" loading="lazy"></a>
+      <a href="../img/IMG_0018.jpg?v=3"><img src="../img/IMG_0018.jpg?v=3" alt="Moving24 vans against the city skyline" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="section section--alt" id="kkk">
   <div class="wrap" style="display:flex;flex-direction:column;align-items:center;text-align:center">
@@ -1054,26 +1082,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
         <button class="faq-q">How do I book, and can I reschedule?</button>
         <div class="faq-a"><p>Get in touch by phone, email or through the form. A booking can be changed or cancelled as long as you let us know a reasonable time before the move date. We accept cash, bank transfer and card.</p></div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section class="section">
-  <div class="wrap">
-    <span class="tag">Gallery</span>
-    <h2 class="big">Moving is our mother tongue.</h2>
-    <p class="lead">Every wardrobe, every piano, every box. Below is a slice of our everyday work. Click a photo to open it full size.</p>
-    <div class="gal" id="gal">
-      <a href="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.42.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.42.jpg" alt="Moving24 vans in central Tallinn" loading="lazy"></a>
-      <a href="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.45.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.45.jpg" alt="Office move in Tallinn" loading="lazy"></a>
-      <a href="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.30.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/2026-04-26-19.20.30.jpg" alt="Loaded cargo van" loading="lazy"></a>
-      <a href="https://moving24.ee/wp-content/uploads/2026/04/680400674_2177159153029414_3665252672125438182_n-1.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/680400674_2177159153029414_3665252672125438182_n-1.jpg" alt="Carrying large items" loading="lazy"></a>
-      <a href="https://moving24.ee/wp-content/uploads/2026/04/672936968_1540802098048739_2966411495760863387_n-1-768x1024.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/672936968_1540802098048739_2966411495760863387_n-1-768x1024.jpg" alt="Belongings secured inside the van" loading="lazy"></a>
-      <a href="https://moving24.ee/wp-content/uploads/2026/04/679002288_35800524549546135_7308767804721973724_n-1.jpg"><img src="https://moving24.ee/wp-content/uploads/2026/04/679002288_35800524549546135_7308767804721973724_n-1.jpg" alt="Loading belongings into the van" loading="lazy"></a>
-      <a href="../img/IMG_0061.jpg?v=3"><img src="../img/IMG_0061.jpg?v=3" alt="Better Call Moving24 van" loading="lazy"></a>
-      <a href="../img/IMG_0060.jpg?v=3"><img src="../img/IMG_0060.jpg?v=3" alt="Moving24 vans on the street" loading="lazy"></a>
-      <a href="../img/IMG_0018.jpg?v=3"><img src="../img/IMG_0018.jpg?v=3" alt="Moving24 vans against the city skyline" loading="lazy"></a>
     </div>
   </div>
 </section>
@@ -1170,21 +1178,44 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 
 <script>
 /* ---- Service chips -> hidden field ---- */
-/* ---- Conditional fields by selected service ---- */
+/* ---- Service chips + conditional expand (desktop: overlay so page stays put) ---- */
 (function(){
-  var sel=document.getElementById('serviceSelect');
-  if(!sel) return;
-  function upd(){
-    var v=sel.value;
+  var chips=document.getElementById('svcChips'); if(!chips) return;
+  var hidden=document.getElementById('serviceField');
+  var card=document.querySelector('.form-card');
+  var closeBtn=document.getElementById('formClose');
+  function showGroups(v){
     document.querySelectorAll('#leadForm .ff').forEach(function(g){
-      var ok = v && ((g.getAttribute('data-svc')||'').split(',').indexOf(v)>-1);
-      g.style.display = ok ? '' : 'none';
-      g.querySelectorAll('input,select,textarea').forEach(function(el){ el.disabled = !ok; });
+      var ok=v&&((g.getAttribute('data-svc')||'').split(',').indexOf(v)>-1);
+      g.style.display=ok?'':'none';
+      g.querySelectorAll('input,select,textarea').forEach(function(el){el.disabled=!ok;});
     });
   }
-  window.m24UpdFields = upd;
-  sel.addEventListener('change', upd);
-  upd();
+  function resetPos(){ if(!card) return; card.style.position='';card.style.top='';card.style.left='';card.style.width='';card.style.zIndex=''; }
+  function apply(v){
+    if(card) card.classList.toggle('expanded',!!v);
+    if(closeBtn) closeBtn.style.display=v?'':'none';
+    resetPos(); showGroups('');
+    if(v && card && window.innerWidth>760){
+      var hero=card.closest('.hero');
+      if(hero){ var r=card.getBoundingClientRect(), hr=hero.getBoundingClientRect();
+        card.style.width=r.width+'px'; card.style.left=(r.left-hr.left)+'px'; card.style.top=(r.top-hr.top)+'px'; card.style.position='absolute'; card.style.zIndex='30'; }
+    }
+    showGroups(v);
+  }
+  function select(v,btn){
+    chips.querySelectorAll('.chip').forEach(function(c){var on=c===btn;c.classList.toggle('on',on);c.setAttribute('aria-checked',on?'true':'false');});
+    if(hidden) hidden.value=v; apply(v);
+  }
+  function closeForm(){
+    chips.querySelectorAll('.chip').forEach(function(c){c.classList.remove('on');c.setAttribute('aria-checked','false');});
+    if(hidden) hidden.value=''; apply('');
+  }
+  window.m24CloseForm=closeForm;
+  chips.querySelectorAll('.chip').forEach(function(c){c.setAttribute('role','radio');c.setAttribute('aria-checked','false');c.addEventListener('click',function(){select(c.getAttribute('data-svc'),c);});});
+  if(closeBtn) closeBtn.addEventListener('click',closeForm);
+  window.addEventListener('resize',function(){ if(hidden && hidden.value) apply(hidden.value); });
+  apply('');
 })();
 
 /* ---- Photo input: keep selected files, show count ---- */
@@ -1226,6 +1257,7 @@ document.getElementById('leadForm').addEventListener('submit',function(e){
   /* honeypot: тихий "успех" для ботов */
   var hp=form.querySelector('input[name="_gotcha"]');
   if(hp && hp.value){ ok.style.display='block'; return; }
+  var _svc=document.getElementById('serviceField'); if(_svc && !_svc.value){ var _ch=document.getElementById('svcChips'); if(_ch){_ch.scrollIntoView({block:'center',behavior:'smooth'});_ch.classList.add('chips-hint');setTimeout(function(){_ch.classList.remove('chips-hint');},1600);} return; }
   var btn=form.querySelector('button[type=submit]');
   var btnTxt=btn?btn.textContent:'';
   ok.style.display='none';
@@ -1242,7 +1274,7 @@ document.getElementById('leadForm').addEventListener('submit',function(e){
       ok.innerHTML='<b>Thank you! Your request has been received.</b><br>We will get in touch with you shortly.';
       ok.style.display='block';
       form.querySelectorAll('input:not([type=hidden]),textarea').forEach(function(i){i.value='';});
-      selectedPhotos=[]; var ss=document.getElementById('serviceSelect'); if(ss) ss.value=''; if(window.m24UpdFields) window.m24UpdFields();
+      selectedPhotos=[]; if(window.m24CloseForm) window.m24CloseForm();
       document.getElementById('photoLabel-txt').textContent='Attach a photo (optional)';
       dataLayer.push({event:'generate_lead'}); /* конверсию формы считает тег в GTM */
     }else{
