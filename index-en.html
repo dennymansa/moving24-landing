@@ -66,7 +66,6 @@
   window.M24={GTM:'GTM-XXXXXXX',AW:'AW-XXXXXXXXXX',GA4:'G-XXXXXXXXXX',CONV_FORM:'AW-XXXXXXXXXX/FORM_LABEL',CONV_PHONE:'AW-XXXXXXXXXX/PHONE_LABEL',FORM_ENDPOINT:''};
   window.dataLayer=window.dataLayer||[];
   function gtag(){dataLayer.push(arguments);}
-  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'granted',security_storage:'granted',wait_for_update:500});
   gtag('set','ads_data_redaction',true);
   gtag('set','url_passthrough',true);
   (function(){
@@ -1146,7 +1145,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
       <div>© 2026 Moving24 · All rights reserved</div>
       <div class="foot-legal">
         <a href="privacy-en.html">Privacy Policy</a>
-        <a href="privacy-en.html" id="cookieSettings">Cookie settings</a>
         <a href="mailto:info@moving24.ee">info@moving24.ee</a>
       </div>
     </div>
@@ -1162,14 +1160,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 <!-- LIGHTBOX -->
 <div class="lb" id="lb"><button class="lb-x" onclick="lb.classList.remove('on')">×</button><img id="lbImg" src="" alt=""></div>
 
-<!-- Cookie consent (Consent Mode v2) -->
-<div class="cc-banner" id="ccBanner" role="dialog" aria-label="Cookie consent">
-  <div class="cc-text"><b>We use cookies</b> for analytics and advertising. By clicking "Accept", you consent to data processing for statistics and Google Ads. <a href="privacy-en.html">Learn more</a>.</div>
-  <div class="cc-actions">
-    <button class="cc-decline" id="ccDecline" type="button">Necessary only</button>
-    <button class="cc-accept" id="ccAccept" type="button">Accept</button>
-  </div>
-</div>
+
 
 <script>
 /* ---- Service chips -> hidden field ---- */
@@ -1276,33 +1267,7 @@ if(hv){
   if(hv.readyState>=1)mid();else hv.addEventListener('loadedmetadata',mid,{once:true});
 }
 
-/* ---- Cookie consent (Consent Mode v2) ---- */
-(function(){
-  var banner=document.getElementById('ccBanner');
-  if(!banner) return;
-  var stored=null; try{stored=localStorage.getItem('m24_consent');}catch(e){}
-  function apply(granted){
-    gtag('consent','update',{
-      ad_storage:granted?'granted':'denied',
-      ad_user_data:granted?'granted':'denied',
-      ad_personalization:granted?'granted':'denied',
-      analytics_storage:granted?'granted':'denied'
-    });
-    dataLayer.push({event:granted?'consent_accepted':'consent_declined'});
-  }
-  function show(){ banner.classList.add('on'); var a=document.getElementById('ccAccept'); if(a) a.focus(); }
-  if(stored==='granted'){apply(true);}
-  else if(stored==='denied'){apply(false);}
-  else{show();}
-  function choose(granted){
-    try{localStorage.setItem('m24_consent',granted?'granted':'denied');}catch(e){}
-    apply(granted); banner.classList.remove('on');
-  }
-  document.getElementById('ccAccept').addEventListener('click',function(){choose(true);});
-  document.getElementById('ccDecline').addEventListener('click',function(){choose(false);});
-  var cs=document.getElementById('cookieSettings');
-  if(cs) cs.addEventListener('click',function(e){e.preventDefault(); try{localStorage.removeItem('m24_consent');}catch(err){} show();});
-})();
+
 
 /* ---- Track phone & email link clicks (mirror live GTM events) ---- */
 document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
