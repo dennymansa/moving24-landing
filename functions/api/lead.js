@@ -4,7 +4,7 @@
 //
 // В Cloudflare Pages -> Settings -> Environment variables задать:
 //   RESEND_API_KEY  - ключ API из resend.com (бесплатно: 3000 писем/мес)
-//   LEAD_TO         - куда слать заявки, напр. info@moving24.ee
+//   LEAD_TO         - куда слать заявки (по умолчанию moving24ee@gmail.com)
 //   LEAD_FROM       - отправитель на верифицированном в Resend домене, напр. "Moving24 <leads@moving24.ee>"
 //
 // На фронте в window.M24.FORM_ENDPOINT поставить '/api/lead'.
@@ -49,7 +49,7 @@ export async function onRequestPost({ request, env }) {
       },
       body: JSON.stringify({
         from: env.LEAD_FROM,
-        to: [env.LEAD_TO],
+        to: [env.LEAD_TO || 'moving24ee@gmail.com'],
         reply_to: email || undefined,
         subject: 'Заявка Moving24 - ' + (name || phone || 'без имени'),
         html: html,
