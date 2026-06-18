@@ -428,14 +428,15 @@ h2.big--xl{font-size:clamp(36px,5.2vw,58px);font-weight:800;letter-spacing:-.02e
   .hsteps::before{display:none}
   .gal{grid-template-columns:repeat(2,1fr)}
   .gal img{height:150px}
-  .mob-bar{display:flex;background:transparent;border-top:none;padding:8px 12px;gap:18px;justify-content:center;pointer-events:none}
-  .mob-bar .btn{flex:0 0 auto;pointer-events:auto;padding:8px 15px;font-size:12.5px;border-radius:22px;box-shadow:0 6px 18px rgba(0,0,0,.22)}
+  .mob-bar{display:flex;background:transparent;border-top:none;padding:8px 16px calc(16px + env(safe-area-inset-bottom,0px));gap:12px;justify-content:space-between;pointer-events:none}
+  .mob-bar .btn{flex:0 0 auto;pointer-events:auto;padding:12px 22px;font-size:14.5px;border-radius:24px;box-shadow:0 6px 18px rgba(0,0,0,.28)}
   .mob-bar .btn-ghost{background:rgba(255,255,255,.94);color:var(--accent)!important;border:1px solid var(--accent-line)}
   .foot{padding-bottom:64px}
   .section{padding:70px 0}
   .nav-pill .btn-ghost{display:none}
   .nav-cta .btn-accent{min-width:0;font-size:11.5px;font-weight:600;padding:8px 12px;white-space:nowrap}
-  .foot-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .foot-brand{grid-column:1/-1}
   .cc-banner{left:12px;right:12px;bottom:76px;flex-direction:column;align-items:stretch;padding:16px}
   .cc-actions{justify-content:stretch}
   .cc-actions button{flex:1}
@@ -512,6 +513,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .lift-toggle button.on{background:#e8f1ff;border-color:#b8d0f5;color:var(--accent)}
 .sp-body h3 a{color:inherit;text-decoration:none}
 .sp-body h3 a:hover{color:var(--accent)}
+.sp-top-label a{color:inherit;text-decoration:none}
+.nav-mobile .nm-sub{padding-left:20px;font-size:15px;opacity:.82}
 .pick-hint{font-size:13px;font-weight:500;color:#8aa0bf;margin-left:7px}
 
 .chip{position:relative}
@@ -622,6 +625,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 </div>
 <div class="nav-mobile" id="navMobile">
   <a href="#teenused" onclick="closeMob()">Teenused</a>
+  <a class="nm-sub" href="/moving24-landing/teenused/arikolimine/" onclick="closeMob()">Ärikolimine</a>
+  <a class="nm-sub" href="/moving24-landing/teenused/erakolimine/" onclick="closeMob()">Kodukolimine</a>
+  <a class="nm-sub" href="/moving24-landing/teenused/prugivedu/" onclick="closeMob()">Prügivedu</a>
+  <a class="nm-sub" href="/moving24-landing/teenused/transport/" onclick="closeMob()">Transport</a>
+  <a class="nm-sub" href="/moving24-landing/teenused/suuregabariidiline/" onclick="closeMob()">Suuregabariidiline vedu</a>
   <a href="#hinnad" onclick="closeMob()">Hinnad</a>
   <a href="#meist" onclick="closeMob()">Meist</a>
   <a href="#kkk" onclick="closeMob()">KKK</a>
@@ -725,33 +733,33 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     <div class="steps-ph">
       <div class="step-ph">
         <div class="img-wrap"><img src="/moving24-landing/img/IMG_0061.jpg?v=4" alt="Moving24 korterikolimine" loading="lazy"></div>
-        <div class="sp-top-label">Erakolimine</div>
+        <div class="sp-top-label"><a href="/moving24-landing/teenused/erakolimine/">Kodukolimine</a></div>
         <div class="sp-body">
-          <h3><a href="/moving24-landing/teenused/erakolimine/">Korter ja maja</a></h3>
+          <h3>Korter ja maja</h3>
           <p>Ühetoaline, neljatoaline või eramaja. Pakime, kanname välja, veame kohale ja seame uues kohas üles. Kõik ühe päevaga.</p>
         </div>
       </div>
       <div class="step-ph">
         <div class="img-wrap"><img src="/moving24-landing/img/g-office3.jpg" alt="Kontorikolimine Tallinnas" loading="lazy"></div>
-        <div class="sp-top-label">Äri ja kontor</div>
+        <div class="sp-top-label"><a href="/moving24-landing/teenused/arikolimine/">Äri ja kontor</a></div>
         <div class="sp-body">
-          <h3><a href="/moving24-landing/teenused/arikolimine/">Kontor, ladu, kauplus</a></h3>
+          <h3>Kontor, ladu, kauplus</h3>
           <p>Kolime õhtul või nädalavahetusel, et töö ei seisaks. IT-seadmed, arhiivid ja mööbel. Kõik nummerdatud ja pakitud.</p>
         </div>
       </div>
       <div class="step-ph">
         <div class="img-wrap"><img src="/moving24-landing/img/g-heavy1.jpg" alt="Raskete esemete vedu" loading="lazy"></div>
-        <div class="sp-top-label">Rasked esemed</div>
+        <div class="sp-top-label"><a href="/moving24-landing/teenused/suuregabariidiline/">Rasked esemed</a></div>
         <div class="sp-body">
-          <h3><a href="/moving24-landing/teenused/suuregabariidiline/">Klaver, seif, seadmed</a></h3>
+          <h3>Klaver, seif, seadmed</h3>
           <p>Veame seda, millest teised keelduvad. Eriotstarbeline varustus, kogenud meeskond. Esemed ja seinad jäävad terveks.</p>
         </div>
       </div>
       <div class="step-ph">
         <div class="img-wrap"><img src="/moving24-landing/img/g-pack2.jpg" alt="Prügi äravedu ja utiliseerimine" loading="lazy"></div>
-        <div class="sp-top-label">Äravedu ja utiliseerimine</div>
+        <div class="sp-top-label"><a href="/moving24-landing/teenused/prugivedu/">Äravedu ja utiliseerimine</a></div>
         <div class="sp-body">
-          <h3><a href="/moving24-landing/teenused/prugivedu/">Prügi, mööbel, koli</a></h3>
+          <h3>Prügi, mööbel, koli</h3>
           <p>Koristame ära kõik, mida enam vaja pole. Ametlik utiliseerimine, ilma ebaseaduslike prügimägedeta. Hind sõltub mahust. Ütleme selle kohe, ilma varjatud lisatasudeta.</p>
         </div>
       </div>
@@ -1208,8 +1216,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 
 <!-- MOBILE BAR -->
 <div class="mob-bar">
-  <a class="btn btn-ghost" href="tel:+37256870101">📞 Helista</a>
   <a class="btn btn-accent" href="#form">Küsi pakkumist</a>
+  <a class="btn btn-ghost" href="tel:+37256870101">📞 Helista</a>
 </div>
 
 <!-- LIGHTBOX -->
