@@ -6,7 +6,7 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/"/>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -16,7 +16,7 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/"/>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -26,8 +26,128 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/"/>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landing/teenused/erakolimine/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/erakolimine/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/chastnyj-pereezd/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/home-move/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/erakolimine/"/>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landing/ru/uslugi/chastnyj-pereezd/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/erakolimine/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/chastnyj-pereezd/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/home-move/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/erakolimine/"/>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landing/en/service/home-move/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/erakolimine/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/chastnyj-pereezd/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/home-move/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/erakolimine/"/>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landing/teenused/arikolimine/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/arikolimine/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/biznes-pereezd/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/business-move/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/arikolimine/"/>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landing/ru/uslugi/biznes-pereezd/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/arikolimine/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/biznes-pereezd/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/business-move/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/arikolimine/"/>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landing/en/service/business-move/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/arikolimine/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/biznes-pereezd/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/business-move/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/arikolimine/"/>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landing/teenused/prugivedu/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/prugivedu/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/vyvoz-musora/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/junk-removal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/prugivedu/"/>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landing/ru/uslugi/vyvoz-musora/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/prugivedu/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/vyvoz-musora/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/junk-removal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/prugivedu/"/>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landing/en/service/junk-removal/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/prugivedu/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/vyvoz-musora/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/junk-removal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/prugivedu/"/>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landing/teenused/transport/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/transport/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/transport/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/transport/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/transport/"/>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landing/ru/uslugi/transport/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/transport/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/transport/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/transport/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/transport/"/>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landing/en/service/transport/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/transport/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/transport/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/transport/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/transport/"/>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
