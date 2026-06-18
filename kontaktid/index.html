@@ -48,7 +48,22 @@
  "vatID": "EE102734342",
  "areaServed": [
   "Tallinn",
+  "Kesklinn",
+  "Lasnamäe",
+  "Mustamäe",
+  "Õismäe",
+  "Haabersti",
+  "Kristiine",
+  "Põhja-Tallinn",
+  "Pirita",
+  "Nõmme",
   "Harjumaa",
+  "Maardu",
+  "Viimsi",
+  "Saue",
+  "Keila",
+  "Tartu",
+  "Pärnu",
   "Estonia"
  ],
  "aggregateRating": {
@@ -70,7 +85,12 @@
   ],
   "opens": "00:00",
   "closes": "23:59"
- }
+ },
+ "sameAs": [
+  "https://www.facebook.com/profile.php?id=61562780713467",
+  "https://www.instagram.com/moving24.ee/",
+  "https://t.me/moving24ee"
+ ]
 }</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Moving24", "url": "https://moving24.ee/", "inLanguage": "et"}</script>
 <!-- ===== TRACKING - РЕАЛЬНЫЕ коды подставлены: GTM-TSG2CVLC, AW-16489866360 (GA4 + конверсии внутри GTM). Гейт по hostname: трекинг включается ТОЛЬКО на moving24.ee - на тесте (github.io/localhost) молчит, чтобы не засорять живую GA4/Ads. FORM_ENDPOINT пуст = демо (форма пока не шлёт по-настоящему). Consent Mode v2 default=denied, баннер обновляет. ===== -->
@@ -90,6 +110,7 @@
     if(realAW){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+window.M24.AW;document.head.appendChild(s);gtag('js',new Date());gtag('config',window.M24.AW);}
   })();
 </script>
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <link rel="preload" as="image" href="/moving24-landing/imagebg-1920.jpg" fetchpriority="high">
 
 <link rel="preload" as="font" type="font/woff2" crossorigin href="/moving24-landing/fonts/inter-400-latin.woff2">
@@ -980,7 +1001,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 <header class="nav-wrap">
   <nav class="nav-pill">
     <a class="nav-logo" href="/moving24-landing/" aria-label="Moving24 - avalehele">
-      <picture><source type="image/webp" srcset="/moving24-landing/img/m24-logo.webp"><img src="/moving24-landing/img/m24-logo.png" alt="Moving24"></picture>
+      <picture><source type="image/webp" srcset="/moving24-landing/img/m24-logo.webp"><img src="/moving24-landing/img/m24-logo.png" width="110" height="110" alt="Moving24"></picture>
       <span>Moving<b>24</b></span>
     </a>
     <div class="nav-links">
@@ -1121,7 +1142,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
         </div>
       </a>
       <a class="step-ph" href="/moving24-landing/teenused/arikolimine/" aria-label="Äri ja kontor">
-        <div class="img-wrap"><picture><source type="image/webp" srcset="/moving24-landing/img/g-office3.webp"><img src="/moving24-landing/img/g-office3.jpg" alt="Kontorikolimine Tallinnas" loading="lazy"></picture></div>
+        <div class="img-wrap"><picture><source type="image/webp" srcset="/moving24-landing/img/g-office3.webp"><img src="/moving24-landing/img/g-office3.jpg" width="975" height="1300" alt="Kontorikolimine Tallinnas" loading="lazy"></picture></div>
         <div class="sp-top-label"><span>Äri ja kontor</span></div>
         <div class="sp-body">
           <h3>Kontor, ladu, kauplus</h3>
@@ -1129,7 +1150,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
         </div>
       </a>
       <a class="step-ph" href="/moving24-landing/teenused/suuregabariidiline/" aria-label="Rasked esemed">
-        <div class="img-wrap"><picture><source type="image/webp" srcset="/moving24-landing/img/g-heavy1.webp"><img src="/moving24-landing/img/g-heavy1.jpg" alt="Raskete esemete vedu" loading="lazy"></picture></div>
+        <div class="img-wrap"><picture><source type="image/webp" srcset="/moving24-landing/img/g-heavy1.webp"><img src="/moving24-landing/img/g-heavy1.jpg" width="975" height="1300" alt="Raskete esemete vedu" loading="lazy"></picture></div>
         <div class="sp-top-label"><span>Rasked esemed</span></div>
         <div class="sp-body">
           <h3>Klaver, seif, seadmed</h3>
@@ -1137,7 +1158,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
         </div>
       </a>
       <a class="step-ph" href="/moving24-landing/teenused/prugivedu/" aria-label="Utiliseerimine">
-        <div class="img-wrap"><picture><source type="image/webp" srcset="/moving24-landing/img/g-pack2.webp"><img src="/moving24-landing/img/g-pack2.jpg" alt="Prügi äravedu ja utiliseerimine" loading="lazy"></picture></div>
+        <div class="img-wrap"><picture><source type="image/webp" srcset="/moving24-landing/img/g-pack2.webp"><img src="/moving24-landing/img/g-pack2.jpg" width="975" height="1300" alt="Prügi äravedu ja utiliseerimine" loading="lazy"></picture></div>
         <div class="sp-top-label"><span>Utiliseerimine</span></div>
         <div class="sp-body">
           <h3>Prügi, mööbel, koli</h3>
@@ -1363,7 +1384,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     <p class="lead">Kõnest kuni asjadeni uues kohas. Üks sujuv protsess.</p>
     <div class="steps-ph">
       <div class="step-ph">
-        <div class="img-wrap"><picture><source type="image/webp" srcset="/moving24-landing/img/g-office2.webp"><img src="/moving24-landing/img/g-office2.jpg" alt="Kolimismahu hindamine" loading="lazy"></picture></div>
+        <div class="img-wrap"><picture><source type="image/webp" srcset="/moving24-landing/img/g-office2.webp"><img src="/moving24-landing/img/g-office2.jpg" width="975" height="1300" alt="Kolimismahu hindamine" loading="lazy"></picture></div>
         <div class="sp-top-label">01 · Esimene samm</div>
         <div class="sp-badge">01</div>
         <div class="sp-body">
@@ -1372,7 +1393,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
         </div>
       </div>
       <div class="step-ph">
-        <div class="img-wrap"><picture><source type="image/webp" srcset="/moving24-landing/img/g-pack2.webp"><img src="/moving24-landing/img/g-pack2.jpg" alt="Asjade pakkimine" loading="lazy"></picture></div>
+        <div class="img-wrap"><picture><source type="image/webp" srcset="/moving24-landing/img/g-pack2.webp"><img src="/moving24-landing/img/g-pack2.jpg" width="975" height="1300" alt="Asjade pakkimine" loading="lazy"></picture></div>
         <div class="sp-top-label">02 · Teine samm</div>
         <div class="sp-badge">02</div>
         <div class="sp-body">
@@ -1381,7 +1402,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
         </div>
       </div>
       <div class="step-ph">
-        <div class="img-wrap"><picture><source type="image/webp" srcset="/moving24-landing/img/g-pack1.webp"><img src="/moving24-landing/img/g-pack1.jpg" alt="Laadimine ja transport" loading="lazy"></picture></div>
+        <div class="img-wrap"><picture><source type="image/webp" srcset="/moving24-landing/img/g-pack1.webp"><img src="/moving24-landing/img/g-pack1.jpg" width="975" height="1300" alt="Laadimine ja transport" loading="lazy"></picture></div>
         <div class="sp-top-label">03 · Kolmas samm</div>
         <div class="sp-badge">03</div>
         <div class="sp-body">
@@ -1390,7 +1411,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
         </div>
       </div>
       <div class="step-ph">
-        <div class="img-wrap"><picture><source type="image/webp" srcset="/moving24-landing/img/g-heavy1.webp"><img src="/moving24-landing/img/g-heavy1.jpg" alt="Asjade paigutamine uues kohas" loading="lazy"></picture></div>
+        <div class="img-wrap"><picture><source type="image/webp" srcset="/moving24-landing/img/g-heavy1.webp"><img src="/moving24-landing/img/g-heavy1.jpg" width="975" height="1300" alt="Asjade paigutamine uues kohas" loading="lazy"></picture></div>
         <div class="sp-top-label">04 · Neljas samm</div>
         <div class="sp-badge">04</div>
         <div class="sp-body">
@@ -1440,7 +1461,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   <div class="wrap">
     <div class="equip">
       <div class="equip-img">
-        <picture><source type="image/webp" srcset="/moving24-landing/img/g-office1.webp"><img src="/moving24-landing/img/g-office1.jpg" alt="Moving24 furgoon laaditud ja kinnitatud esemetega" loading="lazy"></picture>
+        <picture><source type="image/webp" srcset="/moving24-landing/img/g-office1.webp"><img src="/moving24-landing/img/g-office1.jpg" width="975" height="1300" alt="Moving24 furgoon laaditud ja kinnitatud esemetega" loading="lazy"></picture>
       </div>
       <div>
         <span class="tag">Varustus</span>
@@ -1493,12 +1514,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     <h2 class="big">Kolimine on meie emakeel.</h2>
     <p class="lead">Iga kapp, iga klaver, iga karp. Allpool on osa meie igapäevatööst. Klõpsake fotol, et see täies suuruses avada.</p>
     <div class="gal" id="gal">
-      <a href="/moving24-landing/img/g-office2.jpg"><picture><source type="image/webp" srcset="/moving24-landing/img/g-office2.webp"><img src="/moving24-landing/img/g-office2.jpg" alt="Moving24 kaubikud Tallinna kesklinnas" loading="lazy"></picture></a>
-      <a href="/moving24-landing/img/g-office3.jpg"><picture><source type="image/webp" srcset="/moving24-landing/img/g-office3.webp"><img src="/moving24-landing/img/g-office3.jpg" alt="Kontorikolimine Tallinnas" loading="lazy"></picture></a>
-      <a href="/moving24-landing/img/g-office1.jpg"><picture><source type="image/webp" srcset="/moving24-landing/img/g-office1.webp"><img src="/moving24-landing/img/g-office1.jpg" alt="Laaditud kaubik" loading="lazy"></picture></a>
-      <a href="/moving24-landing/img/g-heavy1.jpg"><picture><source type="image/webp" srcset="/moving24-landing/img/g-heavy1.webp"><img src="/moving24-landing/img/g-heavy1.jpg" alt="Suurte esemete tõstmine" loading="lazy"></picture></a>
-      <a href="/moving24-landing/img/g-pack1.jpg"><picture><source type="image/webp" srcset="/moving24-landing/img/g-pack1.webp"><img src="/moving24-landing/img/g-pack1.jpg" alt="Asjad kaubikus kinnitatud" loading="lazy"></picture></a>
-      <a href="/moving24-landing/img/g-pack2.jpg"><picture><source type="image/webp" srcset="/moving24-landing/img/g-pack2.webp"><img src="/moving24-landing/img/g-pack2.jpg" alt="Asjade laadimine kaubikusse" loading="lazy"></picture></a>
+      <a href="/moving24-landing/img/g-office2.jpg"><picture><source type="image/webp" srcset="/moving24-landing/img/g-office2.webp"><img src="/moving24-landing/img/g-office2.jpg" width="975" height="1300" alt="Moving24 kaubikud Tallinna kesklinnas" loading="lazy"></picture></a>
+      <a href="/moving24-landing/img/g-office3.jpg"><picture><source type="image/webp" srcset="/moving24-landing/img/g-office3.webp"><img src="/moving24-landing/img/g-office3.jpg" width="975" height="1300" alt="Kontorikolimine Tallinnas" loading="lazy"></picture></a>
+      <a href="/moving24-landing/img/g-office1.jpg"><picture><source type="image/webp" srcset="/moving24-landing/img/g-office1.webp"><img src="/moving24-landing/img/g-office1.jpg" width="975" height="1300" alt="Laaditud kaubik" loading="lazy"></picture></a>
+      <a href="/moving24-landing/img/g-heavy1.jpg"><picture><source type="image/webp" srcset="/moving24-landing/img/g-heavy1.webp"><img src="/moving24-landing/img/g-heavy1.jpg" width="975" height="1300" alt="Suurte esemete tõstmine" loading="lazy"></picture></a>
+      <a href="/moving24-landing/img/g-pack1.jpg"><picture><source type="image/webp" srcset="/moving24-landing/img/g-pack1.webp"><img src="/moving24-landing/img/g-pack1.jpg" width="975" height="1300" alt="Asjad kaubikus kinnitatud" loading="lazy"></picture></a>
+      <a href="/moving24-landing/img/g-pack2.jpg"><picture><source type="image/webp" srcset="/moving24-landing/img/g-pack2.webp"><img src="/moving24-landing/img/g-pack2.jpg" width="975" height="1300" alt="Asjade laadimine kaubikusse" loading="lazy"></picture></a>
       <a href="/moving24-landing/img/IMG_0061.jpg?v=4"><picture><source type="image/webp" srcset="/moving24-landing/img/IMG_0061.webp?v=4"><img src="/moving24-landing/img/IMG_0061.jpg?v=4" alt="Better Call Moving24 kaubik" loading="lazy"></picture></a>
       <a href="/moving24-landing/img/IMG_0060.jpg?v=3"><picture><source type="image/webp" srcset="/moving24-landing/img/IMG_0060.webp?v=3"><img src="/moving24-landing/img/IMG_0060.jpg?v=3" alt="Moving24 kaubikud tänaval" loading="lazy"></picture></a>
       <a href="/moving24-landing/img/IMG_0018.jpg?v=3"><picture><source type="image/webp" srcset="/moving24-landing/img/IMG_0018.webp?v=3"><img src="/moving24-landing/img/IMG_0018.jpg?v=3" alt="Moving24 kaubikud linna taustal" loading="lazy"></picture></a>
@@ -1549,6 +1570,14 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 </section>
 
 <!-- FINAL CTA -->
+<section class="section section--alt svc-hide" id="piirkonnad" aria-label="Teeninduspiirkond">
+  <div class="wrap" style="max-width:900px;text-align:center">
+    <span class="tag">Teeninduspiirkond</span>
+    <h2 class="big">Kus me kolime</h2>
+    <p class="lead lead--lg">Teenindame kogu Tallinna - Kesklinn, Lasnamäe, Mustamäe, Õismäe, Haabersti, Kristiine, Põhja-Tallinn, Pirita ja Nõmme - ning kogu Harjumaad: Maardu, Viimsi, Saue ja Keila. Kolime ka Tartusse, Pärnusse ja üle kogu Eesti, ka õhtul ja nädalavahetusel.</p>
+  </div>
+</section>
+
 <section class="cta-final">
   <div class="wrap">
     <h2>Ei tea, kust alustada?<br><em>Pole hullu. Kirjeldage, mida on vaja vedada.</em></h2>
