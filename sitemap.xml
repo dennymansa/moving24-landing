@@ -1,171 +1,291 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/"/>
+    <loc>https://dennymansa.github.io/moving24-landing</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/ru/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/"/>
+    <loc>https://dennymansa.github.io/moving24-landingen/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/en/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/"/>
+    <loc>https://dennymansa.github.io/moving24-landingru/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/teenused/erakolimine/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/erakolimine/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/chastnyj-pereezd/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/home-move/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/erakolimine/"/>
+    <loc>https://dennymansa.github.io/moving24-landingfi/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/ru/uslugi/chastnyj-pereezd/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/erakolimine/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/chastnyj-pereezd/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/home-move/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/erakolimine/"/>
+    <loc>https://dennymansa.github.io/moving24-landingteenused/erakolimine/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/erakolimine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/home-move/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/chastnyj-pereezd/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/kotimuutto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/erakolimine/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/en/service/home-move/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/erakolimine/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/chastnyj-pereezd/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/home-move/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/erakolimine/"/>
+    <loc>https://dennymansa.github.io/moving24-landingen/service/home-move/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/erakolimine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/home-move/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/chastnyj-pereezd/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/kotimuutto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/erakolimine/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/teenused/arikolimine/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/arikolimine/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/biznes-pereezd/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/business-move/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/arikolimine/"/>
+    <loc>https://dennymansa.github.io/moving24-landingru/uslugi/chastnyj-pereezd/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/erakolimine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/home-move/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/chastnyj-pereezd/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/kotimuutto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/erakolimine/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/ru/uslugi/biznes-pereezd/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/arikolimine/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/biznes-pereezd/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/business-move/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/arikolimine/"/>
+    <loc>https://dennymansa.github.io/moving24-landingfi/palvelut/kotimuutto/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/erakolimine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/home-move/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/chastnyj-pereezd/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/kotimuutto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/erakolimine/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/en/service/business-move/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/arikolimine/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/biznes-pereezd/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/business-move/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/arikolimine/"/>
+    <loc>https://dennymansa.github.io/moving24-landingteenused/arikolimine/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/arikolimine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/business-move/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/biznes-pereezd/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/yritysmuutto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/arikolimine/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/teenused/prugivedu/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/prugivedu/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/vyvoz-musora/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/junk-removal/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/prugivedu/"/>
+    <loc>https://dennymansa.github.io/moving24-landingen/service/business-move/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/arikolimine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/business-move/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/biznes-pereezd/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/yritysmuutto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/arikolimine/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/ru/uslugi/vyvoz-musora/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/prugivedu/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/vyvoz-musora/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/junk-removal/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/prugivedu/"/>
+    <loc>https://dennymansa.github.io/moving24-landingru/uslugi/biznes-pereezd/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/arikolimine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/business-move/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/biznes-pereezd/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/yritysmuutto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/arikolimine/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/en/service/junk-removal/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/prugivedu/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/vyvoz-musora/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/junk-removal/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/prugivedu/"/>
+    <loc>https://dennymansa.github.io/moving24-landingfi/palvelut/yritysmuutto/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/arikolimine/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/business-move/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/biznes-pereezd/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/yritysmuutto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/arikolimine/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/teenused/transport/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/transport/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/transport/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/transport/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/transport/"/>
+    <loc>https://dennymansa.github.io/moving24-landingteenused/prugivedu/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/prugivedu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/junk-removal/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/vyvoz-musora/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/romun-poisvienti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/prugivedu/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/ru/uslugi/transport/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/transport/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/transport/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/transport/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/transport/"/>
+    <loc>https://dennymansa.github.io/moving24-landingen/service/junk-removal/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/prugivedu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/junk-removal/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/vyvoz-musora/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/romun-poisvienti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/prugivedu/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/en/service/transport/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/transport/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/transport/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/transport/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/transport/"/>
+    <loc>https://dennymansa.github.io/moving24-landingru/uslugi/vyvoz-musora/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/prugivedu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/junk-removal/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/vyvoz-musora/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/romun-poisvienti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/prugivedu/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/teenused/suuregabariidiline/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/suuregabariidiline/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/krupnogabaritnyj/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/oversized/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/suuregabariidiline/"/>
+    <loc>https://dennymansa.github.io/moving24-landingfi/palvelut/romun-poisvienti/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/prugivedu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/junk-removal/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/vyvoz-musora/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/romun-poisvienti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/prugivedu/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/ru/uslugi/krupnogabaritnyj/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/suuregabariidiline/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/krupnogabaritnyj/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/oversized/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/suuregabariidiline/"/>
+    <loc>https://dennymansa.github.io/moving24-landingteenused/transport/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/transport/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/transport/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/transport/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/kuljetus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/transport/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/en/service/oversized/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/teenused/suuregabariidiline/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/krupnogabaritnyj/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/service/oversized/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/teenused/suuregabariidiline/"/>
+    <loc>https://dennymansa.github.io/moving24-landingen/service/transport/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/transport/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/transport/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/transport/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/kuljetus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/transport/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/meist/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/meist/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/o-nas/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/about/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/meist/"/>
+    <loc>https://dennymansa.github.io/moving24-landingru/uslugi/transport/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/transport/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/transport/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/transport/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/kuljetus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/transport/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/ru/o-nas/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/meist/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/o-nas/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/about/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/meist/"/>
+    <loc>https://dennymansa.github.io/moving24-landingfi/palvelut/kuljetus/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/transport/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/transport/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/transport/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/kuljetus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/transport/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/en/about/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/meist/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/o-nas/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/about/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/meist/"/>
+    <loc>https://dennymansa.github.io/moving24-landingteenused/suuregabariidiline/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/suuregabariidiline/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/oversized/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/krupnogabaritnyj/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/raskaat-tavarat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/suuregabariidiline/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/kontaktid/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/kontaktid/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/kontakty/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/kontaktid/"/>
+    <loc>https://dennymansa.github.io/moving24-landingen/service/oversized/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/suuregabariidiline/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/oversized/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/krupnogabaritnyj/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/raskaat-tavarat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/suuregabariidiline/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/ru/kontakty/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/kontaktid/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/kontakty/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/kontaktid/"/>
+    <loc>https://dennymansa.github.io/moving24-landingru/uslugi/krupnogabaritnyj/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/suuregabariidiline/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/oversized/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/krupnogabaritnyj/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/raskaat-tavarat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/suuregabariidiline/"/>
   </url>
   <url>
-    <loc>https://dennymansa.github.io/moving24-landing/en/contact/</loc>
-    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landing/kontaktid/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landing/ru/kontakty/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landing/en/contact/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landing/kontaktid/"/>
+    <loc>https://dennymansa.github.io/moving24-landingfi/palvelut/raskaat-tavarat/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingteenused/suuregabariidiline/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/service/oversized/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/uslugi/krupnogabaritnyj/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/palvelut/raskaat-tavarat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingteenused/suuregabariidiline/"/>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landingmeist/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingmeist/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/about/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/o-nas/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/meista/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingmeist/"/>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landingen/about/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingmeist/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/about/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/o-nas/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/meista/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingmeist/"/>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landingru/o-nas/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingmeist/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/about/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/o-nas/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/meista/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingmeist/"/>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landingfi/meista/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingmeist/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/about/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/o-nas/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/meista/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingmeist/"/>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landingkontaktid/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingkontaktid/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/kontakty/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/yhteystiedot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingkontaktid/"/>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landingen/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingkontaktid/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/kontakty/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/yhteystiedot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingkontaktid/"/>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landingru/kontakty/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingkontaktid/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/kontakty/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/yhteystiedot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingkontaktid/"/>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landingfi/yhteystiedot/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingkontaktid/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/contact/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/kontakty/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/yhteystiedot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingkontaktid/"/>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landingkkk/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingkkk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/ukk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingkkk/"/>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landingen/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingkkk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/ukk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingkkk/"/>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landingru/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingkkk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/ukk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingkkk/"/>
+  </url>
+  <url>
+    <loc>https://dennymansa.github.io/moving24-landingfi/ukk/</loc>
+    <xhtml:link rel="alternate" hreflang="et" href="https://dennymansa.github.io/moving24-landingkkk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dennymansa.github.io/moving24-landingen/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dennymansa.github.io/moving24-landingru/faq/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://dennymansa.github.io/moving24-landingfi/ukk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dennymansa.github.io/moving24-landingkkk/"/>
   </url>
 </urlset>
