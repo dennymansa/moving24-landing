@@ -526,7 +526,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .pick-hint{font-size:13px;font-weight:500;color:#8aa0bf;margin-left:7px}
 
 .chip{position:relative}
-.chip-tick{position:absolute;right:11px;top:50%;transform:translateY(-50%);color:#7db8ff;font-size:13px;font-weight:700;opacity:0;pointer-events:none}
+.chip-tick{position:absolute;right:11px;top:50%;transform:translateY(-50%);color:#5b9bff;font-size:13px;font-weight:700;opacity:0;pointer-events:none}
 @keyframes tickCycle{0%{opacity:0;transform:translateY(-50%) translateX(-5px) scale(.9)}3%{opacity:.6;transform:translateY(-50%) translateX(0) scale(1)}10%{opacity:.6;transform:translateY(-50%) translateX(0) scale(1)}14%{opacity:0;transform:translateY(-50%) translateX(4px) scale(.9)}100%{opacity:0;transform:translateY(-50%) translateX(4px) scale(.9)}}
 #svcChips:not(:has(.chip.on)) .chip:nth-child(1) .chip-tick{animation:tickCycle 10s ease-in-out 0s infinite}
 #svcChips:not(:has(.chip.on)) .chip:nth-child(2) .chip-tick{animation:tickCycle 10s ease-in-out 1.4s infinite}
@@ -544,6 +544,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 
 .form-slot{position:relative}
 @media(max-width:760px){.form-card{max-width:none;width:100%}.form-card input,.form-card select,.form-card textarea,.form-card .form-select{font-size:16px}}
+
+.chip-oval{position:absolute;left:-5px;top:-7px;width:calc(100% + 10px);height:calc(100% + 14px);overflow:visible;pointer-events:none;z-index:2}
+.chip-oval path{fill:none;stroke:#4f93f5;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:640;stroke-dashoffset:640}
+.chip.on .chip-oval path{animation:drawOval .6s cubic-bezier(.6,0,.35,1) forwards}
+@keyframes drawOval{to{stroke-dashoffset:0}}
+@media(max-width:760px){.chip-oval{display:none}}
 
 </style>
 </head>
@@ -632,10 +638,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
           <input type="hidden" name="service" id="serviceField"><input type="hidden" name="utm_source" id="utm_source"><input type="hidden" name="utm_medium" id="utm_medium"><input type="hidden" name="utm_campaign" id="utm_campaign"><input type="hidden" name="utm_term" id="utm_term"><input type="hidden" name="utm_content" id="utm_content"><input type="hidden" name="gclid" id="gclid">
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:0;top:0;width:1px;height:1px;opacity:0;overflow:hidden;pointer-events:none">
           <div class="chips" id="svcChips" role="radiogroup">
-            <button type="button" class="chip" data-svc="private">Erakolimine<span class="chip-tick" aria-hidden="true">✓</span></button>
-            <button type="button" class="chip" data-svc="business">Ärikolimine<span class="chip-tick" aria-hidden="true">✓</span></button>
-            <button type="button" class="chip" data-svc="garbage">Prügivedu<span class="chip-tick" aria-hidden="true">✓</span></button>
-            <button type="button" class="chip" data-svc="transport">Transport<span class="chip-tick" aria-hidden="true">✓</span></button>
+            <button type="button" class="chip" data-svc="private"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M28 14C70 5 150 5 196 16 216 21 214 48 180 54 120 62 55 61 22 50 5 44 6 18 44 11"/></svg>Erakolimine<span class="chip-tick" aria-hidden="true">✓</span></button>
+            <button type="button" class="chip" data-svc="business"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M28 14C70 5 150 5 196 16 216 21 214 48 180 54 120 62 55 61 22 50 5 44 6 18 44 11"/></svg>Ärikolimine<span class="chip-tick" aria-hidden="true">✓</span></button>
+            <button type="button" class="chip" data-svc="garbage"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M28 14C70 5 150 5 196 16 216 21 214 48 180 54 120 62 55 61 22 50 5 44 6 18 44 11"/></svg>Prügivedu<span class="chip-tick" aria-hidden="true">✓</span></button>
+            <button type="button" class="chip" data-svc="transport"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M28 14C70 5 150 5 196 16 216 21 214 48 180 54 120 62 55 61 22 50 5 44 6 18 44 11"/></svg>Transport<span class="chip-tick" aria-hidden="true">✓</span></button>
           </div>
           <div class="form-grid">
             <input type="text" name="name" placeholder="Täisnimi / ettevõtte nimi *" aria-label="Täisnimi / ettevõtte nimi" required style="grid-column:1/-1">
