@@ -1,11 +1,11 @@
-// Cloudflare Pages Function — POST /api/lead
+// Cloudflare Pages Function - POST /api/lead
 // Принимает заявку с лендинга (включая сжатые фото) и шлёт письмо через Resend.
 // Аналог старого флоу "фото -> письмо на Gmail", но без WordPress.
 //
 // В Cloudflare Pages -> Settings -> Environment variables задать:
-//   RESEND_API_KEY  — ключ API из resend.com (бесплатно: 3000 писем/мес)
-//   LEAD_TO         — куда слать заявки, напр. info@moving24.ee
-//   LEAD_FROM       — отправитель на верифицированном в Resend домене, напр. "Moving24 <leads@moving24.ee>"
+//   RESEND_API_KEY  - ключ API из resend.com (бесплатно: 3000 писем/мес)
+//   LEAD_TO         - куда слать заявки, напр. info@moving24.ee
+//   LEAD_FROM       - отправитель на верифицированном в Resend домене, напр. "Moving24 <leads@moving24.ee>"
 //
 // На фронте в window.M24.FORM_ENDPOINT поставить '/api/lead'.
 
@@ -51,7 +51,7 @@ export async function onRequestPost({ request, env }) {
         from: env.LEAD_FROM,
         to: [env.LEAD_TO],
         reply_to: email || undefined,
-        subject: 'Заявка Moving24 — ' + (name || phone || 'без имени'),
+        subject: 'Заявка Moving24 - ' + (name || phone || 'без имени'),
         html: html,
         attachments: attachments
       })

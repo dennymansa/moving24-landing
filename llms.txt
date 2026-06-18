@@ -3,9 +3,9 @@
 > Kolimisteenus / Переезды / Moving and transport service in Tallinn and across Estonia. Apartment, home, office and business moves, heavy-item transport (pianos, safes), packing and waste removal. Available 24/7.
 
 ## Pages
-- [Avaleht — Eesti (ET)](https://dennymansa.github.io/moving24-landing/)
-- [Главная — Русский (RU)](https://dennymansa.github.io/moving24-landing/ru/)
-- [Home — English (EN)](https://dennymansa.github.io/moving24-landing/en/)
+- [Avaleht - Eesti (ET)](https://dennymansa.github.io/moving24-landing/)
+- [Главная - Русский (RU)](https://dennymansa.github.io/moving24-landing/ru/)
+- [Home - English (EN)](https://dennymansa.github.io/moving24-landing/en/)
 
 ## Contact
 - Phone: +372 5687 0101
