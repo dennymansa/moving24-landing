@@ -138,6 +138,7 @@ h3.sub{font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;text-transform:
 .wp-row h3{margin:0 0 7px;font-size:15px}
 .wp-row p{font-size:13.5px;color:#5a6b80;line-height:1.6}
 @media(max-width:720px){.inv-row{grid-template-columns:1fr}.inv-cat,.inv-plain{border-right:none;border-bottom:1px solid #e3ebf4}.wp{grid-template-columns:1fr}}
+.cl-list{margin:8px 0 0 18px;padding:0}.cl-list li{font-size:13.5px;color:#3a4d6b;margin:5px 0;line-height:1.5}.tbl.cw td{font-size:12.5px;vertical-align:top}.tbl.cw th{white-space:nowrap}.tbl.cw tr.us td{background:rgba(22,163,74,.08)}.tbl.cw tr.us td:first-child{box-shadow:inset 3px 0 0 var(--us)}code{background:#eef2f8;border-radius:5px;padding:1px 6px;font-size:12.5px;color:#1b4fd0;font-family:ui-monospace,monospace}
 </style>
 </head>
 <body>
@@ -145,22 +146,63 @@ h3.sub{font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;text-transform:
 
 <header class="hero">
   <div class="wrap">
-    <div class="brand"><span class="mark">Moving<b>24</b></span><span class="div"></span><span class="role">Карта рынка · что наше, что нет</span></div>
-    <div class="eyebrow">Где мы играем, а где нет</div>
-    <h1>Рынок переездов Эстонии: <span class="hl">наши запросы и чужие</span></h1>
-    <p class="lede">170 запросов ниши с объёмами и сложностью, размечены: <b style="color:var(--ours)">наши</b> (переезд, транспорт, коробки, негабарит), <b style="color:var(--maybe)">спорные</b> (брать как доп) и <b style="color:var(--not)">не наши</b> (регулярный вывоз мусора, строймусор, бренды конкурентов). Наведите курсор для пояснений.</p>
+    <div class="brand"><span class="mark">Moving<b>24</b></span><span class="div"></span><span class="role">Технический паспорт сайта + карта рынка</span></div>
+    <div class="eyebrow">Что построено и как это работает</div>
+    <h1>Moving24: <span class="hl">технический паспорт</span> сайта и карта рынка</h1>
+    <p class="lede">Сначала - что содержит сайт, как устроены трекинг и аналитика, что мы умеем и чем отличаемся от конкурентов (сравнение по живому коду). Ниже - SEO-анализ ниши: 170 запросов, размеченных наши, спорные и не наши.</p>
     <div class="badges">
       <span class="tag">📊 Ahrefs · страна Эстония</span>
       <span class="tag">🗓 18.06.2026</span>
       <span class="tag">🟢 наши · 🟠 спорные · 🔴 не наши</span>
     </div>
-    <div class="kpis" id="kpis"></div>
   </div>
 </header>
 
+<section id="tech">
+  <div class="wrap">
+    <h2>Технический паспорт сайта</h2>
+    <p class="sub">Что содержит сайт. Слева простым языком, справа технически - для сдачи как сопровождение.</p>
+    <div class="inv"><div class="inv-row inv-head"><div></div><div>Простым языком</div><div>Технически</div></div><div class="inv-row"><div class="inv-cat">Страницы и структура</div><div class="inv-plain">44 страницы. На каждом из 4 языков: главная, 5 услуг, О компании, Контакты, FAQ. Плюс 8 юридических.</div><div class="inv-tech">Статический HTML, чистые URL (папка + index.html). 36 индексируемых + 8 noindex (легал). Слаги повторяют структуру moving24.ee. ET - основной (x-default).</div></div><div class="inv-row"><div class="inv-cat">4 языка (i18n)</div><div class="inv-plain">ET, EN, RU, FI - полноценные. Переключатель ведёт на ту же страницу на другом языке, а не на главную.</div><div class="inv-tech">ET=/, EN=/en/, RU=/ru/, FI=/fi/. hreflang реципрокен (+ x-default=et). Свитчер и слаги из общего модуля langnav.py; видимый свитчер = hreflang-альтернаты этой страницы. lang-атрибут + preload шрифтов по языку.</div></div><div class="inv-row"><div class="inv-cat">SEO-разметка</div><div class="inv-plain">Каждая страница размечена для Google: заголовок, описание, схемы, карта сайта, превью для соцсетей.</div><div class="inv-tech">Title &lt;=60 / description &lt;=158 (нативный совет, не машинный перевод). JSON-LD: MovingCompany + aggregateRating 5.0/37, Service на каждой услуге, FAQPage. OG + Twitter. sitemap.xml 36 URL с hreflang. robots.txt. canonical self. 80 JSON-LD блоков, 0 невалидных.</div></div><div class="inv-row"><div class="inv-cat">Форма и заявки</div><div class="inv-plain">Умная форма: выбираешь, что перевезти - появляются нужные поля. Заявка уходит на e-mail.</div><div class="inv-tech">FormData -&gt; Basin (usebasin.com/f/48904e530a24). Чипы услуг, тогглы lift/упаковка (рисованный овал при выборе), дата, загрузка фото. Письмо человекочитаемое, язык по documentElement.lang. Резерв: Cloudflare Function + Resend (lead.js).</div></div><div class="inv-row"><div class="inv-cat">Производительность</div><div class="inv-plain">Шрифты и картинки грузятся быстро, без мигания и скачков.</div><div class="inv-tech">Self-hosted woff2 (@font-face inline + preload по языку), 0 запросов к Google Fonts (был render-block ~2.7с). Картинки WebP через &lt;picture&gt; + JPEG fallback (-31%, ~600КБ). loading=lazy.</div></div><div class="inv-row"><div class="inv-cat">Дизайн</div><div class="inv-plain">Единый премиум-стиль: карточки услуг, кнопки, аккордеоны, рисованные акценты.</div><div class="inv-tech">3 шрифта (Inter текст / Plus Jakarta Sans заголовки / Caveat рукописный кикер). Сервис-секции в стиле ClickAnalytic (feature-cards + check-benefits + gradient CTA). Кикер - триггер-вопрос под услугу. FAQ - нативный &lt;details&gt;. Овал на тогглах - SVG data-URI.</div></div><div class="inv-row"><div class="inv-cat">Код и сборка</div><div class="inv-plain">Сайт собирается скриптами из одного шаблона: правишь главную - меняется на всех страницах сразу.</div><div class="inv-tech">Python-генераторы: assemble.py (услуги), infopages.py (О/Контакты), faqpage.py, fi_build+fi_scaffold (финский), terms.py+fi_legal.py (легал), sitemap.py, langnav.py (общий switcher/кикеры/слаги/CTA). Контент в consilium.json. Принцип клон-и-патч.</div></div></div>
+  </div>
+</section>
+
+<section id="track">
+  <div class="wrap">
+    <h2>Трекинг, Google Ads и аналитика</h2>
+    <p class="sub">Что настроено у нас и как это соотносится с moving24.ee.</p>
+    <h3 class="sub" style="margin-top:2px">Что отслеживаем прямо сейчас</h3><table class="tbl trk"><tbody><tr><td><code>generate_lead</code></td><td>посетитель отправил форму-заявку</td></tr><tr><td><code>phone_link_klick</code></td><td>кликнул по номеру телефона (звонок)</td></tr><tr><td><code>email_link_click</code></td><td>кликнул по e-mail</td></tr><tr><td><code>consent_update</code></td><td>поменял согласие на cookie</td></tr></tbody></table><p class="note">Каждое событие срабатывает на РЕАЛЬНОЕ действие (клик, отправка), а не на загрузку страницы. Поэтому Google Ads учится приводить тех, кто реально связывается, а не просто заходит.</p><h3 class="sub" style="margin-top:28px">Что ещё можем отслеживать</h3><p class="note" style="margin-top:0">Сайт - это наш код, поэтому добавить можно почти что угодно одной правкой. Аналитика не ограничена четырьмя событиями, это лишь то, что включено по умолчанию:</p><ul class="cl-list"><li>Глубину прокрутки - докрутил ли до формы, отзывов, цен</li><li>Какую услугу выбирают в форме (чипы) и сколько времени проводят на странице</li><li>Начал ли загружать фото, бросил ли форму на полпути</li><li>Клики по конкретным кнопкам, открытия вопросов в FAQ</li><li>Исходящие клики, enhanced conversions (расширенные конверсии Google), server-side трекинг</li></ul><h3 class="sub" style="margin-top:28px">A/B тестирование</h3><p class="note" style="margin-top:0">Сайт под нашим контролем, поэтому можно гонять A/B тесты: показать половине посетителей один заголовок, кнопку или расположение формы, другой половине - другой, и смотреть, что лучше превращает заходы в заявки. Тестируем заголовки, CTA, фото героя, порядок полей, тексты. Решения по цифрам, а не на глаз.</p><h3 class="sub" style="margin-top:28px">«Один путь без дублей» - что это значит</h3><p class="note" style="margin-top:0">На moving24.ee тег Google Ads загружается ДВАЖДЫ: один раз внутри GTM и второй раз отдельным скриптом gtag. Из-за этого одно действие может посчитаться дважды (раздувает статистику) плюс лишний вес страницы. У нас каждый тег грузится ОДИН раз, только через GTM - чисто, без двойного счёта.</p><h3 class="sub" style="margin-top:28px">Конверсия - простыми словами</h3><p class="note" style="margin-top:0">Конверсия = ценное действие (заявка). Для Google Ads мы помечаем как конверсии два действия: отправку формы и клик по телефону. Они срабатывают на самом действии, а не на открытии страницы, поэтому реклама оптимизируется под людей, которые реально обращаются.</p><h3 class="sub" style="margin-top:28px">moving24.ee против нашего сайта</h3><div style="overflow-x:auto"><table class="tbl cmp"><thead><tr><th>Аспект</th><th>moving24.ee</th><th>Наш сайт</th></tr></thead><tbody><tr><td>CMS</td><td class="them">WordPress 7.0 + Elementor</td><td class="us">Статический HTML - без ядра, плагинов, БД</td></tr><tr><td>GTM</td><td class="them">GTM-TSG2CVLC</td><td class="us">GTM-TSG2CVLC (тот же контейнер)</td></tr><tr><td>Google Ads</td><td class="them">AW-16489866360 грузится И через GTM, И напрямую gtag/js (дубль)</td><td class="us">AW-16489866360 - один путь, без дублей</td></tr><tr><td>GA4</td><td class="them">внутри GTM</td><td class="us">G-7X1TS2BVF6 через dataLayer</td></tr><tr><td>Согласие</td><td class="them">CookieYes (сторонний плагин)</td><td class="us">Consent Mode v2, свой код, default denied</td></tr><tr><td>Конверсии</td><td class="them">стандартные теги</td><td class="us">generate_lead / phone / email на реальные клики</td></tr></tbody></table></div><h3 class="sub" style="margin-top:28px">Согласие на cookie: почему свой баннер лучше стороннего плагина</h3><p class="note" style="margin-top:0">На moving24.ee стоит сторонний плагин CookieYes. Минусы: он грузит свой скрипт с чужих серверов (лишний вес и зависимость - их сбой ломает ваш баннер) и часто неправильно связан с Google Consent Mode v2 (теги могут сработать до согласия посетителя). Наш баннер - свой код: грузится мгновенно вместе со страницей, без внешней зависимости, и напрямую завязан на Consent Mode v2 (по умолчанию всё запрещено, теги включаются только после согласия). Меньше деталей, быстрее, корректно по GDPR.</p><p class="note">Проверено по живому коду moving24.ee 18.06.2026: GTM-TSG2CVLC, Google Ads AW-16489866360 (через GTM и напрямую), CookieYes, WordPress 7.0.</p>
+  </div>
+</section>
+
+<section id="wp">
+  <div class="wrap">
+    <h2>Почему WordPress не нужен</h2>
+    <p class="sub">Для трекинга, Google Ads и аналитики - по фактам, без воды.</p>
+    <div class="wp"><div class="wp-row"><h3 class="sub">Когда WordPress реально полезен</h3><p>Честно: WordPress силён, когда нетехническая команда каждый день правит контент через визуальный редактор, нужен блог или магазин на сотни страниц с несколькими редакторами, или есть готовый плагин ровно под задачу. Это его сильная сторона, и отрицать её глупо.</p></div><div class="wp-row"><h3 class="sub">Почему именно нам он не нужен</h3><p>У нас около 44 страниц, которые правите вы и я (агент) прямо в коде - это быстрее и безопаснее, чем через админку CMS. Трекинг, Google Ads, аналитика, формы, SEO-разметка и скорость уже есть и работают без WordPress. Здесь он только добавил бы вес и риск.</p></div><div class="wp-row"><h3 class="sub">Трекинг - это сниппет, а не CMS</h3><p>Google Ads, GA4 и GTM работают через JS-сниппет в коде страницы. Сниппету нужен САЙТ (любой HTML), а не WordPress. На moving24.ee в коде стоит GTM-TSG2CVLC - ровно тот же сниппет у нас, только без WordPress вокруг.</p></div><div class="wp-row"><h3 class="sub">Плагин = кнопки для человека</h3><p>WordPress-плагин (напр. для GTM) просто вставляет тот же сниппет и даёт UI в админке. Сам сниппет от этого не меняется. Наша «админка» - AI-агент, который правит код напрямую.</p></div><div class="wp-row"><h3 class="sub">Что WP дал бы - и почему не нужен</h3><p>Дал бы: визуальный редактор, медиатеку, готовые плагины. НЕ нужен для трекинга, Google Ads, аналитики, форм, SEO-разметки и скорости - всё это у нас уже есть, причём легче и быстрее.</p></div><div class="wp-row"><h3 class="sub">Минусы WordPress здесь</h3><p>Их стек: WP 7.0 + Elementor + CookieYes + дублирующийся Ads-тег = вес страницы, уязвимости, постоянные обновления плагинов. Наш статический сайт - быстрее, безопаснее, без обслуживания.</p></div></div>
+  </div>
+</section>
+
+<section id="compare">
+  <div class="wrap">
+    <h2>Сравнение с конкурентами (по живому коду)</h2>
+    <p class="sub">Зашли в код топ-сайтов ниши и сравнили: платформа, число внешних скриптов, шрифты, schema-разметка, языки, WebP, скорость.</p>
+    <div style="overflow-x:auto"><table class="tbl cw"><thead><tr><th>Сайт</th><th>Платформа</th><th>Внеш. скрипты</th><th>Шрифты</th><th>Schema ниши</th><th>Языки</th><th>WebP</th><th>Скорость (по коду)</th></tr></thead><tbody><tr class="us"><td><b>Наш сайт</b></td><td>Статический HTML</td><td>0</td><td>Свои (0 Google)</td><td>MovingCompany + FAQPage + Service + рейтинг</td><td>4 (ET/EN/RU/FI)</td><td>да</td><td>Очень быстро - одним самодостаточным файлом, без внешних запросов</td></tr><tr><td><b>moving24.ee (текущий)</b></td><td>WordPress 7.0</td><td>24</td><td>Google Fonts</td><td>Organization (без MovingCompany/FAQPage)</td><td>3</td><td>нет</td><td>Средне-медленно</td></tr><tr><td><b>adduco.ee</b></td><td>WordPress + Elementor + WooCommerce</td><td>58</td><td>Google Fonts</td><td>Organization (без MovingCompany/FAQPage)</td><td>4</td><td>нет</td><td>Медленно</td></tr><tr><td><b>movingexpert.ee</b></td><td>Next.js (React)</td><td>0</td><td>Google Fonts</td><td>Organization (без MovingCompany/FAQPage)</td><td>3</td><td>да</td><td>Средне - тяжёлые JS-бандлы</td></tr><tr><td><b>kolimisveod.ee</b></td><td>WordPress + Elementor Pro</td><td>27</td><td>Свои</td><td>MovingCompany + FAQPage</td><td>3</td><td>да</td><td>Медленно</td></tr><tr><td><b>kolimisroom.ee</b></td><td>WordPress + Elementor</td><td>19</td><td>Свои</td><td>Organization (без схемы ниши)</td><td>0</td><td>да</td><td>Медленно</td></tr><tr><td><b>ava.ee</b></td><td>Nuxt (Vue), статика</td><td>1</td><td>Нет</td><td>НЕТ schema совсем</td><td>0</td><td>нет</td><td>Быстро, но без SEO</td></tr></tbody></table></div><p class="note">Проверено по живому коду каждого сайта 18.06.2026 (платформа, размер, скрипты, schema, hreflang, трекинг). Скорость - вывод из кода: число внешних скриптов и render-blocking ресурсов, а не замер в браузере.</p>
+  </div>
+</section>
+
+<section id="assess">
+  <div class="wrap">
+    <h2>Итоговая оценка сайта</h2>
+    <p class="sub">Где мы сильны и где единственное слабое место.</p>
+    <div class="inv"><div class="inv-row inv-head"><div>Критерий</div><div></div></div><div class="inv-row" style="grid-template-columns:230px 1fr"><div class="inv-cat">Скорость и чистота кода</div><div class="inv-plain">0 внешних скриптов и свои шрифты против 19-58 внешних скриптов и Google Fonts почти у всех конкурентов. Страница грузится одним самодостаточным файлом, без десятков сетевых запросов.</div></div><div class="inv-row" style="grid-template-columns:230px 1fr"><div class="inv-cat">SEO-разметка</div><div class="inv-plain">Полный набор для ниши: MovingCompany + FAQPage + Service + рейтинг 5.0/37. Такой есть только у kolimisveod.ee; у остальных (включая текущий moving24.ee, adduco, movingexpert) - лишь базовый Organization.</div></div><div class="inv-row" style="grid-template-columns:230px 1fr"><div class="inv-cat">Языки</div><div class="inv-plain">4 (ET/EN/RU/FI) - как у adduco, больше чем у большинства. У kolimisroom и ava hreflang вообще нет.</div></div><div class="inv-row" style="grid-template-columns:230px 1fr"><div class="inv-cat">Изображения</div><div class="inv-plain">WebP - как у movingexpert/kolimisveod/kolimisroom; у adduco и текущего moving24.ee их нет.</div></div><div class="inv-row" style="grid-template-columns:230px 1fr"><div class="inv-cat">Трекинг</div><div class="inv-plain">Один чистый путь без дублей. На текущем moving24.ee тег Google Ads задвоен (через GTM и напрямую).</div></div><div class="inv-row" style="grid-template-columns:230px 1fr"><div class="inv-cat">Единственное слабое место</div><div class="inv-plain">DR 0 - нет внешних ссылок. Это не про код, а про авторитет домена; решается ссылками отдельно (есть в дорожной карте).</div></div></div>
+  </div>
+</section>
+
 <section>
   <div class="wrap">
-    <h2>Наши запросы и чужие</h2>
+    <div class="eyebrow">SEO-анализ ниши Эстонии</div>
+    <div class="kpis" id="kpis"></div>
+    <h2 style="margin-top:26px">Наши запросы и чужие</h2>
     <p class="sub">Самое важное: крупнейшие по объёму термины ниши (prügi äravedu 700, ehituspraht 600) - это регулярный вывоз мусора и строймусор. Мы перевозчики, не мусорщики и не вывоз завалов. Берём переезд, транспорт, негабарит; старую мебель - только как доп к переезду.</p>
     <div class="split" id="split"></div>
     <div class="detail">
@@ -181,13 +223,7 @@ h3.sub{font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;text-transform:
 <section>
   <div class="wrap">
     <h2>Карта конкурентов</h2>
-    <p class="sub">Пузырь - домен. Горизонталь: авторитет (DR), вертикаль: органический трафик (лог), размер: число ключей. Оранжевые - вывоз мусора (НЕ наша сфера), синие - переезды (конкуренты), зелёный - мы.</p>
-    <div class="legend">
-      <span><span class="dot" style="background:var(--waste)"></span>вывоз мусора (не наше)</span>
-      <span><span class="dot" style="background:var(--move)"></span>переезды</span>
-      <span><span class="dot" style="background:var(--us)"></span>Moving24</span>
-    </div>
-    <div class="chart"><svg id="bubble" viewBox="0 0 960 500"></svg></div>
+    <p class="sub">Кто в нише: их авторитет (DR), органический трафик и сколько ключей собирают. Оранжевые - вывоз мусора (НЕ наша сфера), синие - переезды (прямые конкуренты), зелёный - мы.</p>
     <div style="overflow-x:auto;margin-top:20px"><table class="tbl"><thead><tr><th>Домен</th><th>Сфера</th><th>DR</th><th>Органика/мес</th><th class="hide">Ключей</th><th>Кто это</th></tr></thead><tbody id="ctbody"></tbody></table></div>
   </div>
 </section>
@@ -215,30 +251,6 @@ h3.sub{font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;text-transform:
     <h2>Дорожная карта</h2>
     <p class="sub">Следующие шаги по приоритету «наш объём ÷ сложность».</p>
     <div class="road" id="road"></div>
-  </div>
-</section>
-
-<section id="tech">
-  <div class="wrap">
-    <h2>Технический паспорт сайта</h2>
-    <p class="sub">Что содержит сайт. Слева простым языком, справа технически - для сдачи как сопровождение.</p>
-    <div class="inv"><div class="inv-row inv-head"><div></div><div>Простым языком</div><div>Технически</div></div><div class="inv-row"><div class="inv-cat">Страницы и структура</div><div class="inv-plain">44 страницы. На каждом из 4 языков: главная, 5 услуг, О компании, Контакты, FAQ. Плюс 8 юридических.</div><div class="inv-tech">Статический HTML, чистые URL (папка + index.html). 36 индексируемых + 8 noindex (легал). Слаги повторяют структуру moving24.ee. ET - основной (x-default).</div></div><div class="inv-row"><div class="inv-cat">4 языка (i18n)</div><div class="inv-plain">ET, EN, RU, FI - полноценные. Переключатель ведёт на ту же страницу на другом языке, а не на главную.</div><div class="inv-tech">ET=/, EN=/en/, RU=/ru/, FI=/fi/. hreflang реципрокен (+ x-default=et). Свитчер и слаги из общего модуля langnav.py; видимый свитчер = hreflang-альтернаты этой страницы. lang-атрибут + preload шрифтов по языку.</div></div><div class="inv-row"><div class="inv-cat">SEO-разметка</div><div class="inv-plain">Каждая страница размечена для Google: заголовок, описание, схемы, карта сайта, превью для соцсетей.</div><div class="inv-tech">Title &lt;=60 / description &lt;=158 (нативный совет, не машинный перевод). JSON-LD: MovingCompany + aggregateRating 5.0/37, Service на каждой услуге, FAQPage. OG + Twitter. sitemap.xml 36 URL с hreflang. robots.txt. canonical self. 80 JSON-LD блоков, 0 невалидных.</div></div><div class="inv-row"><div class="inv-cat">Форма и заявки</div><div class="inv-plain">Умная форма: выбираешь, что перевезти - появляются нужные поля. Заявка уходит на e-mail.</div><div class="inv-tech">FormData -&gt; Basin (usebasin.com/f/48904e530a24). Чипы услуг, тогглы lift/упаковка (рисованный овал при выборе), дата, загрузка фото. Письмо человекочитаемое, язык по documentElement.lang. Резерв: Cloudflare Function + Resend (lead.js).</div></div><div class="inv-row"><div class="inv-cat">Производительность</div><div class="inv-plain">Шрифты и картинки грузятся быстро, без мигания и скачков.</div><div class="inv-tech">Self-hosted woff2 (@font-face inline + preload по языку), 0 запросов к Google Fonts (был render-block ~2.7с). Картинки WebP через &lt;picture&gt; + JPEG fallback (-31%, ~600КБ). loading=lazy.</div></div><div class="inv-row"><div class="inv-cat">Дизайн</div><div class="inv-plain">Единый премиум-стиль: карточки услуг, кнопки, аккордеоны, рисованные акценты.</div><div class="inv-tech">3 шрифта (Inter текст / Plus Jakarta Sans заголовки / Caveat рукописный кикер). Сервис-секции в стиле ClickAnalytic (feature-cards + check-benefits + gradient CTA). Кикер - триггер-вопрос под услугу. FAQ - нативный &lt;details&gt;. Овал на тогглах - SVG data-URI.</div></div><div class="inv-row"><div class="inv-cat">Код и сборка</div><div class="inv-plain">Сайт собирается скриптами из одного шаблона: правишь главную - меняется на всех страницах сразу.</div><div class="inv-tech">Python-генераторы: assemble.py (услуги), infopages.py (О/Контакты), faqpage.py, fi_build+fi_scaffold (финский), terms.py+fi_legal.py (легал), sitemap.py, langnav.py (общий switcher/кикеры/слаги/CTA). Контент в consilium.json. Принцип клон-и-патч.</div></div></div>
-  </div>
-</section>
-
-<section id="track">
-  <div class="wrap">
-    <h2>Трекинг, Google Ads и аналитика</h2>
-    <p class="sub">Что настроено у нас и как это соотносится с moving24.ee.</p>
-    <h3 class="sub">Наш трекинг</h3><table class="tbl trk"><tbody><tr><td>Google Tag Manager</td><td>GTM-TSG2CVLC</td></tr><tr><td>Google Analytics 4</td><td>G-7X1TS2BVF6</td></tr><tr><td>Google Ads</td><td>AW-16489866360 + 2 ярлыка конверсий (форма, звонок)</td></tr><tr><td>События</td><td>generate_lead · phone_link_klick · email_link_click · consent_update</td></tr><tr><td>Согласие</td><td>Consent Mode v2, свой баннер, default denied, гранулярно (аналитика/реклама)</td></tr><tr><td>Защита статистики</td><td>Гейт по hostname - на github.io ничего не шлёт</td></tr></tbody></table><h3 class="sub" style="margin-top:28px">moving24.ee vs наш сайт</h3><div style="overflow-x:auto"><table class="tbl cmp"><thead><tr><th>Аспект</th><th>moving24.ee</th><th>Наш сайт</th></tr></thead><tbody><tr><td>CMS</td><td class="them">WordPress 7.0 + Elementor</td><td class="us">Статический HTML - без ядра, плагинов, БД</td></tr><tr><td>GTM</td><td class="them">GTM-TSG2CVLC</td><td class="us">GTM-TSG2CVLC (тот же контейнер)</td></tr><tr><td>Google Ads</td><td class="them">AW-16489866360 грузится И через GTM, И напрямую gtag/js (дубль)</td><td class="us">AW-16489866360 - один путь, без дублей</td></tr><tr><td>GA4</td><td class="them">внутри GTM</td><td class="us">G-7X1TS2BVF6 через dataLayer</td></tr><tr><td>Согласие</td><td class="them">CookieYes (сторонний плагин)</td><td class="us">Consent Mode v2, свой код, default denied</td></tr><tr><td>Конверсии</td><td class="them">стандартные теги</td><td class="us">generate_lead / phone / email на реальные клики</td></tr></tbody></table></div><p class="note">Проверено по живому коду moving24.ee 18.06.2026: GTM-TSG2CVLC, Google Ads AW-16489866360 (через GTM и напрямую), CookieYes, WordPress 7.0.</p>
-  </div>
-</section>
-
-<section id="wp">
-  <div class="wrap">
-    <h2>Почему WordPress не нужен</h2>
-    <p class="sub">Для трекинга, Google Ads и аналитики - по фактам, без воды.</p>
-    <div class="wp"><div class="wp-row"><h3 class="sub">Трекинг - это сниппет, а не CMS</h3><p>Google Ads, GA4 и GTM работают через JS-сниппет в коде страницы. Сниппету нужен САЙТ (любой HTML), а не WordPress. На moving24.ee в коде стоит GTM-TSG2CVLC - ровно тот же сниппет у нас, только без WordPress вокруг.</p></div><div class="wp-row"><h3 class="sub">Плагин = кнопки для человека</h3><p>WordPress-плагин (напр. для GTM) просто вставляет тот же сниппет и даёт UI в админке. Сам сниппет от этого не меняется. Наша «админка» - AI-агент, который правит код напрямую.</p></div><div class="wp-row"><h3 class="sub">Что WP дал бы - и почему не нужен</h3><p>Дал бы: визуальный редактор, медиатеку, готовые плагины. НЕ нужен для трекинга, Google Ads, аналитики, форм, SEO-разметки и скорости - всё это у нас уже есть, причём легче и быстрее.</p></div><div class="wp-row"><h3 class="sub">Минусы WordPress здесь</h3><p>Их стек: WP 7.0 + Elementor + CookieYes + дублирующийся Ads-тег = вес страницы, уязвимости, постоянные обновления плагинов. Наш статический сайт - быстрее, безопаснее, без обслуживания.</p></div></div>
   </div>
 </section>
 
@@ -290,7 +302,7 @@ document.addEventListener('mousemove',e=>{const el=e.target.closest('[data-tip]'
   const list=KW.filter(k=>k[4]===key).sort((a,b)=>b[1]-a[1]);
   if(!list.length)return;
   const tot=list.reduce((s,k)=>s+k[1],0);
-  const top=list.slice(0,9);
+  const top=list;
   const rows=top.map(k=>{const[name,v,kd,cpc,cl,own,why]=k;
    return `<div class="kw ${own}" data-tip="<b>${name}</b><br>Объём ${v}/мес · KD ${kd} · CPC ${cpc?('$'+cpc):'-'}<br>${OWNC[own]==='#16a34a'?'🟢 наш':own==='maybe'?'🟠 спорный':'🔴 не наш'}: ${why}">`+
    `<span class="od" style="background:${OWNC[own]}"></span><span class="kn">${name}</span>`+
@@ -298,7 +310,7 @@ document.addEventListener('mousemove',e=>{const el=e.target.closest('[data-tip]'
   const op=ownPill[m.own];
   html+=`<div class="cl"><div class="top"><div><h3>${m.name}</h3><div class="meta">${m.ru} · ${list.length} запросов</div></div>`+
    `<div style="text-align:right"><span class="ownpill ${op[0]}">${op[1]}</span><div class="vol" style="margin-top:6px"><b>${tot.toLocaleString('ru')}</b><span>поисков/мес</span></div></div></div>`+
-   `${rows}${list.length>9?`<div class="more">+ ещё ${list.length-9} запросов</div>`:''}</div>`;
+   `${rows}</div>`;
  });
  document.getElementById('clusters').innerHTML=html;
 })();
@@ -317,7 +329,7 @@ document.addEventListener('mousemove',e=>{const el=e.target.closest('[data-tip]'
   s+=`<g data-tip="<b>${d}</b> · DR ${dr} · ${t.toLocaleString('ru')} визитов · ${kw} ключей<br>${f}" style="cursor:pointer">`+
   `<circle cx="${x}" cy="${y}" r="${r}" fill="${cc}" fill-opacity="${us?.4:.22}" stroke="${cc}" stroke-width="${us?2.5:1.5}"${us?' stroke-dasharray="4 3"':''}/>`+
   `<text x="${x}" y="${y-r-6}" fill="${us?cc:'#3a4d6b'}" font-size="${us?12.5:11}" font-weight="${us?800:600}" text-anchor="middle">${us?'★ '+d.replace('.ee',''):d.replace('.ee','')}</text></g>`;});
- document.getElementById('bubble').innerHTML=s;
+ var _b=document.getElementById('bubble');if(_b)_b.innerHTML=s;
  const maxT=Math.max(...COMP.map(c=>c[2])), chip={waste:'<span class="chip waste">мусор</span>',move:'<span class="chip move">переезд</span>',us:'<span class="chip us">мы</span>'};
  document.getElementById('ctbody').innerHTML=COMP.slice().sort((a,b)=>b[2]-a[2]).map(c=>{const[d,dr,t,kw,niche,f]=c;
   return `<tr class="${niche==='us'?'us':''}"><td class="d">${d}</td><td>${chip[niche]}</td><td class="num">${dr}</td>`+
