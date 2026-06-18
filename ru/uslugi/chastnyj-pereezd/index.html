@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ru"><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -15,8 +15,8 @@
 <meta property="og:url" content="https://dennymansa.github.io/moving24-landing/ru/uslugi/chastnyj-pereezd/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Moving24">
-<meta property="og:title" content="Moving24 · Грузоперевозки в Таллинне. Один звонок. Всё переедет.">
-<meta property="og:description" content="Переезды в Таллинне и Харьюмаа: квартирные, офисные, домашние. Перевозка тяжёлых предметов, упаковка, вывоз мусора. 24/7.">
+<meta property="og:title" content="Домашний переезд в Таллине и по Эстонии · Moving24">
+<meta property="og:description" content="Переезд квартиры или дома в Таллине и по всей Эстонии. Аккуратные грузчики, упаковка, сборка мебели, свои фургоны с лифтом. Персональный расчёт без скрытых доплат.">
 <meta property="og:image" content="../img/m24-logo.png">
 <meta property="og:locale" content="ru_RU">
 <meta name="twitter:card" content="summary_large_image">
@@ -581,7 +581,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .lang-phones{display:flex;flex-direction:column;gap:8px;margin-top:14px;border-top:1px solid var(--line-hero);padding-top:14px}
 .lang-phones a{display:flex;align-items:center;gap:8px;font-size:16px;font-weight:700;color:var(--hero-text);border:0;padding:2px 0}
 .lang-phones .lp-fl{font-size:15px;font-weight:500;min-width:54px}
-.foot-phones a.foot-et{display:inline-block;margin-top:7px;font-size:13.5px;opacity:.85}
+.foot-phones{display:flex;flex-wrap:wrap;gap:6px 20px;align-items:center;margin-top:4px}
+.foot-phones a{white-space:nowrap}
+.foot-wordmark{font-size:clamp(58px,15vw,168px);font-weight:800;letter-spacing:-.045em;line-height:.82;text-align:center;margin:36px 0 -6px;color:rgba(255,255,255,.06);user-select:none;pointer-events:none}
+.foot-wordmark span{color:rgba(120,170,255,.16)}
 
 .pak-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:10px}
 .pak-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 18px;text-align:center;box-shadow:0 4px 18px rgba(26,60,120,.06)}
@@ -590,12 +593,79 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 @media(max-width:680px){.pak-grid{grid-template-columns:1fr}}
 
 </style>
-</head><body><main id="main">
-<section class="hero"><div class="hero-photo-bg"></div><div class="wrap" style="padding-top:calc(72px + 36px)">
-<div class="nav-wrap" style="position:static;margin-bottom:18px"><nav class="nav-pill"><a class="nav-logo" href="/moving24-landing/ru/"><img src="/moving24-landing/img/m24-logo.png" alt="Moving24"><span>Moving<b>24</b></span></a><div class="nav-links"><div><button>Услуги ▾</button><div class="dd"><a href="/moving24-landing/ru/uslugi/chastnyj-pereezd/">Частный переезд</a><a href="/moving24-landing/ru/uslugi/biznes-pereezd/">Бизнес переезд</a><a href="/moving24-landing/ru/uslugi/vyvoz-musora/">Вывоз мусора</a><a href="/moving24-landing/ru/uslugi/transport/">Транспорт</a></div></div><a href="/moving24-landing/ru/#hinnad">Цены</a></div><div class="nav-cta"><a class="btn btn-accent" href="#leadForm">Услуги →</a></div></nav></div>
-<div class="hero-grid"><div><a href="/moving24-landing/ru/" style="color:#9cc6f5;font-size:13px;text-decoration:none">← На главную</a><h1 style="margin-top:12px">Домашний переезд в Таллине и по всей Эстонии</h1><p class="lead" style="color:#cfe0f5">Переезжаем квартиры и дома аккуратно, спокойно и под ключ. Один звонок — и мы берём на себя сборку, упаковку, погрузку и перевозку.</p>
-<div class="benefits-grid" style="display:grid;gap:10px;margin-top:18px"><div class="hon good" style="margin:0"><h3>Бережно к вашим вещам</h3><p>Закрепляем и упаковываем мебель и технику так, чтобы ничего не поцарапалось и не разбилось в пути.</p></div><div class="hon good" style="margin:0"><h3>Команда под объём</h3><p>Высылаем от 1 до 8 опытных грузчиков — ровно столько, сколько нужно для вашего переезда.</p></div><div class="hon good" style="margin:0"><h3>Упаковка по желанию</h3><p>Можем упаковать всё сами по стандартам безопасности или привезти материалы, если хотите собраться самостоятельно.</p></div><div class="hon good" style="margin:0"><h3>Сборка и разборка мебели</h3><p>Разбираем шкафы и кровати перед погрузкой и собираем их обратно на новом месте.</p></div><div class="hon good" style="margin:0"><h3>Свои фургоны с лифтом</h3><p>Грузовые фургоны с гидробортом — тяжёлую мебель и технику грузим без надрыва и риска.</p></div><div class="hon good" style="margin:0"><h3>Честная цена заранее</h3><p>Считаем стоимость персонально под ваш переезд и называем её до начала — без скрытых доплат.</p></div></div></div>
-<div class="form-slot">
+</head>
+<body>
+<!-- Google Tag Manager (noscript). ВАЖНО: этот ID правится ВРУЧНУЮ (JS-конфиг window.M24 сюда не дотянется) — при вставке реального GTM замени GTM-XXXXXXX и здесь. -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSG2CVLC" height="0" width="0" style="display:none;visibility:hidden" title="gtm"></iframe></noscript>
+
+<a href="#main" class="skip-link">Перейти к содержимому</a>
+
+<!-- PILL NAV -->
+<div class="nav-wrap">
+  <nav class="nav-pill">
+    <a class="nav-logo" href="/moving24-landing/ru/" aria-label="Moving24 — на главную">
+      <img src="/moving24-landing/img/m24-logo.png" alt="Moving24">
+      <span>Moving<b>24</b></span>
+    </a>
+    <div class="nav-links">
+      <div>
+        <button>Услуги ▾</button>
+        <div class="dd"><a href="/moving24-landing/ru/uslugi/chastnyj-pereezd/">Частный переезд</a><a href="/moving24-landing/ru/uslugi/biznes-pereezd/">Бизнес переезд</a><a href="/moving24-landing/ru/uslugi/vyvoz-musora/">Вывоз мусора</a><a href="/moving24-landing/ru/uslugi/transport/">Транспорт</a></div>
+      </div>
+      <a href="#hinnad">Цены</a>
+      <a href="#meist">О нас</a>
+      <a href="#kkk">FAQ</a>
+    </div>
+    <div class="nav-cta">
+      <div class="lang-switch" role="navigation" aria-label="Язык / Keel / Language">
+        <a href="/moving24-landing/ru/" class="lang-link is-active" hreflang="ru" lang="ru" aria-current="page">RU</a>
+        <a href="/moving24-landing/" class="lang-link" hreflang="et" lang="et">ET</a>
+        <a href="/moving24-landing/en/" class="lang-link" hreflang="en" lang="en">EN</a>
+      </div>
+      <a class="nav-tel" href="tel:+37256870101">+372 5687 0101</a>
+      <a class="btn btn-accent" href="#form">Получить расчёт →</a>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="navMobile" onclick="var n=document.querySelector('.nav-mobile');var o=n.classList.toggle('on');this.setAttribute('aria-expanded',o);this.setAttribute('aria-label',o?'Закрыть меню':'Открыть меню');">☰</button>
+    </div>
+  </nav>
+</div>
+<div class="nav-mobile" id="navMobile">
+  <a href="#teenused" onclick="closeMob()">Услуги</a>
+  <a href="#hinnad" onclick="closeMob()">Цены</a>
+  <a href="#meist" onclick="closeMob()">О нас</a>
+  <a href="#kkk" onclick="closeMob()">FAQ</a>
+  <a href="#form" onclick="closeMob()">Получить расчёт →</a>
+  <div class="lang-phones">
+    <a href="tel:+37256870101"><span class="lp-fl">🇷🇺 🇬🇧</span> +372 5687 0101</a>
+    <a href="tel:+3725540806"><span class="lp-fl">🇪🇪</span> +372 5540 806</a>
+  </div>
+  <div class="nav-mobile-lang">
+    <a href="/moving24-landing/ru/" lang="ru" hreflang="ru" aria-current="page">RU</a>
+    <a href="/moving24-landing/" lang="et" hreflang="et">ET</a>
+    <a href="/moving24-landing/en/" lang="en" hreflang="en">EN</a>
+  </div>
+</div>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-photo-bg"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-kicker hand">Частный переезд</div>
+        <a class="hero-trust" href="https://www.google.com/maps/search/Moving24+Kolimisteenused+Tallinn" target="_blank" rel="noopener" style="text-decoration:none">
+          <span class="ht-stars">★★★★★</span>
+          <span class="ht-score">5.0</span>
+          <span class="ht-sep">·</span>
+          <span class="ht-label">37 отзывов на Google</span>
+        </a>
+        <h1>Домашний переезд в Таллине и по всей Эстонии</h1>
+        <div class="hero-btns">
+          <a class="btn btn-accent" href="#form">Получить расчёт →</a>
+          <a class="btn btn-ghost" href="tel:+37256870101">Позвонить +372 5687 0101</a>
+        </div>
+      </div>
+      <div class="form-slot">
       <div class="form-card" id="form">
         <span class="form-tag">Оформить заявку</span>
         <h2>Что везём? <span class="pick-hint">(выберите)</span></h2>
@@ -623,19 +693,500 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
           <div class="ff" data-svc="private,business,garbage,transport"><textarea name="msg" placeholder="Дополнительная информация, список вещей"></textarea></div>
           <label class="photo-upload ff" data-svc="private,business,garbage" id="photoLabel"><input type="file" name="photos" accept="image/*" multiple id="photoInput" aria-label="Прикрепить фото (необязательно)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);border:0"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span id="photoLabel-txt" aria-live="polite">Прикрепить фото (необязательно)</span></label>
           <button class="btn btn-accent" type="submit" style="width:100%;padding:13px;font-size:15px">Получить расчёт →</button>
-          <p class="form-consent">Отправляя форму, вы принимаете <a href="privaatsus/">Политику конфиденциальности</a></p>
+          <p class="form-consent">Отправляя форму, вы принимаете <a href="/moving24-landing/ru/privaatsus/">Политику конфиденциальности</a></p>
           <div class="form-ok" id="formOk" role="status"><b>Спасибо! Заявка принята.</b><br>Свяжемся с вами в ближайшее время.</div>
         </form>
       </div>
-      </div></div></div></section>
-<section class="section"><div class="wrap"><h2 class="big">Как проходит переезд</h2><p class="lead">Сначала мы уточняем детали: что и откуда переезжает, есть ли крупная мебель, техника, лестницы или лифт. На основе этого подбираем фургон, команду и называем точную цену заранее.</p><p class="lead"></p><p class="lead">В день переезда команда разбирает мебель, аккуратно упаковывает и закрепляет вещи в фургоне, перевозит их и собирает мебель на новом месте. Вы получаете квартиру или дом, где всё на своих местах.</p></div></section><section class="section section--alt"><div class="wrap"><h2 class="big">Таллин и вся Эстония, 24/7</h2><p class="lead">Работаем в Таллине и по всей Эстонии — от переезда внутри района до дальних маршрутов за пределами Харьюмаа. Доступны круглосуточно, в том числе в выходные, и подстраиваемся под удобное вам время.</p><p class="lead"></p><p class="lead">Нам доверяют: 5,0★ и 37 отзывов в Google. Каждый член команды сделал сотни переездов, поэтому мы спокойно решаем и стандартные, и сложные задачи.</p></div></section>
-<section class="section section--alt"><div class="wrap"><h2 class="big">Частые вопросы</h2><div class="faq"><div class="faq-q">Сколько стоит домашний переезд?</div><div class="faq-a"><p>Каждый переезд индивидуален, поэтому мы считаем стоимость персонально под ваш объём, маршрут и условия и называем её заранее. Без скрытых доплат — в цену входят транспорт, грузчики и страховка.</p></div><div class="faq-q">Вы упакуете вещи и соберёте мебель за меня?</div><div class="faq-a"><p>Да, по желанию мы упакуем всё по стандартам безопасности, разберём крупную мебель перед погрузкой и соберём её на новом месте. Если хотите упаковаться сами, привезём материалы.</p></div><div class="faq-q">Как быстро вы можете приехать?</div><div class="faq-a"><p>Мы работаем круглосуточно, 7 дней в неделю, и стараемся подстроиться под ваше время. Позвоните по +372 5687 0101 — подскажем ближайшие свободные слоты.</p></div><div class="faq-q">Можно ли заодно вывезти старую мебель и мусор?</div><div class="faq-a"><p>Да, организуем вывоз и утилизацию сразу после переезда, чтобы вы въехали в чистую квартиру. Это отдельная услуга — рассчитаем её вместе с переездом.</p></div></div></div></section>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><b>24/7</b><span>Работаем каждый день, даже ночью</span></div>
+      <div class="hstat"><b>0</b><span>Скрытых доплат. Цена есть цена.</span></div>
+      <div class="hstat"><b>5000+</b><span>Успешных переездов по Эстонии</span></div>
+    </div>
+  </div>
+</section>
+<section class="section"><div class="wrap" style="max-width:780px"><p class="lead">Переезжаем квартиры и дома аккуратно, спокойно и под ключ. Один звонок — и мы берём на себя сборку, упаковку, погрузку и перевозку.</p></div></section><section class="section"><div class="wrap"><h2 class="big">Как проходит переезд</h2><p class="lead">Сначала мы уточняем детали: что и откуда переезжает, есть ли крупная мебель, техника, лестницы или лифт. На основе этого подбираем фургон, команду и называем точную цену заранее.</p><p class="lead"></p><p class="lead">В день переезда команда разбирает мебель, аккуратно упаковывает и закрепляет вещи в фургоне, перевозит их и собирает мебель на новом месте. Вы получаете квартиру или дом, где всё на своих местах.</p></div></section><section class="section section--alt"><div class="wrap"><h2 class="big">Таллин и вся Эстония, 24/7</h2><p class="lead">Работаем в Таллине и по всей Эстонии — от переезда внутри района до дальних маршрутов за пределами Харьюмаа. Доступны круглосуточно, в том числе в выходные, и подстраиваемся под удобное вам время.</p><p class="lead"></p><p class="lead">Нам доверяют: 5,0★ и 37 отзывов в Google. Каждый член команды сделал сотни переездов, поэтому мы спокойно решаем и стандартные, и сложные задачи.</p></div></section><section class="section"><div class="wrap"><h2 class="big">Частые вопросы</h2><div class="faq"><div class="faq-q">Сколько стоит домашний переезд?</div><div class="faq-a"><p>Каждый переезд индивидуален, поэтому мы считаем стоимость персонально под ваш объём, маршрут и условия и называем её заранее. Без скрытых доплат — в цену входят транспорт, грузчики и страховка.</p></div><div class="faq-q">Вы упакуете вещи и соберёте мебель за меня?</div><div class="faq-a"><p>Да, по желанию мы упакуем всё по стандартам безопасности, разберём крупную мебель перед погрузкой и соберём её на новом месте. Если хотите упаковаться сами, привезём материалы.</p></div><div class="faq-q">Как быстро вы можете приехать?</div><div class="faq-a"><p>Мы работаем круглосуточно, 7 дней в неделю, и стараемся подстроиться под ваше время. Позвоните по +372 5687 0101 — подскажем ближайшие свободные слоты.</p></div><div class="faq-q">Можно ли заодно вывезти старую мебель и мусор?</div><div class="faq-a"><p>Да, организуем вывоз и утилизацию сразу после переезда, чтобы вы въехали в чистую квартиру. Это отдельная услуга — рассчитаем её вместе с переездом.</p></div></div></div></section>
+
+
+<!-- INFO STRIP -->
+<section class="info-strip">
+  <div class="wrap">
+    <div class="info-inner">
+      <div>
+        <span class="tag">Что мы делаем</span>
+        <h2 class="info-title">Грузоперевозки.<br>Быстро, аккуратно,<br>по честной цене.</h2>
+      </div>
+      <div>
+        <p>Квартирные, офисные и домашние переезды, тяжёлые предметы, упаковка, вывоз мусора. <b>Приедем, упакуем, перевезём.</b> Таллинн, Харьюмаа, вся Эстония.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS PHOTOS -->
+<section class="section" id="teenused">
+  <div class="wrap">
+    <span class="tag">Наши услуги</span>
+    <h2 class="big big--xl">Перевезём всё. Квартира, офис, кладовка или рояль.</h2>
+    <p class="lead lead--lg">Каждый переезд разный. Подбираем машину, команду и подход под ваш конкретный случай.</p>
+    <div class="steps-ph">
+      <div class="step-ph">
+        <div class="img-wrap"><img src="/moving24-landing/img/IMG_0061.jpg?v=4" alt="Квартирный переезд Moving24" loading="lazy"></div>
+        <div class="sp-top-label">Частный переезд</div>
+        <div class="sp-body">
+          <h3>Квартира и дом</h3>
+          <p>Однушка, четырёхкомнатная или загородный дом. Упакуем, вынесем, перевезём и расставим на новом месте. Всё за один день.</p>
+        </div>
+      </div>
+      <div class="step-ph">
+        <div class="img-wrap"><img src="/moving24-landing/img/g-office3.jpg" alt="Офисный переезд в Таллинне" loading="lazy"></div>
+        <div class="sp-top-label">Бизнес и офис</div>
+        <div class="sp-body">
+          <h3>Офис, склад, магазин</h3>
+          <p>Переезжаем вечером или в выходные, чтобы работа не останавливалась. IT-оборудование, архивы и мебель. Всё пронумеровано и упаковано.</p>
+        </div>
+      </div>
+      <div class="step-ph">
+        <div class="img-wrap"><img src="/moving24-landing/img/g-heavy1.jpg" alt="Перевозка тяжёлых предметов" loading="lazy"></div>
+        <div class="sp-top-label">Тяжёлые предметы</div>
+        <div class="sp-body">
+          <h3>Пианино, сейфы, оборудование</h3>
+          <p>Перевозим то, от чего другие отказываются. Специальное оборудование, опытная команда. Вещи и стены остаются целыми.</p>
+        </div>
+      </div>
+      <div class="step-ph">
+        <div class="img-wrap"><img src="/moving24-landing/img/g-pack2.jpg" alt="Вывоз и утилизация мусора" loading="lazy"></div>
+        <div class="sp-top-label">Вывоз и утиль</div>
+        <div class="sp-body">
+          <h3>Мусор, мебель, хлам</h3>
+          <p>Уберём всё, что уже не нужно. Официальная утилизация, без незаконных свалок. Стоимость зависит от объёма. Назовём сразу, без скрытых доплат.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MINI CTA -->
+<div class="mini-cta">
+  <div class="wrap">
+    <span>Не знаете, какая услуга подходит?</span>
+    <div class="mini-cta-btns">
+      <a class="btn btn-accent" href="#form">Получить расчёт →</a>
+      <a class="btn btn-ghost" href="tel:+37256870101">Позвонить, разберёмся за 5 минут</a>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<section class="section">
+  <div class="wrap">
+    <span class="tag">Отзывы в Google</span>
+    <h2 class="big" style="margin-bottom:32px">Нам доверяют в Таллинне и по всей Эстонии</h2>
+    <div class="gbp-wrap">
+
+      <!-- LEFT: Google Business Profile panel -->
+      <div class="gbp-panel">
+        <!-- Photo collage -->
+        <div class="gbp-photos">
+          <div class="gbp-photo-main" style="background:url('/moving24-landing/imagebg-1920.jpg') center/cover"></div>
+          <div class="gbp-photo-stack">
+            <div style="background:url('/moving24-landing/img/IMG_0061.jpg?v=4') center/cover;flex:1;border-radius:0 12px 0 0"></div>
+            <div style="background:url('/moving24-landing/img/g-office3.jpg') center/cover;flex:1;border-radius:0 0 12px 0"></div>
+          </div>
+        </div>
+        <!-- Info body -->
+        <div class="gbp-body">
+          <div class="gbp-title-row">
+            <h3 class="gbp-name">Moving24 - Kolimisteenused</h3>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" flex-shrink="0"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          </div>
+          <div class="gbp-rating-row">
+            <span class="gbp-score">5.0</span>
+            <span class="gbp-stars">★★★★★</span>
+            <a class="gbp-cnt" href="https://www.google.com/maps/search/Moving24+Kolimisteenused+Tallinn" target="_blank" rel="noopener">37 Google отзывов</a>
+          </div>
+          <p class="gbp-type">Kolimis- ja veoteenused &middot; Таллинн</p>
+          <!-- Action buttons -->
+          <div class="gbp-actions">
+            <a class="gbp-btn" href="https://moving24.ee" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Сайт
+            </a>
+            <a class="gbp-btn" href="tel:+37256870101">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5.08 2 2 0 0 1 3.59 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.6a16 16 0 0 0 6 6l.92-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Позвонить
+            </a>
+          </div>
+          <!-- Service options -->
+          <div class="gbp-opts">
+            <span><span class="gbp-check">&#10003;</span> Квартирный</span>
+            <span><span class="gbp-check">&#10003;</span> Офисный</span>
+            <span><span class="gbp-check">&#10003;</span> 24/7</span>
+          </div>
+          <hr class="gbp-hr">
+          <!-- Details -->
+          <div class="gbp-details">
+            <div class="gbp-row">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#70757a" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Таллинн, Эстония</span>
+            </div>
+            <div class="gbp-row">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#70757a" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span><b style="color:#188038">Открыто</b> &middot; Работаем 24/7</span>
+            </div>
+            <div class="gbp-row">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#70757a" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5.08 2 2 0 0 1 3.59 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.6a16 16 0 0 0 6 6l.92-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+37256870101" style="color:#1a73e8;text-decoration:none">+372 5687 0101</a>
+            </div>
+            <div class="gbp-row">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#70757a" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <a href="https://moving24.ee" target="_blank" rel="noopener" style="color:#1a73e8;text-decoration:none">moving24.ee</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Reviews -->
+      <div class="gbp-reviews">
+        <div class="gbp-rev-hd">
+          <span class="gbp-rev-score">5.0</span>
+          <div class="gbp-rev-divider"></div>
+          <div class="gbp-rev-mid">
+            <div class="gbp-rev-stars">★★★★★</div>
+            <div class="gbp-rev-cnt">37 отзывов в Google</div>
+          </div>
+          <a class="gbp-rev-link" href="https://www.google.com/maps/search/Moving24+Kolimisteenused+Tallinn" target="_blank" rel="noopener">Все отзывы →</a>
+        </div>
+        <div class="gbp-rev-list">
+          <div class="gbp-rev-card">
+            <div class="gbp-rev-top"><div class="ava" style="background:#d44638">A</div><div><div class="gr-name">Anastassija Morozova</div><div class="gr-meta">Отзыв в Google My Business</div></div></div>
+            <div class="gbp-rev-stars-row">★★★★★ <span class="gbp-rev-date">год назад</span></div>
+            <p class="gbp-rev-txt">Команда профессионалов. Быстро и качественно выполнили работу. Все вещи были в полной сохранности. Спасибо!</p>
+            <a class="gbp-rev-more" href="https://maps.app.goo.gl/wAiAv4sh9TgQNPan6" target="_blank" rel="noopener">Смотреть в Google →</a>
+          </div>
+          <div class="gbp-rev-card">
+            <div class="gbp-rev-top"><div class="ava" style="background:#1a73e8">J</div><div><div class="gr-name">Julia B.</div><div class="gr-meta">Отзыв в Google My Business</div></div></div>
+            <div class="gbp-rev-stars-row">★★★★★ <span class="gbp-rev-date">год назад</span></div>
+            <p class="gbp-rev-txt">Всё отлично — заказали вывоз (утилизацию) дивана. Сотрудники приехали вовремя, сделали всё очень быстро. Общение по телефону тоже было приятным. Однозначно рекомендую!</p>
+            <a class="gbp-rev-more" href="https://maps.app.goo.gl/1MPMKr9X4vsBSRXg7" target="_blank" rel="noopener">Смотреть в Google →</a>
+          </div>
+          <div class="gbp-rev-card">
+            <div class="gbp-rev-top"><div class="ava" style="background:#34a853">A</div><div><div class="gr-name">Alan Bagajev</div><div class="gr-meta">Отзыв в Google My Business</div></div></div>
+            <div class="gbp-rev-stars-row">★★★★★ <span class="gbp-rev-date">год назад</span></div>
+            <p class="gbp-rev-txt">Приятно иметь дело с людьми, знающими толк в работе! Огромное спасибо за порядочность, оперативность и профессионализм. Рекомендую этих ребят!</p>
+            <a class="gbp-rev-more" href="https://maps.app.goo.gl/p7o9uVtNHyNWtyPL8" target="_blank" rel="noopener">Смотреть в Google →</a>
+          </div>
+          <div class="gbp-rev-card">
+            <div class="gbp-rev-top"><div class="ava" style="background:#f4511e">K</div><div><div class="gr-name">Kristina Laikova</div><div class="gr-meta">Отзыв в Google My Business</div></div></div>
+            <div class="gbp-rev-stars-row">★★★★★ <span class="gbp-rev-date">год назад</span></div>
+            <p class="gbp-rev-txt">Отличная фирма по перевозке вещей. Всё перевезли аккуратно, учли все нюансы. Остались работой очень довольны!</p>
+            <a class="gbp-rev-more" href="https://maps.app.goo.gl/AhqTvFuWEVvrCgVT6" target="_blank" rel="noopener">Смотреть в Google →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="partners-strip" aria-label="Клиенты и партнёры">
+  <div class="wrap">
+
+    <div class="trust-bar">
+      <!-- Left: copy + CTA -->
+      <div class="trust-copy">
+        <span class="tag">Нам доверяют</span>
+        <h2>Переезды для квартир,<br>офисов и бизнеса</h2>
+        <p>Работаем с частными клиентами, агентствами недвижимости, магазинами, офисами и девелоперами по всей Эстонии.</p>
+        <div class="trust-cta">
+          <a class="btn btn-accent" href="#form">Получить расчёт →</a>
+          <a class="btn-outline-blue" href="https://www.google.com/maps/search/Moving24+Kolimisteenused+Tallinn" target="_blank" rel="noopener">Смотреть отзывы →</a>
+        </div>
+      </div>
+
+      <!-- Right: metrics -->
+      <div class="trust-metrics">
+        <div>
+          <b>5 000+</b>
+          <span>переездов</span>
+        </div>
+        <div>
+          <b>5.0 ★</b>
+          <span>Google</span>
+          <a href="https://www.google.com/maps/search/Moving24+Kolimisteenused+Tallinn" target="_blank" rel="noopener">37 отзывов →</a>
+        </div>
+        <div>
+          <b>24/7</b>
+          <span>на связи</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo row — src указывает на локальные файлы; пока файлов нет — показывается текст -->
+    <!-- Скачай логотипы и сохрани в img/partners/ — они подхватятся автоматически -->
+    <div class="partner-logo-row" role="list" aria-label="Клиенты и партнёры Moving24">
+
+      <div class="partner-logo" role="listitem">
+        <!-- Скачать: https://logo.clearbit.com/remax.com → img/partners/remax.png -->
+        <img src="/moving24-landing/img/partners/remax.png" alt="RE/MAX" loading="lazy"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="partner-fallback">RE/MAX</span>
+      </div>
+
+      <div class="partner-logo" role="listitem">
+        <!-- Скачать: https://logo.clearbit.com/ober-haus.ee → img/partners/ober-haus.png -->
+        <img src="/moving24-landing/img/partners/ober-haus.png" alt="Ober-Haus" loading="lazy"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="partner-fallback">OBER-HAUS</span>
+      </div>
+
+      <div class="partner-logo" role="listitem">
+        <!-- Скачать: https://logo.clearbit.com/pindi.ee → img/partners/pindi.png -->
+        <img src="/moving24-landing/img/partners/pindi.png" alt="Pindi Kinnisvara" loading="lazy"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="partner-fallback">PINDI</span>
+      </div>
+
+      <div class="partner-logo" role="listitem">
+        <!-- Скачать: https://logo.clearbit.com/uusmaa.ee → img/partners/uus-maa.png -->
+        <img src="/moving24-landing/img/partners/uus-maa.png" alt="Uus Maa" loading="lazy"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="partner-fallback">UUS MAA</span>
+      </div>
+
+      <div class="partner-logo" role="listitem">
+        <!-- Скачать: https://logo.clearbit.com/ikea.com → img/partners/ikea.png -->
+        <img src="/moving24-landing/img/partners/ikea.png" alt="IKEA" loading="lazy"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="partner-fallback">IKEA</span>
+      </div>
+
+      <div class="partner-logo" role="listitem">
+        <!-- Скачать: https://logo.clearbit.com/liven.ee → img/partners/liven.png -->
+        <img src="/moving24-landing/img/partners/liven.png" alt="Liven" loading="lazy"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="partner-fallback">Liven</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section section--alt">
+  <div class="wrap">
+    <span class="tag">Как мы работаем</span>
+    <h2 class="big">Четыре шага. Вы ничего не поднимаете.</h2>
+    <p class="lead">От звонка до вещей на новом месте. Один слаженный процесс.</p>
+    <div class="steps-ph">
+      <div class="step-ph">
+        <div class="img-wrap"><img src="/moving24-landing/img/g-office2.jpg" alt="Оценка объёма переезда" loading="lazy"></div>
+        <div class="sp-top-label">01 · Шаг первый</div>
+        <div class="sp-badge">01</div>
+        <div class="sp-body">
+          <h3>Описываете переезд</h3>
+          <p>Одного предложения достаточно. Позвоните, напишите или заполните форму.</p>
+        </div>
+      </div>
+      <div class="step-ph">
+        <div class="img-wrap"><img src="/moving24-landing/img/g-pack2.jpg" alt="Упаковка вещей" loading="lazy"></div>
+        <div class="sp-top-label">02 · Шаг второй</div>
+        <div class="sp-badge">02</div>
+        <div class="sp-body">
+          <h3>Получаете расчёт</h3>
+          <p>Оцениваем объём и называем честную цену. Без скрытых доплат.</p>
+        </div>
+      </div>
+      <div class="step-ph">
+        <div class="img-wrap"><img src="/moving24-landing/img/g-pack1.jpg" alt="Погрузка и транспортировка" loading="lazy"></div>
+        <div class="sp-top-label">03 · Шаг третий</div>
+        <div class="sp-badge">03</div>
+        <div class="sp-body">
+          <h3>Приезжаем и переезжаем</h3>
+          <p>Упакуем, вынесем, довезём. Обычная квартира переезжает за один день.</p>
+        </div>
+      </div>
+      <div class="step-ph">
+        <div class="img-wrap"><img src="/moving24-landing/img/g-heavy1.jpg" alt="Расстановка вещей на новом месте" loading="lazy"></div>
+        <div class="sp-top-label">04 · Шаг четвёртый</div>
+        <div class="sp-badge">04</div>
+        <div class="sp-body">
+          <h3>Проверяем результат</h3>
+          <p>Все вещи на местах, мебель собрана, упаковка вывезена.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HONEST -->
+<section class="section section--alt">
+  <div class="wrap">
+    <span class="tag">Честно о ценах</span>
+    <h2 class="big">Что входит в цену, а за что доплачивать.</h2>
+    <p class="lead">Никто не любит сюрпризы в счёте. Каждый переезд разный: этаж, лифт, объём, парковка. Поэтому фиксированного прайса нет. Мы считаем именно ваш заказ и называем цену сразу, без скрытых доплат.</p>
+    <div class="honest">
+      <div class="hon good">
+        <h3>Всегда входит в цену</h3>
+        <ul>
+          <li>Грузчики и водитель</li>
+          <li>Фургон и топливо в пределах Таллинна</li>
+          <li>Переездные одеяла, ремни и тележки</li>
+          
+          <li>Погрузка и разгрузка</li>
+          <li>Первичная оценка и расчёт</li>
+        </ul>
+      </div>
+      <div class="hon bad">
+        <h3>Оплачивается отдельно</h3>
+        <ul>
+          <li>Упаковочные материалы (коробки, плёнка)</li>
+          <li>Полная услуга упаковки</li>
+          <li>Разборка и сборка мебели</li>
+          <li>Особо тяжёлые предметы (пианино, сейф)</li>
+          <li>Вывоз и утилизация мусора</li>
+          <li>Дальние маршруты за пределами Харьюмаа</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPMENT -->
+<section class="section" id="hinnad">
+  <div class="wrap">
+    <div class="equip">
+      <div class="equip-img">
+        <img src="/moving24-landing/img/g-office1.jpg" alt="Moving24 furgoon laaditud ja kinnitatud esemetega" loading="lazy">
+      </div>
+      <div>
+        <span class="tag">Оснащение</span>
+        <h2 class="big">Нужная машина, опытная команда, правильное оснащение.</h2>
+        <p class="lead">Перевозим на собственных грузовых машинах с лифтом, оснащённых ремнями, тележками, плёнкой, пузырчатой плёнкой и переездными одеялами. Каждый предмет крепится ремнями. <b>Вещи не скользят, не царапают друг друга и не бьются в пути.</b> Каждый член команды сделал сотни переездов.</p>
+        <ul class="spec">
+          <li><span>Машины</span><span>Грузовые машины разных размеров, все с лифтом</span></li>
+          <li><span>Защита</span><span>Ремни, тележки, пузырчатая плёнка, переездные одеяла</span></li>
+          <li><span>Команда</span><span>1-8 опытных грузчиков в зависимости от объёма</span></li>
+          <li><span>Режим</span><span>24/7, включая выходные и ночное время</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKING MATERIALS -->
+<section class="section" id="pakend">
+  <div class="wrap">
+    <span class="tag">Упаковочные материалы</span>
+    <h2 class="big">Упаковка — по фиксированным ценам.</h2>
+    <p class="lead">Нужны коробки или плёнка? Привезём вместе с бригадой.</p>
+    <div class="pak-grid">
+      <div class="pak-card"><div class="pak-name">Обычная коробка</div><div class="pak-price">3.9 €</div></div>
+      <div class="pak-card"><div class="pak-name">Коробка для одежды</div><div class="pak-price">14 €</div></div>
+      <div class="pak-card"><div class="pak-name">Пузырчатая плёнка (10 м)</div><div class="pak-price">10 €</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section class="section section--dark" id="meist" style="position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:url('/moving24-landing/imagebg-1920.jpg') center/cover no-repeat;opacity:.07;pointer-events:none"></div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <span class="tag">Каждый день</span>
+    <h2 class="big">В Таллинне каждый день больше 140 переездов.</h2>
+    <p class="lead">Для большинства это новый, иногда волнительный этап жизни. Для нас это отточенное за годы мастерство. Перевозим дома, квартиры, офисы, мебель и грузы быстро, аккуратно и по честной цене.</p>
+    <div class="nums">
+      <div class="num"><b>5000<small>+</small></b><div class="t">успешных переездов</div><p>Квартиры, дома, офисы, склады и рестораны</p></div>
+      <div class="num"><b>1000<small>+</small></b><div class="t">тонн вывезено</div><p>Официально и в соответствии с нормами</p></div>
+      <div class="num"><b>24<small>/7</small></b><div class="t">всегда на связи</div><p>Ночью, в выходные и праздники</p></div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section">
+  <div class="wrap">
+    <span class="tag">Галерея</span>
+    <h2 class="big">Переезд это наш родной язык.</h2>
+    <p class="lead">Каждый шкаф, каждое пианино, каждая коробка. Ниже часть нашей повседневной работы. Нажмите на фото, чтобы открыть полностью.</p>
+    <div class="gal" id="gal">
+      <a href="/moving24-landing/img/g-office2.jpg"><img src="/moving24-landing/img/g-office2.jpg" alt="Фургоны Moving24 в центре Таллинна" loading="lazy"></a>
+      <a href="/moving24-landing/img/g-office3.jpg"><img src="/moving24-landing/img/g-office3.jpg" alt="Офисный переезд в Таллинне" loading="lazy"></a>
+      <a href="/moving24-landing/img/g-office1.jpg"><img src="/moving24-landing/img/g-office1.jpg" alt="Загруженный грузовой фургон" loading="lazy"></a>
+      <a href="/moving24-landing/img/g-heavy1.jpg"><img src="/moving24-landing/img/g-heavy1.jpg" alt="Перенос крупных предметов" loading="lazy"></a>
+      <a href="/moving24-landing/img/g-pack1.jpg"><img src="/moving24-landing/img/g-pack1.jpg" alt="Вещи закреплены в фургоне" loading="lazy"></a>
+      <a href="/moving24-landing/img/g-pack2.jpg"><img src="/moving24-landing/img/g-pack2.jpg" alt="Загрузка вещей в фургон" loading="lazy"></a>
+      <a href="/moving24-landing/img/IMG_0061.jpg?v=4"><img src="/moving24-landing/img/IMG_0061.jpg?v=4" alt="Фургон Better Call Moving24" loading="lazy"></a>
+      <a href="/moving24-landing/img/IMG_0060.jpg?v=3"><img src="/moving24-landing/img/IMG_0060.jpg?v=3" alt="Фургоны Moving24 на улице" loading="lazy"></a>
+      <a href="/moving24-landing/img/IMG_0018.jpg?v=3"><img src="/moving24-landing/img/IMG_0018.jpg?v=3" alt="Фургоны Moving24 на фоне города" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--alt" id="kkk">
+  <div class="wrap" style="display:flex;flex-direction:column;align-items:center;text-align:center">
+    <span class="tag">Часто задаваемые вопросы</span>
+    <h2 class="big">Что спрашивают перед заказом</h2>
+    <div class="faq" style="text-align:left">
+      <div class="faq-item">
+        <button class="faq-q">Сколько стоит переезд?</button>
+        <div class="faq-a"><p>Цена зависит от объёма вещей, расстояния, этажа и дополнительных услуг. Опишите переезд в форме или по телефону, и мы пришлём точное предложение в тот же день. Оценка бесплатна и ни к чему не обязывает.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Что входит в цену?</button>
+        <div class="faq-a"><p>В цену входят транспорт и грузчики. Упаковочные материалы, полная упаковка и демонтаж мебели оплачиваются отдельно, мы всегда называем стоимость заранее.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Как быстро вы можете приехать?</button>
+        <div class="faq-a"><p>По Таллинну и Харьюмаа часто уже в тот же или на следующий день. Работаем 24/7, поэтому найдём время вечером, ночью или в выходные. Чем раньше свяжетесь, тем надёжнее получите нужную дату.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Вы сами упакуете вещи?</button>
+        <div class="faq-a"><p>Да, по желанию наши грузчики упакуют всё по стандартам безопасности. Хрупкие предметы оборачиваем пузырчатой плёнкой и укладываем в коробки с перегородками. Можете упаковать сами: рекомендуем подписать коробки по комнатам и содержимому.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Какой размер машины мне нужен?</button>
+        <div class="faq-a"><p>Не нужно это знать. Опишите, что везёте, и мы подберём подходящее транспортное средство: от небольшого фургона до большого грузовика с задней загрузкой.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Вы перевезёте пианино или сейф?</button>
+        <div class="faq-a"><p>Да. Перевозка тяжёлых предметов наша специализация: пианино, сейфы, промышленное оборудование. Используем специальные инструменты и опытную команду, чтобы вещь и лестничный пролёт остались целыми.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Вы заберёте старую мебель и мусор?</button>
+        <div class="faq-a"><p>Да, организуем вывоз и утилизацию сразу после переезда. Стоимость зависит от объёма мусора. Назовём цену сразу.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Как забронировать и можно ли перенести?</button>
+        <div class="faq-a"><p>Свяжитесь по телефону, почте или через форму. Бронирование можно изменить или отменить, предупредив нас за разумное время до даты переезда. Принимаем наличные, банковский перевод и карту.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-final">
+  <div class="wrap">
+    <h2>Не знаете, с чего начать?<br><em>Не страшно. Просто опишите, что нужно перевезти.</em></h2>
+    <p>Разберёмся и скажем, какая машина нужна, сколько грузчиков и сколько времени займёт ваш переезд. Оценка бесплатна.</p>
+    <div class="hero-btns">
+      <a class="btn btn-accent" href="#form">Запросить предложение →</a>
+      <a class="btn btn-ghost" href="tel:+37256870101">Позвонить +372 5687 0101</a>
+    </div>
+  </div>
+</section>
+
 </main>
+
+<!-- FOOTER -->
 <footer class="foot">
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a class="nav-logo" href="./" aria-label="Moving24 — на главную">
+        <a class="nav-logo" href="/moving24-landing/ru/" aria-label="Moving24 — на главную">
           <img src="/moving24-landing/img/m24-logo.png" alt="Moving24">
           <span style="color:var(--hero-text)">Moving<b style="color:var(--accent)">24</b></span>
         </a>
@@ -645,37 +1196,36 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
           <div><b>24/7</b><span>работаем</span></div>
           
         </div>
-        <a href="tel:+37256870101"><b style="color:var(--hero-text)">Позвонить</b> +372 5687 0101</a><br><a class="foot-et" href="tel:+3725540806" style="color:inherit;text-decoration:none">🇪🇪 +372 5540 806</a>
+        <div class="foot-phones"><a href="tel:+37256870101"><b style="color:var(--hero-text)">Позвонить</b> +372 5687 0101</a><a href="tel:+3725540806">+372 5540 806</a></div>
         <a href="mailto:info@moving24.ee"><b style="color:var(--hero-text)">Написать</b> info@moving24.ee</a>
         <address style="font-style:normal;margin-top:10px;font-size:13px;color:var(--hero-text-dim);line-height:1.6">
           Tartu mnt 2, 10145 Tallinn, Eesti<br>
-          <!-- TODO: вписать юр. лицо + регистрикод + KMKR № -->Reg. nr 16978239 · KMKR EE102734342
+          Reg 16978239 · VAT EE102734342
         </address>
       </div>
       <div>
         <h4>Услуги</h4>
-        <a href="/moving24-landing/ru/#teenused">Квартирный переезд</a>
-        <a href="/moving24-landing/ru/#teenused">Домашний переезд</a>
-        <a href="/moving24-landing/ru/#teenused">Офисный переезд</a>
-        <a href="/moving24-landing/ru/#teenused">Перевозка тяжёлых предметов</a>
-        <a href="/moving24-landing/ru/#teenused">Услуга упаковки</a>
-        <a href="/moving24-landing/ru/#teenused">Вывоз мусора</a>
+        <a href="#teenused">Квартирный переезд</a>
+        <a href="#teenused">Домашний переезд</a>
+        <a href="#teenused">Офисный переезд</a>
+        <a href="#teenused">Перевозка тяжёлых предметов</a>
+        <a href="#teenused">Услуга упаковки</a>
+        <a href="#teenused">Вывоз мусора</a>
       </div>
       <div>
         <h4>Районы</h4>
-        <a href="/moving24-landing/ru/#form">Таллинн</a>
-        <a href="/moving24-landing/ru/#form">Харьюмаа</a>
-        <a href="/moving24-landing/ru/#form">Маарду</a>
-        <a href="/moving24-landing/ru/#form">Кейла</a>
-        <a href="/moving24-landing/ru/#form">Сауэ</a>
-        <a href="/moving24-landing/ru/#form">По всей Эстонии</a>
+        <a href="#form">Таллинн</a>
+        <a href="#form">Харьюмаа</a>
+        <a href="#form">Маарду</a>
+        <a href="#form">Кейла</a>
+        <a href="#form">Сауэ</a>
       </div>
       <div>
         <h4>Компания</h4>
-        <a href="/moving24-landing/ru/#meist">О нас</a>
-        <a href="/moving24-landing/ru/#hinnad">Прайс</a>
-        <a href="/moving24-landing/ru/#kkk">FAQ</a>
-        <a href="/moving24-landing/ru/#form">Контакты</a>
+        <a href="#meist">О нас</a>
+        <a href="#hinnad">Прайс</a>
+        <a href="#kkk">FAQ</a>
+        <a href="#form">Контакты</a>
       </div>
       <div class="foot-hours">
         <h4>Режим работы</h4>
@@ -693,7 +1243,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
       </div>
     </div>
   </div>
+  <div class="wrap"><div class="foot-wordmark">MOVING<span>24</span></div></div>
 </footer>
+
 <!-- MOBILE BAR -->
 <div class="mob-bar">
   <a class="btn btn-ghost" href="tel:+37256870101">📞 Позвонить</a>
@@ -701,7 +1253,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 </div>
 
 <!-- LIGHTBOX -->
-<div class="lb" id="lb"><button class="lb-x" onclick="lb.classList.remove('on')">×</button><img id="lbImg" src="" alt=""></div>
+<div class="lb" id="lb"><button class="lb-x" onclick="lb.classList.remove('on')">×</button><img id="lbImg" src="/moving24-landing/ru/" alt=""></div>
 
 
 
@@ -875,5 +1427,5 @@ document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
   <div class="cc-row cc-saverow"><button class="cc-btn cc-save" type="button">Сохранить выбор</button></div>
 </div>
 <script>(function(){var KEY="m24_consent_v2";var cc=document.getElementById("cc");if(!cc)return;function apply(a,d){gtag("consent","update",{analytics_storage:a?"granted":"denied",ad_storage:d?"granted":"denied",ad_user_data:d?"granted":"denied",ad_personalization:d?"granted":"denied"});try{dataLayer.push({event:"consent_update",consent_analytics:a,consent_ads:d});}catch(e){}}var s=null;try{s=JSON.parse(localStorage.getItem(KEY));}catch(e){}if(s&&typeof s.a==="boolean"){apply(s.a,s.d);}else{cc.classList.add("show");}function save(a,d){try{localStorage.setItem(KEY,JSON.stringify({a:a,d:d,t:Date.now()}));}catch(e){}apply(a,d);cc.classList.remove("show");}function flip(sw){var on=!sw.classList.contains("cc-sw--on");sw.classList.toggle("cc-sw--on",on);sw.setAttribute("aria-checked",on?"true":"false");}var sws=cc.querySelectorAll(".cc-sw[data-for]");for(var i=0;i<sws.length;i++){(function(sw){sw.addEventListener("click",function(){flip(sw);});sw.addEventListener("keydown",function(e){if(e.key===" "||e.key==="Enter"){e.preventDefault();flip(sw);}});})(sws[i]);}cc.querySelector(".cc-cust").addEventListener("click",function(){cc.classList.add("cc-open");});function st(n){var sw=cc.querySelector('.cc-sw[data-for="'+n+'"]');return!!(sw&&sw.classList.contains("cc-sw--on"));}cc.querySelector(".cc-acc").addEventListener("click",function(){save(true,true);});cc.querySelector(".cc-dec").addEventListener("click",function(){save(false,false);});cc.querySelector(".cc-save").addEventListener("click",function(){save(st("analytics"),st("ads"));});})();</script>
-
-</body></html>
+</body>
+</html>
