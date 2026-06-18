@@ -515,7 +515,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 /* form3 overrides */
 .form-card{max-width:415px}
 .form-card.expanded{box-shadow:0 24px 56px rgba(0,0,0,.28)}
-@media(min-width:761px){.hero{height:100vh}.hero-grid{min-height:0}.form-card{align-self:start;max-height:calc(100vh - 248px);overflow-y:auto}}
+@media(min-width:761px){.form-slot{align-self:start}}
 .form-card input,.form-card textarea,.form-card select,.form-card .form-select{padding:12px 13px;font-size:14.5px}
 .ff-base{margin-bottom:9px}
 .ff-base>label,.form-card .ff>label{display:block;font-size:12px;font-weight:600;color:#56657a;margin:0 0 4px}
@@ -541,6 +541,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .cc-btn{flex:1;padding:10px;border-radius:9px;font-weight:700;font-size:13px;cursor:pointer;font-family:inherit}
 .cc-acc{background:var(--accent);color:#fff;border:1px solid var(--accent)}
 .cc-dec{background:transparent;color:#aebfd2;border:1px solid rgba(255,255,255,.22)}
+
+.form-slot{position:relative}
+@media(max-width:760px){.form-card{max-width:none;width:100%}.form-card input,.form-card select,.form-card textarea,.form-card .form-select{font-size:16px}}
 
 </style>
 </head>
@@ -620,6 +623,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
           <a class="btn btn-ghost" href="tel:+37256870101">Позвонить +372 5687 0101</a>
         </div>
       </div>
+      <div class="form-slot">
       <div class="form-card" id="form">
         <span class="form-tag">Оформить заявку</span>
         <h2>Что везём? <span class="pick-hint">(выберите)</span></h2>
@@ -650,6 +654,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
           <p class="form-consent">Отправляя форму, вы принимаете <a href="privaatsus/">Политику конфиденциальности</a></p>
           <div class="form-ok" id="formOk" role="status"><b>Спасибо! Заявка принята.</b><br>Свяжемся с вами в ближайшее время.</div>
         </form>
+      </div>
       </div>
     </div>
     <div class="hero-stats">
@@ -1197,11 +1202,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 
 <script>
 /* ---- Service chips -> hidden field ---- */
-/* ---- Service chips + conditional expand (inline, no reposition) ---- */
+/* ---- Service chips + conditional expand (desktop overlay via slot: no push, no shift) ---- */
 (function(){
   var chips=document.getElementById('svcChips'); if(!chips) return;
   var hidden=document.getElementById('serviceField');
   var closeBtn=document.getElementById('formClose');
+  var card=document.querySelector('.form-card');
+  var slot=card?card.closest('.form-slot'):null;
   function showGroups(v){
     document.querySelectorAll('#leadForm .ff').forEach(function(g){
       var ok=v&&((g.getAttribute('data-svc')||'').split(',').indexOf(v)>-1);
@@ -1210,13 +1217,24 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     });
     if(closeBtn) closeBtn.style.display=v?'':'none';
   }
+  function resetPos(){ if(!slot||!card) return; slot.style.minHeight=''; card.style.position=''; card.style.top=''; card.style.left=''; card.style.right=''; card.style.zIndex=''; }
+  function apply(v){
+    if(card) card.classList.toggle('expanded',!!v);
+    resetPos(); showGroups('');
+    if(v && slot && card && window.innerWidth>760){
+      var h=card.offsetHeight;
+      slot.style.minHeight=h+'px';
+      card.style.position='absolute'; card.style.top='0'; card.style.left='0'; card.style.right='0'; card.style.zIndex='40';
+    }
+    showGroups(v);
+  }
   function select(v,btn){
     chips.querySelectorAll('.chip').forEach(function(c){var on=c===btn;c.classList.toggle('on',on);c.setAttribute('aria-checked',on?'true':'false');});
-    if(hidden) hidden.value=v; showGroups(v);
+    if(hidden) hidden.value=v; apply(v);
   }
   function closeForm(){
     chips.querySelectorAll('.chip').forEach(function(c){c.classList.remove('on');c.setAttribute('aria-checked','false');});
-    if(hidden) hidden.value=''; showGroups('');
+    if(hidden) hidden.value=''; apply('');
   }
   window.m24CloseForm=closeForm;
   chips.querySelectorAll('.chip').forEach(function(c){c.setAttribute('role','radio');c.setAttribute('aria-checked','false');c.addEventListener('click',function(){select(c.getAttribute('data-svc'),c);});});
@@ -1227,6 +1245,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
       tg.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b);}); if(hid) hid.value=b.getAttribute('data-val');
     });});
   });
+  window.addEventListener('resize',function(){ if(hidden && hidden.value) apply(hidden.value); });
   showGroups('');
 })();
 
