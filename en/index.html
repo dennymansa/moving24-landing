@@ -40,6 +40,7 @@
   "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}
 }
 </script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Moving24", "url": "https://moving24.ee/", "inLanguage": "en"}</script>
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -592,8 +593,9 @@ h2.big--xl{font-size:clamp(36px,5.2vw,58px);font-weight:800;letter-spacing:-.02e
 .mini-cta .btn-ghost:hover{background:var(--accent-soft)}
 
 .steps-ph{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px;max-width:1260px;margin-left:auto;margin-right:auto}
-.step-ph{border-radius:20px;overflow:hidden;position:relative;height:390px;background:#08101c;transition:transform .25s ease,box-shadow .28s ease;cursor:default}
+.step-ph{display:block;text-decoration:none;color:inherit;border-radius:20px;overflow:hidden;position:relative;height:390px;background:#08101c;transition:transform .25s ease,box-shadow .28s ease;cursor:pointer;touch-action:manipulation}
 .step-ph:hover{transform:translateY(-4px);box-shadow:0 28px 56px rgba(0,0,0,.3)}
+.step-ph:hover img{transform:scale(1.05)}
 .step-ph .img-wrap{position:absolute;inset:0}
 .step-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.25,.46,.45,.94);display:block}
 .step-ph:hover img{transform:scale(1.07)}
@@ -755,7 +757,7 @@ h2.big--xl{font-size:clamp(36px,5.2vw,58px);font-weight:800;letter-spacing:-.02e
   .hero .wrap{padding-top:calc(64px + 44px)}
   .hero-photo-bg{bottom:auto;height:100svh;background-size:auto 160%;background-position:38% bottom}
   .hero h1{min-height:0}
-  .nav-wrap{position:relative;top:auto;padding-top:10px}
+  .nav-wrap{position:sticky;top:8px;padding-top:10px}
   .hero-grid{grid-template-columns:1fr;gap:32px;padding-bottom:32px}
   .hero-kicker{font-size:24px;margin-bottom:12px}
   .hero-trust{margin-bottom:20px}
@@ -864,7 +866,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .lift-toggle button.on{background:#e8f1ff;border-color:#b8d0f5;color:var(--accent)}@media(min-width:761px){.lift-toggle button.on{background:#fff;border-color:#cdddf5}}.lift-toggle button{position:relative;overflow:visible}.lift-toggle button.on .chip-oval path{stroke-dashoffset:0}.lift-toggle button.drew .chip-oval path{animation:drawOval .6s cubic-bezier(.6,0,.35,1) forwards}
 .sp-body h3 a{color:inherit;text-decoration:none}
 .sp-body h3 a:hover{color:var(--accent)}
-.sp-top-label a{color:inherit;text-decoration:none}
+.sp-top-label a,.sp-top-label span{color:inherit;text-decoration:none}
 .nav-mobile .nm-sub{padding-left:20px;font-size:13.5px;opacity:.82}
 .svc-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(236px,1fr));gap:14px;margin-top:30px}
 .svc-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 20px 18px;transition:transform .16s,box-shadow .16s,border-color .16s}
@@ -1092,38 +1094,38 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     <h2 class="big big--xl">We'll move it all. Apartment, office, storage room or a grand piano.</h2>
     <p class="lead lead--lg">Every move is different. We match the van, the crew and the approach to your specific situation.</p>
     <div class="steps-ph">
-      <div class="step-ph">
+      <a class="step-ph" href="service/home-move/" aria-label="Home move">
         <div class="img-wrap"><picture><source type="image/webp" srcset="../img/IMG_0061.webp?v=4"><img src="../img/IMG_0061.jpg?v=4" alt="Home moving with Moving24" loading="lazy"></picture></div>
-        <div class="sp-top-label"><a href="service/home-move/">Home move</a></div>
+        <div class="sp-top-label"><span>Home move</span></div>
         <div class="sp-body">
           <h3>Apartment and house</h3>
           <p>A studio, a four-room flat or a country house. We pack, carry out, move and arrange everything at the new place. All in a single day.</p>
         </div>
-      </div>
-      <div class="step-ph">
+      </a>
+      <a class="step-ph" href="service/business-move/" aria-label="Business and office">
         <div class="img-wrap"><picture><source type="image/webp" srcset="../img/g-office3.webp"><img src="../img/g-office3.jpg" alt="Office move in Tallinn" loading="lazy"></picture></div>
-        <div class="sp-top-label"><a href="service/business-move/">Business and office</a></div>
+        <div class="sp-top-label"><span>Business and office</span></div>
         <div class="sp-body">
           <h3>Office, warehouse, shop</h3>
           <p>We move in the evening or on weekends so your work never stops. IT equipment, archives and furniture. Everything labelled and packed.</p>
         </div>
-      </div>
-      <div class="step-ph">
+      </a>
+      <a class="step-ph" href="service/oversized/" aria-label="Heavy items">
         <div class="img-wrap"><picture><source type="image/webp" srcset="../img/g-heavy1.webp"><img src="../img/g-heavy1.jpg" alt="Heavy-item transport" loading="lazy"></picture></div>
-        <div class="sp-top-label"><a href="service/oversized/">Heavy items</a></div>
+        <div class="sp-top-label"><span>Heavy items</span></div>
         <div class="sp-body">
           <h3>Pianos, safes, equipment</h3>
           <p>We move what others turn down. Specialised equipment, an experienced crew. Your belongings and your walls stay intact.</p>
         </div>
-      </div>
-      <div class="step-ph">
+      </a>
+      <a class="step-ph" href="service/junk-removal/" aria-label="Disposal">
         <div class="img-wrap"><picture><source type="image/webp" srcset="../img/g-pack2.webp"><img src="../img/g-pack2.jpg" alt="Junk removal and disposal" loading="lazy"></picture></div>
-        <div class="sp-top-label"><a href="service/junk-removal/">Disposal</a></div>
+        <div class="sp-top-label"><span>Disposal</span></div>
         <div class="sp-body">
           <h3>Junk, furniture, clutter</h3>
           <p>We clear out everything you no longer need. Official disposal, no illegal dumping. The price depends on the volume. We tell you upfront, with no hidden fees.</p>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>

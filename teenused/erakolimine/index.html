@@ -40,6 +40,7 @@
   "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}
 }
 </script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Moving24", "url": "https://moving24.ee/", "inLanguage": "et"}</script>
 <!-- ===== TRACKING - РЕАЛЬНЫЕ коды подставлены: GTM-TSG2CVLC, AW-16489866360 (GA4 + конверсии внутри GTM). Гейт по hostname: трекинг включается ТОЛЬКО на moving24.ee - на тесте (github.io/localhost) молчит, чтобы не засорять живую GA4/Ads. FORM_ENDPOINT пуст = демо (форма пока не шлёт по-настоящему). Consent Mode v2 default=denied, баннер обновляет. ===== -->
 <script>
   window.M24={GTM:'GTM-TSG2CVLC',AW:'AW-16489866360',GA4:'G-7X1TS2BVF6',CONV_FORM:'AW-16489866360/uyGYCLT3uagZEPjI_bY9',CONV_PHONE:'AW-16489866360/LgJRCOq6nK4ZEPjI_bY9',FORM_ENDPOINT:'https://usebasin.com/f/48904e530a24'};
@@ -575,8 +576,9 @@ h2.big--xl{font-size:clamp(36px,5.2vw,58px);font-weight:800;letter-spacing:-.02e
 .mini-cta .btn-ghost:hover{background:var(--accent-soft)}
 
 .steps-ph{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px;max-width:1260px;margin-left:auto;margin-right:auto}
-.step-ph{border-radius:20px;overflow:hidden;position:relative;height:390px;background:#08101c;transition:transform .25s ease,box-shadow .28s ease;cursor:default}
+.step-ph{display:block;text-decoration:none;color:inherit;border-radius:20px;overflow:hidden;position:relative;height:390px;background:#08101c;transition:transform .25s ease,box-shadow .28s ease;cursor:pointer;touch-action:manipulation}
 .step-ph:hover{transform:translateY(-4px);box-shadow:0 28px 56px rgba(0,0,0,.3)}
+.step-ph:hover img{transform:scale(1.05)}
 .step-ph .img-wrap{position:absolute;inset:0}
 .step-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.25,.46,.45,.94);display:block}
 .step-ph:hover img{transform:scale(1.07)}
@@ -738,7 +740,7 @@ h2.big--xl{font-size:clamp(36px,5.2vw,58px);font-weight:800;letter-spacing:-.02e
   .hero .wrap{padding-top:calc(64px + 44px)}
   .hero-photo-bg{bottom:auto;height:100svh;background-size:auto 160%;background-position:38% bottom}
   .hero h1{min-height:0}
-  .nav-wrap{position:relative;top:auto;padding-top:10px}
+  .nav-wrap{position:sticky;top:8px;padding-top:10px}
   .hero-grid{grid-template-columns:1fr;gap:32px;padding-bottom:32px}
   .hero-kicker{font-size:24px;margin-bottom:12px}
   .hero-trust{margin-bottom:20px}
@@ -847,7 +849,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .lift-toggle button.on{background:#e8f1ff;border-color:#b8d0f5;color:var(--accent)}@media(min-width:761px){.lift-toggle button.on{background:#fff;border-color:#cdddf5}}.lift-toggle button{position:relative;overflow:visible}.lift-toggle button.on .chip-oval path{stroke-dashoffset:0}.lift-toggle button.drew .chip-oval path{animation:drawOval .6s cubic-bezier(.6,0,.35,1) forwards}
 .sp-body h3 a{color:inherit;text-decoration:none}
 .sp-body h3 a:hover{color:var(--accent)}
-.sp-top-label a{color:inherit;text-decoration:none}
+.sp-top-label a,.sp-top-label span{color:inherit;text-decoration:none}
 .nav-mobile .nm-sub{padding-left:20px;font-size:13.5px;opacity:.82}
 .svc-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(236px,1fr));gap:14px;margin-top:30px}
 .svc-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 20px 18px;transition:transform .16s,box-shadow .16s,border-color .16s}
@@ -936,6 +938,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Kui palju korteri või maja kolimine maksab?", "acceptedAnswer": {"@type": "Answer", "text": "Hind sõltub asjade mahust, vahemaast, korrusest ja lisateenustest, seega koostame iga kolimise jaoks personaalse pakkumise. Kirjelda oma kolimist ja saadame täpse hinna ette, ilma peidetud lisatasudeta. Hindamine on tasuta."}}, {"@type": "Question", "name": "Kuidas kolimine käib - mida ma ise tegema pean?", "acceptedAnswer": {"@type": "Answer", "text": "Kolimine käib kolme sammuga: kirjelda meile oma kodu ja aadressid, saad personaalse pakkumise ette, ning kokkulepitud päeval pakime, kanname välja, veame ja paneme mööbli kokku. Sina ei pea midagi tõstma."}}, {"@type": "Question", "name": "Kas pakite asjad ise ära ja paned mööbli kokku?", "acceptedAnswer": {"@type": "Answer", "text": "Jah. Soovi korral pakivad kolijad kogu kodu turvaliselt ning võtavad mööbli enne vedu lahti ja monteerivad uues kodus tagasi kokku. Võid ka ise pakkida - siis toome ainult karbid ja kile."}}, {"@type": "Question", "name": "Kas saate aidata ka siis, kui majas ei ole lifti?", "acceptedAnswer": {"@type": "Answer", "text": "Jah. Liftita või kitsa lifti puhul kanname asjad treppidest ja kasutame raskemate esemete jaoks sobivat varustust. Anna kõrgemate korruste puhul pakkumist küsides teada, et saadame õige suurusega meeskonna."}}, {"@type": "Question", "name": "Kui kiiresti saate kohale tulla?", "acceptedAnswer": {"@type": "Answer", "text": "Töötame 24/7 ja püüame leida sulle sobiva aja - ka õhtul, nädalavahetusel või lühikese etteteatamisega. Helista +372 5687 0101 ja vaatame lähimad vabad ajad."}}, {"@type": "Question", "name": "Kas saate kolida ka väljapoole Tallinna?", "acceptedAnswer": {"@type": "Answer", "text": "Jah. Kolime Tallinnas, Tartus, Pärnus ja kõikjal Eestis - nii linnasiseselt kui ka maakondade vahel. Anna lähte- ja sihtaadress teada ning arvestame vahemaa pakkumisse."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Korteri ja maja kolimine Tallinnas", "description": "Korteri ja maja kolimine Tallinnas ja üle Eesti: pakime, veame ja paneme mööbli kokku. Hoolikas, kiire, aus hind kohe. Küsi tasuta pakkumist.", "provider": {"@type": "MovingCompany", "name": "Moving24", "telephone": "+372 5687 0101", "url": "https://moving24.ee/"}, "areaServed": ["Tallinn", "Harjumaa", "Estonia"], "url": "https://dennymansa.github.io/moving24-landing/teenused/erakolimine/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Avaleht", "item": "https://dennymansa.github.io/moving24-landing/"}, {"@type": "ListItem", "position": 2, "name": "Kodukolimine", "item": "https://dennymansa.github.io/moving24-landing/teenused/erakolimine/"}]}</script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript). ВАЖНО: этот ID правится ВРУЧНУЮ (JS-конфиг window.M24 сюда не дотянется) - при вставке реального GTM замени GTM-XXXXXXX и здесь. -->

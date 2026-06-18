@@ -40,6 +40,7 @@
   "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}
 }
 </script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Moving24", "url": "https://moving24.ee/", "inLanguage": "et"}</script>
 <!-- ===== TRACKING - РЕАЛЬНЫЕ коды подставлены: GTM-TSG2CVLC, AW-16489866360 (GA4 + конверсии внутри GTM). Гейт по hostname: трекинг включается ТОЛЬКО на moving24.ee - на тесте (github.io/localhost) молчит, чтобы не засорять живую GA4/Ads. FORM_ENDPOINT пуст = демо (форма пока не шлёт по-настоящему). Consent Mode v2 default=denied, баннер обновляет. ===== -->
 <script>
   window.M24={GTM:'GTM-TSG2CVLC',AW:'AW-16489866360',GA4:'G-7X1TS2BVF6',CONV_FORM:'AW-16489866360/uyGYCLT3uagZEPjI_bY9',CONV_PHONE:'AW-16489866360/LgJRCOq6nK4ZEPjI_bY9',FORM_ENDPOINT:'https://usebasin.com/f/48904e530a24'};
@@ -575,8 +576,9 @@ h2.big--xl{font-size:clamp(36px,5.2vw,58px);font-weight:800;letter-spacing:-.02e
 .mini-cta .btn-ghost:hover{background:var(--accent-soft)}
 
 .steps-ph{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px;max-width:1260px;margin-left:auto;margin-right:auto}
-.step-ph{border-radius:20px;overflow:hidden;position:relative;height:390px;background:#08101c;transition:transform .25s ease,box-shadow .28s ease;cursor:default}
+.step-ph{display:block;text-decoration:none;color:inherit;border-radius:20px;overflow:hidden;position:relative;height:390px;background:#08101c;transition:transform .25s ease,box-shadow .28s ease;cursor:pointer;touch-action:manipulation}
 .step-ph:hover{transform:translateY(-4px);box-shadow:0 28px 56px rgba(0,0,0,.3)}
+.step-ph:hover img{transform:scale(1.05)}
 .step-ph .img-wrap{position:absolute;inset:0}
 .step-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.25,.46,.45,.94);display:block}
 .step-ph:hover img{transform:scale(1.07)}
@@ -738,7 +740,7 @@ h2.big--xl{font-size:clamp(36px,5.2vw,58px);font-weight:800;letter-spacing:-.02e
   .hero .wrap{padding-top:calc(64px + 44px)}
   .hero-photo-bg{bottom:auto;height:100svh;background-size:auto 160%;background-position:38% bottom}
   .hero h1{min-height:0}
-  .nav-wrap{position:relative;top:auto;padding-top:10px}
+  .nav-wrap{position:sticky;top:8px;padding-top:10px}
   .hero-grid{grid-template-columns:1fr;gap:32px;padding-bottom:32px}
   .hero-kicker{font-size:24px;margin-bottom:12px}
   .hero-trust{margin-bottom:20px}
@@ -847,7 +849,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .lift-toggle button.on{background:#e8f1ff;border-color:#b8d0f5;color:var(--accent)}@media(min-width:761px){.lift-toggle button.on{background:#fff;border-color:#cdddf5}}.lift-toggle button{position:relative;overflow:visible}.lift-toggle button.on .chip-oval path{stroke-dashoffset:0}.lift-toggle button.drew .chip-oval path{animation:drawOval .6s cubic-bezier(.6,0,.35,1) forwards}
 .sp-body h3 a{color:inherit;text-decoration:none}
 .sp-body h3 a:hover{color:var(--accent)}
-.sp-top-label a{color:inherit;text-decoration:none}
+.sp-top-label a,.sp-top-label span{color:inherit;text-decoration:none}
 .nav-mobile .nm-sub{padding-left:20px;font-size:13.5px;opacity:.82}
 .svc-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(236px,1fr));gap:14px;margin-top:30px}
 .svc-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 20px 18px;transition:transform .16s,box-shadow .16s,border-color .16s}
@@ -934,6 +936,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 @media(max-width:680px){.pak-grid{grid-template-columns:1fr}}
 
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Avaleht", "item": "https://dennymansa.github.io/moving24-landing/"}, {"@type": "ListItem", "position": 2, "name": "Kontakt", "item": "https://dennymansa.github.io/moving24-landing/kontaktid/"}]}</script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript). ВАЖНО: этот ID правится ВРУЧНУЮ (JS-конфиг window.M24 сюда не дотянется) - при вставке реального GTM замени GTM-XXXXXXX и здесь. -->
@@ -1077,38 +1080,38 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     <h2 class="big big--xl">Kolime kõike. Korter, kontor, panipaik või tiibklaver.</h2>
     <p class="lead lead--lg">Iga kolimine on erinev. Valime auto, meeskonna ja lähenemise just teie konkreetse juhtumi järgi.</p>
     <div class="steps-ph">
-      <div class="step-ph">
+      <a class="step-ph" href="/moving24-landing/teenused/erakolimine/" aria-label="Kodukolimine">
         <div class="img-wrap"><picture><source type="image/webp" srcset="/moving24-landing/img/IMG_0061.webp?v=4"><img src="/moving24-landing/img/IMG_0061.jpg?v=4" alt="Moving24 korterikolimine" loading="lazy"></picture></div>
-        <div class="sp-top-label"><a href="/moving24-landing/teenused/erakolimine/">Kodukolimine</a></div>
+        <div class="sp-top-label"><span>Kodukolimine</span></div>
         <div class="sp-body">
           <h3>Korter ja maja</h3>
           <p>Ühetoaline, neljatoaline või eramaja. Pakime, kanname välja, veame kohale ja seame uues kohas üles. Kõik ühe päevaga.</p>
         </div>
-      </div>
-      <div class="step-ph">
+      </a>
+      <a class="step-ph" href="/moving24-landing/teenused/arikolimine/" aria-label="Äri ja kontor">
         <div class="img-wrap"><picture><source type="image/webp" srcset="/moving24-landing/img/g-office3.webp"><img src="/moving24-landing/img/g-office3.jpg" alt="Kontorikolimine Tallinnas" loading="lazy"></picture></div>
-        <div class="sp-top-label"><a href="/moving24-landing/teenused/arikolimine/">Äri ja kontor</a></div>
+        <div class="sp-top-label"><span>Äri ja kontor</span></div>
         <div class="sp-body">
           <h3>Kontor, ladu, kauplus</h3>
           <p>Kolime õhtul või nädalavahetusel, et töö ei seisaks. IT-seadmed, arhiivid ja mööbel. Kõik nummerdatud ja pakitud.</p>
         </div>
-      </div>
-      <div class="step-ph">
+      </a>
+      <a class="step-ph" href="/moving24-landing/teenused/suuregabariidiline/" aria-label="Rasked esemed">
         <div class="img-wrap"><picture><source type="image/webp" srcset="/moving24-landing/img/g-heavy1.webp"><img src="/moving24-landing/img/g-heavy1.jpg" alt="Raskete esemete vedu" loading="lazy"></picture></div>
-        <div class="sp-top-label"><a href="/moving24-landing/teenused/suuregabariidiline/">Rasked esemed</a></div>
+        <div class="sp-top-label"><span>Rasked esemed</span></div>
         <div class="sp-body">
           <h3>Klaver, seif, seadmed</h3>
           <p>Veame seda, millest teised keelduvad. Eriotstarbeline varustus, kogenud meeskond. Esemed ja seinad jäävad terveks.</p>
         </div>
-      </div>
-      <div class="step-ph">
+      </a>
+      <a class="step-ph" href="/moving24-landing/teenused/prugivedu/" aria-label="Utiliseerimine">
         <div class="img-wrap"><picture><source type="image/webp" srcset="/moving24-landing/img/g-pack2.webp"><img src="/moving24-landing/img/g-pack2.jpg" alt="Prügi äravedu ja utiliseerimine" loading="lazy"></picture></div>
-        <div class="sp-top-label"><a href="/moving24-landing/teenused/prugivedu/">Utiliseerimine</a></div>
+        <div class="sp-top-label"><span>Utiliseerimine</span></div>
         <div class="sp-body">
           <h3>Prügi, mööbel, koli</h3>
           <p>Koristame ära kõik, mida enam vaja pole. Ametlik utiliseerimine, ilma ebaseaduslike prügimägedeta. Hind sõltub mahust. Ütleme selle kohe, ilma varjatud lisatasudeta.</p>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
