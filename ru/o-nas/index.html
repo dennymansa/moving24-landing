@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>О компании Moving24 - переезды в Таллинне</title>
+<title>О компании, переезды в Таллинне</title>
 <meta name="description" content="Moving24 OÜ - зарегистрированная эстонская компания по переездам и грузоперевозкам: тысячи переездов, опытная команда, 24/7 по Эстонии.">
 
 <!-- ===== SEO / Open Graph / Schema ===== -->
@@ -15,13 +15,13 @@
 <meta property="og:url" content="https://dennymansa.github.io/moving24-landing/ru/o-nas/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Moving24">
-<meta property="og:title" content="О компании Moving24 - переезды в Таллинне">
+<meta property="og:title" content="О компании, переезды в Таллинне">
 <meta property="og:description" content="Moving24 OÜ - зарегистрированная эстонская компания по переездам и грузоперевозкам: тысячи переездов, опытная команда, 24/7 по Эстонии.">
 <meta property="og:image" content="https://dennymansa.github.io/moving24-landing/img/m24-logo.png">
 <meta property="og:locale" content="ru_RU">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Moving24 · Грузоперевозки в Таллинне">
-<meta name="twitter:description" content="Один звонок - и всё переедет. Переезды 24/7 по Эстонии.">
+<meta name="twitter:title" content="Услуги по переезду и грузоперевозки в Таллинне">
+<meta name="twitter:description" content="Переезд квартир и офисов, грузоперевозки и утилизация в Таллинне и по Эстонии. Честная цена сразу, без скрытых доплат, 24/7.">
 <meta name="twitter:image" content="https://dennymansa.github.io/moving24-landing/img/m24-logo.png">
 <script type="application/ld+json">
 {
@@ -515,6 +515,20 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .sp-body h3 a:hover{color:var(--accent)}
 .sp-top-label a{color:inherit;text-decoration:none}
 .nav-mobile .nm-sub{padding-left:20px;font-size:15px;opacity:.82}
+.svc-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(236px,1fr));gap:14px;margin-top:30px}
+.svc-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 20px 18px;transition:transform .16s,box-shadow .16s,border-color .16s}
+.svc-card:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(20,40,80,.09);border-color:#cdddf5}
+.svc-card .ic{width:42px;height:42px;border-radius:12px;background:linear-gradient(155deg,#e8f1ff,#dce9ff);color:var(--accent);display:grid;place-items:center;font-size:19px;font-weight:800;margin-bottom:13px}
+.svc-card h4{font-size:15.5px;font-weight:700;color:var(--body-text);margin-bottom:5px}
+.svc-card p{font-size:13.5px;color:var(--body-text-dim);line-height:1.5}
+.svc-bens{display:grid;grid-template-columns:1fr 1fr;gap:13px 28px;margin-top:26px;max-width:900px;list-style:none}
+.svc-bens li{position:relative;padding-left:34px;font-size:15px;color:var(--body-text-dim);line-height:1.5;align-self:start}
+.svc-bens li::before{content:"\2713";position:absolute;left:0;top:1px;width:23px;height:23px;border-radius:50%;background:#e8f1ff;color:var(--accent);font-size:13px;font-weight:800;display:grid;place-items:center}
+.svc-cta{margin-top:36px;background:linear-gradient(135deg,var(--accent),#1450a0);border-radius:20px;padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap}
+.svc-cta b{color:#fff;font-size:21px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-.01em}
+.svc-cta .btn{background:#fff;color:var(--accent);padding:14px 28px;border-radius:12px;font-weight:700;text-decoration:none;white-space:nowrap;font-size:15.5px}
+.svc-cta .btn:hover{background:#eef4ff}
+@media(max-width:680px){.svc-bens{grid-template-columns:1fr}.svc-cta{flex-direction:column;align-items:flex-start;padding:24px}}
 .pick-hint{font-size:13px;font-weight:500;color:#8aa0bf;margin-left:7px}
 
 .chip{position:relative}
@@ -723,7 +737,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 </section>
 
 <!-- PROCESS PHOTOS -->
-<section class="section" id="teenused">
+<section class="section svc-hide" id="teenused">
   <div class="wrap">
     <span class="tag">Наши услуги</span>
     <h2 class="big big--xl">Перевезём всё. Квартира, офис, кладовка или рояль.</h2>
@@ -889,7 +903,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 </section>
 
 <!-- PARTNERS -->
-<section class="partners-strip" aria-label="Клиенты и партнёры">
+<section class="partners-strip svc-hide" aria-label="Клиенты и партнёры">
   <div class="wrap">
 
     <div class="trust-bar">
@@ -1089,7 +1103,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 </section>
 
 <!-- NUMBERS -->
-<section class="section section--dark" id="meist" style="position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:url('/moving24-landing/imagebg-1920.jpg') center/cover no-repeat;opacity:.07;pointer-events:none"></div>
+<section class="section section--dark svc-hide" id="meist" style="position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:url('/moving24-landing/imagebg-1920.jpg') center/cover no-repeat;opacity:.07;pointer-events:none"></div>
   <div class="wrap" style="position:relative;z-index:1">
     <span class="tag">Каждый день</span>
     <h2 class="big">В Таллинне каждый день больше 140 переездов.</h2>
