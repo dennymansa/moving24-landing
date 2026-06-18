@@ -915,7 +915,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .chip-oval{position:absolute;left:-5px;top:-7px;width:calc(100% + 10px);height:calc(100% + 14px);overflow:visible;pointer-events:none;z-index:2}
 .chip-oval path{fill:none;stroke:#4f93f5;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:640;stroke-dashoffset:640}
 .chip.on .chip-oval path{animation:drawOval .6s cubic-bezier(.6,0,.35,1) forwards}
-@keyframes drawOval{to{stroke-dashoffset:0}}
+@keyframes drawOval{from{stroke-dashoffset:640}to{stroke-dashoffset:0}}
 @media(max-width:760px){.chip-oval{display:none}}
 @media(min-width:761px){.chip.on{background:#e8f1ff;border-color:#b8d0f5;color:var(--accent)}.chip-oval path{stroke:#3f86f0;stroke-width:2}}
 
