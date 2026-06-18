@@ -1376,12 +1376,17 @@ document.getElementById('leadForm').addEventListener('submit',function(e){
   Promise.all(selectedPhotos.slice(0,8).map(function(f){return compressImage(f,1600,0.8);})).then(function(photos){
     var endpoint=(window.M24&&M24.FORM_ENDPOINT)||'';
     if(!endpoint){ console.warn('M24.FORM_ENDPOINT не задан - демо-режим.'); done(false,true); return; }
-    var fd=new FormData(form);
-    fd.delete('photos'); fd.delete('_gotcha');
-    photos.forEach(function(p,i){fd.append('photo'+(i+1),p,p.name);});
-    fd.append('page_url', location.href);
-    fd.append('_subject', 'Päring Moving24 maandumislehelt');
-    return fetch(endpoint,{method:'POST',body:fd,headers:{'Accept':'application/json'}})
+    var L=(document.documentElement.lang||'et').slice(0,2);
+    var LBALL={ru:{service:'Услуга',name:'Имя / компания',phone:'Телефон',email:'Email',from_address:'Откуда',from_floor:'Этаж (откуда)',from_lift:'Лифт (откуда)',to_address:'Куда',to_floor:'Этаж (куда)',to_lift:'Лифт (куда)',date:'Дата',time:'Время',packing:'Упаковка от нас',msg:'Сообщение',page:'Страница'},et:{service:'Teenus',name:'Nimi / ettevõte',phone:'Telefon',email:'E-post',from_address:'Kust',from_floor:'Korrus (kust)',from_lift:'Lift (kust)',to_address:'Kuhu',to_floor:'Korrus (kuhu)',to_lift:'Lift (kuhu)',date:'Kuupäev',time:'Kellaaeg',packing:'Pakkimine meilt',msg:'Sõnum',page:'Leht'},en:{service:'Service',name:'Name / company',phone:'Phone',email:'Email',from_address:'From',from_floor:'Floor (from)',from_lift:'Lift (from)',to_address:'To',to_floor:'Floor (to)',to_lift:'Lift (to)',date:'Date',time:'Time',packing:'Packing by us',msg:'Message',page:'Page'},fi:{service:'Palvelu',name:'Nimi / yritys',phone:'Puhelin',email:'Sähköposti',from_address:'Mistä',from_floor:'Kerros (mistä)',from_lift:'Hissi (mistä)',to_address:'Minne',to_floor:'Kerros (minne)',to_lift:'Hissi (minne)',date:'Päivä',time:'Aika',packing:'Pakkaus meiltä',msg:'Viesti',page:'Sivu'}};
+    var SVCALL={ru:{private:'Частный переезд',business:'Бизнес переезд',garbage:'Вывоз мусора',transport:'Транспорт'},et:{private:'Erakolimine',business:'Ärikolimine',garbage:'Prügivedu',transport:'Transport'},en:{private:'Home move',business:'Business move',garbage:'Junk removal',transport:'Transport'},fi:{private:'Kotimuutto',business:'Yritysmuutto',garbage:'Romun poisvienti',transport:'Kuljetus'}};
+    var LB=LBALL[L]||LBALL.et, SVC=SVCALL[L]||SVCALL.et;
+    var raw=new FormData(form), out=new FormData();
+    ['service','name','phone','email','from_address','from_floor','from_lift','to_address','to_floor','to_lift','date','time','packing','msg'].forEach(function(k){var v=(raw.get(k)||'').toString().trim();if(!v)return;if(k==='service')v=SVC[v]||v;out.append(LB[k]||k,v);});
+    out.append(LB.page, location.href);
+    ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid'].forEach(function(k){var v=(raw.get(k)||'').toString().trim();if(v)out.append(k,v);});
+    photos.forEach(function(p,i){out.append('photo'+(i+1),p,p.name);});
+    out.append('_subject','Moving24: '+((SVC[raw.get('service')]||raw.get('service')||'')+' - '+(raw.get('name')||raw.get('phone')||'')).trim());
+    return fetch(endpoint,{method:'POST',body:out,headers:{'Accept':'application/json'}})
       .then(function(r){done(r.ok,false);});
   }).catch(function(){done(false,false);});
 });
