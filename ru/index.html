@@ -534,13 +534,39 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 #svcChips:not(:has(.chip.on)) .chip:nth-child(4) .chip-tick{animation:tickCycle 10s ease-in-out 4.2s infinite}
 @media(prefers-reduced-motion:reduce){.chip-tick{animation:none!important}}
 
-.cc{position:fixed;left:14px;right:14px;bottom:14px;max-width:540px;margin:0 auto;background:#0e1622;color:#e7eef7;border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:15px 17px;z-index:9999;box-shadow:0 18px 50px rgba(0,0,0,.5);font-size:13px;line-height:1.5;display:none}
-.cc.show{display:block}
-.cc-txt a{color:#7fb0ff}
-.cc-row{display:flex;gap:8px;margin-top:12px}
-.cc-btn{flex:1;padding:10px;border-radius:9px;font-weight:700;font-size:13px;cursor:pointer;font-family:inherit}
+.cc{position:fixed;left:14px;right:14px;bottom:14px;max-width:460px;margin:0 auto;background:#0e1622;color:#e7eef7;border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:17px 18px 15px;z-index:9999;box-shadow:0 18px 50px rgba(0,0,0,.5);font-size:13px;line-height:1.5;display:none}
+.cc.show{display:block;animation:ccup .3s ease}
+@keyframes ccup{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.cc-head{display:flex;gap:12px;align-items:flex-start}
+.cc-ico{font-size:22px;line-height:1;flex:none;margin-top:1px}
+.cc-title{font-weight:800;font-size:15px;color:#fff;margin-bottom:3px;letter-spacing:-.01em}
+.cc-txt{color:#aebfd2}
+.cc-txt a{color:#7fb0ff;text-decoration:none}
+.cc-txt a:hover{text-decoration:underline}
+.cc-cats{display:none;flex-direction:column;margin:13px 0 2px;border-top:1px solid rgba(255,255,255,.1);padding-top:6px}
+.cc.cc-open .cc-cats{display:flex}
+.cc-cat{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.cc-cat:last-child{border-bottom:0}
+.cc-cat b{display:block;font-weight:700;color:#e7eef7;font-size:12.5px}
+.cc-cat i{display:block;font-style:normal;color:#8295ac;font-size:11px;margin-top:1px}
+.cc-sw{flex:none;width:38px;height:22px;border-radius:99px;background:rgba(255,255,255,.16);position:relative;cursor:pointer;transition:background .18s}
+.cc-sw:after{content:"";position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;background:#fff;transition:transform .18s}
+.cc-sw.cc-sw--on{background:var(--accent)}
+.cc-sw.cc-sw--on:after{transform:translateX(16px)}
+.cc-sw.cc-sw--lock{background:var(--accent);opacity:.45;cursor:not-allowed}
+.cc-sw.cc-sw--lock:after{transform:translateX(16px)}
+.cc-sw:focus-visible{outline:2px solid #9cc6f5;outline-offset:2px}
+.cc-row{display:flex;gap:8px;margin-top:13px;flex-wrap:wrap}
+.cc-btn{flex:1 1 auto;padding:10px 8px;border-radius:9px;font-weight:700;font-size:12.5px;cursor:pointer;font-family:inherit;transition:background .15s,border-color .15s;white-space:nowrap}
 .cc-acc{background:var(--accent);color:#fff;border:1px solid var(--accent)}
-.cc-dec{background:transparent;color:#aebfd2;border:1px solid rgba(255,255,255,.22)}
+.cc-acc:hover{background:var(--accent-deep)}
+.cc-dec,.cc-cust{background:transparent;color:#aebfd2;border:1px solid rgba(255,255,255,.22)}
+.cc-dec:hover,.cc-cust:hover{background:rgba(255,255,255,.06);color:#fff}
+.cc-saverow{display:none;margin-top:8px}
+.cc.cc-open .cc-saverow{display:flex}
+.cc.cc-open .cc-cust{display:none}
+.cc-save{flex:1;background:var(--accent);color:#fff;border:1px solid var(--accent);padding:10px;border-radius:9px;font-weight:700;font-size:12.5px;cursor:pointer;font-family:inherit}
+.cc-save:hover{background:var(--accent-deep)}
 
 .form-slot{position:relative}
 @media(max-width:760px){.form-card{max-width:none;width:100%}.form-card input,.form-card select,.form-card textarea,.form-card .form-select{font-size:16px}}
@@ -1385,10 +1411,16 @@ document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
   });
 })();
 </script>
-<div class="cc" id="cc" role="dialog" aria-label="Согласие на использование cookie" aria-live="polite">
-  <div class="cc-txt">Мы используем cookie для аналитики и рекламы. <a href="privaatsus/">Подробнее</a></div>
-  <div class="cc-row"><button class="cc-btn cc-dec" type="button">Отклонить</button><button class="cc-btn cc-acc" type="button">Принять</button></div>
+<div class="cc" id="cc" role="dialog" aria-label="Согласие на cookie" aria-live="polite">
+  <div class="cc-head"><div class="cc-ico">🍪</div><div><div class="cc-title">Cookie</div><div class="cc-txt">Мы используем cookie для аналитики и рекламы. <a href="privaatsus/">Подробнее</a></div></div></div>
+  <div class="cc-cats">
+    <div class="cc-cat"><span><b>Необходимые</b><i>Всегда включены — без них сайт не работает.</i></span><span class="cc-sw cc-sw--lock" aria-hidden="true"></span></div>
+    <div class="cc-cat"><span><b>Аналитика</b><i>Помогает понять, как используется сайт.</i></span><span class="cc-sw" data-for="analytics" role="switch" tabindex="0" aria-checked="false" aria-label="Аналитика"></span></div>
+    <div class="cc-cat"><span><b>Реклама</b><i>Измерение и персонализация рекламы.</i></span><span class="cc-sw" data-for="ads" role="switch" tabindex="0" aria-checked="false" aria-label="Реклама"></span></div>
+  </div>
+  <div class="cc-row"><button class="cc-btn cc-dec" type="button">Только необходимые</button><button class="cc-btn cc-cust" type="button">Настроить</button><button class="cc-btn cc-acc" type="button">Принять всё</button></div>
+  <div class="cc-row cc-saverow"><button class="cc-btn cc-save" type="button">Сохранить выбор</button></div>
 </div>
-<script>(function(){var KEY="m24_consent";var cc=document.getElementById("cc");if(!cc)return;function apply(g){gtag("consent","update",{ad_storage:g?"granted":"denied",ad_user_data:g?"granted":"denied",ad_personalization:g?"granted":"denied",analytics_storage:g?"granted":"denied"});}var s=null;try{s=localStorage.getItem(KEY);}catch(e){}if(s==="granted"){apply(true);}else if(s==="denied"){apply(false);}else{cc.classList.add("show");}function ch(g){try{localStorage.setItem(KEY,g?"granted":"denied");}catch(e){}apply(g);cc.classList.remove("show");}cc.querySelector(".cc-acc").addEventListener("click",function(){ch(true);});cc.querySelector(".cc-dec").addEventListener("click",function(){ch(false);});})();</script>
+<script>(function(){var KEY="m24_consent_v2";var cc=document.getElementById("cc");if(!cc)return;function apply(a,d){gtag("consent","update",{analytics_storage:a?"granted":"denied",ad_storage:d?"granted":"denied",ad_user_data:d?"granted":"denied",ad_personalization:d?"granted":"denied"});try{dataLayer.push({event:"consent_update",consent_analytics:a,consent_ads:d});}catch(e){}}var s=null;try{s=JSON.parse(localStorage.getItem(KEY));}catch(e){}if(s&&typeof s.a==="boolean"){apply(s.a,s.d);}else{cc.classList.add("show");}function save(a,d){try{localStorage.setItem(KEY,JSON.stringify({a:a,d:d,t:Date.now()}));}catch(e){}apply(a,d);cc.classList.remove("show");}function flip(sw){var on=!sw.classList.contains("cc-sw--on");sw.classList.toggle("cc-sw--on",on);sw.setAttribute("aria-checked",on?"true":"false");}var sws=cc.querySelectorAll(".cc-sw[data-for]");for(var i=0;i<sws.length;i++){(function(sw){sw.addEventListener("click",function(){flip(sw);});sw.addEventListener("keydown",function(e){if(e.key===" "||e.key==="Enter"){e.preventDefault();flip(sw);}});})(sws[i]);}cc.querySelector(".cc-cust").addEventListener("click",function(){cc.classList.add("cc-open");});function st(n){var sw=cc.querySelector('.cc-sw[data-for="'+n+'"]');return!!(sw&&sw.classList.contains("cc-sw--on"));}cc.querySelector(".cc-acc").addEventListener("click",function(){save(true,true);});cc.querySelector(".cc-dec").addEventListener("click",function(){save(false,false);});cc.querySelector(".cc-save").addEventListener("click",function(){save(st("analytics"),st("ads"));});})();</script>
 </body>
 </html>
