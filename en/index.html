@@ -551,6 +551,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 @keyframes drawOval{to{stroke-dashoffset:0}}
 @media(max-width:760px){.chip-oval{display:none}}
 
+.lang-phones{display:flex;flex-direction:column;gap:8px;margin-top:14px;border-top:1px solid var(--line-hero);padding-top:14px}
+.lang-phones a{display:flex;align-items:center;gap:8px;font-size:16px;font-weight:700;color:var(--hero-text);border:0;padding:2px 0}
+.lang-phones .lp-fl{font-size:15px;font-weight:500;min-width:54px}
+.foot-phones a.foot-et{display:inline-block;margin-top:7px;font-size:13.5px;opacity:.85}
+
 </style>
 </head>
 <body>
@@ -601,7 +606,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   <a href="#meist" onclick="closeMob()">About</a>
   <a href="#kkk" onclick="closeMob()">FAQ</a>
   <a href="#form" onclick="closeMob()">Get a quote →</a>
-  <a href="tel:+37256870101">📞 +372 5687 0101</a>
+  <div class="lang-phones">
+    <a href="tel:+37256870101"><span class="lp-fl">🇷🇺 🇬🇧</span> +372 5687 0101</a>
+    <a href="tel:+3725540806"><span class="lp-fl">🇪🇪</span> +372 5540 806</a>
+  </div>
   <div class="nav-mobile-lang">
     <a href="../ru/" lang="ru" hreflang="ru">RU</a>
     <a href="../" lang="et" hreflang="et">ET</a>
@@ -648,12 +656,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
             <input type="email" name="email" placeholder="Email" aria-label="Email">
             <input type="tel" name="phone" placeholder="Phone *" aria-label="Phone" pattern="[+0-9 ()\-]{6,}" required>
           </div>
-          <div class="ff-base"><label>From</label><input type="text" name="from_address" placeholder="City or address (e.g. Tallinn)"></div>
+          <div class="ff-base"><label>From</label><input type="text" name="from_address" placeholder="e.g. Rotermanni 18, Tallinn"></div>
           <div class="ff form-grid2" data-svc="private,business,garbage"><select name="from_floor" class="form-select"><option value="">Floor</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>-1</option><option>-2</option><option>-3</option><option>-4</option><option>-5</option></select><div class="lift-toggle" data-name="from_lift" role="group" aria-label="Elevator?"><span class="lift-q">Elevator?</span><button type="button" data-val="Yes">Yes</button><button type="button" data-val="No">No</button><input type="hidden" name="from_lift"></div></div>
-          <div class="ff" data-svc="private,business,transport"><label>To</label><input type="text" name="to_address" placeholder="City or address (e.g. Tartu)"></div>
+          <div class="ff" data-svc="private,business,transport"><label>To</label><input type="text" name="to_address" placeholder="e.g. Randvere tee, Viimsi"></div>
           <div class="ff form-grid2" data-svc="private,business"><select name="to_floor" class="form-select"><option value="">Floor</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>-1</option><option>-2</option><option>-3</option><option>-4</option><option>-5</option></select><div class="lift-toggle" data-name="to_lift" role="group" aria-label="Elevator?"><span class="lift-q">Elevator?</span><button type="button" data-val="Yes">Yes</button><button type="button" data-val="No">No</button><input type="hidden" name="to_lift"></div></div>
-          <div class="ff form-grid2" data-svc="private,business,garbage,transport"><input type="date" name="date" aria-label="Date" required><input type="time" name="time" step="900" aria-label="Time"></div>
-          <div class="ff" data-svc="private,business"><select name="packing" class="form-select"><option value="">Packing</option><option>No packing needed</option><option>I need packing</option></select></div>
+          <div class="ff form-grid2" data-svc="private,business,garbage,transport"><input type="date" name="date" aria-label="Date" required><select name="time" class="form-select" aria-label="Time"><option value="">Time</option><option>00:00</option><option>00:15</option><option>00:30</option><option>00:45</option><option>01:00</option><option>01:15</option><option>01:30</option><option>01:45</option><option>02:00</option><option>02:15</option><option>02:30</option><option>02:45</option><option>03:00</option><option>03:15</option><option>03:30</option><option>03:45</option><option>04:00</option><option>04:15</option><option>04:30</option><option>04:45</option><option>05:00</option><option>05:15</option><option>05:30</option><option>05:45</option><option>06:00</option><option>06:15</option><option>06:30</option><option>06:45</option><option>07:00</option><option>07:15</option><option>07:30</option><option>07:45</option><option>08:00</option><option>08:15</option><option>08:30</option><option>08:45</option><option>09:00</option><option>09:15</option><option>09:30</option><option>09:45</option><option>10:00</option><option>10:15</option><option>10:30</option><option>10:45</option><option>11:00</option><option>11:15</option><option>11:30</option><option>11:45</option><option>12:00</option><option>12:15</option><option>12:30</option><option>12:45</option><option>13:00</option><option>13:15</option><option>13:30</option><option>13:45</option><option>14:00</option><option>14:15</option><option>14:30</option><option>14:45</option><option>15:00</option><option>15:15</option><option>15:30</option><option>15:45</option><option>16:00</option><option>16:15</option><option>16:30</option><option>16:45</option><option>17:00</option><option>17:15</option><option>17:30</option><option>17:45</option><option>18:00</option><option>18:15</option><option>18:30</option><option>18:45</option><option>19:00</option><option>19:15</option><option>19:30</option><option>19:45</option><option>20:00</option><option>20:15</option><option>20:30</option><option>20:45</option><option>21:00</option><option>21:15</option><option>21:30</option><option>21:45</option><option>22:00</option><option>22:15</option><option>22:30</option><option>22:45</option><option>23:00</option><option>23:15</option><option>23:30</option><option>23:45</option></select></div>
+          <div class="ff" data-svc="private,business"><div class="lift-toggle" data-name="packing" role="group" aria-label="Packing by us?"><span class="lift-q">Packing by us?</span><button type="button" data-val="Yes">Yes</button><button type="button" data-val="No">No</button><input type="hidden" name="packing"></div></div>
           <div class="ff" data-svc="private,business,garbage,transport"><textarea name="msg" placeholder="Additional info — list of items"></textarea></div>
           <label class="photo-upload ff" data-svc="private,business,garbage" id="photoLabel"><input type="file" name="photos" accept="image/*" multiple id="photoInput" aria-label="Attach a photo (optional)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);border:0"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span id="photoLabel-txt" aria-live="polite">Attach a photo (optional)</span></label>
           <button class="btn btn-accent" type="submit" style="width:100%;padding:13px;font-size:15px">Get a quote →</button>
@@ -1144,7 +1152,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
           <div><b>24/7</b><span>available</span></div>
           
         </div>
-        <a href="tel:+37256870101"><b style="color:var(--hero-text)">Call</b> +372 5687 0101</a>
+        <a href="tel:+37256870101"><b style="color:var(--hero-text)">Call</b> +372 5687 0101</a><br><a class="foot-et" href="tel:+3725540806" style="color:inherit;text-decoration:none">🇪🇪 +372 5540 806</a>
         <a href="mailto:info@moving24.ee"><b style="color:var(--hero-text)">Email</b> info@moving24.ee</a>
         <address style="font-style:normal;margin-top:10px;font-size:13px;color:var(--hero-text-dim);line-height:1.6">
           Tartu mnt 2, 10145 Tallinn, Eesti<br>
