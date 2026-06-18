@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Korteri ja maja kolimine · Moving24</title>
-<meta name="description" content="Korteri ja maja kolimine Tallinnas ja üle kogu Eesti. Hoolikas käsitsemine, pakkimine, mööbli monteerimine, oma tagaluugiga veokid. Tasuta pakkumine, 24/7.">
+<title>Korteri ja maja kolimine Tallinnas · Moving24</title>
+<meta name="description" content="Korteri- ja majakolimine Tallinnas ja üle Eesti: pakkimine, väljakanne, vedu, sissekanne ja mööbli kokkupanek. Hoolikas, kiire, 24/7. Küsi tasuta pakkumist.">
 
 <!-- ===== SEO / Open Graph / Schema ===== -->
 <link rel="canonical" href="https://dennymansa.github.io/moving24-landing/teenused/erakolimine/">
@@ -15,8 +15,8 @@
 <meta property="og:url" content="https://dennymansa.github.io/moving24-landing/teenused/erakolimine/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Moving24">
-<meta property="og:title" content="Korteri ja maja kolimine · Moving24">
-<meta property="og:description" content="Korteri ja maja kolimine Tallinnas ja üle kogu Eesti. Hoolikas käsitsemine, pakkimine, mööbli monteerimine, oma tagaluugiga veokid. Tasuta pakkumine, 24/7.">
+<meta property="og:title" content="Korteri ja maja kolimine Tallinnas · Moving24">
+<meta property="og:description" content="Korteri- ja majakolimine Tallinnas ja üle Eesti: pakkimine, väljakanne, vedu, sissekanne ja mööbli kokkupanek. Hoolikas, kiire, 24/7. Küsi tasuta pakkumist.">
 <meta property="og:image" content="img/m24-logo.png">
 <meta property="og:locale" content="et_EE">
 <meta name="twitter:card" content="summary_large_image">
@@ -293,6 +293,9 @@ h2.big--xl{font-size:clamp(36px,5.2vw,58px);font-weight:800;letter-spacing:-.02e
 .spec li{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
 .spec li span:first-child{color:var(--body-text-mute)}
 .spec li span:last-child{font-weight:600;text-align:right}
+.svc-why{list-style:none;max-width:780px;margin:8px 0 0;display:grid;gap:11px}
+.svc-why li{position:relative;padding-left:30px;font-size:15.5px;color:var(--body-text-dim)}
+.svc-why li::before{content:"\2713";position:absolute;left:0;top:1px;color:var(--accent);font-weight:800;font-size:17px}
 
 /* Google Business Profile layout */
 .gbp-wrap{display:grid;grid-template-columns:340px 1fr;gap:36px;align-items:start;margin-top:16px}
@@ -594,6 +597,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 @media(max-width:680px){.pak-grid{grid-template-columns:1fr}}
 
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Kui palju korteri või maja kolimine maksab?", "acceptedAnswer": {"@type": "Answer", "text": "Hind sõltub asjade mahust, vahemaast, korrusest ja lisateenustest, seega koostame iga kolimise jaoks personaalse pakkumise. Kirjelda oma kolimist ja saadame täpse hinna ette, ilma peidetud lisatasudeta. Hindamine on tasuta."}}, {"@type": "Question", "name": "Kuidas kolimine käib - mida ma ise tegema pean?", "acceptedAnswer": {"@type": "Answer", "text": "Kolimine käib kolme sammuga: kirjelda meile oma kodu ja aadressid, saad personaalse pakkumise ette, ning kokkulepitud päeval pakime, kanname välja, veame ja paneme mööbli kokku. Sina ei pea midagi tõstma."}}, {"@type": "Question", "name": "Kas pakite asjad ise ära ja paned mööbli kokku?", "acceptedAnswer": {"@type": "Answer", "text": "Jah. Soovi korral pakivad kolijad kogu kodu turvaliselt ning võtavad mööbli enne vedu lahti ja monteerivad uues kodus tagasi kokku. Võid ka ise pakkida - siis toome ainult karbid ja kile."}}, {"@type": "Question", "name": "Kas saate aidata ka siis, kui majas ei ole lifti?", "acceptedAnswer": {"@type": "Answer", "text": "Jah. Liftita või kitsa lifti puhul kanname asjad treppidest ja kasutame raskemate esemete jaoks sobivat varustust. Anna kõrgemate korruste puhul pakkumist küsides teada, et saadame õige suurusega meeskonna."}}, {"@type": "Question", "name": "Kui kiiresti saate kohale tulla?", "acceptedAnswer": {"@type": "Answer", "text": "Töötame 24/7 ja püüame leida sulle sobiva aja - ka õhtul, nädalavahetusel või lühikese etteteatamisega. Helista +372 5687 0101 ja vaatame lähimad vabad ajad."}}, {"@type": "Question", "name": "Kas saate kolida ka väljapoole Tallinna?", "acceptedAnswer": {"@type": "Answer", "text": "Jah. Kolime Tallinnas, Tartus, Pärnus ja kõikjal Eestis - nii linnasiseselt kui ka maakondade vahel. Anna lähte- ja sihtaadress teada ning arvestame vahemaa pakkumisse."}}]}</script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript). ВАЖНО: этот ID правится ВРУЧНУЮ (JS-конфиг window.M24 сюда не дотянется) - при вставке реального GTM замени GTM-XXXXXXX и здесь. -->
@@ -611,7 +615,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     <div class="nav-links">
       <div>
         <button>Teenused ▾</button>
-        <div class="dd"><a href="/moving24-landing/teenused/erakolimine/">Erakolimine</a><a href="/moving24-landing/teenused/arikolimine/">Ärikolimine</a><a href="/moving24-landing/teenused/prugivedu/">Prügivedu</a><a href="/moving24-landing/teenused/transport/">Transport</a></div>
+        <div class="dd"><a href="/moving24-landing/teenused/erakolimine/">Erakolimine</a><a href="/moving24-landing/teenused/arikolimine/">Ärikolimine</a><a href="/moving24-landing/teenused/prugivedu/">Prügivedu</a><a href="/moving24-landing/teenused/transport/">Transport</a><a href="/moving24-landing/teenused/suuregabariidiline/">Suuregabariidiline vedu</a></div>
       </div>
       <a href="#hinnad">Hinnad</a>
       <a href="#meist">Meist</a>
@@ -707,7 +711,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     </div>
   </div>
 </section>
-<section class="section"><div class="wrap" style="max-width:780px"><p class="lead">Kolime teie kodu hoolikalt ja kiiresti - korterist, majast või suvilast. Saadame ausa pakkumise ette, ilma peidetud lisatasudeta.</p></div></section><section class="section"><div class="wrap"><h2 class="big">Terve kodu kolimine ühe meeskonnaga</h2><p class="lead">Korteri-, maja- ja suvilakolimine on meie igapäevatöö. Tuleme kohale õige varustusega, pakime ja kanname asjad välja, veame need uude koju ning paneme mööbli soovi korral tagasi kokku. Teie ei pea midagi tõstma.</p><p class="lead"></p><p class="lead">Iga kodu on isesugune, seega kohandame meeskonna ja auto teie mahule. Väiksema korteri kolib paar kolijat, suure maja jaoks tuleme suurema tiimiga - alati nii, et päev läheks sujuvalt ja ilma asjatu ootamiseta.</p></div></section><section class="section section--alt"><div class="wrap"><h2 class="big">Tallinnas ja üle kogu Eesti, 24/7</h2><p class="lead">Kolime Tallinnas ja kõikjal Eestis - nii linnasiseselt kui ka maakondade vahel. Töötame 24/7, seega leiame sobiva aja ka õhtul, nädalavahetusel või lühikese etteteatamisega.</p><p class="lead"></p><p class="lead">Kirjeldage oma kolimist telefoni, e-posti või vormi teel ja saadame täpse pakkumise. Hindamine on tasuta ega kohusta millekski - räägime ausalt läbi, mida on vaja ja mis hinna sisse kuulub.</p></div></section><section class="section"><div class="wrap"><h2 class="big">Korduma kippuvad küsimused</h2><div class="faq"><div class="faq-q">Kui palju korteri kolimine maksab?</div><div class="faq-a"><p>Hind sõltub asjade mahust, vahemaast, korrusest ja lisateenustest, seega koostame iga kolimise jaoks personaalse pakkumise. Kirjeldage oma kolimist ja saadame täpse hinna ette - ilma peidetud lisatasudeta. Hindamine on tasuta.</p></div><div class="faq-q">Kas pakite asjad ise ära?</div><div class="faq-a"><p>Jah, soovi korral pakivad meie kolijad kogu kodu turvaliselt: õrnad esemed mähime mullikilesse ja paigutame karpidesse. Võite ka ise pakkida - siis soovitame karbid tubade ja sisu järgi ära märkida.</p></div><div class="faq-q">Kas võtate mööbli lahti ja panete uues kohas kokku?</div><div class="faq-a"><p>Jah. Võtame voodid, kapid ja lauad enne kolimist lahti ning monteerime need uues kodus jälle kokku. Andke broneerimisel teada, millised esemed monteerimist vajavad.</p></div><div class="faq-q">Kas saate aidata ka siis, kui majas ei ole lifti?</div><div class="faq-a"><p>Jah. Kui lifti ei ole või see on kitsas, kanname asjad treppidest ja kasutame raskemate esemete jaoks tõstukit ning sobivat varustust. Andke kõrgemate korruste puhul sellest pakkumist küsides teada.</p></div></div></div></section>
+<section class="section"><div class="wrap" style="max-width:820px"><p class="lead lead--lg">Kolime sinu kodu hoolikalt ja kiiresti algusest lõpuni - pakime, kanname välja, veame, kanname sisse ja paneme mööbli kokku. Sina ei pea midagi tõstma.</p></div></section><section class="section section--alt"><div class="wrap"><h2 class="big">Mida kolimisteenus sisaldab</h2><ul class="spec"><li><span>Pakkimine</span><span>Pakime kogu kodu kvaliteetsesse materjali või toome ainult karbid ja kile, kui soovid ise pakkida.</span></li><li><span>Mööbli lahtivõtmine</span><span>Võtame voodid, kapid ja lauad enne vedu lahti, et need läbi uste ja treppide sujuksid.</span></li><li><span>Väljakanne</span><span>Kanname asjad korterist või majast välja - ka ilma liftita, treppidest, oma varustusega.</span></li><li><span>Vedu</span><span>Veame oma tagaluugiga veokitega, asjad kinnitatud rihmadega ja õrnad pinnad kaitstud.</span></li><li><span>Sissekanne</span><span>Toome kõik uude koju tuppa, õigesse kohta - mitte ukse taha ega trepikotta.</span></li><li><span>Kokkupanek</span><span>Monteerime mööbli uues kodus jälle kokku, et saaksid kohe sisse elada.</span></li><li><span>Meeskond mahu järgi</span><span>Saadame 1-8 kogenud kolijat ja õige suurusega auto vastavalt sinu kodu mahule.</span></li></ul></div></section><section class="section"><div class="wrap"><h2 class="big">Miks valida Moving24</h2><ul class="svc-why"><li>Kõik ühes teenus: pakkimine, lahtivõtmine, vedu ja kokkupanek ühe meeskonnaga - sina midagi korraldama ei pea.</li><li>Hoolikas käsitsemine: mähime mööbli ja õrnad esemed kaitsesse ning kinnitame autos, et miski ei saaks viga.</li><li>Oma tagaluugiga veokid ja varustus, nii et raske mööbel liigub treppidest turvaliselt ka ilma liftita.</li><li>Töötame 24/7 Tallinnas ja üle kogu Eesti - leiame aja ka õhtuks, nädalavahetuseks või lühikese etteteatamisega.</li><li>Aus hind ette: anname personaalse pakkumise enne tööd, ilma peidetud lisatasude ja üllatusteta arvel.</li><li>5,0 tärni ja 37 arvustust Google'is - iga kolija on teinud sadu kolimisi.</li></ul></div></section>
 
 
 <!-- INFO STRIP -->
@@ -1131,40 +1135,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   <div class="wrap" style="display:flex;flex-direction:column;align-items:center;text-align:center">
     <span class="tag">Korduma kippuvad küsimused</span>
     <h2 class="big">Mida küsitakse enne tellimist</h2>
-    <div class="faq" style="text-align:left">
-      <div class="faq-item">
-        <button class="faq-q">Kui palju kolimine maksab?</button>
-        <div class="faq-a"><p>Hind sõltub asjade mahust, vahemaast, korrusest ja lisateenustest. Kirjeldage kolimist vormis või telefoni teel ning saadame täpse pakkumise samal päeval. Hindamine on tasuta ega kohusta millekski.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Mis kuulub hinna sisse?</button>
-        <div class="faq-a"><p>Hinna sisse kuuluvad transport ja kolijad. Pakkematerjalid, täielik pakkimine ja mööbli lahtimonteerimine tasutakse eraldi - ütleme hinna alati ette.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Kui kiiresti saate kohale tulla?</button>
-        <div class="faq-a"><p>Tallinnas ja Harjumaal sageli juba samal või järgmisel päeval. Töötame 24/7, seega leiame aja õhtul, öösel või nädalavahetusel. Mida varem ühendust võtate, seda kindlamini saate soovitud kuupäeva.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Kas pakite asjad ise ära?</button>
-        <div class="faq-a"><p>Jah, soovi korral pakivad meie kolijad kõik turvanõuete järgi. Õrnad esemed mähime mullikilesse ja paigutame vaheseintega karpidesse. Võite ka ise pakkida: soovitame märkida karbid tubade ja sisu järgi.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Millise suurusega autot mul vaja on?</button>
-        <div class="faq-a"><p>Seda ei pea teadma. Kirjeldage, mida veate, ja meie valime sobiva sõiduki: väikesest kaubikust kuni suure tõstukiga veokini.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Kas veate ka klaverit või seifi?</button>
-        <div class="faq-a"><p>Jah. Raskete esemete vedu on meie eriala: klaverid, seifid, tööstusseadmed. Kasutame eritööriistu ja kogenud meeskonda, et nii ese kui ka trepikoda jääksid terveks.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Kas viite ära vana mööbli ja prügi?</button>
-        <div class="faq-a"><p>Jah, korraldame äraveo ja utiliseerimise kohe pärast kolimist. Hind sõltub prügi mahust. Ütleme selle kohe.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Kuidas broneerida ja kas saab edasi lükata?</button>
-        <div class="faq-a"><p>Võtke ühendust telefoni, e-posti või vormi kaudu. Broneeringut saab muuta või tühistada, kui annate sellest mõistliku aja jooksul enne kolimiskuupäeva teada. Võtame vastu sularaha, pangaülekande ja kaardi.</p></div>
-      </div>
-    </div>
+    <div class="faq" style="text-align:left"><div class="faq-item"><button class="faq-q">Kui palju korteri või maja kolimine maksab?</button><div class="faq-a"><p>Hind sõltub asjade mahust, vahemaast, korrusest ja lisateenustest, seega koostame iga kolimise jaoks personaalse pakkumise. Kirjelda oma kolimist ja saadame täpse hinna ette, ilma peidetud lisatasudeta. Hindamine on tasuta.</p></div></div><div class="faq-item"><button class="faq-q">Kuidas kolimine käib - mida ma ise tegema pean?</button><div class="faq-a"><p>Kolimine käib kolme sammuga: kirjelda meile oma kodu ja aadressid, saad personaalse pakkumise ette, ning kokkulepitud päeval pakime, kanname välja, veame ja paneme mööbli kokku. Sina ei pea midagi tõstma.</p></div></div><div class="faq-item"><button class="faq-q">Kas pakite asjad ise ära ja paned mööbli kokku?</button><div class="faq-a"><p>Jah. Soovi korral pakivad kolijad kogu kodu turvaliselt ning võtavad mööbli enne vedu lahti ja monteerivad uues kodus tagasi kokku. Võid ka ise pakkida - siis toome ainult karbid ja kile.</p></div></div><div class="faq-item"><button class="faq-q">Kas saate aidata ka siis, kui majas ei ole lifti?</button><div class="faq-a"><p>Jah. Liftita või kitsa lifti puhul kanname asjad treppidest ja kasutame raskemate esemete jaoks sobivat varustust. Anna kõrgemate korruste puhul pakkumist küsides teada, et saadame õige suurusega meeskonna.</p></div></div><div class="faq-item"><button class="faq-q">Kui kiiresti saate kohale tulla?</button><div class="faq-a"><p>Töötame 24/7 ja püüame leida sulle sobiva aja - ka õhtul, nädalavahetusel või lühikese etteteatamisega. Helista +372 5687 0101 ja vaatame lähimad vabad ajad.</p></div></div><div class="faq-item"><button class="faq-q">Kas saate kolida ka väljapoole Tallinna?</button><div class="faq-a"><p>Jah. Kolime Tallinnas, Tartus, Pärnus ja kõikjal Eestis - nii linnasiseselt kui ka maakondade vahel. Anna lähte- ja sihtaadress teada ning arvestame vahemaa pakkumisse.</p></div></div></div>
   </div>
 </section>
 
@@ -1434,5 +1405,6 @@ document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
   <div class="cc-row cc-saverow"><button class="cc-btn cc-save" type="button">Salvesta valik</button></div>
 </div>
 <script>(function(){var KEY="m24_consent_v2";var cc=document.getElementById("cc");if(!cc)return;function apply(a,d){gtag("consent","update",{analytics_storage:a?"granted":"denied",ad_storage:d?"granted":"denied",ad_user_data:d?"granted":"denied",ad_personalization:d?"granted":"denied"});try{dataLayer.push({event:"consent_update",consent_analytics:a,consent_ads:d});}catch(e){}}var s=null;try{s=JSON.parse(localStorage.getItem(KEY));}catch(e){}if(s&&typeof s.a==="boolean"){apply(s.a,s.d);}else{cc.classList.add("show");}function save(a,d){try{localStorage.setItem(KEY,JSON.stringify({a:a,d:d,t:Date.now()}));}catch(e){}apply(a,d);cc.classList.remove("show");}function flip(sw){var on=!sw.classList.contains("cc-sw--on");sw.classList.toggle("cc-sw--on",on);sw.setAttribute("aria-checked",on?"true":"false");}var sws=cc.querySelectorAll(".cc-sw[data-for]");for(var i=0;i<sws.length;i++){(function(sw){sw.addEventListener("click",function(){flip(sw);});sw.addEventListener("keydown",function(e){if(e.key===" "||e.key==="Enter"){e.preventDefault();flip(sw);}});})(sws[i]);}cc.querySelector(".cc-cust").addEventListener("click",function(){cc.classList.add("cc-open");});function st(n){var sw=cc.querySelector('.cc-sw[data-for="'+n+'"]');return!!(sw&&sw.classList.contains("cc-sw--on"));}cc.querySelector(".cc-acc").addEventListener("click",function(){save(true,true);});cc.querySelector(".cc-dec").addEventListener("click",function(){save(false,false);});cc.querySelector(".cc-save").addEventListener("click",function(){save(st("analytics"),st("ads"));});})();</script>
+<script>window.addEventListener("load",function(){try{var c=document.querySelector('.chip[data-svc="private"]');if(c)c.click();var sf=document.getElementById("serviceField");if(sf&&!sf.value)sf.value="private";window.scrollTo(0,0);}catch(e){}});</script>
 </body>
 </html>

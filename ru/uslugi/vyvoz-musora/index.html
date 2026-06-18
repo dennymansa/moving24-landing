@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Вывоз мусора и старой мебели в Таллинне · Moving24</title>
-<meta name="description" content="Вывоз и утилизация старой мебели, хлама и строительного мусора в Таллинне и по всей Эстонии. Легальная сдача на пункты приёма. 30 €/м³. Возможно в день обращения.">
+<title>Вывоз старой мебели и хлама в Таллинне | Moving24</title>
+<meta name="description" content="Вывезем старую мебель, бытовую технику и хлам из квартиры или офиса + легальная утилизация. От 30 €/м³. Часто в день обращения. Узнайте цену.">
 
 <!-- ===== SEO / Open Graph / Schema ===== -->
 <link rel="canonical" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/vyvoz-musora/"><!-- TODO: на проде заменить на https://moving24.ee/ -->
@@ -15,8 +15,8 @@
 <meta property="og:url" content="https://dennymansa.github.io/moving24-landing/ru/uslugi/vyvoz-musora/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Moving24">
-<meta property="og:title" content="Вывоз мусора и старой мебели в Таллинне · Moving24">
-<meta property="og:description" content="Вывоз и утилизация старой мебели, хлама и строительного мусора в Таллинне и по всей Эстонии. Легальная сдача на пункты приёма. 30 €/м³. Возможно в день обращения.">
+<meta property="og:title" content="Вывоз старой мебели и хлама в Таллинне | Moving24">
+<meta property="og:description" content="Вывезем старую мебель, бытовую технику и хлам из квартиры или офиса + легальная утилизация. От 30 €/м³. Часто в день обращения. Узнайте цену.">
 <meta property="og:image" content="../img/m24-logo.png">
 <meta property="og:locale" content="ru_RU">
 <meta name="twitter:card" content="summary_large_image">
@@ -293,6 +293,9 @@ h2.big--xl{font-size:clamp(36px,5.2vw,58px);font-weight:800;letter-spacing:-.02e
 .spec li{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
 .spec li span:first-child{color:var(--body-text-mute)}
 .spec li span:last-child{font-weight:600;text-align:right}
+.svc-why{list-style:none;max-width:780px;margin:8px 0 0;display:grid;gap:11px}
+.svc-why li{position:relative;padding-left:30px;font-size:15.5px;color:var(--body-text-dim)}
+.svc-why li::before{content:"\2713";position:absolute;left:0;top:1px;color:var(--accent);font-weight:800;font-size:17px}
 
 /* Google Business Profile layout */
 .gbp-wrap{display:grid;grid-template-columns:340px 1fr;gap:36px;align-items:start;margin-top:16px}
@@ -594,6 +597,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 @media(max-width:680px){.pak-grid{grid-template-columns:1fr}}
 
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Сколько стоит вывоз старой мебели?", "acceptedAnswer": {"@type": "Answer", "text": "Ориентир по вывозу и утилизации - 30 €/м³ плюс работа грузчиков. Точную сумму называем заранее по объёму, этажу и доступу - сюрпризов в счёте не будет."}}, {"@type": "Question", "name": "Вы сами выносите вещи?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Грузчики сами выносят мебель и технику из квартиры, подвала или с чердака - вам не нужно ничего готовить и таскать к подъезду."}}, {"@type": "Question", "name": "Вывозите ли вы строительный мусор и делаете снос?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Мы занимаемся старой мебелью, бытовой техникой и хламом. Строительный мусор после ремонта и работы по сносу мы не выполняем."}}, {"@type": "Question", "name": "Это регулярный вывоз бытового мусора?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Мы не вывозим ежедневный бытовой мусор и не обслуживаем контейнеры. Это разовый вывоз крупных вещей и хлама с последующей утилизацией."}}, {"@type": "Question", "name": "Куда вы отвозите старые вещи?", "acceptedAnswer": {"@type": "Answer", "text": "Всё везём на официальный пункт приёма отходов, где их сортируют и утилизируют по правилам. Исправные и пригодные вещи по возможности отдаём на повторное использование."}}, {"@type": "Question", "name": "Можете приехать в день обращения?", "acceptedAnswer": {"@type": "Answer", "text": "Часто да. Если есть свободная бригада, заберём ваш хлам уже сегодня - позвоните +372 5687 0101, и мы согласуем время."}}]}</script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript). ВАЖНО: этот ID правится ВРУЧНУЮ (JS-конфиг window.M24 сюда не дотянется) - при вставке реального GTM замени GTM-XXXXXXX и здесь. -->
@@ -611,7 +615,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     <div class="nav-links">
       <div>
         <button>Услуги ▾</button>
-        <div class="dd"><a href="/moving24-landing/ru/uslugi/chastnyj-pereezd/">Частный переезд</a><a href="/moving24-landing/ru/uslugi/biznes-pereezd/">Бизнес переезд</a><a href="/moving24-landing/ru/uslugi/vyvoz-musora/">Вывоз мусора</a><a href="/moving24-landing/ru/uslugi/transport/">Транспорт</a></div>
+        <div class="dd"><a href="/moving24-landing/ru/uslugi/chastnyj-pereezd/">Частный переезд</a><a href="/moving24-landing/ru/uslugi/biznes-pereezd/">Бизнес переезд</a><a href="/moving24-landing/ru/uslugi/vyvoz-musora/">Вывоз мусора</a><a href="/moving24-landing/ru/uslugi/transport/">Транспорт</a><a href="/moving24-landing/ru/uslugi/krupnogabaritnyj/">Крупногабаритный груз</a></div>
       </div>
       <a href="#hinnad">Цены</a>
       <a href="#meist">О нас</a>
@@ -660,7 +664,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
           <span class="ht-sep">·</span>
           <span class="ht-label">37 отзывов на Google</span>
         </a>
-        <h1>Вывоз мусора и старой мебели в Таллинне</h1>
+        <h1>Вывоз старой мебели и хлама</h1>
         <div class="hero-btns">
           <a class="btn btn-accent" href="#form">Получить расчёт →</a>
           <a class="btn btn-ghost" href="tel:+37256870101">Позвонить +372 5687 0101</a>
@@ -707,7 +711,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     </div>
   </div>
 </section>
-<section class="section"><div class="wrap" style="max-width:780px"><p class="lead">Заберём и легально утилизируем старую мебель, хлам и строительный мусор - быстро, аккуратно и без свалок в лесу. Работаем по Таллинну и всей Эстонии, 24/7.</p></div></section><section class="section"><div class="wrap"><h2 class="big">Что и как мы вывозим</h2><p class="lead">Забираем старую мебель, диваны, шкафы, матрасы, бытовую технику, а также строительный мусор после ремонта. Грузчики сами выносят всё из квартиры или дома - вам не нужно ничего таскать к подъезду.</p><p class="lead"></p><p class="lead">Объём считаем в кубометрах: вывоз стоит 30 €/м³ плюс работа грузчиков. Точную сумму называем заранее, после того как вы опишете или покажете, что нужно вывезти. Никаких скрытых доплат.</p></div></section><section class="section section--alt"><div class="wrap"><h2 class="big">Легальная утилизация - без свалок</h2><p class="lead">Мы не выбрасываем мусор в лесу, у контейнеров или на стихийных свалках. Весь вывезенный хлам мы доставляем на официальные пункты приёма отходов Таллинна (jäätmejaam), где его принимают и перерабатывают по закону.</p><p class="lead"></p><p class="lead">Так вы можете быть уверены, что избавляетесь от мусора честно и без риска штрафов за незаконный выброс. Это наша принципиальная позиция.</p></div></section><section class="section section--alt"><div class="wrap"><h2 class="big">Что вывозим</h2><p class="lead">Вывоз старой мебели, диванов и кроватей, холодильников и стиральных машин, бытовой техники, строительного и крупногабаритного мусора. Забираем и везём на официальную свалку - без незаконных свалок.</p></div></section><section class="section"><div class="wrap"><h2 class="big">Частые вопросы</h2><div class="faq"><div class="faq-q">Сколько стоит вывоз мусора?</div><div class="faq-a"><p>Вывоз стоит 30 €/м³ плюс работа грузчиков. Итоговую сумму мы называем заранее, исходя из объёма и сложности выноса - без скрытых доплат.</p></div><div class="faq-q">Можно ли вывезти мусор в день обращения?</div><div class="faq-a"><p>Да, при наличии свободной бригады мы приедем и заберём ваш хлам уже в тот же день. Позвоните по +372 5687 0101, и мы подскажем ближайшее свободное время.</p></div><div class="faq-q">Куда вы отвозите мусор?</div><div class="faq-a"><p>Весь мусор мы доставляем на официальные пункты приёма отходов Таллинна (jäätmejaam). Никаких незаконных свалок - только легальная утилизация.</p></div><div class="faq-q">Нужно ли мне самому выносить вещи на улицу?</div><div class="faq-a"><p>Нет. Наши грузчики сами вынесут мебель и мусор из квартиры или дома и погрузят в машину. У нас собственные машины с гидробортом для тяжёлых предметов.</p></div></div></div></section>
+<section class="section"><div class="wrap" style="max-width:820px"><p class="lead lead--lg">Заберём старую мебель, бытовую технику и накопившийся хлам из квартиры или офиса и отвезём на официальный пункт приёма отходов. Вам не нужно ничего таскать и искать свалку.</p></div></section><section class="section section--alt"><div class="wrap"><h2 class="big">Что мы вывозим</h2><ul class="spec"><li><span>Старая мебель</span><span>Диваны, шкафы, кровати, столы, стулья, стеллажи - при необходимости разберём на месте.</span></li><li><span>Бытовая техника</span><span>Холодильники, стиральные машины, плиты, телевизоры - сдаём на правильную утилизацию.</span></li><li><span>Хлам и вещи</span><span>Матрасы, ковры, коробки, завалы из подвала и с чердака.</span></li><li><span>Старая мебель офиса</span><span>Столы, кресла, шкафы и устаревшая офисная техника при освобождении помещения.</span></li><li><span>Вынос из помещения</span><span>Грузчики сами выносят всё с любого этажа - вы ничего не поднимаете.</span></li><li><span>Легальная утилизация</span><span>Всё везём на официальный пункт приёма (jäätmejaam), без свалок в лесу.</span></li></ul></div></section><section class="section"><div class="wrap"><h2 class="big">Почему Moving24</h2><ul class="svc-why"><li>Понятная цена: вывоз от 30 €/м³ плюс работа грузчиков - всю сумму называем заранее, без скрытых доплат.</li><li>Часто приезжаем уже в день обращения и быстро освобождаем помещение.</li><li>1-8 опытных грузчиков и машины с гидробортом - тяжёлое и габаритное увезём за один раз.</li><li>Легальная утилизация на официальном пункте приёма, а не нелегальный сброс.</li><li>Оценка 5.0★ на Google по 37 отзывам.</li><li>Работаем в Таллинне, Тарту, Пярну и по всей Эстонии, в том числе вечером и в выходные.</li></ul></div></section>
 
 
 <!-- INFO STRIP -->
@@ -1131,40 +1135,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   <div class="wrap" style="display:flex;flex-direction:column;align-items:center;text-align:center">
     <span class="tag">Часто задаваемые вопросы</span>
     <h2 class="big">Что спрашивают перед заказом</h2>
-    <div class="faq" style="text-align:left">
-      <div class="faq-item">
-        <button class="faq-q">Сколько стоит переезд?</button>
-        <div class="faq-a"><p>Цена зависит от объёма вещей, расстояния, этажа и дополнительных услуг. Опишите переезд в форме или по телефону, и мы пришлём точное предложение в тот же день. Оценка бесплатна и ни к чему не обязывает.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Что входит в цену?</button>
-        <div class="faq-a"><p>В цену входят транспорт и грузчики. Упаковочные материалы, полная упаковка и демонтаж мебели оплачиваются отдельно, мы всегда называем стоимость заранее.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Как быстро вы можете приехать?</button>
-        <div class="faq-a"><p>По Таллинну и Харьюмаа часто уже в тот же или на следующий день. Работаем 24/7, поэтому найдём время вечером, ночью или в выходные. Чем раньше свяжетесь, тем надёжнее получите нужную дату.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Вы сами упакуете вещи?</button>
-        <div class="faq-a"><p>Да, по желанию наши грузчики упакуют всё по стандартам безопасности. Хрупкие предметы оборачиваем пузырчатой плёнкой и укладываем в коробки с перегородками. Можете упаковать сами: рекомендуем подписать коробки по комнатам и содержимому.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Какой размер машины мне нужен?</button>
-        <div class="faq-a"><p>Не нужно это знать. Опишите, что везёте, и мы подберём подходящее транспортное средство: от небольшого фургона до большого грузовика с задней загрузкой.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Вы перевезёте пианино или сейф?</button>
-        <div class="faq-a"><p>Да. Перевозка тяжёлых предметов наша специализация: пианино, сейфы, промышленное оборудование. Используем специальные инструменты и опытную команду, чтобы вещь и лестничный пролёт остались целыми.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Вы заберёте старую мебель и мусор?</button>
-        <div class="faq-a"><p>Да, организуем вывоз и утилизацию сразу после переезда. Стоимость зависит от объёма мусора. Назовём цену сразу.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Как забронировать и можно ли перенести?</button>
-        <div class="faq-a"><p>Свяжитесь по телефону, почте или через форму. Бронирование можно изменить или отменить, предупредив нас за разумное время до даты переезда. Принимаем наличные, банковский перевод и карту.</p></div>
-      </div>
-    </div>
+    <div class="faq" style="text-align:left"><div class="faq-item"><button class="faq-q">Сколько стоит вывоз старой мебели?</button><div class="faq-a"><p>Ориентир по вывозу и утилизации - 30 €/м³ плюс работа грузчиков. Точную сумму называем заранее по объёму, этажу и доступу - сюрпризов в счёте не будет.</p></div></div><div class="faq-item"><button class="faq-q">Вы сами выносите вещи?</button><div class="faq-a"><p>Да. Грузчики сами выносят мебель и технику из квартиры, подвала или с чердака - вам не нужно ничего готовить и таскать к подъезду.</p></div></div><div class="faq-item"><button class="faq-q">Вывозите ли вы строительный мусор и делаете снос?</button><div class="faq-a"><p>Нет. Мы занимаемся старой мебелью, бытовой техникой и хламом. Строительный мусор после ремонта и работы по сносу мы не выполняем.</p></div></div><div class="faq-item"><button class="faq-q">Это регулярный вывоз бытового мусора?</button><div class="faq-a"><p>Нет. Мы не вывозим ежедневный бытовой мусор и не обслуживаем контейнеры. Это разовый вывоз крупных вещей и хлама с последующей утилизацией.</p></div></div><div class="faq-item"><button class="faq-q">Куда вы отвозите старые вещи?</button><div class="faq-a"><p>Всё везём на официальный пункт приёма отходов, где их сортируют и утилизируют по правилам. Исправные и пригодные вещи по возможности отдаём на повторное использование.</p></div></div><div class="faq-item"><button class="faq-q">Можете приехать в день обращения?</button><div class="faq-a"><p>Часто да. Если есть свободная бригада, заберём ваш хлам уже сегодня - позвоните +372 5687 0101, и мы согласуем время.</p></div></div></div>
   </div>
 </section>
 
@@ -1434,5 +1405,6 @@ document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
   <div class="cc-row cc-saverow"><button class="cc-btn cc-save" type="button">Сохранить выбор</button></div>
 </div>
 <script>(function(){var KEY="m24_consent_v2";var cc=document.getElementById("cc");if(!cc)return;function apply(a,d){gtag("consent","update",{analytics_storage:a?"granted":"denied",ad_storage:d?"granted":"denied",ad_user_data:d?"granted":"denied",ad_personalization:d?"granted":"denied"});try{dataLayer.push({event:"consent_update",consent_analytics:a,consent_ads:d});}catch(e){}}var s=null;try{s=JSON.parse(localStorage.getItem(KEY));}catch(e){}if(s&&typeof s.a==="boolean"){apply(s.a,s.d);}else{cc.classList.add("show");}function save(a,d){try{localStorage.setItem(KEY,JSON.stringify({a:a,d:d,t:Date.now()}));}catch(e){}apply(a,d);cc.classList.remove("show");}function flip(sw){var on=!sw.classList.contains("cc-sw--on");sw.classList.toggle("cc-sw--on",on);sw.setAttribute("aria-checked",on?"true":"false");}var sws=cc.querySelectorAll(".cc-sw[data-for]");for(var i=0;i<sws.length;i++){(function(sw){sw.addEventListener("click",function(){flip(sw);});sw.addEventListener("keydown",function(e){if(e.key===" "||e.key==="Enter"){e.preventDefault();flip(sw);}});})(sws[i]);}cc.querySelector(".cc-cust").addEventListener("click",function(){cc.classList.add("cc-open");});function st(n){var sw=cc.querySelector('.cc-sw[data-for="'+n+'"]');return!!(sw&&sw.classList.contains("cc-sw--on"));}cc.querySelector(".cc-acc").addEventListener("click",function(){save(true,true);});cc.querySelector(".cc-dec").addEventListener("click",function(){save(false,false);});cc.querySelector(".cc-save").addEventListener("click",function(){save(st("analytics"),st("ads"));});})();</script>
+<script>window.addEventListener("load",function(){try{var c=document.querySelector('.chip[data-svc="garbage"]');if(c)c.click();var sf=document.getElementById("serviceField");if(sf&&!sf.value)sf.value="garbage";window.scrollTo(0,0);}catch(e){}});</script>
 </body>
 </html>

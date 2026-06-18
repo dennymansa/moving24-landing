@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Переезд офиса в Таллинне и по Эстонии · Moving24</title>
-<meta name="description" content="Переезд офиса и бизнеса в Эстонии без остановки работы: вечером, в выходные или ночью. Техника, архивы, координация. Э-счёт через e-äriregister. Звоните +372 5687 0101.">
+<title>Офисный переезд в Таллинне | Moving24</title>
+<meta name="description" content="Переезд офисов, складов и магазинов в Таллинне и Харьюмаа. Официальная фирма, счёт и договор, IT-техника и архивы, переезд вечером. Запросите смету.">
 
 <!-- ===== SEO / Open Graph / Schema ===== -->
 <link rel="canonical" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/biznes-pereezd/"><!-- TODO: на проде заменить на https://moving24.ee/ -->
@@ -15,8 +15,8 @@
 <meta property="og:url" content="https://dennymansa.github.io/moving24-landing/ru/uslugi/biznes-pereezd/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Moving24">
-<meta property="og:title" content="Переезд офиса в Таллинне и по Эстонии · Moving24">
-<meta property="og:description" content="Переезд офиса и бизнеса в Эстонии без остановки работы: вечером, в выходные или ночью. Техника, архивы, координация. Э-счёт через e-äriregister. Звоните +372 5687 0101.">
+<meta property="og:title" content="Офисный переезд в Таллинне | Moving24">
+<meta property="og:description" content="Переезд офисов, складов и магазинов в Таллинне и Харьюмаа. Официальная фирма, счёт и договор, IT-техника и архивы, переезд вечером. Запросите смету.">
 <meta property="og:image" content="../img/m24-logo.png">
 <meta property="og:locale" content="ru_RU">
 <meta name="twitter:card" content="summary_large_image">
@@ -293,6 +293,9 @@ h2.big--xl{font-size:clamp(36px,5.2vw,58px);font-weight:800;letter-spacing:-.02e
 .spec li{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
 .spec li span:first-child{color:var(--body-text-mute)}
 .spec li span:last-child{font-weight:600;text-align:right}
+.svc-why{list-style:none;max-width:780px;margin:8px 0 0;display:grid;gap:11px}
+.svc-why li{position:relative;padding-left:30px;font-size:15.5px;color:var(--body-text-dim)}
+.svc-why li::before{content:"\2713";position:absolute;left:0;top:1px;color:var(--accent);font-weight:800;font-size:17px}
 
 /* Google Business Profile layout */
 .gbp-wrap{display:grid;grid-template-columns:340px 1fr;gap:36px;align-items:start;margin-top:16px}
@@ -594,6 +597,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 @media(max-width:680px){.pak-grid{grid-template-columns:1fr}}
 
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Делаете ли переезд вне рабочего времени?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Офисные и складские переезды мы часто выполняем вечером, ночью или в выходные, чтобы ваша повседневная работа не прерывалась. Согласуем время под ваш график."}}, {"@type": "Question", "name": "Выставляете ли счёт и работаете по договору?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Мы официальная компания (рег. код 16978239, KMKR/VAT EE102734342). Работаем по письменному договору и выставляем полноценный счёт (arve) с НДС."}}, {"@type": "Question", "name": "Как вы обращаетесь с IT-техникой?", "acceptedAnswer": {"@type": "Answer", "text": "Компьютеры, серверы и мониторы отключаем, упаковываем с защитой и снова устанавливаем на новом адресе. По желанию маркируем кабели, чтобы подключение прошло быстро."}}, {"@type": "Question", "name": "Упаковываете ли архивы и документы?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Документы и папки складываем в коробки, нумеруем и расставляем на новом месте в том же порядке, чтобы ничего не потерялось."}}, {"@type": "Question", "name": "Как быстро я получу смету?", "acceptedAnswer": {"@type": "Answer", "text": "Отвечаем на запрос быстро - обычно в тот же рабочий день. Для крупных переездов приезжаем на осмотр и даём точное предложение по цене."}}, {"@type": "Question", "name": "Работаете ли в Тарту и Пярну?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Базируемся в Таллинне и Харьюмаа, перевозим также в Тарту, Пярну и по всей Эстонии."}}]}</script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript). ВАЖНО: этот ID правится ВРУЧНУЮ (JS-конфиг window.M24 сюда не дотянется) - при вставке реального GTM замени GTM-XXXXXXX и здесь. -->
@@ -611,7 +615,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     <div class="nav-links">
       <div>
         <button>Услуги ▾</button>
-        <div class="dd"><a href="/moving24-landing/ru/uslugi/chastnyj-pereezd/">Частный переезд</a><a href="/moving24-landing/ru/uslugi/biznes-pereezd/">Бизнес переезд</a><a href="/moving24-landing/ru/uslugi/vyvoz-musora/">Вывоз мусора</a><a href="/moving24-landing/ru/uslugi/transport/">Транспорт</a></div>
+        <div class="dd"><a href="/moving24-landing/ru/uslugi/chastnyj-pereezd/">Частный переезд</a><a href="/moving24-landing/ru/uslugi/biznes-pereezd/">Бизнес переезд</a><a href="/moving24-landing/ru/uslugi/vyvoz-musora/">Вывоз мусора</a><a href="/moving24-landing/ru/uslugi/transport/">Транспорт</a><a href="/moving24-landing/ru/uslugi/krupnogabaritnyj/">Крупногабаритный груз</a></div>
       </div>
       <a href="#hinnad">Цены</a>
       <a href="#meist">О нас</a>
@@ -660,7 +664,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
           <span class="ht-sep">·</span>
           <span class="ht-label">37 отзывов на Google</span>
         </a>
-        <h1>Переезд офиса и бизнеса в Таллинне и по всей Эстонии</h1>
+        <h1>Бизнес-переезд: офис, склад, магазин</h1>
         <div class="hero-btns">
           <a class="btn btn-accent" href="#form">Получить расчёт →</a>
           <a class="btn btn-ghost" href="tel:+37256870101">Позвонить +372 5687 0101</a>
@@ -707,7 +711,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     </div>
   </div>
 </section>
-<section class="section"><div class="wrap" style="max-width:780px"><p class="lead">Перевезём ваш офис без остановки работы - вечером, в выходные или ночью. Техника, мебель и архивы под нашей ответственностью, координация на каждом этапе.</p></div></section><section class="section"><div class="wrap"><h2 class="big">Переезд офиса без остановки бизнеса</h2><p class="lead">Главная задача при переезде компании - не потерять рабочие дни. Мы заранее составляем план: что и когда упаковывается, в каком порядке вывозится и где встаёт на новом месте. Рабочие места маркируются, поэтому каждый сотрудник находит свои вещи и технику сразу.</p><p class="lead"></p><p class="lead">Чаще всего переезжаем вечером, в выходные или ночью - чтобы в понедельник утром офис уже работал. Для каждого проекта назначаем одного ответственного менеджера: он держит связь с вашим контактным лицом и контролирует все этапы.</p></div></section><section class="section section--alt"><div class="wrap"><h2 class="big">Техника, мебель и архивы под контролем</h2><p class="lead">Перевозим компьютеры, серверы, мониторы и оргтехнику с правильной упаковкой и маркировкой кабелей, при необходимости разбираем и собираем мебель. Документы и архивы перевозим с сохранением порядка папок, чтобы ничего не потерялось.</p><p class="lead"></p><p class="lead">У нас собственные грузовики с гидробортом и опытные грузчики - от 1 до 8 человек в зависимости от объёма. Работаем по Таллинну и всей Эстонии, доступны 24/7.</p></div></section><section class="section"><div class="wrap"><h2 class="big">Прозрачная цена и удобные э-счета</h2><p class="lead">Каждый офисный переезд индивидуален, поэтому фиксированной почасовой цены мы не называем - вместо этого даём персональное предложение заранее, после уточнения объёма и условий. Без скрытых доплат: цена, о которой договорились, и есть итоговая.</p><p class="lead"></p><p class="lead">Для юридических лиц выставляем электронные счета (э-счёт / e-arve) через эстонский e-äriregister - они приходят прямо в вашу бухгалтерскую программу, без бумаги и ручного ввода.</p></div></section><section class="section section--alt"><div class="wrap"><h2 class="big">Офисный переезд с минимальным простоем</h2><p class="lead">Офисный переезд вечером или в выходные, аккуратная работа с IT-техникой и архивом. Отправляем э-счета через e-äriregister.</p></div></section><section class="section"><div class="wrap"><h2 class="big">Частые вопросы</h2><div class="faq"><div class="faq-q">Можно ли перевезти офис в выходные или ночью, чтобы не останавливать работу?</div><div class="faq-a"><p>Да. Мы регулярно перевозим офисы вечером, в выходные и ночью, чтобы в рабочее время бизнес не простаивал. Доступны 24/7 - согласуем удобное вам окно.</p></div><div class="faq-q">Вы работаете с компьютерами и серверами?</div><div class="faq-a"><p>Да. Технику аккуратно упаковываем, маркируем кабели и при необходимости отключаем и подключаем на новом месте, чтобы оборудование быстро вернулось в работу.</p></div><div class="faq-q">Выставляете ли вы счёт юридическому лицу?</div><div class="faq-a"><p>Да. Для компаний мы отправляем электронные счета (э-счёт / e-arve) через эстонский e-äriregister - счёт приходит прямо в вашу бухгалтерскую систему.</p></div><div class="faq-q">Сколько стоит переезд офиса?</div><div class="faq-a"><p>Каждый переезд индивидуален, поэтому мы не называем почасовую ставку наугад. После уточнения объёма и условий даём персональное предложение заранее - без скрытых доплат.</p></div></div></div></section>
+<section class="section"><div class="wrap" style="max-width:820px"><p class="lead lead--lg">Перевозим ваш бизнес на новый адрес без простоя - работа заканчивается на одной площадке и продолжается утром на другой. Работаем официально, по договору и со счётом.</p></div></section><section class="section section--alt"><div class="wrap"><h2 class="big">Что входит в бизнес-переезд</h2><ul class="spec"><li><span>IT-техника</span><span>компьютеры, серверы, мониторы - отключение, безопасная упаковка и подключение на месте</span></li><li><span>Архивы и документы</span><span>папки и шкафы в коробки, с нумерацией и в том же порядке</span></li><li><span>Офисная мебель</span><span>столы, шкафы, стеллажи - демонтаж и сборка</span></li><li><span>Оборудование склада и магазина</span><span>стеллажи, товар, холодильники, кассы, тяжёлая техника</span></li><li><span>Упаковочные материалы</span><span>коробки, плёнка, защита и ремни - привозим с собой</span></li><li><span>Транспорт и подъём</span><span>фургоны и опытная бригада, при необходимости подъёмные средства</span></li></ul></div></section><section class="section"><div class="wrap"><h2 class="big">Почему Moving24</h2><ul class="svc-why"><li>Официально зарегистрированная компания: рег. код 16978239, KMKR (VAT) EE102734342 - работаем по договору и выставляем счёт (arve)</li><li>Переезд вечером и в выходные, чтобы ваша работа не простаивала</li><li>IT-технику и архивы упаковываем и маркируем так, чтобы быстро всё восстановить на новом месте</li><li>1-8 опытных грузчиков в зависимости от объёма - не затягиваем работу</li><li>Быстрый ответ на запрос и чёткий график до переезда</li><li>Страхование ответственности - ваше имущество защищено при перевозке</li></ul></div></section>
 
 
 <!-- INFO STRIP -->
@@ -1131,40 +1135,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   <div class="wrap" style="display:flex;flex-direction:column;align-items:center;text-align:center">
     <span class="tag">Часто задаваемые вопросы</span>
     <h2 class="big">Что спрашивают перед заказом</h2>
-    <div class="faq" style="text-align:left">
-      <div class="faq-item">
-        <button class="faq-q">Сколько стоит переезд?</button>
-        <div class="faq-a"><p>Цена зависит от объёма вещей, расстояния, этажа и дополнительных услуг. Опишите переезд в форме или по телефону, и мы пришлём точное предложение в тот же день. Оценка бесплатна и ни к чему не обязывает.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Что входит в цену?</button>
-        <div class="faq-a"><p>В цену входят транспорт и грузчики. Упаковочные материалы, полная упаковка и демонтаж мебели оплачиваются отдельно, мы всегда называем стоимость заранее.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Как быстро вы можете приехать?</button>
-        <div class="faq-a"><p>По Таллинну и Харьюмаа часто уже в тот же или на следующий день. Работаем 24/7, поэтому найдём время вечером, ночью или в выходные. Чем раньше свяжетесь, тем надёжнее получите нужную дату.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Вы сами упакуете вещи?</button>
-        <div class="faq-a"><p>Да, по желанию наши грузчики упакуют всё по стандартам безопасности. Хрупкие предметы оборачиваем пузырчатой плёнкой и укладываем в коробки с перегородками. Можете упаковать сами: рекомендуем подписать коробки по комнатам и содержимому.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Какой размер машины мне нужен?</button>
-        <div class="faq-a"><p>Не нужно это знать. Опишите, что везёте, и мы подберём подходящее транспортное средство: от небольшого фургона до большого грузовика с задней загрузкой.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Вы перевезёте пианино или сейф?</button>
-        <div class="faq-a"><p>Да. Перевозка тяжёлых предметов наша специализация: пианино, сейфы, промышленное оборудование. Используем специальные инструменты и опытную команду, чтобы вещь и лестничный пролёт остались целыми.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Вы заберёте старую мебель и мусор?</button>
-        <div class="faq-a"><p>Да, организуем вывоз и утилизацию сразу после переезда. Стоимость зависит от объёма мусора. Назовём цену сразу.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Как забронировать и можно ли перенести?</button>
-        <div class="faq-a"><p>Свяжитесь по телефону, почте или через форму. Бронирование можно изменить или отменить, предупредив нас за разумное время до даты переезда. Принимаем наличные, банковский перевод и карту.</p></div>
-      </div>
-    </div>
+    <div class="faq" style="text-align:left"><div class="faq-item"><button class="faq-q">Делаете ли переезд вне рабочего времени?</button><div class="faq-a"><p>Да. Офисные и складские переезды мы часто выполняем вечером, ночью или в выходные, чтобы ваша повседневная работа не прерывалась. Согласуем время под ваш график.</p></div></div><div class="faq-item"><button class="faq-q">Выставляете ли счёт и работаете по договору?</button><div class="faq-a"><p>Да. Мы официальная компания (рег. код 16978239, KMKR/VAT EE102734342). Работаем по письменному договору и выставляем полноценный счёт (arve) с НДС.</p></div></div><div class="faq-item"><button class="faq-q">Как вы обращаетесь с IT-техникой?</button><div class="faq-a"><p>Компьютеры, серверы и мониторы отключаем, упаковываем с защитой и снова устанавливаем на новом адресе. По желанию маркируем кабели, чтобы подключение прошло быстро.</p></div></div><div class="faq-item"><button class="faq-q">Упаковываете ли архивы и документы?</button><div class="faq-a"><p>Да. Документы и папки складываем в коробки, нумеруем и расставляем на новом месте в том же порядке, чтобы ничего не потерялось.</p></div></div><div class="faq-item"><button class="faq-q">Как быстро я получу смету?</button><div class="faq-a"><p>Отвечаем на запрос быстро - обычно в тот же рабочий день. Для крупных переездов приезжаем на осмотр и даём точное предложение по цене.</p></div></div><div class="faq-item"><button class="faq-q">Работаете ли в Тарту и Пярну?</button><div class="faq-a"><p>Да. Базируемся в Таллинне и Харьюмаа, перевозим также в Тарту, Пярну и по всей Эстонии.</p></div></div></div>
   </div>
 </section>
 
@@ -1434,5 +1405,6 @@ document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
   <div class="cc-row cc-saverow"><button class="cc-btn cc-save" type="button">Сохранить выбор</button></div>
 </div>
 <script>(function(){var KEY="m24_consent_v2";var cc=document.getElementById("cc");if(!cc)return;function apply(a,d){gtag("consent","update",{analytics_storage:a?"granted":"denied",ad_storage:d?"granted":"denied",ad_user_data:d?"granted":"denied",ad_personalization:d?"granted":"denied"});try{dataLayer.push({event:"consent_update",consent_analytics:a,consent_ads:d});}catch(e){}}var s=null;try{s=JSON.parse(localStorage.getItem(KEY));}catch(e){}if(s&&typeof s.a==="boolean"){apply(s.a,s.d);}else{cc.classList.add("show");}function save(a,d){try{localStorage.setItem(KEY,JSON.stringify({a:a,d:d,t:Date.now()}));}catch(e){}apply(a,d);cc.classList.remove("show");}function flip(sw){var on=!sw.classList.contains("cc-sw--on");sw.classList.toggle("cc-sw--on",on);sw.setAttribute("aria-checked",on?"true":"false");}var sws=cc.querySelectorAll(".cc-sw[data-for]");for(var i=0;i<sws.length;i++){(function(sw){sw.addEventListener("click",function(){flip(sw);});sw.addEventListener("keydown",function(e){if(e.key===" "||e.key==="Enter"){e.preventDefault();flip(sw);}});})(sws[i]);}cc.querySelector(".cc-cust").addEventListener("click",function(){cc.classList.add("cc-open");});function st(n){var sw=cc.querySelector('.cc-sw[data-for="'+n+'"]');return!!(sw&&sw.classList.contains("cc-sw--on"));}cc.querySelector(".cc-acc").addEventListener("click",function(){save(true,true);});cc.querySelector(".cc-dec").addEventListener("click",function(){save(false,false);});cc.querySelector(".cc-save").addEventListener("click",function(){save(st("analytics"),st("ads"));});})();</script>
+<script>window.addEventListener("load",function(){try{var c=document.querySelector('.chip[data-svc="business"]');if(c)c.click();var sf=document.getElementById("serviceField");if(sf&&!sf.value)sf.value="business";window.scrollTo(0,0);}catch(e){}});</script>
 </body>
 </html>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Транспортные услуги в Эстонии · Moving24</title>
-<meta name="description" content="Перевозка мебели, отдельных вещей и грузов по Таллинну и всей Эстонии. Машины с гидробортом, бережная фиксация, работаем 24/7. Точная цена заранее.">
+<title>Грузоперевозки в Таллине и Эстонии | Moving24</title>
+<meta name="description" content="Перевозим мебель, покупки и отдельные вещи по Таллину и Эстонии. Машины с лифтом, гибкое время, груз застрахован. Узнайте цену сегодня.">
 
 <!-- ===== SEO / Open Graph / Schema ===== -->
 <link rel="canonical" href="https://dennymansa.github.io/moving24-landing/ru/uslugi/transport/"><!-- TODO: на проде заменить на https://moving24.ee/ -->
@@ -15,8 +15,8 @@
 <meta property="og:url" content="https://dennymansa.github.io/moving24-landing/ru/uslugi/transport/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Moving24">
-<meta property="og:title" content="Транспортные услуги в Эстонии · Moving24">
-<meta property="og:description" content="Перевозка мебели, отдельных вещей и грузов по Таллинну и всей Эстонии. Машины с гидробортом, бережная фиксация, работаем 24/7. Точная цена заранее.">
+<meta property="og:title" content="Грузоперевозки в Таллине и Эстонии | Moving24">
+<meta property="og:description" content="Перевозим мебель, покупки и отдельные вещи по Таллину и Эстонии. Машины с лифтом, гибкое время, груз застрахован. Узнайте цену сегодня.">
 <meta property="og:image" content="../img/m24-logo.png">
 <meta property="og:locale" content="ru_RU">
 <meta name="twitter:card" content="summary_large_image">
@@ -293,6 +293,9 @@ h2.big--xl{font-size:clamp(36px,5.2vw,58px);font-weight:800;letter-spacing:-.02e
 .spec li{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
 .spec li span:first-child{color:var(--body-text-mute)}
 .spec li span:last-child{font-weight:600;text-align:right}
+.svc-why{list-style:none;max-width:780px;margin:8px 0 0;display:grid;gap:11px}
+.svc-why li{position:relative;padding-left:30px;font-size:15.5px;color:var(--body-text-dim)}
+.svc-why li::before{content:"\2713";position:absolute;left:0;top:1px;color:var(--accent);font-weight:800;font-size:17px}
 
 /* Google Business Profile layout */
 .gbp-wrap{display:grid;grid-template-columns:340px 1fr;gap:36px;align-items:start;margin-top:16px}
@@ -594,6 +597,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 @media(max-width:680px){.pak-grid{grid-template-columns:1fr}}
 
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Перевезёте одну вещь, например диван или холодильник?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Услуга как раз для отдельных вещей - часто достаточно перевезти один предмет мебели или технику. Заказывать полный переезд не нужно."}}, {"@type": "Question", "name": "У вас есть машина с гидробортом (лифтом)?", "acceptedAnswer": {"@type": "Answer", "text": "Да, мы используем машины с гидробортом, чтобы тяжёлые и крупные вещи можно было безопасно загрузить и выгрузить без переноски по лестнице."}}, {"@type": "Question", "name": "Как быстро вы можете приехать?", "acceptedAnswer": {"@type": "Answer", "text": "Отвечаем на заявку быстро и предлагаем гибкое время, включая вечер и выходные. Часто можем организовать перевозку в тот же или на следующий день."}}, {"@type": "Question", "name": "Вы работаете только в Таллине?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Возим по Таллину, Харьюмаа и по всей Эстонии, в том числе в направлении Тарту и Пярну. Перевозки между городами - обычная часть услуги."}}, {"@type": "Question", "name": "Как формируется цена?", "acceptedAnswer": {"@type": "Answer", "text": "Цена зависит от объёма груза, расстояния и доступа (этаж, лифт). Мы называем понятную цену до работы, а оплата - только после перевозки."}}, {"@type": "Question", "name": "Помогаете с погрузкой и выгрузкой?", "acceptedAnswer": {"@type": "Answer", "text": "Да, бригада грузит вещи, фиксирует их ремнями в машине и заносит в помещение по адресу. При необходимости помогаем и с переноской."}}]}</script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript). ВАЖНО: этот ID правится ВРУЧНУЮ (JS-конфиг window.M24 сюда не дотянется) - при вставке реального GTM замени GTM-XXXXXXX и здесь. -->
@@ -611,7 +615,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     <div class="nav-links">
       <div>
         <button>Услуги ▾</button>
-        <div class="dd"><a href="/moving24-landing/ru/uslugi/chastnyj-pereezd/">Частный переезд</a><a href="/moving24-landing/ru/uslugi/biznes-pereezd/">Бизнес переезд</a><a href="/moving24-landing/ru/uslugi/vyvoz-musora/">Вывоз мусора</a><a href="/moving24-landing/ru/uslugi/transport/">Транспорт</a></div>
+        <div class="dd"><a href="/moving24-landing/ru/uslugi/chastnyj-pereezd/">Частный переезд</a><a href="/moving24-landing/ru/uslugi/biznes-pereezd/">Бизнес переезд</a><a href="/moving24-landing/ru/uslugi/vyvoz-musora/">Вывоз мусора</a><a href="/moving24-landing/ru/uslugi/transport/">Транспорт</a><a href="/moving24-landing/ru/uslugi/krupnogabaritnyj/">Крупногабаритный груз</a></div>
       </div>
       <a href="#hinnad">Цены</a>
       <a href="#meist">О нас</a>
@@ -660,7 +664,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
           <span class="ht-sep">·</span>
           <span class="ht-label">37 отзывов на Google</span>
         </a>
-        <h1>Транспортные услуги - перевозка вещей и мебели по Эстонии</h1>
+        <h1>Транспорт и грузоперевозки</h1>
         <div class="hero-btns">
           <a class="btn btn-accent" href="#form">Получить расчёт →</a>
           <a class="btn btn-ghost" href="tel:+37256870101">Позвонить +372 5687 0101</a>
@@ -707,7 +711,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     </div>
   </div>
 </section>
-<section class="section"><div class="wrap" style="max-width:780px"><p class="lead">Нужно перевезти диван, забрать покупку из магазина или отправить пару коробок? Доставим быстро и аккуратно - без оплаты за полный переезд.</p></div></section><section class="section"><div class="wrap"><h2 class="big">Что мы перевозим</h2><p class="lead">Транспортная услуга подходит, когда нужно переместить отдельные вещи, а не всю квартиру. Привезём новый диван или холодильник, заберём мебель с маркетплейса или из магазина, доставим стройматериалы, технику, велосипед или несколько коробок.</p><p class="lead"></p><p class="lead">Это разовая перевозка под ваш запрос: один предмет или небольшой груз, один адрес загрузки и один адрес доставки. Если же речь о полном переезде квартиры или офиса, посмотрите нашу услугу переезда - там мы подбираем бригаду и технику под весь объём.</p></div></section><section class="section section--alt"><div class="wrap"><h2 class="big">Как мы работаем</h2><p class="lead">Расскажите, что и откуда нужно перевезти, укажите адреса и удобное время - мы подберём машину нужного размера и назовём точную цену сразу. Каждый заказ индивидуален, поэтому стоимость считаем под ваш конкретный случай, без скрытых доплат.</p><p class="lead"></p><p class="lead">На месте опытные грузчики аккуратно вынесут вещи, закрепят их в кузове и доставят по адресу. При необходимости поднимем груз на этаж. У нас собственные грузовики с гидробортом, поэтому даже тяжёлые предметы загружаются безопасно и быстро.</p></div></section><section class="section section--alt"><div class="wrap"><h2 class="big">Тяжёлые и габаритные вещи</h2><p class="lead">Перевозка пианино, сейфов, станков и других тяжёлых предметов. Машины с лифтом и правильное оснащение - безопасно и без повреждений.</p></div></section><section class="section"><div class="wrap"><div class="equip"><div class="equip-img"><img src="/moving24-landing/img/g-heavy1.jpg" alt="Габаритные предметы" loading="lazy"></div><div><span class="tag">Габаритные предметы</span><h2 class="big">Перевозим то, от чего отказываются другие.</h2><p class="lead">Пианино, сейф, тренажёры - спецоснащение и опытная команда. Вещи и стены остаются целыми.</p><ul class="spec"><li><span>Пианино и рояль</span><span>Спецремни, перевозка с лифтом</span></li><li><span>Сейф</span><span>Подъём тяжёлых предметов, до сотен кг</span></li><li><span>Тренажёры</span><span>Беговая дорожка, силовая станция</span></li><li><span>Бильярдный стол</span><span>Разборка и сборка</span></li><li><span>Крупная мебель</span><span>Угловые диваны, шкафы, комоды</span></li><li><span>Бытовая техника</span><span>Холодильник, стиралка, плита</span></li><li><span>Станки и оборудование</span><span>Оснащение мастерских и бизнеса</span></li><li><span>Аквариум и предметы искусства</span><span>Бережная перевозка, доп. защита</span></li></ul></div></div></div></section><section class="section"><div class="wrap"><h2 class="big">Частые вопросы</h2><div class="faq"><div class="faq-q">Сколько стоит перевозка одной вещи?</div><div class="faq-a"><p>Цена зависит от размера груза, расстояния и нужной машины. Опишите задачу по телефону +372 5687 0101 - мы назовём точную стоимость заранее, без скрытых доплат.</p></div><div class="faq-q">Можете перевезти всего один предмет, например диван или холодильник?</div><div class="faq-a"><p>Да, это и есть наша транспортная услуга. Перевозим как отдельные вещи, так и небольшие грузы - полный переезд для этого заказывать не нужно.</p></div><div class="faq-q">Помогут ли грузчики занести вещь в квартиру?</div><div class="faq-a"><p>Да. На заказ выезжают опытные грузчики, которые вынесут, погрузят и при необходимости поднимут груз на нужный этаж.</p></div><div class="faq-q">Как быстро вы можете приехать?</div><div class="faq-a"><p>Мы работаем круглосуточно, 24/7, и часто можем подъехать в день обращения. Позвоните - подберём ближайшее свободное время под ваш график.</p></div></div></div></section>
+<section class="section"><div class="wrap" style="max-width:820px"><p class="lead lead--lg">Перевозим мебель, бытовую технику, покупки и отдельные грузы по Таллину и всей Эстонии - даже когда полноценный переезд не нужен. Машины с гидробортом и гибкое время, включая вечера и выходные.</p></div></section><section class="section section--alt"><div class="wrap"><h2 class="big">Что мы перевозим</h2><ul class="spec"><li><span>Мебель</span><span>Диван, шкаф, кровать, стол - в том числе отдельные предметы</span></li><li><span>Бытовая техника</span><span>Холодильник, стиралка, плита - надёжно фиксируем ремнями</span></li><li><span>Покупки из магазина и интернета</span><span>Заберём товар из магазина или пункта выдачи</span></li><li><span>Крупные и тяжёлые вещи</span><span>Пианино, сейф, тренажёр - машиной с гидробортом</span></li><li><span>Стройматериалы и товары для сада</span><span>Плитка, доски, грунт - на объект или домой</span></li><li><span>Офисные и единичные перевозки</span><span>Столы, кресла, техника без переезда всего офиса</span></li></ul></div></section><section class="section"><div class="wrap"><h2 class="big">Почему Moving24</h2><ul class="svc-why"><li>Машины с гидробортом - тяжёлое не нужно тащить по лестнице</li><li>Гибкое время: перевозка вечером и в выходные, быстрый ответ на заявку</li><li>1-8 опытных грузчиков в зависимости от объёма</li><li>Груз застрахован - вещи защищены на всём пути</li><li>Честная цена: оплата только после работы, без предоплаты</li><li>Официальная компания (рег. 16978239), рейтинг Google 5,0 по 37 отзывам</li></ul></div></section>
 
 
 <!-- INFO STRIP -->
@@ -1131,40 +1135,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   <div class="wrap" style="display:flex;flex-direction:column;align-items:center;text-align:center">
     <span class="tag">Часто задаваемые вопросы</span>
     <h2 class="big">Что спрашивают перед заказом</h2>
-    <div class="faq" style="text-align:left">
-      <div class="faq-item">
-        <button class="faq-q">Сколько стоит переезд?</button>
-        <div class="faq-a"><p>Цена зависит от объёма вещей, расстояния, этажа и дополнительных услуг. Опишите переезд в форме или по телефону, и мы пришлём точное предложение в тот же день. Оценка бесплатна и ни к чему не обязывает.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Что входит в цену?</button>
-        <div class="faq-a"><p>В цену входят транспорт и грузчики. Упаковочные материалы, полная упаковка и демонтаж мебели оплачиваются отдельно, мы всегда называем стоимость заранее.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Как быстро вы можете приехать?</button>
-        <div class="faq-a"><p>По Таллинну и Харьюмаа часто уже в тот же или на следующий день. Работаем 24/7, поэтому найдём время вечером, ночью или в выходные. Чем раньше свяжетесь, тем надёжнее получите нужную дату.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Вы сами упакуете вещи?</button>
-        <div class="faq-a"><p>Да, по желанию наши грузчики упакуют всё по стандартам безопасности. Хрупкие предметы оборачиваем пузырчатой плёнкой и укладываем в коробки с перегородками. Можете упаковать сами: рекомендуем подписать коробки по комнатам и содержимому.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Какой размер машины мне нужен?</button>
-        <div class="faq-a"><p>Не нужно это знать. Опишите, что везёте, и мы подберём подходящее транспортное средство: от небольшого фургона до большого грузовика с задней загрузкой.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Вы перевезёте пианино или сейф?</button>
-        <div class="faq-a"><p>Да. Перевозка тяжёлых предметов наша специализация: пианино, сейфы, промышленное оборудование. Используем специальные инструменты и опытную команду, чтобы вещь и лестничный пролёт остались целыми.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Вы заберёте старую мебель и мусор?</button>
-        <div class="faq-a"><p>Да, организуем вывоз и утилизацию сразу после переезда. Стоимость зависит от объёма мусора. Назовём цену сразу.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Как забронировать и можно ли перенести?</button>
-        <div class="faq-a"><p>Свяжитесь по телефону, почте или через форму. Бронирование можно изменить или отменить, предупредив нас за разумное время до даты переезда. Принимаем наличные, банковский перевод и карту.</p></div>
-      </div>
-    </div>
+    <div class="faq" style="text-align:left"><div class="faq-item"><button class="faq-q">Перевезёте одну вещь, например диван или холодильник?</button><div class="faq-a"><p>Да. Услуга как раз для отдельных вещей - часто достаточно перевезти один предмет мебели или технику. Заказывать полный переезд не нужно.</p></div></div><div class="faq-item"><button class="faq-q">У вас есть машина с гидробортом (лифтом)?</button><div class="faq-a"><p>Да, мы используем машины с гидробортом, чтобы тяжёлые и крупные вещи можно было безопасно загрузить и выгрузить без переноски по лестнице.</p></div></div><div class="faq-item"><button class="faq-q">Как быстро вы можете приехать?</button><div class="faq-a"><p>Отвечаем на заявку быстро и предлагаем гибкое время, включая вечер и выходные. Часто можем организовать перевозку в тот же или на следующий день.</p></div></div><div class="faq-item"><button class="faq-q">Вы работаете только в Таллине?</button><div class="faq-a"><p>Нет. Возим по Таллину, Харьюмаа и по всей Эстонии, в том числе в направлении Тарту и Пярну. Перевозки между городами - обычная часть услуги.</p></div></div><div class="faq-item"><button class="faq-q">Как формируется цена?</button><div class="faq-a"><p>Цена зависит от объёма груза, расстояния и доступа (этаж, лифт). Мы называем понятную цену до работы, а оплата - только после перевозки.</p></div></div><div class="faq-item"><button class="faq-q">Помогаете с погрузкой и выгрузкой?</button><div class="faq-a"><p>Да, бригада грузит вещи, фиксирует их ремнями в машине и заносит в помещение по адресу. При необходимости помогаем и с переноской.</p></div></div></div>
   </div>
 </section>
 
@@ -1434,5 +1405,6 @@ document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
   <div class="cc-row cc-saverow"><button class="cc-btn cc-save" type="button">Сохранить выбор</button></div>
 </div>
 <script>(function(){var KEY="m24_consent_v2";var cc=document.getElementById("cc");if(!cc)return;function apply(a,d){gtag("consent","update",{analytics_storage:a?"granted":"denied",ad_storage:d?"granted":"denied",ad_user_data:d?"granted":"denied",ad_personalization:d?"granted":"denied"});try{dataLayer.push({event:"consent_update",consent_analytics:a,consent_ads:d});}catch(e){}}var s=null;try{s=JSON.parse(localStorage.getItem(KEY));}catch(e){}if(s&&typeof s.a==="boolean"){apply(s.a,s.d);}else{cc.classList.add("show");}function save(a,d){try{localStorage.setItem(KEY,JSON.stringify({a:a,d:d,t:Date.now()}));}catch(e){}apply(a,d);cc.classList.remove("show");}function flip(sw){var on=!sw.classList.contains("cc-sw--on");sw.classList.toggle("cc-sw--on",on);sw.setAttribute("aria-checked",on?"true":"false");}var sws=cc.querySelectorAll(".cc-sw[data-for]");for(var i=0;i<sws.length;i++){(function(sw){sw.addEventListener("click",function(){flip(sw);});sw.addEventListener("keydown",function(e){if(e.key===" "||e.key==="Enter"){e.preventDefault();flip(sw);}});})(sws[i]);}cc.querySelector(".cc-cust").addEventListener("click",function(){cc.classList.add("cc-open");});function st(n){var sw=cc.querySelector('.cc-sw[data-for="'+n+'"]');return!!(sw&&sw.classList.contains("cc-sw--on"));}cc.querySelector(".cc-acc").addEventListener("click",function(){save(true,true);});cc.querySelector(".cc-dec").addEventListener("click",function(){save(false,false);});cc.querySelector(".cc-save").addEventListener("click",function(){save(st("analytics"),st("ads"));});})();</script>
+<script>window.addEventListener("load",function(){try{var c=document.querySelector('.chip[data-svc="transport"]');if(c)c.click();var sf=document.getElementById("serviceField");if(sf&&!sf.value)sf.value="transport";window.scrollTo(0,0);}catch(e){}});</script>
 </body>
 </html>
