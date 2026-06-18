@@ -47,9 +47,9 @@
     {"@type":"Question","name":"Mis kuulub hinna sisse?","acceptedAnswer":{"@type":"Answer","text":"Hinna sisse kuuluvad transport ja kolijad. Pakkematerjalid, täielik pakkimine ja mööbli lahtimonteerimine tasutakse eraldi — ütleme hinna alati ette."}},
     {"@type":"Question","name":"Kui kiiresti saate kohale tulla?","acceptedAnswer":{"@type":"Answer","text":"Tallinnas ja Harjumaal sageli juba samal või järgmisel päeval. Töötame 24/7, seega leiame aja õhtul, öösel või nädalavahetusel. Mida varem ühendust võtate, seda kindlamini saate soovitud kuupäeva."}},
     {"@type":"Question","name":"Kas pakite asjad ise ära?","acceptedAnswer":{"@type":"Answer","text":"Jah, soovi korral pakivad meie kolijad kõik turvanõuete järgi. Õrnad esemed mähime mullikilesse ja paigutame vaheseintega karpidesse. Võite ka ise pakkida: soovitame märkida karbid tubade ja sisu järgi."}},
-    {"@type":"Question","name":"Millise suurusega autot mul vaja on?","acceptedAnswer":{"@type":"Answer","text":"Seda ei pea teadma. Kirjeldage, mida veate, ja meie valime sobiva sõiduki: väikesest kaubikust kuni suure tagaluugiga veokini."}},
+    {"@type":"Question","name":"Millise suurusega autot mul vaja on?","acceptedAnswer":{"@type":"Answer","text":"Seda ei pea teadma. Kirjeldage, mida veate, ja meie valime sobiva sõiduki: väikesest kaubikust kuni suure tõstukiga veokini."}},
     {"@type":"Question","name":"Kas veate ka klaverit või seifi?","acceptedAnswer":{"@type":"Answer","text":"Jah. Raskete esemete vedu on meie eriala: klaverid, seifid, tööstusseadmed. Kasutame eritööriistu ja kogenud meeskonda, et nii ese kui ka trepikoda jääksid terveks."}},
-    {"@type":"Question","name":"Kas viite ära vana mööbli ja prügi?","acceptedAnswer":{"@type":"Answer","text":"Jah, korraldame äraveo ja utiliseerimise kohe pärast kolimist. Hind sõltub prügi mahust — ütleme selle kohe."}},
+    {"@type":"Question","name":"Kas viite ära vana mööbli ja prügi?","acceptedAnswer":{"@type":"Answer","text":"Jah, korraldame äraveo ja utiliseerimise kohe pärast kolimist. Hind sõltub prügi mahust. Ütleme selle kohe."}},
     {"@type":"Question","name":"Kuidas broneerida ja kas saab edasi lükata?","acceptedAnswer":{"@type":"Answer","text":"Võtke ühendust telefoni, e-posti või vormi kaudu. Broneeringut saab muuta või tühistada, kui annate sellest mõistliku aja jooksul enne kolimiskuupäeva teada. Võtame vastu sularaha, pangaülekande ja kaardi."}}
   ]
 }
@@ -190,7 +190,7 @@ a{color:inherit;text-decoration:none}
 .form-card h2{font-size:22px;font-weight:800;margin:7px 0 5px;color:#0f1a2e}
 .form-card>p{color:var(--body-text-dim);font-size:13px;margin-bottom:14px}
 .chips{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:12px}
-.chip{border:1px solid #c8d4e6;background:#fff;color:var(--body-text-dim);border-radius:10px;padding:10px 13px;font-size:13.5px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .15s;text-align:center}
+.chip{border:1px solid #c8d4e6;background:#fff;color:var(--body-text-dim);border-radius:10px;padding:10px 8px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .15s;text-align:center;white-space:nowrap}
 .chip:hover{border-color:var(--accent-line);background:#f0f5ff}
 .chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
 .chip--full{grid-column:1/-1}
@@ -550,7 +550,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .chip.on .chip-oval path{animation:drawOval .6s cubic-bezier(.6,0,.35,1) forwards}
 @keyframes drawOval{to{stroke-dashoffset:0}}
 @media(max-width:760px){.chip-oval{display:none}}
-@media(min-width:761px){.chip-oval path{stroke:#fff;stroke-width:1.8}}
+@media(min-width:761px){.chip.on{background:#fff;border-color:#dce5f1;color:var(--body-text)}.chip-oval path{stroke:#3f86f0;stroke-width:2}}
 
 .lang-phones{display:flex;flex-direction:column;gap:8px;margin-top:14px;border-top:1px solid var(--line-hero);padding-top:14px}
 .lang-phones a{display:flex;align-items:center;gap:8px;font-size:16px;font-weight:700;color:var(--hero-text);border:0;padding:2px 0}
@@ -653,10 +653,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
           <input type="hidden" name="service" id="serviceField"><input type="hidden" name="utm_source" id="utm_source"><input type="hidden" name="utm_medium" id="utm_medium"><input type="hidden" name="utm_campaign" id="utm_campaign"><input type="hidden" name="utm_term" id="utm_term"><input type="hidden" name="utm_content" id="utm_content"><input type="hidden" name="gclid" id="gclid">
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:0;top:0;width:1px;height:1px;opacity:0;overflow:hidden;pointer-events:none">
           <div class="chips" id="svcChips" role="radiogroup">
-            <button type="button" class="chip" data-svc="private"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M42 15C95 4 150 8 192 19 213 25 211 50 173 57 108 68 49 64 20 50 6 43 13 17 52 11 82 7 110 8 134 14"/></svg>Erakolimine<span class="chip-tick" aria-hidden="true">✓</span></button>
-            <button type="button" class="chip" data-svc="business"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M42 15C95 4 150 8 192 19 213 25 211 50 173 57 108 68 49 64 20 50 6 43 13 17 52 11 82 7 110 8 134 14"/></svg>Ärikolimine<span class="chip-tick" aria-hidden="true">✓</span></button>
-            <button type="button" class="chip" data-svc="garbage"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M42 15C95 4 150 8 192 19 213 25 211 50 173 57 108 68 49 64 20 50 6 43 13 17 52 11 82 7 110 8 134 14"/></svg>Prügivedu<span class="chip-tick" aria-hidden="true">✓</span></button>
-            <button type="button" class="chip" data-svc="transport"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M42 15C95 4 150 8 192 19 213 25 211 50 173 57 108 68 49 64 20 50 6 43 13 17 52 11 82 7 110 8 134 14"/></svg>Transport<span class="chip-tick" aria-hidden="true">✓</span></button>
+            <button type="button" class="chip" data-svc="private"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M45 13C97 5 151 6 191 17 212 23 212 46 175 53 117 64 57 62 25 50 9 43 13 19 51 12"/></svg>Erakolimine<span class="chip-tick" aria-hidden="true">✓</span></button>
+            <button type="button" class="chip" data-svc="business"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M45 13C97 5 151 6 191 17 212 23 212 46 175 53 117 64 57 62 25 50 9 43 13 19 51 12"/></svg>Ärikolimine<span class="chip-tick" aria-hidden="true">✓</span></button>
+            <button type="button" class="chip" data-svc="garbage"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M45 13C97 5 151 6 191 17 212 23 212 46 175 53 117 64 57 62 25 50 9 43 13 19 51 12"/></svg>Prügivedu<span class="chip-tick" aria-hidden="true">✓</span></button>
+            <button type="button" class="chip" data-svc="transport"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M45 13C97 5 151 6 191 17 212 23 212 46 175 53 117 64 57 62 25 50 9 43 13 19 51 12"/></svg>Transport<span class="chip-tick" aria-hidden="true">✓</span></button>
           </div>
           <div class="form-grid">
             <input type="text" name="name" placeholder="Täisnimi / ettevõtte nimi *" aria-label="Täisnimi / ettevõtte nimi" required style="grid-column:1/-1">
@@ -737,7 +737,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
         <div class="sp-top-label">Äravedu ja utiliseerimine</div>
         <div class="sp-body">
           <h3>Prügi, mööbel, koli</h3>
-          <p>Koristame ära kõik, mida enam vaja pole. Ametlik utiliseerimine, ilma ebaseaduslike prügimägedeta. Hind sõltub mahust — ütleme selle kohe, ilma varjatud lisatasudeta.</p>
+          <p>Koristame ära kõik, mida enam vaja pole. Ametlik utiliseerimine, ilma ebaseaduslike prügimägedeta. Hind sõltub mahust. Ütleme selle kohe, ilma varjatud lisatasudeta.</p>
         </div>
       </div>
     </div>
@@ -1003,7 +1003,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   <div class="wrap">
     <span class="tag">Ausalt hindadest</span>
     <h2 class="big">Mis hinna sisse kuulub ja mille eest juurde maksta.</h2>
-    <p class="lead">Keegi ei armasta üllatusi arvel. Iga kolimine on erinev — korrus, lift, maht, parkimine —, seega fikseeritud hinnakirja pole: arvutame just teie tellimuse ja ütleme hinna kohe, ilma varjatud lisatasudeta.</p>
+    <p class="lead">Keegi ei armasta üllatusi arvel. Iga kolimine on erinev: korrus, lift, maht, parkimine. Seepärast fikseeritud hinnakirja pole. Arvutame just teie tellimuse ja ütleme hinna kohe, ilma varjatud lisatasudeta.</p>
     <div class="honest">
       <div class="hon good">
         <h3>Alati hinna sees</h3>
@@ -1041,9 +1041,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
       <div>
         <span class="tag">Varustus</span>
         <h2 class="big">Õige auto, kogenud meeskond, õige varustus.</h2>
-        <p class="lead">Veame oma tagaluugiga veokitega, mis on varustatud rihmade, kärude, kile, mullikile ja kolimistekkidega. Iga ese kinnitatakse rihmadega. <b>Asjad ei libise, ei kriimusta üksteist ega purune teel.</b> Iga meeskonnaliige on teinud sadu kolimisi.</p>
+        <p class="lead">Veame oma tõstukiga veokitega, mis on varustatud rihmade, kärude, kile, mullikile ja kolimistekkidega. Iga ese kinnitatakse rihmadega. <b>Asjad ei libise, ei kriimusta üksteist ega purune teel.</b> Iga meeskonnaliige on teinud sadu kolimisi.</p>
         <ul class="spec">
-          <li><span>Autod</span><span>Eri suuruses veokid, kõik tagaluugiga</span></li>
+          <li><span>Autod</span><span>Eri suuruses veokid, kõik tõstukiga</span></li>
           <li><span>Kaitse</span><span>Rihmad, kärud, mullikile, kolimistekid</span></li>
           <li><span>Meeskond</span><span>1-8 kogenud kolijat olenevalt mahust</span></li>
           <li><span>Tööaeg</span><span>24/7, sh nädalavahetused ja öine aeg</span></li>
@@ -1070,9 +1070,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 <!-- NUMBERS -->
 <section class="section section--dark" id="meist" style="position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:url('imagebg-1920.jpg') center/cover no-repeat;opacity:.07;pointer-events:none"></div>
   <div class="wrap" style="position:relative;z-index:1">
-    <span class="tag">Numbrid räägivad</span>
-    <h2 class="big">Tuhandeid kolimisi. Iga päev uusi.</h2>
-    <p class="lead">Mitte iga töö ei jõua kaadrisse. Mitte iga klient ei jäta arvustust. Aga numbrid jäävad.</p>
+    <span class="tag">Iga päev</span>
+    <h2 class="big">Tallinnas toimub iga päev üle 140 kolimise.</h2>
+    <p class="lead">Enamiku jaoks on see uus ja vahel ka ärev eluetapp. Meie jaoks on see aastatega lihvitud meistritöö. Kolime kodusid, kortereid, kontoreid, mööblit ja kaupu kiiresti, korralikult ja mõistliku hinnaga.</p>
     <div class="nums">
       <div class="num"><b>5000<small>+</small></b><div class="t">edukat kolimist</div><p>Korterid, majad, kontorid, laod ja restoranid</p></div>
       <div class="num"><b>1000<small>+</small></b><div class="t">tonni ära veetud</div><p>Ametlikult ja nõuetekohaselt</p></div>
@@ -1126,7 +1126,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
       </div>
       <div class="faq-item">
         <button class="faq-q">Millise suurusega autot mul vaja on?</button>
-        <div class="faq-a"><p>Seda ei pea teadma. Kirjeldage, mida veate, ja meie valime sobiva sõiduki: väikesest kaubikust kuni suure tagaluugiga veokini.</p></div>
+        <div class="faq-a"><p>Seda ei pea teadma. Kirjeldage, mida veate, ja meie valime sobiva sõiduki: väikesest kaubikust kuni suure tõstukiga veokini.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Kas veate ka klaverit või seifi?</button>
@@ -1134,7 +1134,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
       </div>
       <div class="faq-item">
         <button class="faq-q">Kas viite ära vana mööbli ja prügi?</button>
-        <div class="faq-a"><p>Jah, korraldame äraveo ja utiliseerimise kohe pärast kolimist. Hind sõltub prügi mahust — ütleme selle kohe.</p></div>
+        <div class="faq-a"><p>Jah, korraldame äraveo ja utiliseerimise kohe pärast kolimist. Hind sõltub prügi mahust. Ütleme selle kohe.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Kuidas broneerida ja kas saab edasi lükata?</button>

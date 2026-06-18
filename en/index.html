@@ -49,7 +49,7 @@
     {"@type":"Question","name":"Will you pack everything yourselves?","acceptedAnswer":{"@type":"Answer","text":"Yes — if you'd like, our movers will pack everything to safety standards. We wrap fragile items in bubble wrap and place them in boxes with dividers. You can pack yourself too: we recommend labelling boxes by room and contents."}},
     {"@type":"Question","name":"What size of van do I need?","acceptedAnswer":{"@type":"Answer","text":"You don't need to figure that out. Tell us what you're moving and we'll pick the right vehicle — from a small van to a large rear-loading truck."}},
     {"@type":"Question","name":"Will you move a piano or a safe?","acceptedAnswer":{"@type":"Answer","text":"Yes. Heavy-item transport is our specialty: pianos, safes, industrial equipment. We use special tools and an experienced crew so the item and the stairwell stay intact."}},
-    {"@type":"Question","name":"Will you take away old furniture and junk?","acceptedAnswer":{"@type":"Answer","text":"Yes, we arrange removal and disposal right after the move. The cost depends on the junk volume — we quote you upfront."}},
+    {"@type":"Question","name":"Will you take away old furniture and junk?","acceptedAnswer":{"@type":"Answer","text":"Yes, we arrange removal and disposal right after the move. The cost depends on the junk volume. We quote you upfront."}},
     {"@type":"Question","name":"How do I book, and can I reschedule?","acceptedAnswer":{"@type":"Answer","text":"Get in touch by phone, email or through the form. A booking can be changed or cancelled as long as you let us know a reasonable time before the move date. We accept cash, bank transfer and card."}}
   ]
 }
@@ -190,7 +190,7 @@ a{color:inherit;text-decoration:none}
 .form-card h2{font-size:22px;font-weight:800;margin:7px 0 5px;color:#0f1a2e}
 .form-card>p{color:var(--body-text-dim);font-size:13px;margin-bottom:14px}
 .chips{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:12px}
-.chip{border:1px solid #c8d4e6;background:#fff;color:var(--body-text-dim);border-radius:10px;padding:10px 13px;font-size:13.5px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .15s;text-align:center}
+.chip{border:1px solid #c8d4e6;background:#fff;color:var(--body-text-dim);border-radius:10px;padding:10px 8px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .15s;text-align:center;white-space:nowrap}
 .chip:hover{border-color:var(--accent-line);background:#f0f5ff}
 .chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
 .chip--full{grid-column:1/-1}
@@ -550,7 +550,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .chip.on .chip-oval path{animation:drawOval .6s cubic-bezier(.6,0,.35,1) forwards}
 @keyframes drawOval{to{stroke-dashoffset:0}}
 @media(max-width:760px){.chip-oval{display:none}}
-@media(min-width:761px){.chip-oval path{stroke:#fff;stroke-width:1.8}}
+@media(min-width:761px){.chip.on{background:#fff;border-color:#dce5f1;color:var(--body-text)}.chip-oval path{stroke:#3f86f0;stroke-width:2}}
 
 .lang-phones{display:flex;flex-direction:column;gap:8px;margin-top:14px;border-top:1px solid var(--line-hero);padding-top:14px}
 .lang-phones a{display:flex;align-items:center;gap:8px;font-size:16px;font-weight:700;color:var(--hero-text);border:0;padding:2px 0}
@@ -653,10 +653,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
           <input type="hidden" name="service" id="serviceField"><input type="hidden" name="utm_source" id="utm_source"><input type="hidden" name="utm_medium" id="utm_medium"><input type="hidden" name="utm_campaign" id="utm_campaign"><input type="hidden" name="utm_term" id="utm_term"><input type="hidden" name="utm_content" id="utm_content"><input type="hidden" name="gclid" id="gclid">
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:0;top:0;width:1px;height:1px;opacity:0;overflow:hidden;pointer-events:none">
           <div class="chips" id="svcChips" role="radiogroup">
-            <button type="button" class="chip" data-svc="private"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M42 15C95 4 150 8 192 19 213 25 211 50 173 57 108 68 49 64 20 50 6 43 13 17 52 11 82 7 110 8 134 14"/></svg>Home move<span class="chip-tick" aria-hidden="true">✓</span></button>
-            <button type="button" class="chip" data-svc="business"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M42 15C95 4 150 8 192 19 213 25 211 50 173 57 108 68 49 64 20 50 6 43 13 17 52 11 82 7 110 8 134 14"/></svg>Business move<span class="chip-tick" aria-hidden="true">✓</span></button>
-            <button type="button" class="chip" data-svc="garbage"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M42 15C95 4 150 8 192 19 213 25 211 50 173 57 108 68 49 64 20 50 6 43 13 17 52 11 82 7 110 8 134 14"/></svg>Junk removal<span class="chip-tick" aria-hidden="true">✓</span></button>
-            <button type="button" class="chip" data-svc="transport"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M42 15C95 4 150 8 192 19 213 25 211 50 173 57 108 68 49 64 20 50 6 43 13 17 52 11 82 7 110 8 134 14"/></svg>Transport<span class="chip-tick" aria-hidden="true">✓</span></button>
+            <button type="button" class="chip" data-svc="private"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M45 13C97 5 151 6 191 17 212 23 212 46 175 53 117 64 57 62 25 50 9 43 13 19 51 12"/></svg>Home move<span class="chip-tick" aria-hidden="true">✓</span></button>
+            <button type="button" class="chip" data-svc="business"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M45 13C97 5 151 6 191 17 212 23 212 46 175 53 117 64 57 62 25 50 9 43 13 19 51 12"/></svg>Business move<span class="chip-tick" aria-hidden="true">✓</span></button>
+            <button type="button" class="chip" data-svc="garbage"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M45 13C97 5 151 6 191 17 212 23 212 46 175 53 117 64 57 62 25 50 9 43 13 19 51 12"/></svg>Junk removal<span class="chip-tick" aria-hidden="true">✓</span></button>
+            <button type="button" class="chip" data-svc="transport"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M45 13C97 5 151 6 191 17 212 23 212 46 175 53 117 64 57 62 25 50 9 43 13 19 51 12"/></svg>Transport<span class="chip-tick" aria-hidden="true">✓</span></button>
           </div>
           <div class="form-grid">
             <input type="text" name="name" placeholder="Full name / company *" aria-label="Full name / company" required style="grid-column:1/-1">
@@ -737,7 +737,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
         <div class="sp-top-label">Removal and disposal</div>
         <div class="sp-body">
           <h3>Junk, furniture, clutter</h3>
-          <p>We clear out everything you no longer need. Official disposal, no illegal dumping. The price depends on the volume — we tell you upfront, with no hidden fees.</p>
+          <p>We clear out everything you no longer need. Official disposal, no illegal dumping. The price depends on the volume. We tell you upfront, with no hidden fees.</p>
         </div>
       </div>
     </div>
@@ -1003,7 +1003,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   <div class="wrap">
     <span class="tag">Honest about pricing</span>
     <h2 class="big">What's included in the price, and what costs extra.</h2>
-    <p class="lead">Nobody likes surprises on the invoice. Every move is different — floor, lift, volume, parking — so there's no fixed price list: we calculate your specific job and tell you the price upfront, with no hidden fees.</p>
+    <p class="lead">Nobody likes surprises on the invoice. Every move is different: floor, lift, volume, parking. That's why there's no fixed price list. We calculate your specific job and tell you the price upfront, with no hidden fees.</p>
     <div class="honest">
       <div class="hon good">
         <h3>Always included in the price</h3>
@@ -1041,9 +1041,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
       <div>
         <span class="tag">Equipment</span>
         <h2 class="big">The right van, an experienced crew, the right gear.</h2>
-        <p class="lead">We move with our own trucks with tail-lifts, equipped with straps, dollies, wrap, bubble wrap and moving blankets. Every item is secured with straps. <b>Your belongings don't slide, scratch each other or break in transit.</b> Every member of the crew has done hundreds of moves.</p>
+        <p class="lead">We move with our own trucks with lifts, equipped with straps, dollies, wrap, bubble wrap and moving blankets. Every item is secured with straps. <b>Your belongings don't slide, scratch each other or break in transit.</b> Every member of the crew has done hundreds of moves.</p>
         <ul class="spec">
-          <li><span>Vehicles</span><span>Vans of various sizes, all with a tail-lift</span></li>
+          <li><span>Vehicles</span><span>Vans of various sizes, all with a lift</span></li>
           <li><span>Protection</span><span>Straps, dollies, bubble wrap, moving blankets</span></li>
           <li><span>Crew</span><span>1-8 experienced movers depending on volume</span></li>
           <li><span>Hours</span><span>24/7, including weekends and night-time</span></li>
@@ -1070,9 +1070,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 <!-- NUMBERS -->
 <section class="section section--dark" id="meist" style="position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:url('../imagebg-1920.jpg') center/cover no-repeat;opacity:.07;pointer-events:none"></div>
   <div class="wrap" style="position:relative;z-index:1">
-    <span class="tag">The numbers speak</span>
-    <h2 class="big">Thousands of moves. New ones every day.</h2>
-    <p class="lead">Not every job ends up on camera. Not every client leaves a review. But the numbers stay.</p>
+    <span class="tag">Every day</span>
+    <h2 class="big">In Tallinn, over 140 moves happen every day.</h2>
+    <p class="lead">For most people it's a new, sometimes nerve-racking chapter. For us it's a craft polished over the years. We move homes, apartments, offices, furniture and goods quickly, properly and at a fair price.</p>
     <div class="nums">
       <div class="num"><b>5000<small>+</small></b><div class="t">successful moves</div><p>Apartments, houses, offices, warehouses and restaurants</p></div>
       <div class="num"><b>1000<small>+</small></b><div class="t">tonnes removed</div><p>Officially and in line with regulations</p></div>
@@ -1134,7 +1134,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
       </div>
       <div class="faq-item">
         <button class="faq-q">Will you take away old furniture and junk?</button>
-        <div class="faq-a"><p>Yes, we arrange removal and disposal right after the move. The cost depends on the junk volume — we quote you upfront.</p></div>
+        <div class="faq-a"><p>Yes, we arrange removal and disposal right after the move. The cost depends on the junk volume. We quote you upfront.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">How do I book, and can I reschedule?</button>
