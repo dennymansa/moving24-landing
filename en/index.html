@@ -812,8 +812,8 @@ h2.big--xl{font-size:clamp(36px,5.2vw,58px);font-weight:800;letter-spacing:-.02e
 .lang-link:hover{color:#fff}
 .lang-link.is-active{background:var(--accent);color:#fff}
 @media(max-width:760px){.lang-switch{display:none}}
-.nav-mobile .nav-mobile-lang{display:flex;gap:6px;margin-top:8px}
-.nav-mobile .nav-mobile-lang a{display:inline-block;border:1px solid var(--line-hero);border-radius:8px;padding:7px 4px;font-size:13px;text-align:center;flex:1}
+.nav-mobile .nav-mobile-lang{display:flex;gap:6px;margin:0 0 16px;padding-bottom:16px;border-bottom:1px solid var(--line-hero)}
+.nav-mobile .nav-mobile-lang a{display:inline-block;border:1px solid var(--line-hero);border-radius:9px;padding:9px 4px;font-size:13.5px;font-weight:700;text-align:center;flex:1;color:var(--hero-text)}
 
 /* ===== Footer legal links ===== */
 .foot-legal{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
@@ -987,6 +987,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   </nav>
 </header>
 <div class="nav-mobile" id="navMobile">
+  <div class="nav-mobile-lang">
+    <a href="/moving24-landing/" lang="et" hreflang="et">ET</a>
+    <a href="/moving24-landing/en/" lang="en" hreflang="en" aria-current="page">EN</a>
+    <a href="/moving24-landing/ru/" lang="ru" hreflang="ru">RU</a>
+    <a href="/moving24-landing/fi/" lang="fi" hreflang="fi">FI</a>
+  </div>
   <a href="#teenused" onclick="closeMob()">Services</a>
   <a class="nm-sub" href="service/business-move/" onclick="closeMob()">Business move</a>
   <a class="nm-sub" href="service/home-move/" onclick="closeMob()">Home move</a>
@@ -999,12 +1005,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   <div class="lang-phones">
     <a href="tel:+37256870101"><span class="lp-fl">🇷🇺 🇬🇧</span> +372 5687 0101</a>
     <a href="tel:+3725540806"><span class="lp-fl">🇪🇪</span> +372 5540 806</a>
-  </div>
-  <div class="nav-mobile-lang">
-    <a href="/moving24-landing/" lang="et" hreflang="et">ET</a>
-    <a href="/moving24-landing/en/" lang="en" hreflang="en" aria-current="page">EN</a>
-    <a href="/moving24-landing/ru/" lang="ru" hreflang="ru">RU</a>
-    <a href="/moving24-landing/fi/" lang="fi" hreflang="fi">FI</a>
   </div>
 </div>
 
