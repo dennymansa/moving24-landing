@@ -57,7 +57,7 @@
 
 <!-- ===== TRACKING — РЕАЛЬНЫЕ коды подставлены: GTM-TSG2CVLC, AW-16489866360 (GA4 + конверсии внутри GTM). Гейт по hostname: трекинг включается ТОЛЬКО на moving24.ee — на тесте (github.io/localhost) молчит, чтобы не засорять живую GA4/Ads. FORM_ENDPOINT пуст = демо (форма пока не шлёт по-настоящему). Consent Mode v2 default=denied, баннер обновляет. ===== -->
 <script>
-  window.M24={GTM:'GTM-TSG2CVLC',AW:'AW-16489866360',GA4:'G-7X1TS2BVF6',CONV_FORM:'AW-16489866360/uyGYCLT3uagZEPjI_bY9',CONV_PHONE:'AW-16489866360/LgJRCOq6nK4ZEPjI_bY9',FORM_ENDPOINT:''};
+  window.M24={GTM:'GTM-TSG2CVLC',AW:'AW-16489866360',GA4:'G-7X1TS2BVF6',CONV_FORM:'AW-16489866360/uyGYCLT3uagZEPjI_bY9',CONV_PHONE:'AW-16489866360/LgJRCOq6nK4ZEPjI_bY9',FORM_ENDPOINT:'https://usebasin.com/f/48904e530a24'};
   window.dataLayer=window.dataLayer||[];
   function gtag(){dataLayer.push(arguments);}
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
@@ -550,7 +550,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .chip.on .chip-oval path{animation:drawOval .6s cubic-bezier(.6,0,.35,1) forwards}
 @keyframes drawOval{to{stroke-dashoffset:0}}
 @media(max-width:760px){.chip-oval{display:none}}
-@media(min-width:761px){.chip.on{background:#fff;border-color:#dce5f1;color:var(--body-text)}.chip-oval path{stroke:#3f86f0;stroke-width:2}}
+@media(min-width:761px){.chip.on{background:#e8f1ff;border-color:#b8d0f5;color:var(--accent)}.chip-oval path{stroke:#3f86f0;stroke-width:2}}
 
 .lang-phones{display:flex;flex-direction:column;gap:8px;margin-top:14px;border-top:1px solid var(--line-hero);padding-top:14px}
 .lang-phones a{display:flex;align-items:center;gap:8px;font-size:16px;font-weight:700;color:var(--hero-text);border:0;padding:2px 0}
@@ -653,10 +653,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
           <input type="hidden" name="service" id="serviceField"><input type="hidden" name="utm_source" id="utm_source"><input type="hidden" name="utm_medium" id="utm_medium"><input type="hidden" name="utm_campaign" id="utm_campaign"><input type="hidden" name="utm_term" id="utm_term"><input type="hidden" name="utm_content" id="utm_content"><input type="hidden" name="gclid" id="gclid">
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:0;top:0;width:1px;height:1px;opacity:0;overflow:hidden;pointer-events:none">
           <div class="chips" id="svcChips" role="radiogroup">
-            <button type="button" class="chip" data-svc="private"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M45 13C97 5 151 6 191 17 212 23 212 46 175 53 117 64 57 62 25 50 9 43 13 19 51 12"/></svg>Erakolimine<span class="chip-tick" aria-hidden="true">✓</span></button>
-            <button type="button" class="chip" data-svc="business"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M45 13C97 5 151 6 191 17 212 23 212 46 175 53 117 64 57 62 25 50 9 43 13 19 51 12"/></svg>Ärikolimine<span class="chip-tick" aria-hidden="true">✓</span></button>
-            <button type="button" class="chip" data-svc="garbage"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M45 13C97 5 151 6 191 17 212 23 212 46 175 53 117 64 57 62 25 50 9 43 13 19 51 12"/></svg>Prügivedu<span class="chip-tick" aria-hidden="true">✓</span></button>
-            <button type="button" class="chip" data-svc="transport"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M45 13C97 5 151 6 191 17 212 23 212 46 175 53 117 64 57 62 25 50 9 43 13 19 51 12"/></svg>Transport<span class="chip-tick" aria-hidden="true">✓</span></button>
+            <button type="button" class="chip" data-svc="private"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M40 16C92 5 158 6 196 18 215 24 210 49 172 56 110 66 48 64 20 50 7 43 12 17 50 11 78 7 104 9 126 13"/></svg>Erakolimine<span class="chip-tick" aria-hidden="true">✓</span></button>
+            <button type="button" class="chip" data-svc="business"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M36 17C84 5 152 4 196 16 219 23 213 48 176 56 112 67 46 64 18 50 5 42 12 15 50 10 76 6 100 8 120 12"/></svg>Ärikolimine<span class="chip-tick" aria-hidden="true">✓</span></button>
+            <button type="button" class="chip" data-svc="garbage"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M48 12C104 5 152 9 192 20 213 27 207 49 168 55 106 64 48 61 21 48 9 41 16 17 56 12"/></svg>Prügivedu<span class="chip-tick" aria-hidden="true">✓</span></button>
+            <button type="button" class="chip" data-svc="transport"><svg class="chip-oval" viewBox="0 0 220 64" preserveAspectRatio="none" aria-hidden="true"><path d="M44 15C90 6 156 6 197 17 216 24 208 48 173 57 110 66 44 62 18 48 7 42 15 18 55 13 82 9 106 11 128 15"/></svg>Transport<span class="chip-tick" aria-hidden="true">✓</span></button>
           </div>
           <div class="form-grid">
             <input type="text" name="name" placeholder="Täisnimi / ettevõtte nimi *" aria-label="Täisnimi / ettevõtte nimi" required style="grid-column:1/-1">
