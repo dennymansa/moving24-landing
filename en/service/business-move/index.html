@@ -789,7 +789,7 @@ h2.big--xl{font-size:clamp(36px,5.2vw,58px);font-weight:800;letter-spacing:-.02e
   .nav-mobile{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--hero-bg);z-index:99;padding:86px 22px 20px;overflow:auto}
   .nav-mobile.on{display:block}
   .nav-mobile a{display:block;padding:8px 4px;font-size:15px;font-weight:600;color:var(--hero-text);border-bottom:1px solid var(--line-hero)}
-  .hero .wrap{padding-top:calc(64px + 26px)}
+  .hero .wrap{padding-top:calc(64px + 44px)}
   .hero-photo-bg{bottom:auto;height:100svh;background-size:auto 160%;background-position:38% bottom}
   .hero h1{min-height:0}
   .nav-wrap{position:sticky;top:8px;padding-top:10px}
@@ -816,7 +816,7 @@ h2.big--xl{font-size:clamp(36px,5.2vw,58px);font-weight:800;letter-spacing:-.02e
   .hsteps::before{display:none}
   .gal{grid-template-columns:repeat(2,1fr)}
   .gal img{height:150px}
-  .mob-bar{display:grid;grid-template-columns:1fr 1fr;background:transparent;border-top:none;padding:8px 16px calc(14px + env(safe-area-inset-bottom,0px));gap:12px;pointer-events:none;max-width:440px;margin-left:auto;margin-right:auto}.mob-bar a{flex:1 1 0;min-width:0;text-align:center;white-space:nowrap;pointer-events:auto;padding-left:8px;padding-right:8px;font-size:14.5px}
+  .mob-bar{display:flex;background:transparent;border-top:none;padding:8px 16px calc(14px + env(safe-area-inset-bottom,0px));gap:14px;justify-content:center;pointer-events:none}.mob-bar a{pointer-events:auto}
   .mob-bar .btn{flex:0 0 auto;pointer-events:auto;padding:12px 22px;font-size:14.5px;border-radius:24px;box-shadow:0 6px 18px rgba(0,0,0,.28)}
   .mob-bar .btn-ghost{background:rgba(255,255,255,.94);color:var(--accent)!important;border:1px solid var(--accent-line)}
   .foot{padding-bottom:64px}
@@ -849,7 +849,7 @@ h2.big--xl{font-size:clamp(36px,5.2vw,58px);font-weight:800;letter-spacing:-.02e
 .lang-link:hover{color:#fff}
 .lang-link.is-active{background:var(--accent);color:#fff}
 @media(max-width:760px){.lang-switch{display:none}}
-.nav-mobile .nav-mobile-lang{display:flex;gap:6px;margin:0 0 16px;padding-bottom:16px;border-bottom:1px solid var(--line-hero)}
+.nav-mobile .nav-mobile-lang{display:flex;gap:6px;margin:0 0 8px;padding-bottom:8px;border-bottom:1px solid var(--line-hero)}
 .nav-mobile .nav-mobile-lang a{display:inline-block;border:1px solid var(--line-hero);border-radius:9px;padding:9px 4px;font-size:13.5px;font-weight:700;text-align:center;flex:1;color:var(--hero-text)}
 
 /* ===== Footer legal links ===== */
