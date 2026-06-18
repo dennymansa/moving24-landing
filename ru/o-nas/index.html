@@ -90,7 +90,7 @@ h2.big{font-size:clamp(24px,3.6vw,34px);margin-bottom:8px}
 .foot-legal{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
 .foot-legal a{color:var(--hero-text-dim);text-decoration:none}
 .foot-legal a:hover{color:var(--hero-text);text-decoration:underline}
-.foot-wordmark{font-size:clamp(44px,16vw,210px);font-weight:800;letter-spacing:-.02em;line-height:.8;text-align:center;margin:28px 0 -10px;color:rgba(255,255,255,.07);user-select:none;pointer-events:none;white-space:nowrap;max-width:100%;overflow:hidden;font-family:'Plus Jakarta Sans'}
+.foot-wordmark{font-size:clamp(44px,16vw,210px);font-weight:800;letter-spacing:-.02em;line-height:.8;text-align:center;margin:22px 0 6px;color:rgba(255,255,255,.07);user-select:none;pointer-events:none;white-space:nowrap;max-width:100%;overflow:hidden;font-family:'Plus Jakarta Sans'}
 .foot-wordmark span{color:rgba(120,170,255,.16)}
 @media(max-width:820px){.foot-grid{grid-template-columns:1fr 1fr}.foot-brand{grid-row:auto;grid-column:1/-1}}
 @media(max-width:520px){.foot-grid{grid-template-columns:1fr}}
@@ -165,6 +165,7 @@ h2.big{font-size:clamp(24px,3.6vw,34px);margin-bottom:8px}
       <div class="foot-legal">
         <a href="/moving24-landing/ru/privaatsus/">Политика конфиденциальности</a>
         <a href="/moving24-landing/ru/tingimused/">Условия обслуживания</a>
+        <a href="#" onclick="var c=document.getElementById('cc');if(c){c.classList.add('show')}return false">Куки</a>
         <a href="mailto:info@moving24.ee">info@moving24.ee</a>
       </div>
     </div>
