@@ -525,7 +525,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .lift-toggle{display:flex;align-items:center;gap:6px;height:100%}
 .lift-toggle .lift-q{font-size:12px;font-weight:600;color:#56657a;white-space:nowrap}
 .lift-toggle button{flex:1;padding:11px 0;border:1px solid #c8d4e6;background:#fff;border-radius:10px;font-family:inherit;font-size:13.5px;font-weight:600;color:#56657a;cursor:pointer;transition:background .12s,border-color .12s,color .12s}
-.lift-toggle button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.lift-toggle button.on{background:#e8f1ff;border-color:#b8d0f5;color:var(--accent)}
+.sp-body h3 a{color:inherit;text-decoration:none}
+.sp-body h3 a:hover{color:var(--accent)}
 .pick-hint{font-size:13px;font-weight:500;color:#8aa0bf;margin-left:7px}
 
 .chip{position:relative}
@@ -658,12 +660,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     <div class="hero-grid">
       <div>
         <div class="hero-kicker hand">Домашний переезд</div>
-        <a class="hero-trust" href="https://www.google.com/maps/search/Moving24+Kolimisteenused+Tallinn" target="_blank" rel="noopener" style="text-decoration:none">
+        <div class="hero-trust">
           <span class="ht-stars">★★★★★</span>
           <span class="ht-score">5.0</span>
           <span class="ht-sep">·</span>
           <span class="ht-label">37 отзывов на Google</span>
-        </a>
+        </div>
         <h1>Домашний и квартирный переезд</h1>
         <div class="hero-btns">
           <a class="btn btn-accent" href="#form">Получить расчёт →</a>
@@ -693,7 +695,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
           <div class="ff form-grid2" data-svc="private,business,garbage"><select name="from_floor" class="form-select"><option value="">Этаж</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>-1</option><option>-2</option><option>-3</option><option>-4</option><option>-5</option></select><div class="lift-toggle" data-name="from_lift" role="group" aria-label="Лифт?"><span class="lift-q">Лифт?</span><button type="button" data-val="Да">Да</button><button type="button" data-val="Нет">Нет</button><input type="hidden" name="from_lift"></div></div>
           <div class="ff" data-svc="private,business,transport"><label>Адрес: куда</label><input type="text" name="to_address" placeholder="напр. Randvere tee, Viimsi"></div>
           <div class="ff form-grid2" data-svc="private,business"><select name="to_floor" class="form-select"><option value="">Этаж</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>-1</option><option>-2</option><option>-3</option><option>-4</option><option>-5</option></select><div class="lift-toggle" data-name="to_lift" role="group" aria-label="Лифт?"><span class="lift-q">Лифт?</span><button type="button" data-val="Да">Да</button><button type="button" data-val="Нет">Нет</button><input type="hidden" name="to_lift"></div></div>
-          <div class="ff form-grid2" data-svc="private,business,garbage,transport"><input type="date" name="date" aria-label="Дата" required><select name="time" class="form-select" aria-label="Время"><option value="">Время</option><option>08:00</option><option>08:15</option><option>08:30</option><option>08:45</option><option>09:00</option><option>09:15</option><option>09:30</option><option>09:45</option><option>10:00</option><option>10:15</option><option>10:30</option><option>10:45</option><option>11:00</option><option>11:15</option><option>11:30</option><option>11:45</option><option>12:00</option><option>12:15</option><option>12:30</option><option>12:45</option><option>13:00</option><option>13:15</option><option>13:30</option><option>13:45</option><option>14:00</option><option>14:15</option><option>14:30</option><option>14:45</option><option>15:00</option><option>15:15</option><option>15:30</option><option>15:45</option><option>16:00</option><option>16:15</option><option>16:30</option><option>16:45</option><option>17:00</option><option>17:15</option><option>17:30</option><option>17:45</option><option>18:00</option><option>18:15</option><option>18:30</option><option>18:45</option><option>19:00</option><option>19:15</option><option>19:30</option><option>19:45</option><option>20:00</option><option>20:15</option><option>20:30</option><option>20:45</option><option>21:00</option><option>21:15</option><option>21:30</option><option>21:45</option><option>22:00</option><option>22:15</option><option>22:30</option><option>22:45</option><option>23:00</option><option>23:15</option><option>23:30</option><option>23:45</option><option>00:00</option><option>00:15</option><option>00:30</option><option>00:45</option><option>01:00</option><option>01:15</option><option>01:30</option><option>01:45</option><option>02:00</option><option>02:15</option><option>02:30</option><option>02:45</option><option>03:00</option><option>03:15</option><option>03:30</option><option>03:45</option><option>04:00</option><option>04:15</option><option>04:30</option><option>04:45</option><option>05:00</option><option>05:15</option><option>05:30</option><option>05:45</option><option>06:00</option><option>06:15</option><option>06:30</option><option>06:45</option><option>07:00</option><option>07:15</option><option>07:30</option><option>07:45</option></select></div>
+          <div class="ff form-grid2" data-svc="private,business,garbage,transport"><input type="text" name="date" placeholder="Дата" aria-label="Дата" onfocus="this.type='date'" onblur="if(!this.value)this.type='text'"><select name="time" class="form-select" aria-label="Время"><option value="">Время</option><option>08:00</option><option>08:15</option><option>08:30</option><option>08:45</option><option>09:00</option><option>09:15</option><option>09:30</option><option>09:45</option><option>10:00</option><option>10:15</option><option>10:30</option><option>10:45</option><option>11:00</option><option>11:15</option><option>11:30</option><option>11:45</option><option>12:00</option><option>12:15</option><option>12:30</option><option>12:45</option><option>13:00</option><option>13:15</option><option>13:30</option><option>13:45</option><option>14:00</option><option>14:15</option><option>14:30</option><option>14:45</option><option>15:00</option><option>15:15</option><option>15:30</option><option>15:45</option><option>16:00</option><option>16:15</option><option>16:30</option><option>16:45</option><option>17:00</option><option>17:15</option><option>17:30</option><option>17:45</option><option>18:00</option><option>18:15</option><option>18:30</option><option>18:45</option><option>19:00</option><option>19:15</option><option>19:30</option><option>19:45</option><option>20:00</option><option>20:15</option><option>20:30</option><option>20:45</option><option>21:00</option><option>21:15</option><option>21:30</option><option>21:45</option><option>22:00</option><option>22:15</option><option>22:30</option><option>22:45</option><option>23:00</option><option>23:15</option><option>23:30</option><option>23:45</option><option>00:00</option><option>00:15</option><option>00:30</option><option>00:45</option><option>01:00</option><option>01:15</option><option>01:30</option><option>01:45</option><option>02:00</option><option>02:15</option><option>02:30</option><option>02:45</option><option>03:00</option><option>03:15</option><option>03:30</option><option>03:45</option><option>04:00</option><option>04:15</option><option>04:30</option><option>04:45</option><option>05:00</option><option>05:15</option><option>05:30</option><option>05:45</option><option>06:00</option><option>06:15</option><option>06:30</option><option>06:45</option><option>07:00</option><option>07:15</option><option>07:30</option><option>07:45</option></select></div>
           <div class="ff" data-svc="private,business"><div class="lift-toggle" data-name="packing" role="group" aria-label="Упаковка от нас?"><span class="lift-q">Упаковка от нас?</span><button type="button" data-val="Да">Да</button><button type="button" data-val="Нет">Нет</button><input type="hidden" name="packing"></div></div>
           <div class="ff" data-svc="private,business,garbage,transport"><textarea name="msg" placeholder="Дополнительная информация, список вещей"></textarea></div>
           <label class="photo-upload ff" data-svc="private,business,garbage" id="photoLabel"><input type="file" name="photos" accept="image/*" multiple id="photoInput" aria-label="Прикрепить фото (необязательно)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);border:0"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span id="photoLabel-txt" aria-live="polite">Прикрепить фото (необязательно)</span></label>
@@ -740,7 +742,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
         <div class="img-wrap"><img src="/moving24-landing/img/IMG_0061.jpg?v=4" alt="Квартирный переезд Moving24" loading="lazy"></div>
         <div class="sp-top-label">Частный переезд</div>
         <div class="sp-body">
-          <h3>Квартира и дом</h3>
+          <h3><a href="/moving24-landing/ru/uslugi/chastnyj-pereezd/">Квартира и дом</a></h3>
           <p>Однушка, четырёхкомнатная или загородный дом. Упакуем, вынесем, перевезём и расставим на новом месте. Всё за один день.</p>
         </div>
       </div>
@@ -748,7 +750,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
         <div class="img-wrap"><img src="/moving24-landing/img/g-office3.jpg" alt="Офисный переезд в Таллинне" loading="lazy"></div>
         <div class="sp-top-label">Бизнес и офис</div>
         <div class="sp-body">
-          <h3>Офис, склад, магазин</h3>
+          <h3><a href="/moving24-landing/ru/uslugi/biznes-pereezd/">Офис, склад, магазин</a></h3>
           <p>Переезжаем вечером или в выходные, чтобы работа не останавливалась. IT-оборудование, архивы и мебель. Всё пронумеровано и упаковано.</p>
         </div>
       </div>
@@ -756,7 +758,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
         <div class="img-wrap"><img src="/moving24-landing/img/g-heavy1.jpg" alt="Перевозка тяжёлых предметов" loading="lazy"></div>
         <div class="sp-top-label">Тяжёлые предметы</div>
         <div class="sp-body">
-          <h3>Пианино, сейфы, оборудование</h3>
+          <h3><a href="/moving24-landing/ru/uslugi/krupnogabaritnyj/">Пианино, сейфы, оборудование</a></h3>
           <p>Перевозим то, от чего другие отказываются. Специальное оборудование, опытная команда. Вещи и стены остаются целыми.</p>
         </div>
       </div>
@@ -764,7 +766,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
         <div class="img-wrap"><img src="/moving24-landing/img/g-pack2.jpg" alt="Вывоз и утилизация мусора" loading="lazy"></div>
         <div class="sp-top-label">Вывоз и утиль</div>
         <div class="sp-body">
-          <h3>Мусор, мебель, хлам</h3>
+          <h3><a href="/moving24-landing/ru/uslugi/vyvoz-musora/">Мусор, мебель, хлам</a></h3>
           <p>Уберём всё, что уже не нужно. Официальная утилизация, без незаконных свалок. Стоимость зависит от объёма. Назовём сразу, без скрытых доплат.</p>
         </div>
       </div>
@@ -1405,6 +1407,5 @@ document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
   <div class="cc-row cc-saverow"><button class="cc-btn cc-save" type="button">Сохранить выбор</button></div>
 </div>
 <script>(function(){var KEY="m24_consent_v2";var cc=document.getElementById("cc");if(!cc)return;function apply(a,d){gtag("consent","update",{analytics_storage:a?"granted":"denied",ad_storage:d?"granted":"denied",ad_user_data:d?"granted":"denied",ad_personalization:d?"granted":"denied"});try{dataLayer.push({event:"consent_update",consent_analytics:a,consent_ads:d});}catch(e){}}var s=null;try{s=JSON.parse(localStorage.getItem(KEY));}catch(e){}if(s&&typeof s.a==="boolean"){apply(s.a,s.d);}else{cc.classList.add("show");}function save(a,d){try{localStorage.setItem(KEY,JSON.stringify({a:a,d:d,t:Date.now()}));}catch(e){}apply(a,d);cc.classList.remove("show");}function flip(sw){var on=!sw.classList.contains("cc-sw--on");sw.classList.toggle("cc-sw--on",on);sw.setAttribute("aria-checked",on?"true":"false");}var sws=cc.querySelectorAll(".cc-sw[data-for]");for(var i=0;i<sws.length;i++){(function(sw){sw.addEventListener("click",function(){flip(sw);});sw.addEventListener("keydown",function(e){if(e.key===" "||e.key==="Enter"){e.preventDefault();flip(sw);}});})(sws[i]);}cc.querySelector(".cc-cust").addEventListener("click",function(){cc.classList.add("cc-open");});function st(n){var sw=cc.querySelector('.cc-sw[data-for="'+n+'"]');return!!(sw&&sw.classList.contains("cc-sw--on"));}cc.querySelector(".cc-acc").addEventListener("click",function(){save(true,true);});cc.querySelector(".cc-dec").addEventListener("click",function(){save(false,false);});cc.querySelector(".cc-save").addEventListener("click",function(){save(st("analytics"),st("ads"));});})();</script>
-<script>window.addEventListener("load",function(){try{var c=document.querySelector('.chip[data-svc="private"]');if(c)c.click();var sf=document.getElementById("serviceField");if(sf&&!sf.value)sf.value="private";window.scrollTo(0,0);}catch(e){}});</script>
 </body>
 </html>
