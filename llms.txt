@@ -6,9 +6,10 @@
 - [Avaleht - Eesti (ET)](https://dennymansa.github.io/moving24-landing/)
 - [Главная - Русский (RU)](https://dennymansa.github.io/moving24-landing/ru/)
 - [Home - English (EN)](https://dennymansa.github.io/moving24-landing/en/)
+- [Etusivu - Suomi (FI)](https://dennymansa.github.io/moving24-landing/fi/)
 
 ## Contact
-- Phone: +372 5687 0101
+- Phone: +372 5687 0101 / +372 5540 806
 - Email: info@moving24.ee
-- Address: Kentmanni 28, 10116 Tallinn, Estonia
+- Address: Tartu mnt 2, 10145 Tallinn, Estonia
 - Hours: 24/7

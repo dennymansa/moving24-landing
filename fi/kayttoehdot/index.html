@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
+<!-- ===== TRACKING: GTM-TSG2CVLC + AW-16489866360 (GA4 + конверсии внутри GTM). Гейт по hostname: включается ТОЛЬКО на moving24.ee, на тесте (github.io/localhost) молчит. Consent Mode v2 default=denied. Форма живая (FORM_ENDPOINT = Basin). ===== -->
+<script>
+  window.M24={GTM:'GTM-TSG2CVLC',AW:'AW-16489866360',GA4:'G-7X1TS2BVF6',CONV_FORM:'AW-16489866360/uyGYCLT3uagZEPjI_bY9',CONV_PHONE:'AW-16489866360/LgJRCOq6nK4ZEPjI_bY9',FORM_ENDPOINT:'https://usebasin.com/f/48904e530a24'};
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+  gtag('set','ads_data_redaction',true);
+  gtag('set','url_passthrough',true);
+  (function(){
+    window.M24.real=function(v){return !!v && !/X{4,}/.test(v) && !/FORM_LABEL|PHONE_LABEL/.test(v);};
+    var prod=/(^|\.)moving24\.ee$/i.test(location.hostname);
+    var realGTM=prod && window.M24.real(window.M24.GTM);
+    var realAW=prod && window.M24.real(window.M24.AW);
+    if(realGTM){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',window.M24.GTM);}
+    if(realAW){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+window.M24.AW;document.head.appendChild(s);gtag('js',new Date());gtag('config',window.M24.AW);}
+  })();
+</script>
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Käyttöehdot - Moving24</title>
@@ -34,6 +52,7 @@
 </style>
 </head>
 <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSG2CVLC" height="0" width="0" style="display:none;visibility:hidden" title="gtm"></iframe></noscript>
   <header class="top">
     <div class="wrap">
       <a class="logo" href="../"><img src="https://moving24.ee/wp-content/uploads/2024/02/cropped-Group-1-1-192x192.png" alt="Moving24">Moving<b>24</b></a>
@@ -86,5 +105,12 @@
       <a class="back" href="../">← Etusivulle</a>
     </div>
   </main>
+<script>
+/* phone & email link clicks (mirror live GTM events) */
+document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.addEventListener('click',function(){dataLayer.push({event:'phone_link_klick'});});});
+document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){a.addEventListener('click',function(){dataLayer.push({event:'email_link_click'});});});
+/* re-apply a consent choice stored on a commercial page (banner UI lives there) */
+(function(){var s=null;try{s=JSON.parse(localStorage.getItem("m24_consent_v2"));}catch(e){}if(s&&typeof s.a==="boolean"){gtag("consent","update",{analytics_storage:s.a?"granted":"denied",ad_storage:s.d?"granted":"denied",ad_user_data:s.d?"granted":"denied",ad_personalization:s.d?"granted":"denied"});}})();
+</script>
 </body>
 </html>
