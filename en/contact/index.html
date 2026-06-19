@@ -1776,7 +1776,7 @@ document.getElementById('leadForm').addEventListener('submit',function(e){
       form.querySelectorAll('input:not([type=hidden]),textarea').forEach(function(i){i.value='';});
       selectedPhotos=[]; if(window.m24CloseForm) window.m24CloseForm();
       document.getElementById('photoLabel-txt').textContent='Attach a photo (optional)';
-      dataLayer.push({event:'generate_lead'}); /* конверсию формы считает тег в GTM */
+      dataLayer.push({event:'ajaxComplete',attributes:{response:{data:{confirmation:'<div class="wpforms-confirmation-container-full">Aitäh! Paring on vastu voetud.</div>'}}}}); /* конверсию формы считает тег в GTM */
     }else{
       ok.innerHTML='<b>Could not send.</b><br>Please call us: +372 5687 0101.';
       ok.style.display='block';
