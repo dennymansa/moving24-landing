@@ -93,21 +93,17 @@
  ]
 }</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Moving24", "url": "https://moving24.ee/", "inLanguage": "et"}</script>
-<!-- ===== TRACKING - РЕАЛЬНЫЕ коды подставлены: GTM-TSG2CVLC, AW-16489866360 (GA4 + конверсии внутри GTM). Гейт по hostname: трекинг включается ТОЛЬКО на moving24.ee - на тесте (github.io/localhost) молчит, чтобы не засорять живую GA4/Ads. Форма живая (FORM_ENDPOINT = Basin). Consent Mode v2 default=denied, баннер обновляет. ===== -->
+<!-- ===== Только контейнер GTM (GTM-TSG2CVLC). GA4, Google Ads, конверсии и триггеры настроены ВНУТРИ GTM. Гейт по hostname: грузится только на moving24.ee. Consent Mode v2 default=denied до контейнера. ===== -->
 <script>
-  window.M24={GTM:'GTM-TSG2CVLC',AW:'AW-16489866360',GA4:'G-7X1TS2BVF6',CONV_FORM:'AW-16489866360/uyGYCLT3uagZEPjI_bY9',CONV_PHONE:'AW-16489866360/LgJRCOq6nK4ZEPjI_bY9',FORM_ENDPOINT:'https://usebasin.com/f/48904e530a24'};
+  window.M24={GTM:'GTM-TSG2CVLC',FORM_ENDPOINT:'https://usebasin.com/f/48904e530a24'};
   window.dataLayer=window.dataLayer||[];
   function gtag(){dataLayer.push(arguments);}
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
   gtag('set','ads_data_redaction',true);
   gtag('set','url_passthrough',true);
   (function(){
-    window.M24.real=function(v){return !!v && !/X{4,}/.test(v) && !/FORM_LABEL|PHONE_LABEL/.test(v);};
     var prod=/(^|\.)moving24\.ee$/i.test(location.hostname);
-    var realGTM=prod && window.M24.real(window.M24.GTM);
-    var realAW=prod && window.M24.real(window.M24.AW);
-    if(realGTM){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',window.M24.GTM);}
-    if(realAW){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+window.M24.AW;document.head.appendChild(s);gtag('js',new Date());gtag('config',window.M24.AW);}
+    if(prod){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',window.M24.GTM);}
   })();
 </script>
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
