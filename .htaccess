@@ -4,11 +4,6 @@
 
 ErrorDocument 404 /404.html
 
-# --- Sitemap stylesheet renders as a styled page in the browser ---
-<IfModule mod_mime.c>
-  AddType application/xslt+xml .xsl
-</IfModule>
-
 # --- Security headers (impossible on GitHub Pages, available here) ---
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
