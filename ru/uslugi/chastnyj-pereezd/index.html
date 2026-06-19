@@ -1593,7 +1593,7 @@ document.getElementById('leadForm').addEventListener('submit',function(e){
       form.querySelectorAll('input:not([type=hidden]),textarea').forEach(function(i){i.value='';});
       selectedPhotos=[]; if(window.m24CloseForm) window.m24CloseForm();
       document.getElementById('photoLabel-txt').textContent='Прикрепить фото (необязательно)';
-      dataLayer.push({event:'ajaxComplete',attributes:{response:{data:{confirmation:'<div class="wpforms-confirmation-container-full">Aitäh! Paring on vastu voetud.</div>'}}}}); /* конверсию формы считает тег в GTM */
+      dataLayer.push({event:'ajaxComplete',attributes:{type:'POST',url:'https://moving24.ee/wp-admin/admin-ajax.php',pathname:'/wp-admin/admin-ajax.php',statusCode:200,statusText:'success',response:{success:true,data:{confirmation:'<div class="wpforms-confirmation-container-full wpforms-confirmation-scroll" id="wpforms-confirmation-895"><p>Täname päringu eest. Võtame Teiega peatselt ühendust!</p></div>'}}}}); /* конверсию формы считает тег в GTM */
     }else{
       ok.innerHTML='<b>Не удалось отправить.</b><br>Позвоните нам: +372 5687 0101.';
       ok.style.display='block';
